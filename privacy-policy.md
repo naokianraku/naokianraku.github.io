@@ -27,7 +27,7 @@ account. The developer has no access to it.
 
 | Category | Examples | Purpose |
 |---|---|---|
-| Health data | Heart rate, resting heart rate (read from Apple Health) | Show session history, heart-rate charts, and the "Afterglow Score" |
+| Health data | Heart rate, heart rate variability (HRV), resting heart rate, walking distance, sleep analysis, respiratory rate, active energy (read from Apple Health) | Show session history, heart-rate charts, recovery analytics, next-day metrics, and the "Afterglow Score" |
 | Location data | Approximate location at the end of a session | Saved with the session as the venue location, for your reference |
 | Session data | Session times, phases, scores, ratings, venue name and memo you enter | Core app functionality |
 | Advertising data | Device and ad-interaction information collected by Google AdMob (free version only) | Show banner ads |
@@ -51,7 +51,11 @@ the developer receives nothing.
 
 ### 4. Health data (HealthKit)
 
-The App reads heart-rate data from Apple Health to provide its features.
+The App reads the following data types from Apple Health to provide its
+features: heart rate, heart rate variability (HRV), resting heart rate,
+walking distance (used during a session to flag movement artifacts in the
+heart-rate signal), active energy burned, and — on the day after a session —
+sleep analysis and respiratory rate (for recovery analytics).
 
 - Health data is **never used for advertising**.
 - Health data is **never sold or shared** with the developer or any third party.
@@ -130,7 +134,7 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
 
 | 種別 | 例 | 目的 |
 |---|---|---|
-| 健康データ | 心拍数・安定時心拍数（Apple ヘルスケアから読取） | セッション履歴・心拍チャート・「ととのい度」の表示 |
+| 健康データ | 心拍数・心拍変動（HRV）・安静時心拍数・歩行距離・睡眠・呼吸数・消費エネルギー（Apple ヘルスケアから読取） | セッション履歴・心拍チャート・回復分析・翌日指標・「ととのい度」の表示 |
 | 位置情報 | セッション終了時のおおよその位置 | セッションの場所として参考用に保存 |
 | セッションデータ | セッション時刻・フェーズ・スコア・評価・入力した施設名/メモ | アプリの中核機能 |
 | 広告データ | Google AdMob が収集する端末情報・広告操作情報（無料版のみ） | バナー広告の表示 |
@@ -155,7 +159,10 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
 
 ### 4. 健康データ（HealthKit）
 
-本アプリは機能提供のため Apple ヘルスケアから心拍データを読み取ります。
+本アプリは機能提供のため、Apple ヘルスケアから以下のデータを読み取ります：
+心拍数、心拍変動（HRV）、安静時心拍数、歩行距離（セッション中の動線アーティ
+ファクト検出に使用）、消費エネルギー、およびセッション翌日の睡眠データと
+呼吸数（回復分析用）。
 
 - 健康データを**広告に使用することはありません**。
 - 健康データを開発者や第三者に**販売・共有することはありません**。
