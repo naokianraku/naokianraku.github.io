@@ -14,8 +14,9 @@ title: FAQ
 ### 1. Subscription & Billing
 
 **Q. How much is Premium?**
-Monthly ¥100, yearly ¥1,000 (regional prices may differ). New subscribers get a
-30-day free trial.
+See the Premium tab in the app for current pricing in your region. A yearly
+plan is also available at roughly **20% off** vs paying monthly. New
+subscribers get a 30-day free trial.
 
 **Q. What does Premium unlock?**
 Advanced analytics (recovery slope, recovery curves, HRR trends), sharing with
@@ -218,8 +219,9 @@ and a brief description of the issue.
 ### 1. サブスクリプション・課金
 
 **Q. Premium はいくらですか？**
-月額 ¥100、年額 ¥1,000（地域により価格が異なる場合あり）。新規ユーザーは 30 日
-間の無料トライアル付き。
+アプリ内の Premium タブで地域別の最新価格をご確認ください。年額プランも用意
+されており、月額換算で **約 2 割お得** です。新規ユーザーは 30 日間の無料
+トライアル付き。
 
 **Q. Premium で何が変わりますか？**
 高度な分析（回復勾配・回復カーブ・HRR 推移）、心拍チャート画像つきの共有、
