@@ -4,7 +4,7 @@ title: Quick Guide
 
 # Quick Guide / 簡易取説 — MaxSauna Timer
 
-**Last updated / 最終更新:** 2026-05-20
+**Last updated / 最終更新:** 2026-06-05
 
 ---
 
@@ -34,7 +34,7 @@ end the session using any of these:
   and index finger. This is the recommended hands-free gesture.
 - **Digital Crown rotation** — rotate either direction to advance.
 - **Screen tap** — only if you enable it under Settings → Session →
-  "Allow screen-tap advance" (off by default).
+  "Screen tap to advance phase" (off by default).
 
 The Watch displays the current phase, elapsed time, heart rate, and your
 recent HR peak / bottom (last 5 minutes). Configured phase times act as
@@ -62,6 +62,9 @@ recent HR peak / bottom (last 5 minutes). Configured phase times act as
 - Add a **1–5 star rating** to power the rating-vs-score correlation chart.
 - A 60-minute session uses ~10–15 % of the Watch battery (Series 7 +). Turn off
   Always-On Display if you need extra headroom.
+- **Optional chart overlays** — Settings → Display lets you add a 60-second
+  and/or 10-minute moving-average line to the HR chart, and hide the
+  preparation phase to re-baseline X axis to sauna entry. All default OFF.
 - The Afterglow Score is a **reference value**, not a medical metric.
 
 ### 7. Typical workflow — time-limited sauna venues
@@ -71,7 +74,7 @@ doing **3 sets of sauna → cold plunge → cool-down**.
 
 **Setup before you arrive**:
 - Use **Standard mode** (iPhone Settings → Session).
-- Enable **"Use preparation phase"** in Settings → Session.
+- Enable **"Use Pre-sauna phase"** in Settings → Session.
 
 **At the venue**:
 1. When the venue starts your timer (entry tag / locker), tap **Standard** on
@@ -118,7 +121,7 @@ The first double-tap (preparation → sauna) counts in this total.
 - **Apple Watch ダブルタップ**（Series 9 / Ultra 2 以降）— 親指と人差し指を 2 回
   軽くつまむ。最も推奨のハンズフリー操作です。
 - **Digital Crown 回転** — どちら向きでも次へ進みます。
-- **画面タップ** — 任意設定（設定 → セッション → 「画面タップで進行を許可」、
+- **画面タップ** — 任意設定（設定 → セッション → 「画面タップでフェーズ進行」、
   デフォルトはオフ）。
 
 Watch には現在のフェーズ・経過時間・心拍数・直近 5 分の心拍ピーク / ボトムが表
@@ -148,6 +151,9 @@ Watch には現在のフェーズ・経過時間・心拍数・直近 5 分の�
 - **1〜5 星の評価** をつけると、主観評価 × スコアの相関グラフが充実します。
 - 60 分セッションで Apple Watch（Series 7 以降）のバッテリーを 10〜15% 消費しま
   す。さらに節約したい場合は「常時表示」をオフにしてください。
+- **任意のチャート表示オプション** — 設定 → 表示 で、心拍グラフに 60 秒移動平均
+  線・10 分移動平均線を重ねたり、準備フェーズを除外して X 軸をサウナ入室時を
+  0:00 として再表示できます。すべてデフォルト OFF。
 - ととのい度スコアは **参考値** であり、医療指標ではありません。
 
 ### 7. 典型的な使用例 — 時間制限のあるサウナ施設

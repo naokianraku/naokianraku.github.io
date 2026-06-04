@@ -4,7 +4,7 @@ title: FAQ
 
 # FAQ / よくある質問 — MaxSauna Timer
 
-**Last updated / 最終更新:** 2026-05-20
+**Last updated / 最終更新:** 2026-06-05
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 ---
@@ -109,12 +109,29 @@ Tap any point to display a value card (bpm / elapsed time / phase). Pinch with
 two fingers to zoom in (up to 20×) around the tapped position. Double-tap to
 reset to full view.
 
+**Q. Can I overlay moving averages on the heart rate chart?**
+Yes. Open Settings → Display and toggle on:
+- **"60s moving average on HR chart"** — overlays a blue trailing 60-second
+  mean. Useful for seeing set-level recovery dynamics without the small
+  sample-to-sample noise.
+- **"10min moving average on HR chart"** — overlays a red trailing 10-minute
+  mean. Useful for the session-wide drift / fatigue baseline.
+Both default OFF. Toggle either or both independently. When enabled, the
+chart shows a legend at the top.
+
+**Q. Can I hide the preparation phase from the heart rate chart?**
+Yes. Settings → Display → **"Hide preparation phase from HR chart"** (default
+OFF). When ON, preparation-phase samples (clothes change, body wash, etc.)
+are removed from the chart and the X axis re-bases to sauna entry as 0:00,
+making the actual sauna portion easier to read. Sessions without a
+preparation phase are unaffected.
+
 **Q. What is the Movement Quality score?**
-A Premium score (0–100, Excellent / Good / Average / Needs work) that measures
-how many heart-rate spikes occur after each sauna peak. Long walking distances
+A score (0–100, Excellent / Good / Average / Needs work) that measures how
+many heart-rate spikes occur after each sauna peak. Long walking distances
 between sauna → cold plunge → cool-down area cause HR rebounds; fewer spikes =
-better facility flow. Shown in session detail and the period summary of the
-PDF report.
+better facility flow. The per-session score is shown in session detail (free).
+The period-average is also included in the Premium PDF report.
 
 **Q. What is the Sleep Score (reference)?**
 A nightly sleep quality score (0–100) computed in-app following Apple's
@@ -134,10 +151,17 @@ reliable for that session.
 **Q. How do I generate a PDF report?**
 Premium feature. Tap **Generate PDF report (Premium)** at the top of the
 Analytics tab, choose a date range and print background color (light / dark),
-then tap "Generate and share". A 3-page A4 portrait report is produced with a
-sessions summary, Afterglow trend, heart-rate trend, a recovery curve grid
-(up to 11 sessions plus a period-average overlay), best sessions, and a visit
-heatmap. Share via AirDrop / Mail / Files / Print.
+then tap "Generate and share". A 3-page A4 portrait report is produced with:
+- **Page 1**: sessions summary, Afterglow trend, heart-rate trend (max / min
+  / resting), and recovery data (HRR1 / HRR3 / HRR5, peak amplitude,
+  movement quality)
+- **Page 2**: recovery curve grid (up to 11 sessions, with per-set slope /
+  R² / lag annotations) plus a period-average overlay
+- **Page 3**: Best Sessions TOP 5, **Recent 11 sessions table** (date / day
+  / venue / time / sets / Max HR / HRR1 / HRR3 / HRR5 / rating / score),
+  and a calendar visit-frequency heatmap
+
+Share via AirDrop / Mail / Files / Print.
 
 **Q. How does the venue suggestion work?**
 When you open a session's detail and the venue field is empty, the app shows
@@ -319,11 +343,28 @@ Premium の高度な分析に含まれる指標（bpm/分）。回復カーブ�
 ると値カード（bpm・経過時刻・フェーズ）が固定表示されます。2 本指のピンチで、
 タップ位置を中心に最大 20 倍までズーム可能。ダブルタップで全幅表示に戻ります。
 
+**Q. 心拍グラフに移動平均線を重ねられますか？**
+できます。設定 → 表示 で以下のトグルを ON:
+- **「心拍グラフに 60 秒移動平均線」** — 青線で trailing 60 秒平均を重ねます。
+  サンプル毎の細かい揺らぎを除いてセット単位の回復ダイナミクスを見たい場合に
+  有効。
+- **「心拍グラフに 10 分移動平均線」** — 赤線で trailing 10 分平均を重ねます。
+  セッション全体のうねり（疲労蓄積・ベースライン推移）の確認に有効。
+両方ともデフォルト OFF。片方ずつでも両方同時でも有効化できます。ON にすると
+チャート上部に凡例が表示されます。
+
+**Q. 準備フェーズを心拍グラフから除外できますか？**
+できます。設定 → 表示 → **「準備フェーズを心拍グラフから除外」**（デフォルト
+OFF）。ON にすると準備フェーズ（着替え・体洗いなど）のサンプルが消え、X 軸
+はサウナ入室時を 0:00 として再表示します。サウナ部分が詰めて表示されるので
+本番の動きが見やすくなります。準備フェーズを使っていないセッションは影響を
+受けません。
+
 **Q. 動線品質スコアとは？**
-Premium のスコア指標（0-100 点、優・良・平均・要改善）。サウナピーク後の心拍
-数スパイク回数で算出。サウナ→水風呂→外気浴の移動が長い施設では心拍が再上昇
-しがちですが、スパイクが少ないほど動線が良い施設と判定。セッション詳細と PDF
-レポートの期間集計に表示されます。
+スコア指標（0-100 点、優・良・平均・要改善）。サウナピーク後の心拍数スパイク
+回数で算出。サウナ→水風呂→外気浴の移動が長い施設では心拍が再上昇しがちです
+が、スパイクが少ないほど動線が良い施設と判定。セッション詳細では無料で確認
+でき、期間平均は Premium の PDF レポートにも反映されます。
 
 **Q. 睡眠スコア（参考）とは？**
 セッション翌日の睡眠を 0-100 点で評価する独自スコア。Apple が公開している
@@ -342,10 +383,16 @@ Premium 機能、デフォルト OFF のトグルです。Apple Watch の歩行�
 **Q. PDF レポートはどう生成しますか？**
 Premium 機能です。分析タブ上部の「**PDF レポートを生成 (Premium)**」をタップし、
 期間（開始日・終了日）と印刷背景色（ライト/ダーク）を選んで「生成して共有」
-をタップ。A4 縦 3 ページの PDF が生成され、サマリー・ととのい度トレンド・
-心拍数推移・回復カーブグリッド（最大 11 セッション + 期間平均の重ね描き）・
-ベストセッション・訪問頻度ヒートマップを含みます。AirDrop・メール・ファイル
-保存・プリント可能。
+をタップ。A4 縦 3 ページの PDF が生成されます:
+- **1 ページ目**: サマリー・ととのい度トレンド・心拍推移（最大/最小/安静時）・
+  回復データ（HRR1/3/5・ピーク振幅・動線品質）
+- **2 ページ目**: 回復カーブグリッド（最大 11 セッション、各セットの傾き／
+  R²／lag 注記付き）＋ 期間平均の重ね描き
+- **3 ページ目**: ベストセッション TOP 5・**最近のセッション 11 件表**（日付／
+  曜・施設名・時間・セット数・最大心拍・HRR1／HRR3／HRR5・評価・スコア）・
+  訪問頻度ヒートマップ
+
+AirDrop・メール・ファイル保存・プリントで共有可能。
 
 **Q. 施設候補はどう表示されますか？**
 セッション詳細を開いた時に施設名が未入力なら、セッション時の GPS 位置情報を
