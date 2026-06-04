@@ -1,8 +1,8 @@
 ---
-title: Terms of Use
+title: Terms of Use (Apple Watch & iPhone)
 ---
 
-# Terms of Use / 利用規約 — MaxSauna Timer
+# Terms of Use / 利用規約 — MaxSauna Timer for Apple Watch & iPhone
 
 **Effective date / 施行日:** (set on App Store release / App Store 公開日に設定)
 **Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer

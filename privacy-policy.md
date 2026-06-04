@@ -1,8 +1,8 @@
 ---
-title: Privacy Policy
+title: Privacy Policy (Apple Watch & iPhone)
 ---
 
-# Privacy Policy / プライバシーポリシー — MaxSauna Timer
+# Privacy Policy / プライバシーポリシー — MaxSauna Timer for Apple Watch & iPhone
 
 **Effective date / 施行日:** (set on App Store release / App Store 公開日に設定)
 **Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer

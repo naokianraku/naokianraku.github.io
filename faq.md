@@ -1,8 +1,8 @@
 ---
-title: FAQ
+title: FAQ (Apple Watch & iPhone)
 ---
 
-# FAQ / よくある質問 — MaxSauna Timer
+# FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-05
 **Contact / 連絡先:** maxsaunatimer@gmail.com

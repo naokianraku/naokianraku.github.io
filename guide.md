@@ -1,8 +1,8 @@
 ---
-title: Quick Guide
+title: Quick Guide (Apple Watch & iPhone)
 ---
 
-# Quick Guide / 簡易取説 — MaxSauna Timer
+# Quick Guide / 簡易取説 — MaxSauna Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-05
 
