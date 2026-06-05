@@ -36,8 +36,9 @@ Health Connect.
 
 **Q. Is watch ↔ phone sync Premium?**
 No. Finished sessions transfer from the Pixel Watch to your Android phone
-automatically over the Wearable Data Layer, for everyone. There is no cloud
-account, so there is nothing to gate behind Premium here.
+automatically over the Wearable Data Layer, for everyone. The optional Google
+Drive cloud sync (see "How does cloud sync / backup work?" below) is also
+**free** — there is nothing to gate behind Premium here.
 
 **Q. What happens when the free trial ends?**
 Your subscription auto-renews at the regular price. You can cancel at any time
@@ -71,17 +72,36 @@ server and no account. All session data, heart-rate data, and locations stay
 on your devices and are **not** sent to the developer.
 
 **Q. Where is my data stored?**
-Locally on your Android phone and your Pixel Watch (local JSON files). When the
-two are paired, finished sessions transfer Watch → Phone directly over the
-Wearable Data Layer (Bluetooth / Wi-Fi). Watch settings sync bidirectionally,
-so you can edit watch settings from the phone. There is **no** cloud, no
-Google-account sync, and no login. (Cloud sync is planned but not yet
-shipped.)
+By default, locally on your Android phone and your Pixel Watch (local JSON
+files). When the two are paired, finished sessions transfer Watch → Phone
+directly over the Wearable Data Layer (Bluetooth / Wi-Fi). Watch settings sync
+bidirectionally, so you can edit watch settings from the phone. There is **no**
+developer server and **no** login to the developer. **Optionally**, you can turn
+on **Cloud sync (Google Drive)** to back up a snapshot of your sessions to
+**your own** Google Drive — see "How does cloud sync / backup work?" below.
+Cloud sync is **off** until you sign in and tap Sync.
+
+**Q. How does cloud sync / backup work?**
+Cloud sync is **optional and free**. In **Settings → Cloud sync (Google Drive)**
+you tap **Sync with Google Drive**: the app signs you in with Google and uses
+the `drive.appdata` permission to store and retrieve a snapshot of your sessions
+in **your own** Google Drive — in its app-private, hidden "App Data" folder
+under your Google account. The purpose is to back up your sessions and move them
+between devices; sync is **two-way and merges by session**. Importantly, **the
+developer still operates no server and stores nothing**: your data goes to your
+own Google Drive, not to the developer, and the developer cannot access it. It
+stays **off** until you sign in / tap Sync — if you do not use it, your data
+stays on your devices (Watch ↔ Phone over the Wearable Data Layer) exactly as
+before. You can **delete** the synced data from your own Google Drive at any
+time, and **revoke** the app's access whenever you like in your Google Account
+permissions (or from Settings).
 
 **Q. What if I delete the app?**
-Data is stored only on-device, so deleting the app removes its local data.
+Data is stored on-device by default, so deleting the app removes its local data.
 Use **CSV export** (Settings → Data import/export, free) as a manual backup,
-then re-import after reinstalling.
+then re-import after reinstalling. If you turned on **Cloud sync (Google Drive)**,
+your sessions are also backed up to your own Google Drive and can be re-synced
+after reinstalling.
 
 **Q. Where does the heart rate come from?**
 The app reads heart rate live from the Pixel Watch's optical sensor via Wear OS
@@ -289,8 +309,9 @@ versions and a brief description of the issue.
 
 **Q. ウォッチ ↔ スマホ同期は Premium 限定ですか？**
 いいえ。完了したセッションは Pixel Watch から Android スマホへ Wearable Data
-Layer 経由で自動転送され、全員が利用できます。クラウドアカウントは存在しない
-ため、ここに Premium ゲーティングはありません。
+Layer 経由で自動転送され、全員が利用できます。任意の Google Drive クラウド同期
+（下記「クラウド同期 / バックアップはどう動きますか？」参照）も**無料**で、
+ここに Premium ゲーティングはありません。
 
 **Q. 無料トライアルが終わるとどうなりますか？**
 自動的に通常価格で課金されます。トライアル中はいつでもキャンセル可能で、終了
@@ -322,16 +343,35 @@ Google Play での購入の返金処理は Google が行います。
 には**送信されません**。
 
 **Q. データはどこに保存されますか？**
-Android スマホと Pixel Watch のローカル（JSON ファイル）に保存されます。両者を
-ペアリングすると、完了したセッションはウォッチ → スマホへ Wearable Data Layer
-経由（Bluetooth / Wi-Fi）で直接転送されます。ウォッチ設定は双方向同期するため、
-スマホからウォッチ設定を編集できます。**クラウドも、Google アカウント同期も、
-ログインもありません。**（クラウド同期は予定していますが、まだ提供していません。）
+既定では、Android スマホと Pixel Watch のローカル（JSON ファイル）に保存されます。
+両者をペアリングすると、完了したセッションはウォッチ → スマホへ Wearable Data
+Layer 経由（Bluetooth / Wi-Fi）で直接転送されます。ウォッチ設定は双方向同期する
+ため、スマホからウォッチ設定を編集できます。**開発者のサーバーはなく、開発者への
+ログインもありません。** **任意で**、**クラウド同期（Google Drive）**をオンにすると、
+セッションのスナップショットを**あなた自身の** Google Drive にバックアップできます
+（下記「クラウド同期 / バックアップはどう動きますか？」参照）。クラウド同期は、
+サインインして同期をタップするまで **オフ** です。
+
+**Q. クラウド同期 / バックアップはどう動きますか？**
+クラウド同期は**任意で無料**です。**設定 → クラウド同期（Google Drive）**で
+**「Google Drive と同期」**をタップすると、Google でサインインし、`drive.appdata`
+権限を使ってセッションのスナップショットを**あなた自身の** Google Drive ——
+お使いの Google アカウント配下の、アプリ専用で非表示の「App Data」フォルダ ——
+に保存・取得します。目的はセッションのバックアップと端末間の移行で、同期は
+**双方向（セッション単位でマージ）**です。重要な点として、**開発者は引き続き
+サーバーを一切運用しておらず、何も保存しません**：データはあなた自身の Google
+Drive に入り、開発者には渡らず、開発者はアクセスできません。サインイン / 同期を
+タップするまでは **オフ** のままで、使わなければデータは従来どおりお使いの
+デバイス内（ウォッチ ↔ スマホ、Wearable Data Layer 経由）にとどまります。同期した
+データは、いつでもあなた自身の Google Drive から**削除**でき、アプリのアクセス権は
+Google アカウントの権限（または設定）からいつでも**取り消せます**。
 
 **Q. アプリを削除するとデータはどうなりますか？**
-データは端末内のみに保存されるため、アプリを削除するとローカルデータも消えます。
+データは既定で端末内に保存されるため、アプリを削除するとローカルデータは消えます。
 手動バックアップとして **CSV エクスポート**（設定 → データ入出力、無料）を行い、
-再インストール後に取り込んでください。
+再インストール後に取り込んでください。**クラウド同期（Google Drive）**をオンに
+していた場合は、セッションがあなた自身の Google Drive にもバックアップされて
+おり、再インストール後に再同期できます。
 
 **Q. 心拍数はどこから取得していますか？**
 セッション中（セッション画面が表示されている間）に、Pixel Watch の光学式センサー

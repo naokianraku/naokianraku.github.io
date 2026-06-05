@@ -21,9 +21,14 @@ title: Quick Guide (Pixel Watch & Android)
   at the end of a session.
 - When paired, finished sessions transfer from the **watch to the phone
   automatically** over the Wearable Data Layer (Bluetooth / Wi-Fi). Watch
-  settings sync both ways, so you can edit them from the phone. There is **no
-  cloud account / login**; data stays locally on each device. (Cloud sync is
-  planned but not yet shipped.)
+  settings sync both ways, so you can edit them from the phone. By default
+  there is **no cloud account / login**; data stays locally on each device.
+- **Cloud sync (optional, FREE):** **Settings → Cloud sync (Google Drive) →
+  "Sync with Google Drive"** to back up your sessions to **your own** Google
+  Drive and move them between devices. It is **off until you sign in / tap
+  Sync**, and the developer operates **no server and stores nothing** — your
+  data goes to your own Drive's app-private folder, not to the developer. See
+  the Cloud sync section below.
 
 ### 2. Start a session
 
@@ -104,12 +109,34 @@ hardware.)
   History tab).
 - **Settings → Data import/export** — CSV import/export (FREE) for offline
   backup or analysis.
+- **Settings → Cloud sync (Google Drive)** — back up to your own Drive, FREE,
+  optional (see the Cloud sync section below).
 
-**Free vs Premium:** CSV import/export, the in-app History analytics
-(streaks / Best Sessions / heatmap / Sauna Map), the Sleep score, and the
-resting-HR reference line are all **FREE**. The end-location map / venue picker,
-the Trends tab, the recovery curve, detailed metrics, and the PDF report are
-**Premium**.
+**Free vs Premium:** CSV import/export, cloud sync (Google Drive), the in-app
+History analytics (streaks / Best Sessions / heatmap / Sauna Map), the Sleep
+score, and the resting-HR reference line are all **FREE**. The end-location
+map / venue picker, the Trends tab, the recovery curve, detailed metrics, and
+the PDF report are **Premium**.
+
+### 5a. Cloud sync (optional, FREE)
+
+Cloud sync is **optional** and **off until you turn it on**. If you do not use
+it, your data stays on your devices (Watch ↔ Phone over the Wearable Data Layer)
+exactly as before.
+
+- Turn it on under **Settings → Cloud sync (Google Drive) → "Sync with Google
+  Drive"**. You sign in with Google and grant the **app-data (`drive.appdata`)**
+  permission.
+- It stores and retrieves a **snapshot of your sessions in your own Google
+  Drive's app-private folder** (the hidden "App Data" area under your Google
+  account), so you can **back up your sessions and move them between devices**.
+- Sync is **two-way** and **merges by session**.
+- **The developer operates no server and stores nothing.** Your data goes to
+  **your own** Google Drive, not to the developer; the developer **cannot
+  access it**.
+- You can **delete the synced data** from your own Google Drive at any time, and
+  **revoke the app's access** anytime in your **Google Account permissions** (or
+  from Settings).
 
 ### 6. Health Connect (optional)
 
@@ -185,9 +212,14 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
   みに使われます。
 - ペアリング済みなら、終了したセッションは **ウォッチ → スマホへ自動転送** され
   ます（Wearable Data Layer、Bluetooth / Wi-Fi）。ウォッチ設定は双方向同期なの
-  で、スマホから編集できます。**クラウドアカウント / ログインはありません**。
-  データは各端末のローカルに保存されます。（クラウド同期は予定していますが、まだ
-  提供していません。）
+  で、スマホから編集できます。既定では **クラウドアカウント / ログインはありませ
+  ん**。データは各端末のローカルに保存されます。
+- **クラウド同期（任意・無料）：** **設定 → クラウド同期（Google ドライブ）→
+  「Google ドライブと同期」** で、セッションを **あなた自身の** Google ドライブに
+  バックアップし、端末間で移行できます。**サインイン / 同期をタップするまでオフ**
+  で、開発者は **サーバーを持たず、何も保存しません** — データはあなた自身のドラ
+  イブのアプリ専用フォルダに保存され、開発者には渡りません。詳しくは後述のクラウ
+  ド同期セクションを参照。
 
 ### 2. セッションを開始
 
@@ -260,11 +292,32 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
   含みます（これらは履歴タブのアプリ内でも無料で見られます）。
 - **設定 → データ入出力** — CSV の入出力（無料）。ローカルバックアップや自前解析
   に。
+- **設定 → クラウド同期（Google ドライブ）** — あなた自身のドライブへバックアップ
+  （無料・任意。後述のクラウド同期セクション参照）。
 
-**無料と Premium：** CSV の入出力、アプリ内の履歴分析（連続記録 / ベスト
-セッション / ヒートマップ / サウナマップ）、睡眠スコア、安静時心拍の基準線は
-すべて **無料** です。終了地点の地図 / 施設ピッカー、トレンドタブ、回復カーブ、
-詳細指標、PDF レポートは **Premium** です。
+**無料と Premium：** CSV の入出力、クラウド同期（Google ドライブ）、アプリ内の
+履歴分析（連続記録 / ベストセッション / ヒートマップ / サウナマップ）、睡眠スコ
+ア、安静時心拍の基準線はすべて **無料** です。終了地点の地図 / 施設ピッカー、
+トレンドタブ、回復カーブ、詳細指標、PDF レポートは **Premium** です。
+
+### 5a. クラウド同期（任意・無料）
+
+クラウド同期は **任意** で、**オンにするまでオフ** です。使わなければ、データは
+これまでどおり各端末（ウォッチ ↔ スマホ、Wearable Data Layer 経由）に保存され
+ます。
+
+- **設定 → クラウド同期（Google ドライブ）→「Google ドライブと同期」** からオン
+  にします。Google でサインインし、**アプリデータ（`drive.appdata`）** 権限を
+  許可します。
+- **あなた自身の Google ドライブのアプリ専用フォルダ**（あなたの Google アカウン
+  ト配下の非表示「App Data」領域）に **セッションのスナップショット** を保存・取得
+  するので、**セッションをバックアップし、端末間で移行** できます。
+- 同期は **双方向** で、**セッション単位でマージ** します。
+- **開発者はサーバーを持たず、何も保存しません。** データは **あなた自身の**
+  Google ドライブに保存され、開発者には渡らず、開発者は **アクセスできません**。
+- 同期データは **あなた自身の Google ドライブからいつでも削除** でき、アプリの
+  アクセスは **Google アカウントの権限**（または設定）からいつでも **取り消せ**
+  ます。
 
 ### 6. Health Connect（任意）
 

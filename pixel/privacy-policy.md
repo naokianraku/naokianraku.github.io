@@ -21,12 +21,21 @@ explains what data the App handles and how.
 
 **The developer does not operate any server and does not collect, receive, or
 store your personal data.** Your session data, heart-rate data, and location
-data stay on your devices (your watch and your phone) as local files. There is
-no cloud account, no login, and no Google-account sync of your sauna data. When
-your watch and phone are paired, finished sessions are transferred directly from
-the watch to the phone over the Wearable Data Layer (Bluetooth/Wi-Fi); they are
-not routed through the developer or any cloud of the App. The developer has no
+data stay on your devices (your watch and your phone) as local files. The App
+has no developer-side cloud account and no login to the developer. When your
+watch and phone are paired, finished sessions are transferred directly from the
+watch to the phone over the Wearable Data Layer (Bluetooth/Wi-Fi); they are not
+routed through the developer or any cloud of the App. The developer has no
 access to your data.
+
+**Cloud sync is optional and goes only to your own Google Drive.** If you choose
+to turn it on (**Settings → Cloud sync (Google Drive) → "Sync with Google
+Drive"**), the App stores a snapshot of your sessions in **your own** Google
+Drive's app-private ("App Data") folder, under your Google account. This is
+free. The developer still operates no server and holds nothing — your data goes
+to your Drive, not to the developer, and the developer cannot access it. Cloud
+sync is **off until you sign in / tap Sync**; if you never use it, your data
+stays on your devices exactly as before. See Section 6 for details.
 
 If you choose to connect **Health Connect**, the App can read and write certain
 health data on your device through Health Connect, with your explicit
@@ -41,6 +50,7 @@ see Section 5 for details.
 | Location data | Approximate location captured once at the end of a session (latitude/longitude), only if you grant Location | Saved with the session as the venue location, for your reference, and to show the map / nearby-venue picker (including your past-visited venues within about 500 m) |
 | Session data | Session times, phases, computed scores, the venue you pick and a 1–5 star rating | Core app functionality |
 | Health Connect data (optional) | Resting heart rate, Sleep, and Respiratory rate **read** from Health Connect; exercise + heart-rate records **written** to Health Connect — only if you connect it | Show a resting-HR reference line, a next-day Sleep score / respiratory-rate reference, and let other apps use your sessions |
+| Cloud sync data (optional) | A snapshot of your sessions stored in **your own** Google Drive's app-private folder, only if you turn on Cloud sync | Back up your sessions and move them between your devices |
 | Advertising data | Device and ad-interaction information collected by Google AdMob (free version only) | Show banner ads |
 
 The App has no account or login. It does not ask for your name or email. A short
@@ -68,8 +78,14 @@ files on your device and are not sent to the developer.
 - **Watch → phone transfer:** When the devices are paired, finished sessions are
   sent from the watch to the phone over the Wearable Data Layer, and watch
   settings sync bidirectionally between the two. This is a direct device-to-device
-  transfer; there is **no cloud account, no Google Drive/Firestore sync, and no
-  login**. Only you have access to the data on your devices. The developer cannot.
+  transfer; there is **no developer-side cloud account and no login to the
+  developer**. Only you have access to the data on your devices. The developer
+  cannot.
+- **Cloud sync (optional):** If you turn on Cloud sync, a snapshot of your
+  sessions is stored in **your own** Google Drive's app-private ("App Data")
+  folder, under your Google account. The developer operates no server and stores
+  nothing; the data lives in your Drive, not with the developer, and the
+  developer has no access to it (see Section 6).
 - **Health Connect (optional):** If you connect Health Connect, the data read
   from and written to Health Connect stays on your device under Health Connect's
   own controls. It is not copied to the developer or any cloud of the App.
@@ -115,7 +131,35 @@ governed entirely by your Health Connect permissions and stays on your device.
 or shared with any third party. Health Connect data is not transmitted to any
 server operated by the developer or to any cloud of the App.
 
-### 6. Permissions
+### 6. Cloud sync (optional)
+
+Cloud sync is **optional** and **off until you sign in / tap Sync**. You turn it
+on in **Settings → Cloud sync (Google Drive)** by tapping **"Sync with Google
+Drive"**. It is **free**. If you never use it, your data stays on your devices
+(Watch ↔ Phone over the Wearable Data Layer) exactly as before, with no cloud
+involved.
+
+When you turn it on, you sign in with Google and grant the **`drive.appdata`**
+permission. With that permission, the App stores and retrieves a snapshot of
+your sessions in your Google Drive's **app-private ("App Data") folder** — a
+hidden area of your Drive reserved for this app. Sync is **two-way**: it merges
+sessions between your device and your Drive, so you can **back up your sessions
+and move them between devices**.
+
+**Crucially, this snapshot goes to *your own* Google Drive, under your own Google
+account — not to the developer.** The developer still operates **no server** and
+**stores nothing**. The `drive.appdata` scope only lets the App see this app's
+own App Data folder; it does not give the App (or the developer) access to the
+rest of your Drive, and **the developer cannot access your synced data**.
+
+You stay in control:
+
+- **Delete the synced data** at any time from your own Google Drive (the App Data
+  / hidden app data of your Drive).
+- **Revoke the app's access** at any time in your **Google Account → Security →
+  Third-party access** permissions, or from **Settings** in the App.
+
+### 7. Permissions
 
 The App requests only the permissions it needs:
 
@@ -137,10 +181,14 @@ The App requests only the permissions it needs:
   read Resting heart rate, Sleep, and Respiratory rate, and to write exercise
   and heart-rate records (see Section 5). Each permission is granted explicitly
   and can be revoked at any time.
-- **Internet (phone):** used by the phone app for maps, ads, and Google Play
-  Billing.
+- **Google sign-in + Google Drive `drive.appdata` (optional):** used only if you
+  turn on Cloud sync, to store and retrieve a snapshot of your sessions in your
+  own Google Drive's app-private folder (see Section 6). It is limited to this
+  app's own App Data folder and can be revoked at any time.
+- **Internet (phone):** used by the phone app for maps, ads, optional Cloud sync,
+  and Google Play Billing.
 
-### 7. Advertising (free version)
+### 8. Advertising (free version)
 
 The free version of the App shows banner ads through **Google AdMob**. AdMob is
 a third-party service operated by Google and may collect device information, an
@@ -158,7 +206,7 @@ accordance with Google's policies.
 - The **Premium version shows no ads**, and the App does not request tracking or
   ad consent from Premium users.
 
-### 8. Other Google services (diagnostics)
+### 9. Other Google services (diagnostics)
 
 The App is built on Google Play Services and may include Firebase components.
 These may collect standard diagnostic and crash logs as part of their normal,
@@ -166,22 +214,26 @@ transparent operation, governed by Google's privacy policy
 (https://policies.google.com/privacy). This is not used to identify you to the
 developer, and your sauna/heart-rate data is not included.
 
-### 9. Purchases
+### 10. Purchases
 
 Premium is an auto-renewing subscription sold through **Google Play Billing**.
 Payments are processed by Google; the App never sees your payment details. You
 can see the price, manage, or cancel the subscription in Google Play under
 Subscriptions.
 
-### 10. Your rights (GDPR, EU DSA, and similar laws)
+### 11. Your rights (GDPR, EU DSA, and similar laws)
 
 Because the developer holds none of your personal data, there is no developer-
 side database to access, correct, or delete. You remain in full control:
 
 - **Delete your data:** Delete sessions in the App, or uninstall the App from
   your watch and phone. Uninstalling removes the local data files on that device.
-  Because there is no cloud copy, deleting on your devices deletes everything.
   Records the App wrote to Health Connect can be deleted in Health Connect.
+- **Delete your cloud backup (if you used Cloud sync):** Remove the synced
+  snapshot from your own Google Drive's app-private ("App Data") folder, and/or
+  revoke the App's access in your Google Account → Security → Third-party access
+  (or from Settings in the App). Because the developer holds nothing, there is no
+  developer-side copy to delete.
 - **Export your data:** You can export your session data as CSV files from
   Settings → Data import/export.
 - **Withdraw ad consent:** Adjust the advertising-ID setting in Android Settings
@@ -191,23 +243,25 @@ side database to access, correct, or delete. You remain in full control:
 
 For requests or questions, contact the developer at the address above.
 
-### 11. Children
+### 12. Children
 
 The App is a sauna tool intended for general audiences and is not directed at
 children. It does not knowingly collect data from children.
 
-### 12. Data retention
+### 13. Data retention
 
 Data is retained in local files on your devices until you delete it (by deleting
-sessions or uninstalling). Any records written to Health Connect remain there
-until you delete them in Health Connect. The developer retains nothing.
+sessions or uninstalling). If you used Cloud sync, the synced snapshot stays in
+your own Google Drive's app-private folder until you delete it there or revoke
+the App's access. Any records written to Health Connect remain there until you
+delete them in Health Connect. The developer retains nothing.
 
-### 13. Changes
+### 14. Changes
 
 This Privacy Policy may be updated. Material changes will be reflected on this
 page with a new effective date.
 
-### 14. Contact
+### 15. Contact
 
 Questions about this Privacy Policy: maxsaunatimer@gmail.com
 
@@ -223,12 +277,21 @@ MaxSauna Timer（以下「本アプリ」）は、サウナセッションを計
 
 **開発者はサーバーを一切運用しておらず、利用者の個人データを収集・受領・保管
 しません。** セッションデータ・心拍データ・位置情報は利用者の端末（ウォッチと
-スマートフォン）内にローカルファイルとして留まります。クラウドアカウント・
-ログイン・Google アカウントによるサウナデータの同期はありません。ウォッチと
-スマートフォンをペアリングしている場合、終了したセッションは Wearable Data
-Layer（Bluetooth / Wi-Fi）を通じてウォッチからスマートフォンへ直接転送され、
-開発者やアプリのクラウドを経由することはありません。開発者はこれらにアクセス
-できません。
+スマートフォン）内にローカルファイルとして留まります。開発者側のクラウド
+アカウントや開発者へのログインはありません。ウォッチとスマートフォンを
+ペアリングしている場合、終了したセッションは Wearable Data Layer（Bluetooth /
+Wi-Fi）を通じてウォッチからスマートフォンへ直接転送され、開発者やアプリの
+クラウドを経由することはありません。開発者はこれらにアクセスできません。
+
+**クラウド同期は任意で、保存先は利用者自身の Google Drive のみです。** オンに
+する場合は、**設定 → クラウド同期（Google Drive） → 「Google Drive と同期」**
+から行います。これにより本アプリは、利用者の Google アカウント配下にある
+**利用者自身の** Google Drive のアプリ専用（「アプリデータ」）フォルダに
+セッションのスナップショットを保存します。**無料**です。開発者は引き続き
+サーバーを運用せず、何も保持しません——データは開発者ではなく利用者自身の
+Drive に保存され、開発者はアクセスできません。クラウド同期は、**サインインまたは
+同期をタップするまでオフ**です。利用しない場合、データは従来どおり利用者の
+端末内に留まります。詳細は第 6 条をご覧ください。
 
 **Health Connect** を接続した場合は、利用者の明示的な許可のもとで、本アプリが
 Health Connect を通じて端末上の一部の健康データを読み書きできます。これらは
@@ -243,6 +306,7 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 | 位置情報 | セッション終了時に一度だけ取得するおおよその位置（緯度・経度。位置情報を許可した場合のみ） | セッションの場所として参考用に保存し、地図／近隣施設の選択（約 500 m 以内の過去に訪れた施設を含む）に使用 |
 | セッションデータ | セッション時刻・フェーズ・算出スコア・選択した施設・1〜5 の星評価 | アプリの中核機能 |
 | Health Connect データ（任意） | Health Connect から**読み取る**安静時心拍数・睡眠・呼吸数、Health Connect へ**書き込む**運動＋心拍レコード（接続した場合のみ） | 安静時心拍の基準線、翌日の睡眠スコア／呼吸数の参考表示、他アプリでのセッション利用 |
+| クラウド同期データ（任意） | クラウド同期をオンにした場合のみ、**利用者自身の** Google Drive のアプリ専用フォルダに保存されるセッションのスナップショット | セッションのバックアップと端末間の移行 |
 | 広告データ | Google AdMob が収集する端末情報・広告操作情報（無料版のみ） | バナー広告の表示 |
 
 本アプリにアカウント登録・ログインはありません。氏名やメールアドレスを求める
@@ -270,9 +334,14 @@ Google のプライバシーポリシー（https://policies.google.com/privacy�
 - **ウォッチ→スマートフォンへの転送:** ペアリングしている場合、終了した
   セッションは Wearable Data Layer を通じてウォッチからスマートフォンへ送信
   され、ウォッチ設定は双方向に同期されます。これは端末間の直接転送であり、
-  **クラウドアカウント・Google Drive/Firestore 同期・ログインはありません**。
+  **開発者側のクラウドアカウントや開発者へのログインはありません**。
   端末内のデータにアクセスできるのは利用者本人のみで、開発者はアクセスでき
   ません。
+- **クラウド同期（任意）:** クラウド同期をオンにした場合、セッションの
+  スナップショットが、利用者の Google アカウント配下にある **利用者自身の**
+  Google Drive のアプリ専用（「アプリデータ」）フォルダに保存されます。開発者は
+  サーバーを運用せず何も保持しません。データは開発者ではなく利用者自身の
+  Drive に保存され、開発者はアクセスできません（第 6 条参照）。
 - **Health Connect（任意）:** Health Connect を接続した場合、Health Connect
   から読み取ったデータや書き込んだデータは、Health Connect 自身の管理のもとで
   端末内に留まります。開発者やアプリのクラウドにコピーされることはありません。
@@ -314,7 +383,37 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 共有されることもありません。Health Connect データが開発者の運用するサーバーや
 アプリのクラウドに送信されることはありません。
 
-### 6. 権限について
+### 6. クラウド同期（任意）
+
+クラウド同期は**任意**で、**サインインまたは同期をタップするまでオフ**です。
+**設定 → クラウド同期（Google Drive）** で **「Google Drive と同期」** を
+タップしてオンにします。**無料**です。利用しない場合、データは従来どおり利用者の
+端末内（ウォッチ ↔ スマートフォンの Wearable Data Layer）に留まり、クラウドは
+一切関与しません。
+
+オンにする際は、Google でサインインし、**`drive.appdata`** 権限を許可します。
+この権限により、本アプリは利用者の Google Drive の**アプリ専用（「アプリデータ」）
+フォルダ**——本アプリ用に確保された Drive 内の隠しフォルダ——にセッションの
+スナップショットを保存・取得します。同期は**双方向**で、端末と Drive の間で
+セッションを統合（マージ）するため、**セッションのバックアップと端末間の移行**が
+できます。
+
+**重要な点として、このスナップショットは開発者ではなく、利用者自身の Google
+アカウント配下にある利用者自身の Google Drive に保存されます。** 開発者は
+引き続き**サーバーを運用せず**、**何も保持しません**。`drive.appdata` の権限は
+本アプリ自身のアプリデータフォルダのみを対象とし、Drive の他の部分へのアクセス
+権を本アプリ（や開発者）に与えるものではありません。**開発者は同期データに
+アクセスできません**。
+
+利用者が管理権を持ちます。
+
+- **同期データの削除:** 利用者自身の Google Drive（Drive のアプリデータ／隠し
+  アプリデータ）から、いつでも削除できます。
+- **アプリのアクセス権の取り消し:** **Google アカウント → セキュリティ →
+  サードパーティによるアクセス** の権限、またはアプリの**設定**から、いつでも
+  取り消せます。
+
+### 7. 権限について
 
 本アプリは必要な権限のみを要求します。
 
@@ -334,10 +433,14 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 - **Health Connect（任意）:** Health Connect を接続した場合のみ、安静時心拍数・
   睡眠・呼吸数の読み取りと、運動・心拍レコードの書き込みに使用します（第 5 条
   参照）。各権限は明示的に許可するもので、いつでも取り消せます。
+- **Google サインイン＋Google Drive `drive.appdata`（任意）:** クラウド同期を
+  オンにした場合のみ、利用者自身の Google Drive のアプリ専用フォルダに
+  セッションのスナップショットを保存・取得するために使用します（第 6 条参照）。
+  本アプリ自身のアプリデータフォルダに限定され、いつでも取り消せます。
 - **インターネット（スマートフォン）:** スマートフォン側アプリが地図・広告・
-  Google Play Billing のために利用します。
+  任意のクラウド同期・Google Play Billing のために利用します。
 
-### 7. 広告（無料版）
+### 8. 広告（無料版）
 
 無料版は **Google AdMob** を通じてバナー広告を表示します。AdMob は Google が
 運営する第三者サービスで、Google のポリシーに従い、広告の配信・計測のため
@@ -354,7 +457,7 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 - **Premium 版では広告は表示されず**、Premium 利用者にトラッキングや広告同意
   を求めることもありません。
 
-### 8. その他の Google サービス（診断）
+### 9. その他の Google サービス（診断）
 
 本アプリは Google Play Services 上で動作し、Firebase コンポーネントを含む場合
 があります。これらは通常かつ透明な動作の一環として、標準的な診断ログや
@@ -362,22 +465,26 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 （https://policies.google.com/privacy）に従います。これは利用者を開発者に
 対して特定するためのものではなく、サウナ／心拍データは含まれません。
 
-### 9. 課金
+### 10. 課金
 
 Premium は **Google Play Billing** で販売される自動更新サブスクリプションです。
 決済は Google が処理し、本アプリが決済情報を見ることはありません。価格の確認・
 管理・解約は、Google Play の「定期購入」から行えます。
 
-### 10. 利用者の権利（GDPR・EU DSA 等）
+### 11. 利用者の権利（GDPR・EU DSA 等）
 
 開発者は利用者の個人データを一切保持していないため、開発者側に閲覧・訂正・
 削除すべきデータベースは存在しません。利用者が完全に管理権を持ちます。
 
 - **データの削除:** アプリ内でセッションを削除する、またはウォッチと
   スマートフォンからアプリをアンインストールします。アンインストールすると、
-  その端末上のローカルデータファイルが削除されます。クラウドのコピーは存在
-  しないため、端末上で削除すればすべて削除されます。本アプリが Health Connect
+  その端末上のローカルデータファイルが削除されます。本アプリが Health Connect
   に書き込んだレコードは Health Connect 内で削除できます。
+- **クラウドバックアップの削除（クラウド同期を利用した場合）:** 利用者自身の
+  Google Drive のアプリ専用（「アプリデータ」）フォルダから同期スナップショットを
+  削除する、かつ／または Google アカウント → セキュリティ → サードパーティに
+  よるアクセス（もしくはアプリの設定）から本アプリのアクセス権を取り消します。
+  開発者は何も保持していないため、開発者側に削除すべきコピーは存在しません。
 - **データのエクスポート:** 設定 → データ入出力 から、セッションデータを
   CSV で書き出せます。
 - **広告同意の撤回:** Android の設定 → プライバシー → 広告 で広告 ID 設定を
@@ -387,24 +494,26 @@ Premium は **Google Play Billing** で販売される自動更新サブスク�
 
 ご要望・ご質問は上記の連絡先までお問い合わせください。
 
-### 11. 子どもについて
+### 12. 子どもについて
 
 本アプリは一般利用者向けのサウナ用ツールであり、子どもを対象としていません。
 子どものデータを意図的に収集することはありません。
 
-### 12. データの保持期間
+### 13. データの保持期間
 
 データは、利用者が削除する（セッションの削除またはアンインストール）まで、
-端末内のローカルファイルに保持されます。Health Connect に書き込まれたレコードは、
-利用者が Health Connect 内で削除するまでそこに保持されます。開発者は何も保持
-しません。
+端末内のローカルファイルに保持されます。クラウド同期を利用した場合、同期
+スナップショットは、利用者が利用者自身の Google Drive のアプリ専用フォルダで
+削除するか本アプリのアクセス権を取り消すまで、そこに保持されます。Health
+Connect に書き込まれたレコードは、利用者が Health Connect 内で削除するまで
+そこに保持されます。開発者は何も保持しません。
 
-### 13. 変更
+### 14. 変更
 
 本ポリシーは更新されることがあります。重要な変更はこのページに新しい施行日
 とともに反映されます。
 
-### 14. お問い合わせ
+### 15. お問い合わせ
 
 本ポリシーに関するお問い合わせ: maxsaunatimer@gmail.com
 
