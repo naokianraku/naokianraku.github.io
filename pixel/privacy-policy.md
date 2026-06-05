@@ -62,7 +62,7 @@ you connect it, the App reads and writes specific data through it (see Section
 5). The App does not access any other apps' health data except through Health
 Connect with your permission.
 
-When you open the session map / venue feature (a Premium feature), the App shows
+When you open the session map / venue feature, the App shows
 a Google Map and looks up nearby sauna/bath facility candidates through Google
 Maps / Google Places. This sends that session's end-location coordinates to
 Google so it can load the map and fetch the nearby places. Google's handling of
@@ -173,8 +173,8 @@ The App requests only the permissions it needs:
   foreground service that keeps a session recording while the session screen is
   on. The notification simply indicates that a session is in progress.
 - **Location (watch, optional):** used only to capture your approximate location
-  once at the end of a session, so you can tag the session venue and (on
-  Premium) see it on the map. There is no continuous GPS tracking and no
+  once at the end of a session, so you can tag the session venue and see it on
+  the map. There is no continuous GPS tracking and no
   past-visit history. If you deny it, the App works normally without a venue
   location.
 - **Health Connect (optional):** used only if you connect Health Connect, to
@@ -319,7 +319,7 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 します（第 5 条参照）。本アプリは、Health Connect を通じて利用者が許可した
 場合を除き、他アプリの健康データにアクセスすることはありません。
 
-セッションの地図／施設機能（Premium 機能）を開くと、本アプリは Google マップを
+セッションの地図／施設機能を開くと、本アプリは Google マップを
 表示し、Google マップ／Google プレイス を通じて近隣のサウナ・入浴施設の候補を
 検索します。これにより該当セッションの終了位置の座標が Google に送信され、
 地図の読み込みと近隣施設の取得に使われます。この座標の Google による取扱いは
@@ -427,7 +427,7 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
   続けるフォアグラウンドサービスの常駐通知を表示するために使用します。この通知
   はセッションが進行中であることを示すだけのものです。
 - **位置情報（ウォッチ・任意）:** セッション終了時に一度だけおおよその位置を
-  取得し、施設の記録や（Premium での）地図表示に使うためだけに利用します。
+  取得し、施設の記録や地図表示に使うためだけに利用します。
   連続的な GPS トラッキングや過去の来訪履歴はありません。拒否しても、施設の
   位置なしで通常どおり動作します。
 - **Health Connect（任意）:** Health Connect を接続した場合のみ、安静時心拍数・

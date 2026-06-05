@@ -19,20 +19,25 @@ plan is also available at roughly **20% off** vs paying monthly. New
 subscribers get a 30-day free trial.
 
 **Q. What does Premium unlock?**
-Detailed metrics (personal z-score / vs-previous comparison / recovery slope β
-/ movement-quality detail), recovery curves, the entire Trends tab, the
-end-location map with nearby-venue picker, the PDF report, and no banner ads.
-(CSV import/export and the basic per-session analysis are **free** — see below.)
+The recovery-slope score **β**, per-set **recovery curves**, the **advanced
+Trends** (HRR trend, recovery-slope trend, by-set-count / by-session-length
+averages, set-position HRR, the recovery-curve overlay, and the recovery
+summary), the **PDF report**, **CSV import/export**, and **no banner ads**.
+(The personal z-score / vs-previous comparison, the movement-quality score, the
+end-location map, and the basic per-session and Trends analysis are **free** —
+see below.)
 
 **Q. What is free?**
 The heart-rate chart with phase bands, the absolute Afterglow score, the
-per-set breakdown, the history list, the movement-quality score, **CSV
-import/export** (Settings → Data import/export), watch-settings editing, and
-the Force-English toggle. The **in-app History analytics** (current / longest
-streak and total count, the **Best Sessions TOP 10**, the visit-frequency
-calendar heatmap, and the Sauna Map of your visited venues) are also free, as
-are the **Sleep score** and the **resting-HR reference line** when you connect
-Health Connect.
+per-set breakdown, the history list, the **personal z-score (個人比) and
+vs-previous (前回比)** comparisons, the movement-quality (Flow) score, the
+**end-location map with the nearby-venue picker**, the **basic Trends**
+(Afterglow-over-time, by-mode average, and the period summary), watch-settings
+editing, and the Force-English toggle. The **in-app History analytics**
+(current / longest streak and total count, the **Best Sessions TOP 10**, the
+visit-frequency calendar heatmap, and the Sauna Map of your visited venues) are
+also free, as are the **Sleep score** and the **resting-HR reference line** when
+you connect Health Connect.
 
 **Q. Is watch ↔ phone sync Premium?**
 No. Finished sessions transfer from the Pixel Watch to your Android phone
@@ -52,8 +57,8 @@ you keep Premium features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
 No. Your sessions, history, and settings all stay (they are stored locally on
-each device). Only the Premium features (detailed metrics, recovery curves,
-the Trends tab, the venue map, the PDF report, ad-free) revert to the free
+each device). Only the Premium features (the β score, recovery curves, the
+advanced Trends, the PDF report, CSV import/export, ad-free) revert to the free
 tier.
 
 **Q. I paid but Premium isn't active on a new device.**
@@ -98,10 +103,10 @@ permissions (or from Settings).
 
 **Q. What if I delete the app?**
 Data is stored on-device by default, so deleting the app removes its local data.
-Use **CSV export** (Settings → Data import/export, free) as a manual backup,
-then re-import after reinstalling. If you turned on **Cloud sync (Google Drive)**,
-your sessions are also backed up to your own Google Drive and can be re-synced
-after reinstalling.
+The free way to back up is **Cloud sync (Google Drive)** — once enabled, your
+sessions are stored in your own Google Drive and can be re-synced after
+reinstalling. Premium members can also use **CSV export** (Settings → Data
+import/export) as a manual backup and re-import after reinstalling.
 
 **Q. Where does the heart rate come from?**
 The app reads heart rate live from the Pixel Watch's optical sensor via Wear OS
@@ -135,9 +140,9 @@ for details.
 A 0–100 score estimating how quickly your parasympathetic nervous system
 ("rest mode") engages after a sauna session, derived from your heart-rate
 recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese sauna culture
-calls "totonou". The absolute score is free; the personal z-score (個人比) and
-vs-previous (前回比) comparisons are Premium. Reference value only — not a
-medical metric.
+calls "totonou". The absolute score, the personal z-score (個人比) and the
+vs-previous (前回比) comparisons are all **free**; the recovery-slope score β
+is Premium. Reference value only — not a medical metric.
 
 **Q. Can I use the app without a Pixel Watch?**
 The timer works on the Android phone alone, but heart-rate measurement and the
@@ -214,14 +219,16 @@ free in the History tab** (TOP 10 there); the PDF still includes its own
 versions as part of the exported report.
 
 **Q. What is in the Trends tab?**
-Premium. The Trends tab shows Afterglow-over-time, the HRR trend (1/3/5), the
-recovery-slope trend, average Afterglow by set count / by session length / by
-mode, a recovery-curve overlay, and a recovery summary (avg HRR1/3/5, best set
-position, best HRR1, recovery completeness, time-to-bottom, front-loading). A
-period filter lets you view All / 30 days / 7 days.
+The Trends tab is **partly free**. **Free:** Afterglow-over-time, average
+Afterglow by mode, and the period summary. **Premium:** the HRR trend (1/3/5),
+the recovery-slope trend, average Afterglow by set count / by session length,
+set-position HRR, a recovery-curve overlay, the recovery summary (avg HRR1/3/5,
+best set position, best HRR1, recovery completeness, time-to-bottom,
+front-loading), and the PDF report button. A period filter (All / 30 days /
+7 days) is available to everyone.
 
 **Q. How does the venue / map work?**
-Premium. If Location permission is granted, the app captures the session **end**
+**Free.** If Location permission is granted, the app captures the session **end**
 location once when the session ends, shows it on a Google Map in the session
 detail, and lists nearby sauna / bath facility candidates. The candidates come
 from a Google Places search **plus your own past-visited venues within about
@@ -295,17 +302,20 @@ versions and a brief description of the issue.
 無料トライアル付き。
 
 **Q. Premium で何が変わりますか？**
-詳細指標（個人比 / 前回比 / 回復勾配 β / 動線品質の詳細）、回復カーブ、トレンド
-タブ全体、終了位置の地図と近隣施設ピッカー、PDF レポート、そして広告なし。
-（CSV の入出力と基本のセッション解析は**無料**です。下記参照。）
+回復勾配スコア **β**、セット別の**回復カーブ**、**高度なトレンド**（HRR 推移 /
+回復勾配の推移 / セット数別・セッション長別の平均 / セット位置別 HRR / 回復カーブ
+重ね描き / 回復サマリー）、**PDF レポート**、**CSV 入出力**、そして**広告なし**。
+（個人比 / 前回比、動線品質スコア、終了位置の地図、基本のセッション解析と基本
+トレンドは**無料**です。下記参照。）
 
 **Q. 無料でできることは？**
 フェーズ帯つき心拍チャート、ととのい度（絶対値）、セット別内訳、履歴一覧、
-動線品質スコア、**CSV 入出力**（設定 → データ入出力）、ウォッチ設定の編集、
-英語表示（強制）トグル。**履歴タブのアプリ内分析**（現在 / 最長の連続日数と
-合計回数、**ベストセッション TOP 10**、訪問頻度カレンダーヒートマップ、訪れた
-施設を表示するサウナマップ）も無料です。Health Connect を連携した場合の
-**睡眠スコア**と**安静時心拍の参照ライン**も無料です。
+**個人比・前回比**、**動線品質（Flow）スコア**、**終了位置の地図と
+近隣施設ピッカー**、**基本トレンド**（ととのい度の推移・モード別平均・期間サマリー）、
+ウォッチ設定の編集、英語表示（強制）トグル。**履歴タブのアプリ内分析**（現在 /
+最長の連続日数と合計回数、**ベストセッション TOP 10**、訪問頻度カレンダー
+ヒートマップ、訪れた施設を表示するサウナマップ）も無料です。Health Connect を
+連携した場合の**睡眠スコア**と**安静時心拍の参照ライン**も無料です。
 
 **Q. ウォッチ ↔ スマホ同期は Premium 限定ですか？**
 いいえ。完了したセッションは Pixel Watch から Android スマホへ Wearable Data
@@ -324,8 +334,8 @@ Google Play ストアを開く → プロフィール → 「**お支払いと�
 
 **Q. キャンセルするとデータは消えますか？**
 消えません。セッション履歴・設定はすべて残ります（各デバイスのローカルに保存
-されています）。失われるのは Premium 機能（詳細指標・回復カーブ・トレンドタブ・
-施設地図・PDF レポート・広告非表示）だけで、無料版機能に戻ります。
+されています）。失われるのは Premium 機能（β スコア・回復カーブ・高度なトレンド・
+PDF レポート・CSV 入出力・広告非表示）だけで、無料版機能に戻ります。
 
 **Q. 課金したのに新しい端末で Premium が有効になりません。**
 設定を開いて「**購入を復元**」をタップし、Google Play の購入状態を再確認して
@@ -368,10 +378,10 @@ Google アカウントの権限（または設定）からいつでも**取り�
 
 **Q. アプリを削除するとデータはどうなりますか？**
 データは既定で端末内に保存されるため、アプリを削除するとローカルデータは消えます。
-手動バックアップとして **CSV エクスポート**（設定 → データ入出力、無料）を行い、
-再インストール後に取り込んでください。**クラウド同期（Google Drive）**をオンに
-していた場合は、セッションがあなた自身の Google Drive にもバックアップされて
-おり、再インストール後に再同期できます。
+無料のバックアップ手段は **クラウド同期（Google Drive）** です。オンにしておくと
+セッションがあなた自身の Google Drive に保存され、再インストール後に再同期できます。
+Premium 会員は手動バックアップとして **CSV エクスポート**（設定 → データ入出力）も
+利用でき、再インストール後に取り込めます。
 
 **Q. 心拍数はどこから取得していますか？**
 セッション中（セッション画面が表示されている間）に、Pixel Watch の光学式センサー
@@ -402,8 +412,8 @@ Google のポリシーと端末のプライバシー設定（Android の広告 I
 **Q. ととのい度とは何ですか？**
 サウナ後に副交感神経（リラックス系）がどれだけ速やかに働き始めたかを心拍降下
 量（HRR1 / HRR3 / HRR5）から推定する、0〜100 点のスコアです。サウナ文化の
-「ととのう」を数値化する独自指標です。絶対値は無料、個人比・前回比の比較は
-Premium。参考値のみであり医療指標ではありません。
+「ととのう」を数値化する独自指標です。絶対値・個人比・前回比の比較はいずれも
+**無料**で、回復勾配スコア β は Premium。参考値のみであり医療指標ではありません。
 
 **Q. Pixel Watch なしで使えますか？**
 Android スマホ単体でタイマー機能は使えますが、**心拍計測とととのい度の算出には
@@ -476,14 +486,15 @@ Premium 機能です。**トレンド**タブからレポートを生成し、An
 として独自に収録されています。
 
 **Q. トレンドタブには何がありますか？**
-Premium。トレンドタブには、ととのい度の推移、HRR トレンド（1/3/5）、回復勾配
-トレンド、セット数別・セッション長別・モード別の平均ととのい度、回復カーブの
+トレンドタブは**一部無料**です。**無料：**ととのい度の推移、モード別の平均
+ととのい度、期間サマリー。**Premium：**HRR トレンド（1/3/5）、回復勾配トレンド、
+セット数別・セッション長別の平均ととのい度、セット位置別 HRR、回復カーブの
 重ね描き、回復サマリー（平均 HRR1/3/5・ベストセット位置・ベスト HRR1・回復の
-完了度・底打ちまでの時間・フロントローディング）が表示されます。期間フィルター
-で 全期間 / 30 日 / 7 日 を切り替えられます。
+完了度・底打ちまでの時間・フロントローディング）、PDF レポートボタン。期間
+フィルター（全期間 / 30 日 / 7 日）は誰でも利用できます。
 
 **Q. 施設・地図はどう動きますか？**
-Premium。位置情報の許可がある場合、セッション**終了**時に終了位置を一度だけ
+**無料です。**位置情報の許可がある場合、セッション**終了**時に終了位置を一度だけ
 取得し、セッション詳細で Google マップ上に表示、近隣のサウナ・温浴施設候補を
 一覧表示します。候補は **Google Places の検索結果に加えて、約 500 m 圏内の
 あなたの過去訪問施設**も含みます。候補をタップすると施設名が設定されます。連続

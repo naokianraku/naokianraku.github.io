@@ -70,7 +70,8 @@ hardware.)
 
 - **Latest tab (最新)** — shows the latest session's full analysis directly:
   heart-rate chart with phase bands, Afterglow Score, set-level breakdown,
-  movement quality, and (Premium) detailed metrics & recovery curve.
+  personal z-score / vs-previous, movement quality, and (Premium) the β score &
+  recovery curve.
 - **Interactive heart-rate chart** — the HR chart is fully interactive:
   - **Tap a point** to show a value card (bpm, elapsed time, and the phase at
     that moment).
@@ -93,30 +94,33 @@ hardware.)
   - **Visit-frequency calendar heatmap** — a calendar showing how often you go.
   - **Sauna Map** — all your visited venues shown on a single map.
   - Below the analytics is the **list of past sessions**. Tap one to open its
-    detail, including (Premium) the **end-location map** with venue candidates
-    you tap to set the venue. Suggestions include the nearby Places search **and
+    detail, including the **end-location map (FREE)** with venue candidates you
+    tap to set the venue. Suggestions include the nearby Places search **and
     your past-visited venues within about 500 m**.
 - **Next-day status (with Health Connect)** — if connected, for the night
   **after** a session the app shows a reference **Sleep score (FREE)** and your
   **average respiratory rate**.
-- **Trends tab (トレンド, Premium)** — afterglow over time, HRR trend (1/3/5),
-  recovery-slope trend, averages by set count / session length / mode, a
-  recovery-curve overlay, and a recovery summary. Period filter: All / 30 days /
-  7 days.
+- **Trends tab (トレンド)** — **partly free**. FREE: afterglow over time,
+  average by mode, and the period summary. Premium: HRR trend (1/3/5), the
+  recovery-slope trend, averages by set count / session length, set-position
+  HRR, a recovery-curve overlay, and a recovery summary. The period filter
+  (All / 30 days / 7 days) is available to everyone.
 - **PDF report (Premium)** — generated from the Trends tab and shared via the
   Android share sheet. A4 portrait, 3 pages, including **Best Sessions** and a
   **visit-frequency heatmap** (these are also available in-app for free, in the
   History tab).
-- **Settings → Data import/export** — CSV import/export (FREE) for offline
+- **Settings → Data import/export** — CSV import/export (Premium) for offline
   backup or analysis.
 - **Settings → Cloud sync (Google Drive)** — back up to your own Drive, FREE,
   optional (see the Cloud sync section below).
 
-**Free vs Premium:** CSV import/export, cloud sync (Google Drive), the in-app
+**Free vs Premium:** the personal z-score / vs-previous, the movement-quality
+(Flow) score, the end-location map / venue picker, the **basic Trends**
+(afterglow-over-time, by-mode, summary), cloud sync (Google Drive), the in-app
 History analytics (streaks / Best Sessions / heatmap / Sauna Map), the Sleep
-score, and the resting-HR reference line are all **FREE**. The end-location
-map / venue picker, the Trends tab, the recovery curve, detailed metrics, and
-the PDF report are **Premium**.
+score, and the resting-HR reference line are all **FREE**. The β score, the
+recovery curve, the **advanced Trends**, the PDF report, and CSV import/export
+are **Premium**.
 
 ### 5a. Cloud sync (optional, FREE)
 
@@ -161,7 +165,7 @@ integration.
 - Turn on the **moving-average overlays** and **Hide preparation phase** under
   **Settings → Display** to read the curve more clearly.
 - Fill in the **venue** (from the nearby candidates or your past-visited venues
-  within ~500 m, Premium) in a session's detail to power the Sauna Map, the
+  within ~500 m — free) in a session's detail to power the Sauna Map, the
   visit heatmap, and the PDF report.
 - Add a **1–5 star rating** to each session.
 - Check the **History tab** for your streaks, Best Sessions and visit heatmap —
@@ -257,8 +261,8 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 ### 5. Android スマホで振り返り
 
 - **最新タブ（Latest）** — 最新セッションの解析を直接表示: フェーズ帯付きの心拍
-  チャート・ととのい度スコア・セット別の内訳・動線品質、（Premium）詳細指標と
-  回復カーブ。
+  チャート・ととのい度スコア・セット別の内訳・個人比 / 前回比・動線品質、
+  （Premium）β スコアと回復カーブ。
 - **インタラクティブな心拍チャート** — 心拍チャートは操作できます:
   - **点をタップ** すると値カード（bpm・経過時間・その時点のフェーズ）を表示。
   - **ピンチで最大 20 倍までズーム**。
@@ -278,27 +282,30 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
   - **ベストセッション TOP 10** — **ととのい度スコア** が高い順。
   - **訪問頻度カレンダーヒートマップ** — 通った頻度をカレンダーで表示。
   - **サウナマップ** — 訪問したすべての施設を 1 枚の地図に表示。
-  - その下に **過去のセッション一覧**。タップで詳細が開き、（Premium）
-    **終了地点の地図** と施設候補（タップで施設を設定）が見られます。候補には
+  - その下に **過去のセッション一覧**。タップで詳細が開き、**終了地点の地図
+    （無料）** と施設候補（タップで施設を設定）が見られます。候補には
     近くの Places 検索に加えて **過去に訪問した約 500 m 以内の施設** も含まれ
     ます。
 - **翌日ステータス（Health Connect 連携時）** — 連携している場合、セッションの
   **翌晩** の参考 **睡眠スコア（無料）** と **平均呼吸数** を表示します。
-- **トレンドタブ（Trends、Premium）** — ととのい度の推移、HRR トレンド（1/3/5）、
-  回復スロープの推移、セット数 / セッション長 / モード別の平均、回復カーブの重ね
-  表示、回復サマリー。期間フィルタ: 全期間 / 30 日 / 7 日。
+- **トレンドタブ（Trends）** — **一部無料**。無料: ととのい度の推移、モード別の
+  平均、期間サマリー。Premium: HRR トレンド（1/3/5）、回復スロープの推移、
+  セット数 / セッション長別の平均、セット位置別 HRR、回復カーブの重ね表示、回復
+  サマリー。期間フィルタ（全期間 / 30 日 / 7 日）は誰でも利用できます。
 - **PDF レポート（Premium）** — トレンドタブから生成し、Android の共有メニューで
   共有。A4 縦・3 ページで、**ベストセッション** と **訪問頻度ヒートマップ** を
   含みます（これらは履歴タブのアプリ内でも無料で見られます）。
-- **設定 → データ入出力** — CSV の入出力（無料）。ローカルバックアップや自前解析
+- **設定 → データ入出力** — CSV の入出力（Premium）。ローカルバックアップや自前解析
   に。
 - **設定 → クラウド同期（Google ドライブ）** — あなた自身のドライブへバックアップ
   （無料・任意。後述のクラウド同期セクション参照）。
 
-**無料と Premium：** CSV の入出力、クラウド同期（Google ドライブ）、アプリ内の
-履歴分析（連続記録 / ベストセッション / ヒートマップ / サウナマップ）、睡眠スコ
-ア、安静時心拍の基準線はすべて **無料** です。終了地点の地図 / 施設ピッカー、
-トレンドタブ、回復カーブ、詳細指標、PDF レポートは **Premium** です。
+**無料と Premium：** 個人比 / 前回比、動線品質（Flow）スコア、終了地点の地図 /
+施設ピッカー、**基本トレンド**（ととのい度の推移・モード別・サマリー）、クラウド
+同期（Google ドライブ）、アプリ内の履歴分析（連続記録 / ベストセッション /
+ヒートマップ / サウナマップ）、睡眠スコア、安静時心拍の基準線はすべて **無料**
+です。β スコア、回復カーブ、**高度なトレンド**、PDF レポート、CSV の入出力は
+**Premium** です。
 
 ### 5a. クラウド同期（任意・無料）
 
@@ -339,7 +346,7 @@ Health Connect は **任意** で、**あなたの許可がある場合のみ** 
 - **設定 → 表示** で **移動平均オーバーレイ** や **準備フェーズを隠す** を ON に
   すると、カーブがより見やすくなります。
 - 各セッションの詳細から **施設名**（近くの候補、または約 500 m 以内の過去訪問
-  施設から選択、Premium）を入れると、サウナマップ・訪問ヒートマップ・PDF レポート
+  施設から選択、無料）を入れると、サウナマップ・訪問ヒートマップ・PDF レポート
   に反映されます。
 - 各セッションに **1〜5 星の評価** をつけられます。
 - 連続記録・ベストセッション・訪問ヒートマップは **履歴タブ** で確認できます
