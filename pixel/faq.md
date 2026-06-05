@@ -28,7 +28,11 @@ end-location map with nearby-venue picker, the PDF report, and no banner ads.
 The heart-rate chart with phase bands, the absolute Afterglow score, the
 per-set breakdown, the history list, the movement-quality score, **CSV
 import/export** (Settings → Data import/export), watch-settings editing, and
-the Force-English toggle.
+the Force-English toggle. The **in-app History analytics** (current / longest
+streak and total count, the **Best Sessions TOP 10**, the visit-frequency
+calendar heatmap, and the Sauna Map of your visited venues) are also free, as
+are the **Sleep score** and the **resting-HR reference line** when you connect
+Health Connect.
 
 **Q. Is watch ↔ phone sync Premium?**
 No. Finished sessions transfer from the Pixel Watch to your Android phone
@@ -71,7 +75,8 @@ Locally on your Android phone and your Pixel Watch (local JSON files). When the
 two are paired, finished sessions transfer Watch → Phone directly over the
 Wearable Data Layer (Bluetooth / Wi-Fi). Watch settings sync bidirectionally,
 so you can edit watch settings from the phone. There is **no** cloud, no
-Google-account sync, and no login.
+Google-account sync, and no login. (Cloud sync is planned but not yet
+shipped.)
 
 **Q. What if I delete the app?**
 Data is stored only on-device, so deleting the app removes its local data.
@@ -80,9 +85,22 @@ then re-import after reinstalling.
 
 **Q. Where does the heart rate come from?**
 The app reads heart rate live from the Pixel Watch's optical sensor via Wear OS
-Health Services during a session (while the session screen is on). It does
-**not** read from or write to Health Connect or Google Fit. On an emulator
-without a real sensor, it falls back to mock heart-rate data.
+Health Services during a session (while the session screen is on). On an
+emulator without a real sensor, it falls back to mock heart-rate data.
+**Optionally**, if you connect **Health Connect** (Settings → Health Connect,
+with your permission), the app can also read your **Resting heart rate** and
+draw it as a reference line on the session HR chart, and **write each finished
+session back** to Health Connect as an exercise + heart-rate record so other
+apps can use it. Health Connect is entirely optional — if you do not connect
+it, the app works exactly as before with no health-data integration.
+
+**Q. What is the Sleep score / Next-day status?**
+If you connect **Health Connect** and you have **sleep data** recorded there,
+the session detail can show a **Next-day status** section for the night **after**
+a session: a reference **Sleep score** (free) and your average respiratory rate
+for that night, read from Health Connect. These are reference values only and
+require both Health Connect to be connected and sleep data to be present — if
+either is missing, the section simply does not appear.
 
 **Q. Does the free version share my data with advertisers?**
 The free version shows an AdMob banner ad. Ad-network data handling follows
@@ -112,6 +130,25 @@ optional "tap screen to advance" setting (OFF by default). Phase times are
 **haptic alerts only** — the app does not auto-advance, so you choose when to
 move on.
 
+**Q. Does recording keep running in the background during a session?**
+While a session screen is on, the watch keeps the display awake and runs a
+**foreground service with an ongoing notification**, so the timer and heart-rate
+measurement keep running for the duration of the session. (Fully screen-off
+background recording is still being finalized and verified on real hardware.)
+
+**Q. Can I interact with the heart-rate chart?**
+Yes — the HR chart is interactive. **Tap a point** to see a value card showing
+the bpm, the elapsed time, and the phase at that point. **Pinch to zoom** in up
+to 20×, **drag to scroll** along the timeline, and **double-tap to reset** the
+view.
+
+**Q. Can I add moving-average lines or hide the preparation phase on the chart?**
+Yes. In **Settings → Display** you can toggle two trailing moving-average
+overlays on the HR chart — a **60-second** average and a **10-minute** average —
+each independently. There is also a **"Hide preparation phase from chart"**
+toggle that re-bases the X axis so 0:00 is your sauna entry. All three default
+to **OFF**.
+
 **Q. What's the difference between Standard and Simple mode?**
 Standard mode tracks distinct phases (sauna → cold water → cool-down) per set,
 with per-set times and HR thresholds, plus an optional Preparation phase and an
@@ -135,6 +172,13 @@ better facility flow. The per-session score is **free** in the session
 analysis; the detailed breakdown and the period-average (in the Premium PDF
 report) are Premium.
 
+**Q. What analytics are in the History tab?**
+**Free.** At the top of the **History** tab the app shows your **current and
+longest streak** plus your **total session count**, a **Best Sessions TOP 10**
+ranking (by Afterglow score), a **visit-frequency calendar heatmap**, and a
+**Sauna Map** that plots all of your visited venues on one map. These are all
+free and live in the app (no Premium and no PDF required).
+
 **Q. How do I generate a PDF report?**
 Premium feature. From the **Trends** tab, generate the report and share it via
 the Android share sheet. An A4-portrait, 3-page report is produced:
@@ -145,8 +189,9 @@ the Android share sheet. An A4-portrait, 3-page report is produced:
 - **Page 3**: **Best Sessions TOP 5**, a recent-sessions table, and a
   visit-frequency heatmap
 
-The **Best Sessions ranking and the visit/calendar heatmap exist only inside
-this PDF** — there is no separate Best-Sessions or heatmap screen in the app.
+The Best Sessions ranking and the visit/calendar heatmap are **also available
+free in the History tab** (TOP 10 there); the PDF still includes its own
+versions as part of the exported report.
 
 **Q. What is in the Trends tab?**
 Premium. The Trends tab shows Afterglow-over-time, the HRR trend (1/3/5), the
@@ -158,9 +203,10 @@ period filter lets you view All / 30 days / 7 days.
 **Q. How does the venue / map work?**
 Premium. If Location permission is granted, the app captures the session **end**
 location once when the session ends, shows it on a Google Map in the session
-detail, and lists nearby sauna / bath facility candidates from Google Places.
-Tap a candidate to set the venue. There is no continuous GPS tracking and no
-past-visit radius history. Each session can also have a 1–5 star rating.
+detail, and lists nearby sauna / bath facility candidates. The candidates come
+from a Google Places search **plus your own past-visited venues within about
+500 m**. Tap a candidate to set the venue. There is no continuous GPS tracking.
+Each session can also have a 1–5 star rating.
 
 ### 4. Troubleshooting
 
@@ -175,16 +221,23 @@ Make sure the watch is worn snugly and that you granted the **Body Sensors**
 denied, the app falls back to demo / mock data instead of your real heart rate.
 
 **Q. Watch battery drains during a session.**
-While a session screen is on, the display is kept awake so the timer and
-heart-rate keep running, which uses more battery than an idle watch. The app
-auto-ends after 60 minutes with no input (it warns first, then auto-ends) to
-protect the battery. There is also an optional low-HR warning during cold water
-/ cool-down.
+While a session screen is on, the display is kept awake and a foreground
+service runs so the timer and heart-rate keep running, which uses more battery
+than an idle watch. The app auto-ends after 60 minutes with no input (it warns
+first, then auto-ends) to protect the battery. There is also an optional low-HR
+warning during cold water / cool-down.
 
 **Q. The Afterglow Score didn't appear after my session.**
 The score needs valid heart-rate data after the peak. If you ended the session
 within 1 minute of the sauna peak, or the watch lost contact (dropouts), the
 score may be missing. Sessions with too few samples are marked as unscored.
+
+**Q. The resting-HR line, Sleep score, or Next-day status isn't showing.**
+These come from **Health Connect**. Make sure you connected it in **Settings →
+Health Connect** and granted the relevant read permissions, and that the data
+exists there (a recorded resting heart rate, and sleep data for the night after
+the session). If Health Connect is not connected, or the data is missing, those
+items simply do not appear and the rest of the app is unaffected.
 
 ### 5. Other
 
@@ -194,10 +247,10 @@ the **Force English** toggle to force the English UI regardless of your system
 language.
 
 **Q. Can I use this for medical purposes?**
-No. The Afterglow Score, heart-rate values, HRR, and all other figures are
-reference information only. They are not medical metrics and must not be used
-for diagnosis or treatment decisions. Consult a physician if you have
-concerns.
+No. The Afterglow Score, heart-rate values, HRR, the Sleep score, and all other
+figures are reference information only. They are not medical metrics and must
+not be used for diagnosis or treatment decisions. Consult a physician if you
+have concerns.
 
 **Q. What is the recommended use?**
 Personal wellness tracking. Use saunas at your own risk and follow your local
@@ -229,7 +282,10 @@ versions and a brief description of the issue.
 **Q. 無料でできることは？**
 フェーズ帯つき心拍チャート、ととのい度（絶対値）、セット別内訳、履歴一覧、
 動線品質スコア、**CSV 入出力**（設定 → データ入出力）、ウォッチ設定の編集、
-英語表示（強制）トグル。
+英語表示（強制）トグル。**履歴タブのアプリ内分析**（現在 / 最長の連続日数と
+合計回数、**ベストセッション TOP 10**、訪問頻度カレンダーヒートマップ、訪れた
+施設を表示するサウナマップ）も無料です。Health Connect を連携した場合の
+**睡眠スコア**と**安静時心拍の参照ライン**も無料です。
 
 **Q. ウォッチ ↔ スマホ同期は Premium 限定ですか？**
 いいえ。完了したセッションは Pixel Watch から Android スマホへ Wearable Data
@@ -270,7 +326,7 @@ Android スマホと Pixel Watch のローカル（JSON ファイル）に保存
 ペアリングすると、完了したセッションはウォッチ → スマホへ Wearable Data Layer
 経由（Bluetooth / Wi-Fi）で直接転送されます。ウォッチ設定は双方向同期するため、
 スマホからウォッチ設定を編集できます。**クラウドも、Google アカウント同期も、
-ログインもありません。**
+ログインもありません。**（クラウド同期は予定していますが、まだ提供していません。）
 
 **Q. アプリを削除するとデータはどうなりますか？**
 データは端末内のみに保存されるため、アプリを削除するとローカルデータも消えます。
@@ -279,9 +335,20 @@ Android スマホと Pixel Watch のローカル（JSON ファイル）に保存
 
 **Q. 心拍数はどこから取得していますか？**
 セッション中（セッション画面が表示されている間）に、Pixel Watch の光学式センサー
-から Wear OS Health Services 経由でリアルタイムに読み取ります。Health Connect
-や Google Fit からの読み書きは**行いません**。実機センサーのないエミュレータ
-では、モックの心拍データにフォールバックします。
+から Wear OS Health Services 経由でリアルタイムに読み取ります。実機センサーの
+ないエミュレータでは、モックの心拍データにフォールバックします。
+**任意で**、**Health Connect** を連携すると（設定 → Health Connect、ユーザーの
+許可が必要）、**安静時心拍**を読み取ってセッションの心拍チャートに参照ラインと
+して表示したり、**完了したセッションを** Health Connect に運動 + 心拍の記録と
+して**書き戻して**他のアプリで使えるようにできます。Health Connect の連携は
+完全に任意で、連携しなければ従来どおり、ヘルスデータ連携なしで動作します。
+
+**Q. 睡眠スコア / 翌日ステータスとは何ですか？**
+**Health Connect** を連携し、そこに**睡眠データ**が記録されている場合、セッション
+詳細にセッションの**翌日（翌晩）**の **翌日ステータス**セクションを表示できます：
+参考値の**睡眠スコア**（無料）と、その晩の平均呼吸数を Health Connect から
+読み取って表示します。いずれも参考値のみで、Health Connect の連携と睡眠データ
+の両方が必要です。どちらかが無い場合、このセクションは表示されません。
 
 **Q. 無料版の広告は私のデータを共有しますか？**
 無料版は AdMob のバナー広告を表示します。広告ネットワーク側のデータ処理は
@@ -308,6 +375,24 @@ Pixel Watch（または他の Wear OS スマートウォッチ）が必要です
 （デフォルト OFF）もあります。フェーズ時間は**ハプティック（振動）通知のみ**で、
 アプリは自動では進みません。進むタイミングはご自身で選べます。
 
+**Q. セッション中、記録はバックグラウンドでも続きますか？**
+セッション画面が表示されている間、ウォッチは画面を点灯維持し、**常駐通知つきの
+フォアグラウンドサービス**を実行します。これにより、セッションの間タイマーと
+心拍計測が動き続けます。（画面オフ完全バックグラウンド記録は、実機での最終調整
+・検証中です。）
+
+**Q. 心拍チャートを操作できますか？**
+はい。心拍チャートはインタラクティブです。**点をタップ**すると、その時点の
+bpm・経過時間・フェーズを表示する値カードが出ます。**ピンチで最大 20 倍まで
+拡大**、**ドラッグで時間軸をスクロール**、**ダブルタップで表示をリセット**でき
+ます。
+
+**Q. チャートに移動平均線を追加したり、準備フェーズを隠せますか？**
+できます。**設定 → 表示**で、心拍チャートに 2 本の移動平均（後方移動平均）の
+重ね描き — **60 秒**平均と **10 分**平均 — をそれぞれ個別にオンにできます。
+さらに **「準備フェーズをチャートから隠す」**トグルがあり、サウナ入室を 0:00 と
+して X 軸を取り直します。いずれも初期値は **OFF** です。
+
 **Q. 標準モードとシンプルモードの違いは？**
 標準モードはサウナ / 水風呂 / 外気浴のフェーズをセット単位で計測し、セット別の
 時間・心拍しきい値を設定でき、任意の準備フェーズや「その他/追加」フェーズも
@@ -329,6 +414,13 @@ Premium の分析に含まれる指標（bpm/分）。回復カーブの中央�
 が、スパイクが少ないほど動線が良い施設と判定。セッション解析では**無料**で確認
 でき、詳細内訳と期間平均（Premium の PDF レポート）は Premium です。
 
+**Q. 履歴タブにはどんな分析がありますか？**
+**無料です。**　**履歴**タブの上部に、**現在 / 最長の連続日数**と**合計セッション
+回数**、**ベストセッション TOP 10**（ととのい度順）ランキング、**訪問頻度
+カレンダーヒートマップ**、訪れたすべての施設を 1 枚の地図に表示する**サウナ
+マップ**が表示されます。いずれも無料で、アプリ内で確認できます（Premium も PDF
+も不要です）。
+
 **Q. PDF レポートはどう生成しますか？**
 Premium 機能です。**トレンド**タブからレポートを生成し、Android の共有シートで
 共有します。A4 縦 3 ページの PDF が生成されます:
@@ -339,8 +431,9 @@ Premium 機能です。**トレンド**タブからレポートを生成し、An
 - **3 ページ目**: **ベストセッション TOP 5**・最近のセッション表・訪問頻度
   ヒートマップ
 
-**ベストセッションのランキングと訪問/カレンダーのヒートマップは、この PDF の
-中だけに存在します** — アプリ内に別画面はありません。
+ベストセッションのランキングと訪問/カレンダーのヒートマップは、**履歴タブでも
+無料で確認できます**（こちらは TOP 10）。PDF にもエクスポートレポートの一部
+として独自に収録されています。
 
 **Q. トレンドタブには何がありますか？**
 Premium。トレンドタブには、ととのい度の推移、HRR トレンド（1/3/5）、回復勾配
@@ -351,10 +444,10 @@ Premium。トレンドタブには、ととのい度の推移、HRR トレンド
 
 **Q. 施設・地図はどう動きますか？**
 Premium。位置情報の許可がある場合、セッション**終了**時に終了位置を一度だけ
-取得し、セッション詳細で Google マップ上に表示、Google Places から近隣のサウナ
-・温浴施設候補を一覧表示します。候補をタップすると施設名が設定されます。連続
-GPS トラッキングや過去訪問の半径履歴はありません。各セッションには 1〜5 の
-星評価も付けられます。
+取得し、セッション詳細で Google マップ上に表示、近隣のサウナ・温浴施設候補を
+一覧表示します。候補は **Google Places の検索結果に加えて、約 500 m 圏内の
+あなたの過去訪問施設**も含みます。候補をタップすると施設名が設定されます。連続
+GPS トラッキングはありません。各セッションには 1〜5 の星評価も付けられます。
 
 ### 4. トラブルシューティング
 
@@ -369,15 +462,22 @@ Watch を手首にしっかり装着し、アプリ初回起動時に **Body Sen
 デモ / モックデータにフォールバックします。
 
 **Q. セッション中に Watch のバッテリーが減ります。**
-セッション画面が表示されている間はタイマーと心拍を継続させるため画面を点灯
-維持します。そのため待機時よりバッテリーを消費します。バッテリー保護のため、
-60 分間操作がないと自動終了します（先に警告 → その後自動終了）。水風呂 / 外気浴
-中の低心拍警告（任意）もあります。
+セッション画面が表示されている間はタイマーと心拍を継続させるため、画面を点灯
+維持し、フォアグラウンドサービスを実行します。そのため待機時よりバッテリーを
+消費します。バッテリー保護のため、60 分間操作がないと自動終了します（先に警告
+→ その後自動終了）。水風呂 / 外気浴中の低心拍警告（任意）もあります。
 
 **Q. セッション後にととのい度が表示されません。**
 ピーク後の心拍データが必要です。サウナピーク直後（1 分以内）に終了した場合や、
 Watch との通信が大きく欠落した場合は計算不可になります。サンプルが少なすぎる
 セッションは未スコア表示になります。
+
+**Q. 安静時心拍ライン・睡眠スコア・翌日ステータスが表示されません。**
+これらは **Health Connect** から取得します。**設定 → Health Connect** で連携し、
+該当する読み取り権限を許可しているか、そしてデータが存在するか（安静時心拍の
+記録、およびセッション翌晩の睡眠データ）を確認してください。Health Connect を
+連携していない場合やデータが無い場合は、これらの項目が表示されないだけで、その他
+のアプリ機能には影響しません。
 
 ### 5. その他
 
@@ -386,9 +486,9 @@ Watch との通信が大きく欠落した場合は計算不可になります�
 （強制）**」トグルをオンにすると、システム言語に関係なく英語 UI に固定されます。
 
 **Q. 医療目的で使えますか？**
-**いいえ。**ととのい度・心拍値・HRR その他すべての表示は参考値のみで、医療指
-標ではありません。診断や治療判断には使用しないでください。健康に不安がある場
-合は医師にご相談ください。
+**いいえ。**ととのい度・心拍値・HRR・睡眠スコアその他すべての表示は参考値の
+みで、医療指標ではありません。診断や治療判断には使用しないでください。健康に
+不安がある場合は医師にご相談ください。
 
 **Q. 推奨される使い方は？**
 個人のウェルネス記録として。サウナ利用は自己責任で、施設のルールに従ってくだ

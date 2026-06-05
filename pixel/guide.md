@@ -22,7 +22,8 @@ title: Quick Guide (Pixel Watch & Android)
 - When paired, finished sessions transfer from the **watch to the phone
   automatically** over the Wearable Data Layer (Bluetooth / Wi-Fi). Watch
   settings sync both ways, so you can edit them from the phone. There is **no
-  cloud account / login**; data stays locally on each device.
+  cloud account / login**; data stays locally on each device. (Cloud sync is
+  planned but not yet shipped.)
 
 ### 2. Start a session
 
@@ -46,6 +47,12 @@ The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
 alerts** — the app does not auto-advance.
 
+**Background recording:** while a session screen is on, the watch **keeps the
+display awake** and runs a **foreground service with an ongoing notification**,
+so the timer and heart rate keep running throughout the session. (Fully
+screen-off background recording is still being finalized and verified on real
+hardware.)
+
 ### 4. End the session
 
 - Move past the final phase to end, or
@@ -59,28 +66,83 @@ alerts** — the app does not auto-advance.
 - **Latest tab (最新)** — shows the latest session's full analysis directly:
   heart-rate chart with phase bands, Afterglow Score, set-level breakdown,
   movement quality, and (Premium) detailed metrics & recovery curve.
-- **History tab (履歴)** — list of past sessions. Tap one to open its detail,
-  including (Premium) the **end-location map** with nearby sauna/bath venue
-  candidates you tap to set the venue.
+- **Interactive heart-rate chart** — the HR chart is fully interactive:
+  - **Tap a point** to show a value card (bpm, elapsed time, and the phase at
+    that moment).
+  - **Pinch to zoom** in up to **20×**.
+  - **Drag to scroll** along the timeline.
+  - **Double-tap to reset** the view.
+- **Chart display options (Settings → Display)** — optional overlays and views
+  for the HR chart, all **default OFF**:
+  - **60-second moving average** — a trailing 60 s moving-average line.
+  - **10-minute moving average** — a trailing 10 min moving-average line.
+  - **Hide preparation phase from chart** — re-bases the X axis so it starts at
+    **sauna entry (0:00)**.
+  - If you connect Health Connect, your **Resting heart rate** can also appear
+    as a reference line on the chart (see Health Connect below).
+- **History tab (履歴)** — at the **top** of this tab you get **in-app
+  analytics, FREE**:
+  - **Streaks & count** — your **current** and **longest** streak plus your
+    **total session count**.
+  - **Best Sessions TOP 10** — your highest sessions by **Afterglow score**.
+  - **Visit-frequency calendar heatmap** — a calendar showing how often you go.
+  - **Sauna Map** — all your visited venues shown on a single map.
+  - Below the analytics is the **list of past sessions**. Tap one to open its
+    detail, including (Premium) the **end-location map** with venue candidates
+    you tap to set the venue. Suggestions include the nearby Places search **and
+    your past-visited venues within about 500 m**.
+- **Next-day status (with Health Connect)** — if connected, for the night
+  **after** a session the app shows a reference **Sleep score (FREE)** and your
+  **average respiratory rate**.
 - **Trends tab (トレンド, Premium)** — afterglow over time, HRR trend (1/3/5),
   recovery-slope trend, averages by set count / session length / mode, a
   recovery-curve overlay, and a recovery summary. Period filter: All / 30 days /
   7 days.
 - **PDF report (Premium)** — generated from the Trends tab and shared via the
-  Android share sheet. A4 portrait, 3 pages, including **Best Sessions TOP 5**
-  and a **visit-frequency heatmap** (these live only inside the PDF).
+  Android share sheet. A4 portrait, 3 pages, including **Best Sessions** and a
+  **visit-frequency heatmap** (these are also available in-app for free, in the
+  History tab).
 - **Settings → Data import/export** — CSV import/export (FREE) for offline
   backup or analysis.
 
-### 6. Tips
+**Free vs Premium:** CSV import/export, the in-app History analytics
+(streaks / Best Sessions / heatmap / Sauna Map), the Sleep score, and the
+resting-HR reference line are all **FREE**. The end-location map / venue picker,
+the Trends tab, the recovery curve, detailed metrics, and the PDF report are
+**Premium**.
+
+### 6. Health Connect (optional)
+
+Health Connect is **optional** and only used **with your permission**. If you do
+not connect it, the app works exactly as before, with no health-data
+integration.
+
+- **Reads Resting heart rate** and shows it as a reference line on the session
+  HR chart.
+- For the night **after** a session, **reads your Sleep** (shown as a reference
+  **Sleep score**, free) and your **average respiratory rate**, in the
+  **Next-day status** section.
+- **Writes each session** to Health Connect as an **exercise + heart-rate
+  record**, so other apps can use it.
+- Connect or manage it any time under **Settings → Health Connect**.
+
+### 7. Tips
 
 - Wear your watch snugly for stable heart-rate readings.
-- Fill in the **venue** (from the nearby candidates, Premium) in a session's
-  detail to power the map and the PDF visit heatmap.
+- **Tap a point** on the HR chart to read its exact bpm / time / phase, and
+  **pinch to zoom** into the part you care about.
+- Turn on the **moving-average overlays** and **Hide preparation phase** under
+  **Settings → Display** to read the curve more clearly.
+- Fill in the **venue** (from the nearby candidates or your past-visited venues
+  within ~500 m, Premium) in a session's detail to power the Sauna Map, the
+  visit heatmap, and the PDF report.
 - Add a **1–5 star rating** to each session.
-- The Afterglow Score is a **reference value**, not a medical metric.
+- Check the **History tab** for your streaks, Best Sessions and visit heatmap —
+  all free.
+- The Afterglow Score and the Sleep score are **reference values**, not medical
+  metrics.
 
-### 7. Typical workflow — time-limited sauna venues
+### 8. Typical workflow — time-limited sauna venues
 
 A recommended flow for time-limited sauna venues (e.g. 60–90 min facilities)
 doing **3 sets of sauna → cold plunge → cool-down**.
@@ -124,7 +186,8 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 - ペアリング済みなら、終了したセッションは **ウォッチ → スマホへ自動転送** され
   ます（Wearable Data Layer、Bluetooth / Wi-Fi）。ウォッチ設定は双方向同期なの
   で、スマホから編集できます。**クラウドアカウント / ログインはありません**。
-  データは各端末のローカルに保存されます。
+  データは各端末のローカルに保存されます。（クラウド同期は予定していますが、まだ
+  提供していません。）
 
 ### 2. セッションを開始
 
@@ -148,6 +211,11 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 表示されます。設定した各フェーズの時間は **ハプティック通知のタイミング**で、
 **自動進行はしません**（自分のタイミングで進めるため）。
 
+**バックグラウンド記録：** セッション画面が表示されている間、ウォッチは
+**画面を点灯させたまま** にし、**常駐通知付きのフォアグラウンドサービス** を
+動かすので、セッション中もタイマーと心拍が動き続けます。（画面オフでの完全な
+バックグラウンド記録は、実機での最終確認・検証を進めているところです。）
+
 ### 4. セッションを終える
 
 - 最後のフェーズで先へ進めると終了します。
@@ -159,27 +227,73 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 - **最新タブ（Latest）** — 最新セッションの解析を直接表示: フェーズ帯付きの心拍
   チャート・ととのい度スコア・セット別の内訳・動線品質、（Premium）詳細指標と
   回復カーブ。
-- **履歴タブ（History）** — 過去のセッション一覧。タップすると詳細が開き、
-  （Premium）**終了地点の地図** と近くのサウナ / 銭湯候補（タップで施設を設定）
-  が見られます。
+- **インタラクティブな心拍チャート** — 心拍チャートは操作できます:
+  - **点をタップ** すると値カード（bpm・経過時間・その時点のフェーズ）を表示。
+  - **ピンチで最大 20 倍までズーム**。
+  - **ドラッグで時間軸をスクロール**。
+  - **ダブルタップで表示をリセット**。
+- **チャートの表示オプション（設定 → 表示）** — 心拍チャート向けの任意オーバー
+  レイ／表示。いずれも **初期値は OFF**:
+  - **60 秒移動平均** — 直近 60 秒の移動平均線。
+  - **10 分移動平均** — 直近 10 分の移動平均線。
+  - **準備フェーズをチャートから隠す** — X 軸を **サウナ入室（0:00）** 起点に
+    し直します。
+  - Health Connect を連携すると、**安静時心拍数** をチャートの基準線として
+    表示することもできます（後述の Health Connect 参照）。
+- **履歴タブ（History）** — このタブの **最上部** に **アプリ内分析（無料）** が
+  表示されます:
+  - **連続記録と回数** — **現在** と **最長** の連続記録、**累計セッション数**。
+  - **ベストセッション TOP 10** — **ととのい度スコア** が高い順。
+  - **訪問頻度カレンダーヒートマップ** — 通った頻度をカレンダーで表示。
+  - **サウナマップ** — 訪問したすべての施設を 1 枚の地図に表示。
+  - その下に **過去のセッション一覧**。タップで詳細が開き、（Premium）
+    **終了地点の地図** と施設候補（タップで施設を設定）が見られます。候補には
+    近くの Places 検索に加えて **過去に訪問した約 500 m 以内の施設** も含まれ
+    ます。
+- **翌日ステータス（Health Connect 連携時）** — 連携している場合、セッションの
+  **翌晩** の参考 **睡眠スコア（無料）** と **平均呼吸数** を表示します。
 - **トレンドタブ（Trends、Premium）** — ととのい度の推移、HRR トレンド（1/3/5）、
   回復スロープの推移、セット数 / セッション長 / モード別の平均、回復カーブの重ね
   表示、回復サマリー。期間フィルタ: 全期間 / 30 日 / 7 日。
 - **PDF レポート（Premium）** — トレンドタブから生成し、Android の共有メニューで
-  共有。A4 縦・3 ページで、**ベストセッション TOP 5** と **訪問頻度ヒートマップ**
-  を含みます（いずれも PDF 内のみ）。
+  共有。A4 縦・3 ページで、**ベストセッション** と **訪問頻度ヒートマップ** を
+  含みます（これらは履歴タブのアプリ内でも無料で見られます）。
 - **設定 → データ入出力** — CSV の入出力（無料）。ローカルバックアップや自前解析
   に。
 
-### 6. ちょっとしたコツ
+**無料と Premium：** CSV の入出力、アプリ内の履歴分析（連続記録 / ベスト
+セッション / ヒートマップ / サウナマップ）、睡眠スコア、安静時心拍の基準線は
+すべて **無料** です。終了地点の地図 / 施設ピッカー、トレンドタブ、回復カーブ、
+詳細指標、PDF レポートは **Premium** です。
+
+### 6. Health Connect（任意）
+
+Health Connect は **任意** で、**あなたの許可がある場合のみ** 使用します。連携
+しなければ、これまでどおり健康データ連携なしで動作します。
+
+- **安静時心拍数を読み取り**、セッションの心拍チャートに基準線として表示します。
+- セッションの **翌晩** の **睡眠を読み取り**（参考の **睡眠スコア**として無料
+  表示）、**平均呼吸数** を **翌日ステータス** セクションに表示します。
+- **各セッションを** Health Connect に **運動 + 心拍の記録** として **書き込み**、
+  他のアプリでも使えるようにします。
+- 連携・管理はいつでも **設定 → Health Connect** から行えます。
+
+### 7. ちょっとしたコツ
 
 - 心拍を安定して取るため、ウォッチは手首に **しっかり装着** してください。
-- 各セッションの詳細から **施設名**（近くの候補から選択、Premium）を入れると、
-  地図と PDF の訪問ヒートマップに反映されます。
+- 心拍チャートの **点をタップ** すると、その時点の bpm / 時間 / フェーズが分かり
+  ます。気になる箇所は **ピンチでズーム** しましょう。
+- **設定 → 表示** で **移動平均オーバーレイ** や **準備フェーズを隠す** を ON に
+  すると、カーブがより見やすくなります。
+- 各セッションの詳細から **施設名**（近くの候補、または約 500 m 以内の過去訪問
+  施設から選択、Premium）を入れると、サウナマップ・訪問ヒートマップ・PDF レポート
+  に反映されます。
 - 各セッションに **1〜5 星の評価** をつけられます。
-- ととのい度スコアは **参考値** であり、医療指標ではありません。
+- 連続記録・ベストセッション・訪問ヒートマップは **履歴タブ** で確認できます
+  （すべて無料）。
+- ととのい度スコアと睡眠スコアは **参考値** であり、医療指標ではありません。
 
-### 7. 典型的な使用例 — 時間制限のあるサウナ施設
+### 8. 典型的な使用例 — 時間制限のあるサウナ施設
 
 時間制限のあるサウナ施設（60〜90 分など）で **3 セット（サウナ → 水風呂 →
 外気浴 を 3 回繰り返す）** を行う場合の推奨ワークフロー。
@@ -214,3 +328,5 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 - [FAQ / よくある質問](faq.html)
 - [Privacy Policy / プライバシーポリシー](privacy-policy.html)
 - [Terms of Use / 利用規約](terms-of-use.html)
+
+**Support / お問い合わせ:** maxsaunatimer@gmail.com
