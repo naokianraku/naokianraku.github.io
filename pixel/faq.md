@@ -7,6 +7,8 @@ title: FAQ (Pixel Watch & Android)
 **Last updated / 最終更新:** 2026-06-05
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
+> 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
+
 ---
 
 ## English
