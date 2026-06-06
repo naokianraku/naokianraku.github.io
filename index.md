@@ -10,13 +10,6 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 サウナセッションを計測し、心拍ベースのデータを記録するアプリです。
 **Apple Watch / iPhone** 版と **Pixel Watch / Android** 版があります。
 
-## 📣 Feedback / フィードバック（iOS・Android 共通）
-
-不具合の報告・改善要望は、こちらのフォームからお寄せください（両バージョン共通）。
-Report bugs & suggestions here (shared for both versions):
-
-**→ [フィードバックフォーム / Feedback form](feedback.html)**
-
 ## Apple Watch & iPhone version / Apple Watch・iPhone 版
 
 - [Quick Guide / 簡易取説](guide.html)
