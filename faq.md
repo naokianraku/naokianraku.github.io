@@ -4,7 +4,7 @@ title: FAQ (Apple Watch & iPhone)
 
 # FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-05
+**Last updated / 最終更新:** 2026-06-06
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
@@ -43,6 +43,11 @@ features until the current billing period ends.
 No. Your sessions, history, settings, and iCloud sync all stay. Only the
 Premium features (advanced analytics, chart-image sharing, CSV export, Premium
 app icon, ad-free) revert to the free tier.
+
+**Q. I paid but Premium isn't active on a new device.**
+Make sure the new device is signed in to the App Store with the **same Apple
+ID** you used to purchase. Then open the **Premium tab** in the app and tap
+**Restore purchases** to re-verify your entitlement with the App Store.
 
 **Q. Refunds?**
 Apple handles all refund requests. Use
@@ -280,6 +285,11 @@ iPhone の「設定」アプリ → 上部の Apple ID → 「サブスクリプ
 消えません。セッション履歴・設定・iCloud 同期はすべて残ります。失われるのは
 Premium 機能（高度な分析、チャート画像共有、CSV エクスポート、専用アイコン、
 広告非表示）だけで、無料版機能に戻ります。
+
+**Q. 課金したのに新しい端末で Premium が有効になりません。**
+購入時と**同じ Apple ID** で新しい端末の App Store にサインインしているか確認
+してください。その上でアプリ内の **Premium タブ**を開き、「**購入を復元**」を
+タップすると App Store と権利状態を再同期できます。
 
 **Q. 返金は可能ですか？**
 返金処理は Apple が行います。[reportaproblem.apple.com](https://reportaproblem.apple.com)
