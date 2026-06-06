@@ -4,8 +4,6 @@ title: Anraku Tech
 
 # Anraku Tech
 
-A site for tech projects and apps developed by Naoki Anraku.
-
 ---
 
 ## Projects / プロジェクト
