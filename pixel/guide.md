@@ -6,7 +6,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 **Last updated / 最終更新:** 2026-06-05
 
-> 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
+> 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](../feedback.html)** / Report bugs & suggestions: **[Feedback form](../feedback.html)**
 
 ---
 
