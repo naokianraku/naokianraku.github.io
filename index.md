@@ -4,8 +4,6 @@ title: Anraku Tech
 
 # Anraku Tech
 
-安樂直樹が個人で開発している技術・アプリの公開ページです。
-
 A site for tech projects and apps developed by Naoki Anraku.
 
 ---
