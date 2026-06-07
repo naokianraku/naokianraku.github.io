@@ -4,7 +4,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 # Quick Guide / 簡易取説 — MaxSauna Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-05
+**Last updated / 最終更新:** 2026-06-07
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](../feedback.html)** / Report bugs & suggestions: **[Feedback form](../feedback.html)**
 
@@ -70,10 +70,12 @@ hardware.)
 
 ### 5. Review on your Android phone
 
-- **Latest tab (最新)** — shows the latest session's full analysis directly:
-  heart-rate chart with phase bands, Afterglow Score, set-level breakdown,
-  personal z-score / vs-previous, movement quality, and (Premium) the β score &
-  recovery curve.
+- **Home tab (ホーム)** — shows the latest session's full analysis directly (no
+  tap needed): the detail header with self-rating (e.g. "Standard • 2 sets •
+  58min • ★5"), heart-rate chart with phase bands, Afterglow Score, set-level
+  breakdown, the **Detailed data** card (Max / Min / Avg HR, HR drop, HRR1 /
+  HRR3 / HRR5), personal z-score / vs-previous, movement quality, and (Premium)
+  the β score & recovery curve.
 - **Interactive heart-rate chart** — the HR chart is fully interactive:
   - **Tap a point** to show a value card (bpm, elapsed time, and the phase at
     that moment).
@@ -88,41 +90,58 @@ hardware.)
     **sauna entry (0:00)**.
   - If you connect Health Connect, your **Resting heart rate** can also appear
     as a reference line on the chart (see Health Connect below).
-- **History tab (履歴)** — at the **top** of this tab you get **in-app
-  analytics, FREE**:
-  - **Streaks & count** — your **current** and **longest** streak plus your
-    **total session count**.
-  - **Best Sessions TOP 10** — your highest sessions by **Afterglow score**.
-  - **Visit-frequency calendar heatmap** — a calendar showing how often you go.
-  - **Sauna Map** — all your visited venues shown on a single map.
-  - Below the analytics is the **list of past sessions**. Tap one to open its
-    detail, including the **end-location map (FREE)** with venue candidates you
-    tap to set the venue. Suggestions include the nearby Places search **and
-    your past-visited venues within about 500 m**.
+- **History tab (履歴)** — now just the **list of past sessions**. **Tap a row**
+  to open that session's analysis (same screen as Home), including the
+  **end-location map (FREE)** with venue candidates you tap to set the venue
+  (nearby Places search **and your past-visited venues within about 500 m**).
+  **Left-swipe a row** to delete that single session (a confirmation dialog
+  appears; this is the only per-session delete).
+- **Recovery curve slope lines (Premium)** — on the recovery-curve chart the app
+  overlays a straight **slope line** for each set, with a **"Show slope lines"**
+  toggle and dashed **1-min / 3-min** guide lines. A per-set legend shows the
+  slope (bpm/min), R², and lag (seconds).
+- **Save / share graph** — from a session's detail you can share the heart-rate
+  chart. **FREE:** a **Share** button shares **text only** (basic info).
+  **PREMIUM:** **Save graph to Photos** + **Share graph** shares detailed text
+  **plus a PNG of the HR chart**; choose **"Info + HR graph"** or **"HR graph
+  only"**. Saved images go to your device's own Photos
+  (Pictures/MaxSaunaTimer) — nothing is uploaded.
 - **Next-day status (with Health Connect)** — if connected, for the night
   **after** a session the app shows a reference **Sleep score (FREE)** and your
   **average respiratory rate**.
-- **Trends tab (トレンド)** — **partly free**. FREE: afterglow over time,
-  average by mode, and the period summary. Premium: HRR trend (1/3/5), the
-  recovery-slope trend, averages by set count / session length, set-position
-  HRR, a recovery-curve overlay, and a recovery summary. The period filter
-  (All / 30 days / 7 days) is available to everyone.
-- **PDF report (Premium)** — generated from the Trends tab and shared via the
+- **Analytics tab (分析)** — **partly free**. FREE: the overview cards moved here
+  from History — **Streaks & count** (current / longest streak + total count),
+  **Best Sessions TOP 10** (by Afterglow score), the **visit-frequency calendar
+  heatmap**, and the **Sauna Map** — plus afterglow over time, average by mode,
+  and the period summary. Premium: HRR trend (1/3/5), the recovery-slope trend,
+  averages by set count / session length, set-position HRR, a recovery-curve
+  overlay, and a recovery summary. The period filter (All / 30 days / 7 days) is
+  available to everyone.
+- **PDF report (Premium)** — generated from the Analytics tab and shared via the
   Android share sheet. A4 portrait, 3 pages, including **Best Sessions** and a
   **visit-frequency heatmap** (these are also available in-app for free, in the
-  History tab).
+  Analytics tab).
 - **Settings → Data import/export** — CSV import/export (Premium) for offline
   backup or analysis.
 - **Settings → Cloud sync (Google Drive)** — back up to your own Drive, FREE,
   optional (see the Cloud sync section below).
 
 **Free vs Premium:** the personal z-score / vs-previous, the movement-quality
-(Flow) score, the end-location map / venue picker, the **basic Trends**
-(afterglow-over-time, by-mode, summary), cloud sync (Google Drive), the in-app
-History analytics (streaks / Best Sessions / heatmap / Sauna Map), the Sleep
-score, and the resting-HR reference line are all **FREE**. The β score, the
-recovery curve, the **advanced Trends**, the PDF report, and CSV import/export
-are **Premium**.
+(Flow) score, the **Detailed data** card, the end-location map / venue picker,
+the **basic Analytics** (afterglow-over-time, by-mode, summary), cloud sync
+(Google Drive), the overview cards (streaks / Best Sessions / heatmap / Sauna
+Map), the Sleep score, and the resting-HR reference line are all **FREE**;
+sharing the HR graph as **text** is also free. The β score, the recovery curve
+(with slope / R² / lag), the **advanced Analytics**, the PDF report, the
+**HR-chart image** in share + Save-to-Photos, and CSV import/export are
+**Premium**. Banner ads appear on Home / History / Analytics and the
+session-detail screen on FREE (no ads on Settings); **Premium removes all ads**.
+Premium also unlocks a **Premium app icon** (Settings → Premium → "Use Premium
+app icon").
+
+**Bilingual:** the entire app — every screen, the shared graph image, and the
+PDF report — is fully Japanese / English. Use **Settings → Display → "Force
+English"** to force English regardless of your system language.
 
 ### 5a. Cloud sync (optional, FREE)
 
@@ -169,8 +188,9 @@ integration.
 - Fill in the **venue** (from the nearby candidates or your past-visited venues
   within ~500 m — free) in a session's detail to power the Sauna Map, the
   visit heatmap, and the PDF report.
-- Add a **1–5 star rating** to each session.
-- Check the **History tab** for your streaks, Best Sessions and visit heatmap —
+- Add a **1–5 star rating** to each session (entered on the watch; it then shows
+  in the detail header).
+- Check the **Analytics tab** for your streaks, Best Sessions and visit heatmap —
   all free.
 - The Afterglow Score and the Sleep score are **reference values**, not medical
   metrics.
@@ -262,8 +282,10 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 
 ### 5. Android スマホで振り返り
 
-- **最新タブ（Latest）** — 最新セッションの解析を直接表示: フェーズ帯付きの心拍
-  チャート・ととのい度スコア・セット別の内訳・個人比 / 前回比・動線品質、
+- **ホームタブ（Home）** — 最新セッションの解析を（タップ不要で）直接表示: 自己
+  評価付きの詳細ヘッダー（例「標準 • 2 セット • 58 分 • ★5」）・フェーズ帯付きの
+  心拍チャート・ととのい度スコア・セット別の内訳・**詳細データ** カード（最大 / 最小
+  / 平均心拍・心拍の落差・HRR1 / HRR3 / HRR5）・個人比 / 前回比・動線品質、
   （Premium）β スコアと回復カーブ。
 - **インタラクティブな心拍チャート** — 心拍チャートは操作できます:
   - **点をタップ** すると値カード（bpm・経過時間・その時点のフェーズ）を表示。
@@ -278,36 +300,53 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
     し直します。
   - Health Connect を連携すると、**安静時心拍数** をチャートの基準線として
     表示することもできます（後述の Health Connect 参照）。
-- **履歴タブ（History）** — このタブの **最上部** に **アプリ内分析（無料）** が
-  表示されます:
-  - **連続記録と回数** — **現在** と **最長** の連続記録、**累計セッション数**。
-  - **ベストセッション TOP 10** — **ととのい度スコア** が高い順。
-  - **訪問頻度カレンダーヒートマップ** — 通った頻度をカレンダーで表示。
-  - **サウナマップ** — 訪問したすべての施設を 1 枚の地図に表示。
-  - その下に **過去のセッション一覧**。タップで詳細が開き、**終了地点の地図
-    （無料）** と施設候補（タップで施設を設定）が見られます。候補には
-    近くの Places 検索に加えて **過去に訪問した約 500 m 以内の施設** も含まれ
-    ます。
+- **履歴タブ（History）** — **過去のセッション一覧** のみになりました。**行を
+  タップ** するとそのセッションの解析（ホームと同じ画面）が開き、**終了地点の地図
+  （無料）** と施設候補（タップで施設を設定）が見られます（近くの Places 検索に
+  加えて **過去に訪問した約 500 m 以内の施設** も候補に含まれます）。**行を左に
+  スワイプ** すると、そのセッション 1 件を削除できます（確認ダイアログが表示され
+  ます。セッション単位の削除はこれだけです）。
+- **回復カーブの傾きの線（Premium）** — 回復カーブのチャートに、各セットの
+  まっすぐな **傾きの線** を重ねて表示します。**「傾きの線を表示」** トグルと、
+  破線の **1 分 / 3 分** ガイド線付き。セットごとの凡例に傾き（bpm/min）・R²・
+  ラグ（秒）を表示します。
+- **グラフを保存・共有** — セッション詳細から心拍チャートを共有できます。
+  **無料：** **共有** ボタンは **テキストのみ**（基本情報）を共有します。
+  **Premium：** **グラフを写真に保存** + **グラフを共有** で、詳細テキストに
+  **心拍チャートの PNG 画像** を添えて共有します。**「情報 + 心拍グラフ」** か
+  **「心拍グラフのみ」** を選べます。保存画像は端末自身の写真
+  （Pictures/MaxSaunaTimer）に入り、アップロードはされません。
 - **翌日ステータス（Health Connect 連携時）** — 連携している場合、セッションの
   **翌晩** の参考 **睡眠スコア（無料）** と **平均呼吸数** を表示します。
-- **トレンドタブ（Trends）** — **一部無料**。無料: ととのい度の推移、モード別の
-  平均、期間サマリー。Premium: HRR トレンド（1/3/5）、回復スロープの推移、
-  セット数 / セッション長別の平均、セット位置別 HRR、回復カーブの重ね表示、回復
-  サマリー。期間フィルタ（全期間 / 30 日 / 7 日）は誰でも利用できます。
-- **PDF レポート（Premium）** — トレンドタブから生成し、Android の共有メニューで
+- **分析タブ（Analytics）** — **一部無料**。無料: 履歴から移動した概要カード —
+  **連続記録と回数**（現在 / 最長の連続記録 + 累計セッション数）、**ベスト
+  セッション TOP 10**（ととのい度スコア順）、**訪問頻度カレンダーヒートマップ**、
+  **サウナマップ** — に加えて、ととのい度の推移、モード別の平均、期間サマリー。
+  Premium: HRR トレンド（1/3/5）、回復スロープの推移、セット数 / セッション長別の
+  平均、セット位置別 HRR、回復カーブの重ね表示、回復サマリー。期間フィルタ
+  （全期間 / 30 日 / 7 日）は誰でも利用できます。
+- **PDF レポート（Premium）** — 分析タブから生成し、Android の共有メニューで
   共有。A4 縦・3 ページで、**ベストセッション** と **訪問頻度ヒートマップ** を
-  含みます（これらは履歴タブのアプリ内でも無料で見られます）。
+  含みます（これらは分析タブのアプリ内でも無料で見られます）。
 - **設定 → データ入出力** — CSV の入出力（Premium）。ローカルバックアップや自前解析
   に。
 - **設定 → クラウド同期（Google ドライブ）** — あなた自身のドライブへバックアップ
   （無料・任意。後述のクラウド同期セクション参照）。
 
-**無料と Premium：** 個人比 / 前回比、動線品質（Flow）スコア、終了地点の地図 /
-施設ピッカー、**基本トレンド**（ととのい度の推移・モード別・サマリー）、クラウド
-同期（Google ドライブ）、アプリ内の履歴分析（連続記録 / ベストセッション /
-ヒートマップ / サウナマップ）、睡眠スコア、安静時心拍の基準線はすべて **無料**
-です。β スコア、回復カーブ、**高度なトレンド**、PDF レポート、CSV の入出力は
-**Premium** です。
+**無料と Premium：** 個人比 / 前回比、動線品質（Flow）スコア、**詳細データ**
+カード、終了地点の地図 / 施設ピッカー、**基本の分析**（ととのい度の推移・モード別・
+サマリー）、クラウド同期（Google ドライブ）、概要カード（連続記録 / ベスト
+セッション / ヒートマップ / サウナマップ）、睡眠スコア、安静時心拍の基準線はすべて
+**無料** です。心拍グラフを **テキスト** で共有するのも無料です。β スコア、回復
+カーブ（傾き / R² / ラグ）、**高度な分析**、PDF レポート、共有・写真保存での
+**心拍チャート画像**、CSV の入出力は **Premium** です。バナー広告は無料版の
+ホーム / 履歴 / 分析・セッション詳細に表示されます（設定タブには広告なし）。
+**Premium はすべての広告を非表示** にします。Premium では **プレミアムアイコン**
+も使えます（設定 → プレミアム →「プレミアムアイコンを使う」）。
+
+**多言語対応：** アプリ全体 — すべての画面・共有するグラフ画像・PDF レポート —
+が日本語 / 英語に完全対応しています。**設定 → 表示 →「英語表示（強制）」** で、
+システム言語に関わらず英語表示に固定できます。
 
 ### 5a. クラウド同期（任意・無料）
 
@@ -350,8 +389,9 @@ Health Connect は **任意** で、**あなたの許可がある場合のみ** 
 - 各セッションの詳細から **施設名**（近くの候補、または約 500 m 以内の過去訪問
   施設から選択、無料）を入れると、サウナマップ・訪問ヒートマップ・PDF レポート
   に反映されます。
-- 各セッションに **1〜5 星の評価** をつけられます。
-- 連続記録・ベストセッション・訪問ヒートマップは **履歴タブ** で確認できます
+- 各セッションに **1〜5 星の評価** をつけられます（ウォッチで入力すると、詳細
+  ヘッダーに表示されます）。
+- 連続記録・ベストセッション・訪問ヒートマップは **分析タブ** で確認できます
   （すべて無料）。
 - ととのい度スコアと睡眠スコアは **参考値** であり、医療指標ではありません。
 

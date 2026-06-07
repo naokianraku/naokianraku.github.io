@@ -21,25 +21,32 @@ plan is also available at roughly **20% off** vs paying monthly. New
 subscribers get a 30-day free trial.
 
 **Q. What does Premium unlock?**
-The recovery-slope score **β**, per-set **recovery curves**, the **advanced
-Trends** (HRR trend, recovery-slope trend, by-set-count / by-session-length
-averages, set-position HRR, the recovery-curve overlay, and the recovery
-summary), the **PDF report**, **CSV import/export**, and **no banner ads**.
+Per-set **recovery curves** with the straight **slope line** for each set (the
+"Show slope lines" toggle, plus per-set slope (bpm/min), R² and lag), the
+**advanced Analytics** (HRR trend, recovery-slope trend, by-set-count /
+by-session-length averages, set-position HRR, the recovery-curve overlay, and
+the recovery summary), the **PDF report** (generated from the Analytics tab),
+**CSV import/export**, the **heart-rate chart image** in share + **Save graph to
+Photos**, the experimental new Afterglow value **β** (when you also turn it on in
+Settings → Experimental), the **Premium app icon**, and **no banner ads**.
 (The personal z-score / vs-previous comparison, the movement-quality score, the
-end-location map, and the basic per-session and Trends analysis are **free** —
-see below.)
+end-location map, the free overview cards (streak / best sessions / heatmap /
+map), and the basic per-session and Analytics analysis are **free** — see
+below.)
 
 **Q. What is free?**
 The heart-rate chart with phase bands, the absolute Afterglow score, the
-per-set breakdown, the history list, the **personal z-score (個人比) and
-vs-previous (前回比)** comparisons, the movement-quality (Flow) score, the
-**end-location map with the nearby-venue picker**, the **basic Trends**
-(Afterglow-over-time, by-mode average, and the period summary), watch-settings
-editing, and the Force-English toggle. The **in-app History analytics**
-(current / longest streak and total count, the **Best Sessions TOP 10**, the
-visit-frequency calendar heatmap, and the Sauna Map of your visited venues) are
-also free, as are the **Sleep score** and the **resting-HR reference line** when
-you connect Health Connect.
+per-set breakdown, the **Detailed data** card (Max / Min / Avg HR, HR drop,
+HRR1 / HRR3 / HRR5), the history list (with left-swipe to delete a single
+session), the **personal z-score (個人比) and vs-previous (前回比)** comparisons,
+the movement-quality (Flow) score, the **end-location map with the nearby-venue
+picker**, the **basic Analytics** (Afterglow-over-time, by-mode average, and the
+period summary), sharing the heart-rate graph as **text**, watch-settings
+editing, and the Force-English toggle. The **free overview cards** in the
+**Analytics** tab (current / longest streak and total count, the **Best Sessions
+TOP 10**, the visit-frequency calendar heatmap, and the Sauna Map of your
+visited venues) are also free, as are the **Sleep score** and the **resting-HR
+reference line** when you connect Health Connect.
 
 **Q. Is watch ↔ phone sync Premium?**
 No. Finished sessions transfer from the Pixel Watch to your Android phone
@@ -59,9 +66,10 @@ you keep Premium features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
 No. Your sessions, history, and settings all stay (they are stored locally on
-each device). Only the Premium features (the β score, recovery curves, the
-advanced Trends, the PDF report, CSV import/export, ad-free) revert to the free
-tier.
+each device). Only the Premium features (recovery curves and slope
+lines, the advanced Analytics, the PDF report, CSV import/export, the HR-graph
+image share / save, the β experimental value, the Premium app icon, ad-free)
+revert to the free tier.
 
 **Q. I paid but Premium isn't active on a new device.**
 Open Settings and tap **Restore purchase** to re-check your Google Play
@@ -143,8 +151,9 @@ A 0–100 score estimating how quickly your parasympathetic nervous system
 ("rest mode") engages after a sauna session, derived from your heart-rate
 recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese sauna culture
 calls "totonou". The absolute score, the personal z-score (個人比) and the
-vs-previous (前回比) comparisons are all **free**; the recovery-slope score β
-is Premium. Reference value only — not a medical metric.
+vs-previous (前回比) comparisons are all **free**; the experimental new Afterglow
+value **β** is Premium (and only when you turn it on in Settings →
+Experimental). Reference value only — not a medical metric.
 
 **Q. Can I use the app without a Pixel Watch?**
 The timer works on the Android phone alone, but heart-rate measurement and the
@@ -199,15 +208,28 @@ better facility flow. The per-session score is **free** in the session
 analysis; the detailed breakdown and the period-average (in the Premium PDF
 report) are Premium.
 
-**Q. What analytics are in the History tab?**
-**Free.** At the top of the **History** tab the app shows your **current and
-longest streak** plus your **total session count**, a **Best Sessions TOP 10**
-ranking (by Afterglow score), a **visit-frequency calendar heatmap**, and a
-**Sauna Map** that plots all of your visited venues on one map. These are all
-free and live in the app (no Premium and no PDF required).
+**Q. What is in the History tab?**
+The **History** tab is now just the **session list**. Tap a row to open that
+session's full analysis. **Left-swipe a row to delete that single session** — a
+confirmation dialog appears; this is the only per-session delete. The free
+overview cards (streak, best sessions, heatmap, map) have moved to the
+**Analytics** tab — see below.
+
+**Q. Where did the streak / best / heatmap / map overview go?**
+**Free.** Those overview cards moved from the History tab to the **Analytics**
+tab. The app shows your **current and longest streak** plus your **total session
+count**, a **Best Sessions TOP 10** ranking (by Afterglow score), a
+**visit-frequency calendar heatmap**, and a **Sauna Map** that plots all of your
+visited venues on one map. These are all free and live in the app (no Premium and
+no PDF required).
+
+**Q. How do I delete a single session?**
+In the **History** tab, **left-swipe** the session row. A confirmation dialog
+appears, and confirming deletes just that one session. This left-swipe is the
+only per-session delete.
 
 **Q. How do I generate a PDF report?**
-Premium feature. From the **Trends** tab, generate the report and share it via
+Premium feature. From the **Analytics** tab, generate the report and share it via
 the Android share sheet. An A4-portrait, 3-page report is produced:
 - **Page 1**: sessions summary, Afterglow trend, heart-rate trend, and recovery
   data (HRR1 / HRR3 / HRR5, plus recovery details)
@@ -217,17 +239,50 @@ the Android share sheet. An A4-portrait, 3-page report is produced:
   visit-frequency heatmap
 
 The Best Sessions ranking and the visit/calendar heatmap are **also available
-free in the History tab** (TOP 10 there); the PDF still includes its own
+free in the Analytics tab** (TOP 10 there); the PDF still includes its own
 versions as part of the exported report.
 
-**Q. What is in the Trends tab?**
-The Trends tab is **partly free**. **Free:** Afterglow-over-time, average
-Afterglow by mode, and the period summary. **Premium:** the HRR trend (1/3/5),
-the recovery-slope trend, average Afterglow by set count / by session length,
+**Q. What is in the Analytics tab?**
+The Analytics tab is **partly free**. **Free:** Afterglow-over-time, average
+Afterglow by mode, the period summary, and the free overview cards (current /
+longest streak and total count, Best Sessions TOP 10, the visit-frequency
+heatmap, and the Sauna Map). **Premium:** the HRR trend (1/3/5), the
+recovery-slope trend, average Afterglow by set count / by session length,
 set-position HRR, a recovery-curve overlay, the recovery summary (avg HRR1/3/5,
 best set position, best HRR1, recovery completeness, time-to-bottom,
 front-loading), and the PDF report button. A period filter (All / 30 days /
 7 days) is available to everyone.
+
+**Q. Can I save or share the heart-rate graph image?**
+**Free:** the **Share** button on the heart-rate chart shares **text only**
+(basic info). **Premium:** "Save graph to Photos" + "Share graph" share detailed
+text **plus a PNG image** of the HR chart; you can choose "Info + HR graph" or
+"HR graph only". Saved images go to your device's own Photos
+(Pictures/MaxSaunaTimer) — nothing is uploaded.
+
+**Q. What are the recovery-curve slope lines?**
+Premium feature. On the per-set recovery curve the app overlays a straight
+**slope line** for each set, with a **"Show slope lines"** toggle and a per-set
+legend showing the slope (bpm/min), R², and lag (seconds). Dashed 1-minute and
+3-minute guide lines are also drawn.
+
+**Q. What is the "Detailed data" card?**
+**Free.** In the session detail the **Detailed data** card shows your **Max HR,
+Min HR, Avg HR, HR drop (peak − min)**, and **HRR1 / HRR3 / HRR5** for that
+session.
+
+**Q. What is the experimental new Afterglow value (β)?**
+β is an **experimental** new Afterglow value. It is shown only when you are
+**Premium** AND you turn on **Settings → Experimental → "Show new Afterglow
+value (β)"**. On the free tier it is not shown at all and the Experimental
+section is hidden.
+
+**Q. What is the Premium app icon?**
+A Premium-only option. In **Settings → Premium**, "Use Premium app icon"
+switches your home-screen app icon to the Premium logo.
+
+**Q. The self-rating ★ I entered on the watch — where does it show?**
+In the session detail header, e.g. "Standard • 2 sets • 58min • ★5".
 
 **Q. How does the venue / map work?**
 **Free.** If Location permission is granted, the app captures the session **end**
@@ -304,20 +359,26 @@ versions and a brief description of the issue.
 無料トライアル付き。
 
 **Q. Premium で何が変わりますか？**
-回復勾配スコア **β**、セット別の**回復カーブ**、**高度なトレンド**（HRR 推移 /
-回復勾配の推移 / セット数別・セッション長別の平均 / セット位置別 HRR / 回復カーブ
-重ね描き / 回復サマリー）、**PDF レポート**、**CSV 入出力**、そして**広告なし**。
-（個人比 / 前回比、動線品質スコア、終了位置の地図、基本のセッション解析と基本
-トレンドは**無料**です。下記参照。）
+セット別の**回復カーブ**とセットごとの**傾きの線**（「傾きの線を表示」トグル、
+セット別の傾き（bpm/分）・R²・ラグ）、**高度な分析**（HRR 推移 / 回復勾配の推移 /
+セット数別・セッション長別の平均 / セット位置別 HRR / 回復カーブ重ね描き / 回復
+サマリー）、**PDF レポート**（分析タブから生成）、**CSV 入出力**、共有時の**心拍
+チャート画像**と**グラフを写真に保存**、実験的な新しいととのい度の値 **β**（設定 →
+実験的機能 でオンにした場合）、**プレミアムアプリアイコン**、そして**広告なし**。
+（個人比 / 前回比、動線品質スコア、終了位置の地図、無料の概要カード（連続記録 /
+ベストセッション / ヒートマップ / マップ）、基本のセッション解析と基本の分析は
+**無料**です。下記参照。）
 
 **Q. 無料でできることは？**
-フェーズ帯つき心拍チャート、ととのい度（絶対値）、セット別内訳、履歴一覧、
-**個人比・前回比**、**動線品質（Flow）スコア**、**終了位置の地図と
-近隣施設ピッカー**、**基本トレンド**（ととのい度の推移・モード別平均・期間サマリー）、
-ウォッチ設定の編集、英語表示（強制）トグル。**履歴タブのアプリ内分析**（現在 /
-最長の連続日数と合計回数、**ベストセッション TOP 10**、訪問頻度カレンダー
-ヒートマップ、訪れた施設を表示するサウナマップ）も無料です。Health Connect を
-連携した場合の**睡眠スコア**と**安静時心拍の参照ライン**も無料です。
+フェーズ帯つき心拍チャート、ととのい度（絶対値）、セット別内訳、**詳細データ**
+カード（最大 / 最小 / 平均心拍・心拍降下量・HRR1 / HRR3 / HRR5）、履歴一覧
+（左スワイプで 1 件削除）、**個人比・前回比**、**動線品質（Flow）スコア**、
+**終了位置の地図と近隣施設ピッカー**、**基本の分析**（ととのい度の推移・モード別
+平均・期間サマリー）、心拍グラフの**テキスト共有**、ウォッチ設定の編集、英語表示
+（強制）トグル。**分析タブの無料の概要カード**（現在 / 最長の連続日数と合計回数、
+**ベストセッション TOP 10**、訪問頻度カレンダーヒートマップ、訪れた施設を表示する
+サウナマップ）も無料です。Health Connect を連携した場合の**睡眠スコア**と**安静時
+心拍の参照ライン**も無料です。
 
 **Q. ウォッチ ↔ スマホ同期は Premium 限定ですか？**
 いいえ。完了したセッションは Pixel Watch から Android スマホへ Wearable Data
@@ -336,8 +397,9 @@ Google Play ストアを開く → プロフィール → 「**お支払いと�
 
 **Q. キャンセルするとデータは消えますか？**
 消えません。セッション履歴・設定はすべて残ります（各デバイスのローカルに保存
-されています）。失われるのは Premium 機能（β スコア・回復カーブ・高度なトレンド・
-PDF レポート・CSV 入出力・広告非表示）だけで、無料版機能に戻ります。
+されています）。失われるのは Premium 機能（回復カーブ・傾きの線・高度な分析・
+PDF レポート・CSV 入出力・心拍グラフ画像の共有 / 保存・β（実験的な値）・
+プレミアムアプリアイコン・広告非表示）だけで、無料版機能に戻ります。
 
 **Q. 課金したのに新しい端末で Premium が有効になりません。**
 設定を開いて「**購入を復元**」をタップし、Google Play の購入状態を再確認して
@@ -415,7 +477,8 @@ Google のポリシーと端末のプライバシー設定（Android の広告 I
 サウナ後に副交感神経（リラックス系）がどれだけ速やかに働き始めたかを心拍降下
 量（HRR1 / HRR3 / HRR5）から推定する、0〜100 点のスコアです。サウナ文化の
 「ととのう」を数値化する独自指標です。絶対値・個人比・前回比の比較はいずれも
-**無料**で、回復勾配スコア β は Premium。参考値のみであり医療指標ではありません。
+**無料**で、実験的な新しいととのい度の値 **β** は Premium（かつ 設定 → 実験的
+機能 でオンにした場合のみ）。参考値のみであり医療指標ではありません。
 
 **Q. Pixel Watch なしで使えますか？**
 Android スマホ単体でタイマー機能は使えますが、**心拍計測とととのい度の算出には
@@ -466,15 +529,26 @@ Premium の分析に含まれる指標（bpm/分）。回復カーブの中央�
 が、スパイクが少ないほど動線が良い施設と判定。セッション解析では**無料**で確認
 でき、詳細内訳と期間平均（Premium の PDF レポート）は Premium です。
 
-**Q. 履歴タブにはどんな分析がありますか？**
-**無料です。**　**履歴**タブの上部に、**現在 / 最長の連続日数**と**合計セッション
-回数**、**ベストセッション TOP 10**（ととのい度順）ランキング、**訪問頻度
-カレンダーヒートマップ**、訪れたすべての施設を 1 枚の地図に表示する**サウナ
-マップ**が表示されます。いずれも無料で、アプリ内で確認できます（Premium も PDF
-も不要です）。
+**Q. 履歴タブには何がありますか？**
+**履歴**タブは、現在は**セッション一覧のみ**です。行をタップするとそのセッション
+の解析が開きます。**行を左スワイプすると、そのセッションを 1 件だけ削除**できます
+（確認ダイアログが表示されます。1 件削除はこの方法のみです）。無料の概要カード
+（連続記録・ベストセッション・ヒートマップ・マップ）は**分析**タブへ移動しました
+（下記参照）。
+
+**Q. 連続記録 / ベスト / ヒートマップ / マップの概要はどこへ行きましたか？**
+**無料です。**　これらの概要カードは履歴タブから**分析**タブへ移動しました。
+**現在 / 最長の連続日数**と**合計セッション回数**、**ベストセッション TOP 10**
+（ととのい度順）ランキング、**訪問頻度カレンダーヒートマップ**、訪れたすべての
+施設を 1 枚の地図に表示する**サウナマップ**が表示されます。いずれも無料で、アプリ
+内で確認できます（Premium も PDF も不要です）。
+
+**Q. セッションを 1 件だけ削除するには？**
+**履歴**タブで、セッションの行を**左スワイプ**します。確認ダイアログが表示され、
+確定するとそのセッションだけが削除されます。1 件削除はこの左スワイプのみです。
 
 **Q. PDF レポートはどう生成しますか？**
-Premium 機能です。**トレンド**タブからレポートを生成し、Android の共有シートで
+Premium 機能です。**分析**タブからレポートを生成し、Android の共有シートで
 共有します。A4 縦 3 ページの PDF が生成されます:
 - **1 ページ目**: サマリー・ととのい度トレンド・心拍推移・回復データ
   （HRR1/3/5・回復関連の詳細）
@@ -483,17 +557,48 @@ Premium 機能です。**トレンド**タブからレポートを生成し、An
 - **3 ページ目**: **ベストセッション TOP 5**・最近のセッション表・訪問頻度
   ヒートマップ
 
-ベストセッションのランキングと訪問/カレンダーのヒートマップは、**履歴タブでも
+ベストセッションのランキングと訪問/カレンダーのヒートマップは、**分析タブでも
 無料で確認できます**（こちらは TOP 10）。PDF にもエクスポートレポートの一部
 として独自に収録されています。
 
-**Q. トレンドタブには何がありますか？**
-トレンドタブは**一部無料**です。**無料：**ととのい度の推移、モード別の平均
-ととのい度、期間サマリー。**Premium：**HRR トレンド（1/3/5）、回復勾配トレンド、
-セット数別・セッション長別の平均ととのい度、セット位置別 HRR、回復カーブの
-重ね描き、回復サマリー（平均 HRR1/3/5・ベストセット位置・ベスト HRR1・回復の
-完了度・底打ちまでの時間・フロントローディング）、PDF レポートボタン。期間
-フィルター（全期間 / 30 日 / 7 日）は誰でも利用できます。
+**Q. 分析タブには何がありますか？**
+分析タブは**一部無料**です。**無料：**ととのい度の推移、モード別の平均
+ととのい度、期間サマリー、無料の概要カード（現在 / 最長の連続日数と合計回数、
+ベストセッション TOP 10、訪問頻度ヒートマップ、サウナマップ）。**Premium：**
+HRR トレンド（1/3/5）、回復勾配トレンド、セット数別・セッション長別の平均
+ととのい度、セット位置別 HRR、回復カーブの重ね描き、回復サマリー（平均
+HRR1/3/5・ベストセット位置・ベスト HRR1・回復の完了度・底打ちまでの時間・
+フロントローディング）、PDF レポートボタン。期間フィルター（全期間 / 30 日 /
+7 日）は誰でも利用できます。
+
+**Q. 心拍グラフの画像を保存・共有できますか？**
+**無料：**心拍チャートの**共有**ボタンは**テキストのみ**（基本情報）を共有します。
+**Premium：**「グラフを写真に保存」＋「グラフを共有」で、詳細テキストに**加えて
+心拍チャートの PNG 画像**を共有できます。「情報 + 心拍グラフ」か「心拍グラフのみ」
+を選べます。保存した画像は端末自身の写真（Pictures/MaxSaunaTimer）に入り、どこにも
+アップロードされません。
+
+**Q. 回復カーブの傾きの線とは？**
+Premium 機能です。セット別の回復カーブに、セットごとの直線の**傾きの線**を重ねて
+描き、**「傾きの線を表示」**トグルと、傾き（bpm/分）・R²・ラグ（秒）を示すセット別
+凡例が付きます。1 分・3 分の破線ガイドラインも描かれます。
+
+**Q. 「詳細データ」カードとは？**
+**無料です。**セッション詳細の**詳細データ**カードには、そのセッションの**最大心拍・
+最小心拍・平均心拍・心拍降下量（ピーク − 最小）**、**HRR1 / HRR3 / HRR5** が
+表示されます。
+
+**Q. 実験的な新しいととのい度の値（β）とは？**
+β は**実験的**な新しいととのい度の値です。**Premium** かつ **設定 → 実験的機能 →
+「新しいととのい度の値（β）を表示」**をオンにした場合にのみ表示されます。無料版では
+一切表示されず、実験的機能セクション自体が非表示になります。
+
+**Q. プレミアムアプリアイコンとは？**
+Premium 限定のオプションです。**設定 → Premium** の「プレミアムアイコンを使う」で、
+ホーム画面のアプリアイコンをプレミアムロゴに切り替えられます。
+
+**Q. ウォッチで入力した自己評価 ★ はどこに表示されますか？**
+セッション詳細のヘッダーに表示されます（例：「標準 • 2 セット • 58分 • ★5」）。
 
 **Q. 施設・地図はどう動きますか？**
 **無料です。**位置情報の許可がある場合、セッション**終了**時に終了位置を一度だけ
