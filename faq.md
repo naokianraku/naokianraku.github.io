@@ -4,7 +4,7 @@ title: FAQ (Apple Watch & iPhone)
 
 # FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-06
+**Last updated / 最終更新:** 2026-06-07
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
@@ -21,9 +21,9 @@ plan is also available at roughly **20% off** vs paying monthly. New
 subscribers get a 30-day free trial.
 
 **Q. What does Premium unlock?**
-Advanced analytics (recovery slope, recovery curves, HRR trends), sharing with
-a heart-rate chart image, CSV export, a dedicated Premium app icon, and no
-banner ads.
+Advanced analytics (recovery slope, recovery curves, HRR trends), an A4 PDF
+report, sharing with a heart-rate chart image, CSV export, a dedicated
+Premium app icon, and no banner ads.
 
 **Q. iCloud sync — is it Premium?**
 No. iCloud sync is free for everyone. Data protection is infrastructure, not a
@@ -41,8 +41,8 @@ features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
 No. Your sessions, history, settings, and iCloud sync all stay. Only the
-Premium features (advanced analytics, chart-image sharing, CSV export, Premium
-app icon, ad-free) revert to the free tier.
+Premium features (advanced analytics, PDF report, chart-image sharing, CSV
+export, Premium app icon, ad-free) revert to the free tier.
 
 **Q. I paid but Premium isn't active on a new device.**
 Make sure the new device is signed in to the App Store with the **same Apple
@@ -265,8 +265,8 @@ and a brief description of the issue.
 トライアル付き。
 
 **Q. Premium で何が変わりますか？**
-高度な分析（回復勾配・回復カーブ・HRR 推移）、心拍チャート画像つきの共有、
-CSV エクスポート、専用アプリアイコン、広告なし。
+高度な分析（回復勾配・回復カーブ・HRR 推移）、A4 PDF レポート出力、心拍チャート
+画像つきの共有、CSV エクスポート、専用アプリアイコン、広告なし。
 
 **Q. iCloud 同期は Premium 限定ですか？**
 いいえ。iCloud 同期は無料・有料を問わず全員が利用できます。データ保護は機能
@@ -283,8 +283,8 @@ iPhone の「設定」アプリ → 上部の Apple ID → 「サブスクリプ
 
 **Q. キャンセルするとデータは消えますか？**
 消えません。セッション履歴・設定・iCloud 同期はすべて残ります。失われるのは
-Premium 機能（高度な分析、チャート画像共有、CSV エクスポート、専用アイコン、
-広告非表示）だけで、無料版機能に戻ります。
+Premium 機能（高度な分析、PDF レポート、チャート画像共有、CSV エクスポート、
+専用アイコン、広告非表示）だけで、無料版機能に戻ります。
 
 **Q. 課金したのに新しい端末で Premium が有効になりません。**
 購入時と**同じ Apple ID** で新しい端末の App Store にサインインしているか確認
