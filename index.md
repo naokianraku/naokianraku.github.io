@@ -35,4 +35,5 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 ## Support / サポート
 
 - Feedback / フィードバック: [フォーム / form](feedback.html)
+- 対応状況 / Fixed issues: [対応済みの不具合一覧 / list](feedback-status.html)
 - Contact / 連絡先: maxsaunatimer@gmail.com
