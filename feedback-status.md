@@ -4,7 +4,7 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 
 # 対応状況 — MaxSauna Timer
 
-**最終更新:** 2026-06-09
+**最終更新:** 2026-06-09（v0.1.4 配信予定の項目を追加）
 
 テスターの皆さまからいただいた不具合のご報告・ご要望と、その対応内容です。ご協力ありがとうございます！
 
@@ -35,6 +35,26 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 **F-005 サウナの設定時間あたりでフェーズが勝手に進むことがある**
 - 状態：🔧 修正済み・次回配信（v0.1.4）
 - 対策：クラウンの誤反応が原因でした。フェーズ移行に必要な回転量を大きくし（約2倍）、ごく小さな回転が時間とともに溜まって誤作動するのをリセットするようにして、意図的に回したときだけ進むよう調整しました。
+
+**F-007 準備フェーズ中にクラウンを回しても反応しない（サウナに進めない）**
+- 状態：🔧 修正済み・次回配信（v0.1.4）
+- 対策：セッション開始直後に画面が操作対象を受け取り切れず、クラウン入力を取りこぼすことがありました。受け取りを確実化し、各フェーズの切り替え時にも取り直すようにしました。
+
+**F-008 クラウンの回転量を設定で調整できるように（要望）**
+- 状態：🆕 追加・次回配信（v0.1.4）
+- 内容：フェーズ移行に必要なクラウンの回転量を「少なめ／標準／多め／最多」から選べるようにしました（不意の接触による誤操作を防げます）。設定 → セッション。
+
+**F-010 1つ前のフェーズに戻れるように（要望）**
+- 状態：🆕 追加・次回配信（v0.1.4）
+- 内容：誤って進めてしまったとき、画面長押し（確認あり）または「戻る」ボタンで1つ前のフェーズに戻せるようにしました。
+
+**F-011 本体ダブルタップで次へ（実験・要望）**
+- 状態：🧪 実験的に追加・次回配信（v0.1.4／既定はOFF）
+- 内容：手がふさがる場面向けに、本体を2回トントンと叩くと次のフェーズへ進む実験機能を追加しました（加速度センサーで判定）。設定 → セッションでON。誤検知することがあるため既定OFFで、合わない場合はOFFにしてください。
+
+**F-009 「休憩」フェーズの追加（要望）→ 既存機能で対応できます**
+- 状態：✅ 既存機能でご利用可能
+- 内容：設定 →「その他フェーズを使う」をONにすると、外気浴のあとに第4フェーズが入り、名称を「休憩／お風呂／給水／シャワー／ストレッチ」から選べます。取説に案内を追記しました。
 
 ---
 
@@ -71,6 +91,26 @@ This page summarizes the bug reports & requests from testers and how each was ad
 **F-005 The phase sometimes advanced on its own near the set sauna time**
 - Status: 🔧 Fixed, shipping next (v0.1.4)
 - Fix: It was caused by accidental crown input. We increased the rotation needed to change phase (about 2×) and reset tiny rotations that built up over time, so the phase only advances when you turn the crown deliberately.
+
+**F-007 The crown didn't respond during the preparation phase (couldn't move to sauna)**
+- Status: 🔧 Fixed, shipping next (v0.1.4)
+- Fix: Right after a session starts, the screen could miss crown input before it was ready. We made input acquisition reliable and re-acquire it on every phase change.
+
+**F-008 Adjustable crown rotation amount (request)**
+- Status: 🆕 Added, shipping next (v0.1.4)
+- What: You can now choose how far to turn the crown to act — Light / Standard / More / Most — to avoid accidental triggers. Settings → Session.
+
+**F-010 Go back one phase (request)**
+- Status: 🆕 Added, shipping next (v0.1.4)
+- What: If you advance by mistake, long-press the screen (with a confirmation) or use the Back button to return to the previous phase.
+
+**F-011 Double-tap the watch body to advance (beta, request)**
+- Status: 🧪 Added experimentally, shipping next (v0.1.4 / off by default)
+- What: For when your hands are occupied, a quick double-tap on the watch body advances to the next phase (detected via the accelerometer). Turn it on in Settings → Session. It can misfire, so it is off by default — turn it off if it doesn't suit you.
+
+**F-009 Add a "rest" phase (request) → already available**
+- Status: ✅ Available with an existing feature
+- What: Turn on Settings → "Use extra phase" to insert a 4th phase after cool-down, with a selectable name (rest / hot bath / hydration / shower / stretch). We added a note to the guide.
 
 ---
 

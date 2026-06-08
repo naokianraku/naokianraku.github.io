@@ -4,7 +4,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 # Quick Guide / 簡易取説 — MaxSauna Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-07
+**Last updated / 最終更新:** 2026-06-09
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](../feedback.html)** / Report bugs & suggestions: **[Feedback form](../feedback.html)**
 
@@ -35,8 +35,10 @@ title: Quick Guide (Pixel Watch & Android)
 ### 2. Start a session
 
 1. Open MaxSauna on your **Pixel Watch**.
-2. Choose **Standard** or **Simple** mode (set in phone Settings → Session).
-3. Tap **Start**.
+2. Choose **Standard** or **Simple** mode (set in phone Settings → Watch settings).
+3. Tap **Standard** (or **Simple**) to start. *The watch buttons are shown in
+   Japanese — **標準モード開始** (Standard) / **シンプルモード開始** (Simple); the
+   watch UI is currently Japanese-only.*
 
 ### 3. During the session — hands-free
 
@@ -47,8 +49,18 @@ phases and pause using the **rotary crown**:
   hands-free action.
 - **Rotate the crown DOWN** = pause / resume.
 - **On-screen buttons** also work.
-- **Screen tap** — only if you enable it under Settings → Session →
-  "Tap screen to advance phase" (off by default).
+- **Screen tap** — only if you enable it under Settings → Watch settings →
+  "Tap screen to advance" (off by default).
+- **Go back one phase** — if you advanced by mistake, **long-press the screen**
+  (a confirmation appears), or use the **Back** button when control buttons are
+  shown. The current phase's record is discarded.
+- **Crown rotation amount** — Settings → Watch settings lets you choose how far you must
+  turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
+  triggers from incidental contact.
+- **Double-tap the watch body (beta, off by default)** — Settings → Watch settings →
+  "Double-tap body to advance (beta)" uses the accelerometer so a quick **double-tap**
+  advances to the next phase hands-free. Experimental and may misfire; keep it off
+  if you see unwanted advances, and use **Go back** to undo.
 
 The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
@@ -201,12 +213,12 @@ A recommended flow for time-limited sauna venues (e.g. 60–90 min facilities)
 doing **3 sets of sauna → cold plunge → cool-down**.
 
 **Setup before you arrive**:
-- Use **Standard mode** (phone Settings → Session).
-- Enable **"Use Pre-sauna phase"** in Settings → Session.
+- Use **Standard mode** (phone Settings → Watch settings).
+- Enable **"Use Pre-sauna phase"** in Settings → Watch settings.
 
 **At the venue**:
-1. When the venue starts your timer (entry tag / locker), tap **Standard** on
-   the watch to start the session. The session enters the **Preparation**
+1. When the venue starts your timer (entry tag / locker), tap **Standard**
+   (**標準モード開始** on the watch) to start the session. The session enters the **Preparation**
    phase — use this time for changing clothes and body wash.
 2. Just before entering the sauna for the **1st time**, **rotate the crown UP**
    → advances to the **Sauna** phase.
@@ -250,7 +262,7 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 ### 2. セッションを開始
 
 1. Pixel Watch で **MaxSauna** を開く。
-2. **標準モード** / **シンプルモード** を選ぶ（スマホ 設定 → セッション）。
+2. **標準モード** / **シンプルモード** を選ぶ（スマホ 設定 → ウォッチ設定）。
 3. **開始** をタップ。
 
 ### 3. セッション中 — ハンズフリー操作
@@ -262,8 +274,17 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
   す。
 - **リューズを下方向に回す** = 一時停止 / 再開。
 - **画面のボタン** でも操作できます。
-- **画面タップ** — 任意設定（設定 → セッション → 「画面タップでフェーズ進行」、
+- **画面タップ** — 任意設定（設定 → ウォッチ設定 → 「画面タップで次へ」、
   デフォルトはオフ）。
+- **1 つ前のフェーズに戻る** — 誤って進めてしまったら、**画面を長押し**（確認が
+  出ます）、または操作ボタン表示時の **「戻る」** で1つ前に戻れます（その
+  フェーズの記録は破棄されます）。
+- **クラウン回転量** — 設定 → ウォッチ設定で、操作に必要な回転量を **少なめ /
+  標準 / 多め / 最多** から選べます（不意の接触による誤操作を防止）。
+- **本体ダブルタップで次へ（実験・既定オフ）** — 設定 → ウォッチ設定 →
+  「本体ダブルタップで次へ（実験）」を ON にすると、加速度センサーで本体を **2 回トン
+  トン** と叩くと次のフェーズへ進みます。実験的で誤検知の可能性があるため、
+  意図しない進行が出る場合は OFF にし、誤爆時は **「戻る」** で取り消せます。
 
 ウォッチには現在のフェーズ・経過時間・心拍数・直近 5 分の心拍ピーク / ボトムが
 表示されます。設定した各フェーズの時間は **ハプティック通知のタイミング**で、
@@ -401,13 +422,13 @@ Health Connect は **任意** で、**あなたの許可がある場合のみ** 
 外気浴 を 3 回繰り返す）** を行う場合の推奨ワークフロー。
 
 **事前設定**:
-- **スタンダードモード** を使用（スマホの設定 → セッション）。
-- 設定 → セッションで **「準備フェーズを使う」を ON**。
+- **標準モード** を使用（スマホの設定 → ウォッチ設定）。
+- 設定 → ウォッチ設定で **「準備時間から開始」を ON**（＝最初に「準備」フェーズが入る）。
 
 **施設での操作**:
 1. 施設の時間カウントが始まったタイミング（入店タグ・ロッカー）で ウォッチの
-   **「スタンダード」をタップしてセッション開始**。準備フェーズに入る（着替
-   え・体を洗う時間に活用）。
+   **「標準モード開始」をタップしてセッション開始**。準備フェーズ（表示は
+   「準備」）に入る（着替え・体を洗う時間に活用）。
 2. **1 回目のサウナに入る直前** に **リューズを上に回す** →
    「**サウナ**」フェーズに進む。
 3. **水風呂（水風呂・湖・プールなど）に入る** タイミングでリューズを上に回す →
@@ -422,6 +443,29 @@ Health Connect は **任意** で、**あなたの許可がある場合のみ** 
 
 3 セットでのリューズ上回し合計：**約 9 回**（サウナ 3 + 水風呂 3 + 外気浴 3）。
 最初の「準備 → サウナ」の上回しもこの合計に含まれます。
+
+---
+
+## 用語対応表 / Terminology
+
+アプリ画面と本取説で同じ機能を指す用語の対応です。
+Terms in the app and in this guide that refer to the same thing.
+
+| 日本語（アプリ表記） | English (app) | 説明 / Notes |
+|---|---|---|
+| クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
+| 標準モード（開始ボタン「標準モード開始」） | Standard | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold → cool-down cycle |
+| シンプルモード | Simple | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
+| 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Pre-sauna / Preparation | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |
+| 外気浴 | Cool down | 休憩・外気浴のフェーズ / The rest / cool-down phase |
+| その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ） | Extra phase | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
+| クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |
+
+**「休憩」など第4フェーズを使いたいときは / To add a "rest" 4th phase:** 設定 →
+セッションで **「その他フェーズを使う」** を ON にすると、外気浴の後に第4フェーズが
+入り、名称を **休憩・お風呂・給水・シャワー・ストレッチ** から選べます。
+Turn on **"Use extra phase"** in Settings → Watch settings to insert a 4th phase after
+cool-down, with a selectable name (rest / hot bath / hydration / shower / stretch).
 
 ---
 
