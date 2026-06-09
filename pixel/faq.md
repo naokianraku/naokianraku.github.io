@@ -37,8 +37,8 @@ below.)
 **Q. What is free?**
 The heart-rate chart with phase bands, the absolute Afterglow score, the
 per-set breakdown, the **Detailed data** card (Max / Min / Avg HR, HR drop,
-HRR1 / HRR3 / HRR5), the history list (with left-swipe to delete a single
-session), the **personal z-score (個人比) and vs-previous (前回比)** comparisons,
+HRR1 / HRR3 / HRR5), the history list (left-swipe a row to reveal a trash button,
+then tap it to delete a single session), the **personal z-score (個人比) and vs-previous (前回比)** comparisons,
 the movement-quality (Flow) score, the **end-location map with the nearby-venue
 picker**, the **basic Analytics** (Afterglow-over-time, by-mode average, and the
 period summary), sharing the heart-rate graph as **text**, watch-settings
@@ -161,10 +161,14 @@ Afterglow Score require a Pixel Watch (or other Wear OS smartwatch).
 
 **Q. How do I control the timer with wet hands during a session?**
 Use the **rotary crown**: rotate **up** to advance to the next phase, rotate
-**down** to pause/resume. The on-screen buttons also work, and there is an
-optional "tap screen to advance" setting (OFF by default). Phase times are
-**haptic alerts only** — the app does not auto-advance, so you choose when to
-move on.
+**down** to pause. To resume, rotate **up** again. **During a running session the
+screen does not respond to touch** (to prevent wet-hand misfires) — the crown is
+the only control. **While paused**, an on-screen menu appears with **Resume / Go
+back one phase / End**. If you prefer touch controls, turn on **Settings → Watch
+settings → "Show control buttons"** to also show Next/Pause buttons during a
+running session. There is also an optional **"Double-tap body to advance"** gesture
+(beta, OFF by default). Phase times are **haptic alerts only** — the app does not
+auto-advance, so you choose when to move on.
 
 **Q. Does recording keep running in the background during a session?**
 While a session screen is on, the watch keeps the display awake and runs a
@@ -210,8 +214,9 @@ report) are Premium.
 
 **Q. What is in the History tab?**
 The **History** tab is now just the **session list**. Tap a row to open that
-session's full analysis. **Left-swipe a row to delete that single session** — a
-confirmation dialog appears; this is the only per-session delete. The free
+session's full analysis. **Left-swipe a row to reveal a trash button, then tap it
+to delete that single session** (no confirmation dialog — deletion is immediate);
+this is the only per-session delete. The free
 overview cards (streak, best sessions, heatmap, map) have moved to the
 **Analytics** tab — see below.
 
@@ -224,9 +229,10 @@ visited venues on one map. These are all free and live in the app (no Premium an
 no PDF required).
 
 **Q. How do I delete a single session?**
-In the **History** tab, **left-swipe** the session row. A confirmation dialog
-appears, and confirming deletes just that one session. This left-swipe is the
-only per-session delete.
+In the **History** tab, **left-swipe** the session row to reveal a **trash
+button**, then **tap the trash button** to delete just that one session. There is
+no confirmation dialog — deletion is immediate. This left-swipe is the only
+per-session delete.
 
 **Q. How do I generate a PDF report?**
 Premium feature. From the **Analytics** tab, generate the report and share it via
@@ -372,7 +378,7 @@ versions and a brief description of the issue.
 **Q. 無料でできることは？**
 フェーズ帯つき心拍チャート、ととのい度（絶対値）、セット別内訳、**詳細データ**
 カード（最大 / 最小 / 平均心拍・心拍降下量・HRR1 / HRR3 / HRR5）、履歴一覧
-（左スワイプで 1 件削除）、**個人比・前回比**、**動線品質（Flow）スコア**、
+（左スワイプでゴミ箱を表示→タップで 1 件削除）、**個人比・前回比**、**動線品質（Flow）スコア**、
 **終了位置の地図と近隣施設ピッカー**、**基本の分析**（ととのい度の推移・モード別
 平均・期間サマリー）、心拍グラフの**テキスト共有**、ウォッチ設定の編集、英語表示
 （強制）トグル。**分析タブの無料の概要カード**（現在 / 最長の連続日数と合計回数、
@@ -486,8 +492,12 @@ Pixel Watch（または他の Wear OS スマートウォッチ）が必要です
 
 **Q. セッション中、濡れた手でどう操作しますか？**
 **ロータリークラウン**を使います：**上**に回すと次のフェーズへ進み、**下**に回す
-と一時停止/再開します。画面のボタンでも操作でき、任意設定の「画面タップで進む」
-（デフォルト OFF）もあります。フェーズ時間は**ハプティック（振動）通知のみ**で、
+と一時停止します。**一時停止中に上へ回すと再開**します。既定では、セッション中は
+**画面タッチに反応しません**（濡れた手での誤操作防止のため）＝操作はクラウンのみ
+です。**一時停止中**は画面に「**再開／戻る／終了**」のメニューが表示されます。タッチ
+操作を使いたい場合は、**設定 → ウォッチ設定 →「操作ボタンを表示」**をオンにすると、
+実行中にも 次へ／停止 ボタンが表示されます。任意で「**本体ダブルタップで次へ**」
+（実験・デフォルト OFF）も使えます。フェーズ時間は**ハプティック（振動）通知のみ**で、
 アプリは自動では進みません。進むタイミングはご自身で選べます。
 
 **Q. セッション中、記録はバックグラウンドでも続きますか？**
@@ -531,8 +541,9 @@ Premium の分析に含まれる指標（bpm/分）。回復カーブの中央�
 
 **Q. 履歴タブには何がありますか？**
 **履歴**タブは、現在は**セッション一覧のみ**です。行をタップするとそのセッション
-の解析が開きます。**行を左スワイプすると、そのセッションを 1 件だけ削除**できます
-（確認ダイアログが表示されます。1 件削除はこの方法のみです）。無料の概要カード
+の解析が開きます。**行を左スワイプするとゴミ箱ボタンが現れ、ゴミ箱をタップすると
+そのセッションを 1 件だけ削除**できます（確認ダイアログは表示されず、その場で削除
+されます。1 件削除はこの方法のみです）。無料の概要カード
 （連続記録・ベストセッション・ヒートマップ・マップ）は**分析**タブへ移動しました
 （下記参照）。
 
@@ -544,8 +555,9 @@ Premium の分析に含まれる指標（bpm/分）。回復カーブの中央�
 内で確認できます（Premium も PDF も不要です）。
 
 **Q. セッションを 1 件だけ削除するには？**
-**履歴**タブで、セッションの行を**左スワイプ**します。確認ダイアログが表示され、
-確定するとそのセッションだけが削除されます。1 件削除はこの左スワイプのみです。
+**履歴**タブで、セッションの行を**左スワイプ**するとゴミ箱ボタンが現れます。その
+ゴミ箱をタップすると、そのセッションだけがその場で削除されます（確認ダイアログは
+表示されません）。1 件削除はこの左スワイプのみです。
 
 **Q. PDF レポートはどう生成しますか？**
 Premium 機能です。**分析**タブからレポートを生成し、Android の共有シートで

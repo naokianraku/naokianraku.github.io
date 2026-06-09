@@ -42,18 +42,22 @@ title: Quick Guide (Pixel Watch & Android)
 
 ### 3. During the session — hands-free
 
-Once started, you don't need to touch the screen. With wet hands you can advance
-phases and pause using the **rotary crown**:
+Once started, you don't need to touch the screen. **During a running session the
+screen does not respond to touch** (to prevent wet-hand mis-taps) — you operate with
+the **rotary crown**:
 
 - **Rotate the crown UP** = advance to the next phase. This is the recommended
   hands-free action.
-- **Rotate the crown DOWN** = pause / resume.
-- **On-screen buttons** also work.
-- **Screen tap** — only if you enable it under Settings → Watch settings →
-  "Tap screen to advance" (off by default).
-- **Go back one phase** — if you advanced by mistake, **long-press the screen**
-  (a confirmation appears), or use the **Back** button when control buttons are
-  shown. The current phase's record is discarded.
+- **Rotate the crown DOWN** = pause. To resume, **rotate the crown UP** again (or
+  tap **Resume** in the pause menu).
+- **While paused**, an on-screen touch menu appears: **Resume / Go back one phase /
+  End**.
+- **Go back one phase** — if you advanced by mistake, rotate the crown DOWN to pause,
+  then tap **Go back** in the pause menu (a confirmation appears). You return to the
+  previous phase and its **previous elapsed time is carried over** (it does not reset
+  to zero).
+- **On-screen Next / Pause buttons** during a running session appear **only if you turn
+  on Settings → Watch settings → "Show control buttons"** (off by default).
 - **Crown rotation amount** — Settings → Watch settings lets you choose how far you must
   turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
   triggers from incidental contact.
@@ -106,8 +110,9 @@ hardware.)
   to open that session's analysis (same screen as Home), including the
   **end-location map (FREE)** with venue candidates you tap to set the venue
   (nearby Places search **and your past-visited venues within about 500 m**).
-  **Left-swipe a row** to delete that single session (a confirmation dialog
-  appears; this is the only per-session delete).
+  **Left-swipe a row** to reveal a **trash button**, then **tap it** to delete that
+  single session (no confirmation dialog — deletion is immediate; this is the only
+  per-session delete).
 - **Recovery curve slope lines (Premium)** — on the recovery-curve chart the app
   overlays a straight **slope line** for each set, with a **"Show slope lines"**
   toggle and dashed **1-min / 3-min** guide lines. A per-set legend shows the
@@ -263,22 +268,23 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
 
 1. Pixel Watch で **MaxSauna** を開く。
 2. **標準モード** / **シンプルモード** を選ぶ（スマホ 設定 → ウォッチ設定）。
-3. **開始** をタップ。
+3. **「標準モード開始」**（または「シンプルモード開始」）をタップ。
 
 ### 3. セッション中 — ハンズフリー操作
 
-一度開始すれば、画面に触れずに操作できます。濡れた手でも **リューズ（回転クラウ
-ン）** で操作できます:
+一度開始すれば、画面に触れる必要はありません。**計測中は誤操作（水しぶき等）防止のため、
+画面タッチに反応しません** — 操作は **リューズ（回転クラウン）** のみです:
 
 - **リューズを上方向に回す** = 次のフェーズへ進む。最も推奨のハンズフリー操作で
   す。
-- **リューズを下方向に回す** = 一時停止 / 再開。
-- **画面のボタン** でも操作できます。
-- **画面タップ** — 任意設定（設定 → ウォッチ設定 → 「画面タップで次へ」、
-  デフォルトはオフ）。
-- **1 つ前のフェーズに戻る** — 誤って進めてしまったら、**画面を長押し**（確認が
-  出ます）、または操作ボタン表示時の **「戻る」** で1つ前に戻れます（その
-  フェーズの記録は破棄されます）。
+- **リューズを下方向に回す** = 一時停止。再開するには再び **リューズを上方向に回す**
+  （または一時停止メニューの **「再開」**）。
+- **一時停止中** は画面にタッチメニュー（**再開 / 戻る / 終了**）が表示されます。
+- **1 つ前のフェーズに戻る** — 誤って進めてしまったら、**リューズを下に回して一時停止**
+  し、一時停止メニューの **「戻る」** をタップします（確認が出ます）。1つ前のフェーズに
+  戻り、**戻り先の経過時間が引き継がれます**（0 にはリセットされません）。
+- **画面の 次へ / 停止 ボタン** は、実行中は 設定 → ウォッチ設定 → **「操作ボタンを表示」**
+  を ON にしたときだけ表示されます（既定はオフ＝クラウンのみ）。
 - **クラウン回転量** — 設定 → ウォッチ設定で、操作に必要な回転量を **少なめ /
   標準 / 多め / 最多** から選べます（不意の接触による誤操作を防止）。
 - **本体ダブルタップで次へ（実験・既定オフ）** — 設定 → ウォッチ設定 →
@@ -325,8 +331,9 @@ cool-down). The first UP turn (preparation → sauna) counts in this total.
   タップ** するとそのセッションの解析（ホームと同じ画面）が開き、**終了地点の地図
   （無料）** と施設候補（タップで施設を設定）が見られます（近くの Places 検索に
   加えて **過去に訪問した約 500 m 以内の施設** も候補に含まれます）。**行を左に
-  スワイプ** すると、そのセッション 1 件を削除できます（確認ダイアログが表示され
-  ます。セッション単位の削除はこれだけです）。
+  スワイプ** するとゴミ箱ボタンが現れ、**ゴミ箱をタップ** するとそのセッション 1 件を
+  削除できます（確認ダイアログは表示されず、その場で削除されます。セッション単位の
+  削除はこれだけです）。
 - **回復カーブの傾きの線（Premium）** — 回復カーブのチャートに、各セットの
   まっすぐな **傾きの線** を重ねて表示します。**「傾きの線を表示」** トグルと、
   破線の **1 分 / 3 分** ガイド線付き。セットごとの凡例に傾き（bpm/min）・R²・
@@ -462,7 +469,7 @@ Terms in the app and in this guide that refer to the same thing.
 | クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |
 
 **「休憩」など第4フェーズを使いたいときは / To add a "rest" 4th phase:** 設定 →
-セッションで **「その他フェーズを使う」** を ON にすると、外気浴の後に第4フェーズが
+ウォッチ設定で **「その他フェーズを使う」** を ON にすると、外気浴の後に第4フェーズが
 入り、名称を **休憩・お風呂・給水・シャワー・ストレッチ** から選べます。
 Turn on **"Use extra phase"** in Settings → Watch settings to insert a 4th phase after
 cool-down, with a selectable name (rest / hot bath / hydration / shower / stretch).
