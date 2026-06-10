@@ -1,0 +1,151 @@
+<!-- 🌗 ダーク/ライトモード切替（jekyll-theme-minimal の head-custom フックを利用） -->
+<meta name="color-scheme" content="light dark">
+
+<style>
+  /* ===== CSS 変数（ライト / ダーク 両モード） ===== */
+  :root {
+    --bg: #ffffff;
+    --text: #444444;
+    --heading: #222222;
+    --link: #167F92;
+    --link-hover: #11606D;
+    --code-bg: rgba(0, 0, 0, 0.04);
+    --hr: #dce6f0;
+    --border: #e9ebed;
+    --blockquote: rgba(0, 0, 0, 0.04);
+    --button-bg: #f6f8fa;
+    --button-hover-bg: #e1e4e8;
+    --table-stripe: rgba(0, 0, 0, 0.02);
+  }
+
+  html[data-theme="dark"] {
+    --bg: #15171a;
+    --text: #d0d3d6;
+    --heading: #f0f3f5;
+    --link: #5cc6d8;
+    --link-hover: #8ddae7;
+    --code-bg: rgba(255, 255, 255, 0.06);
+    --hr: #2b2f33;
+    --border: #2b2f33;
+    --blockquote: rgba(255, 255, 255, 0.04);
+    --button-bg: #1f2226;
+    --button-hover-bg: #2a2e33;
+    --table-stripe: rgba(255, 255, 255, 0.03);
+  }
+
+  /* ===== 適用 ===== */
+  html, body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  h1, h2, h3, h4, h5, h6 { color: var(--heading); }
+  a { color: var(--link); }
+  a:hover { color: var(--link-hover); }
+  hr { border-color: var(--hr); background-color: var(--hr); }
+  code, pre {
+    background-color: var(--code-bg);
+    color: var(--text);
+    border-color: var(--border);
+  }
+  blockquote {
+    border-left-color: var(--hr);
+    color: var(--text);
+    background-color: var(--blockquote);
+  }
+  table, th, td { border-color: var(--border); color: var(--text); }
+  th { background-color: var(--code-bg); }
+  tbody tr:nth-child(2n) { background-color: var(--table-stripe); }
+
+  /* ===== トグルボタン ===== */
+  .theme-toggle {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    z-index: 9999;
+    background-color: var(--button-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .theme-toggle:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+  }
+  .theme-toggle:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+  }
+  @media print { .theme-toggle { display: none !important; } }
+</style>
+
+<script>
+(function () {
+  var STORAGE_KEY = 'anraku-theme';
+
+  function readSaved() {
+    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+  }
+  function writeSaved(v) {
+    try { localStorage.setItem(STORAGE_KEY, v); } catch (e) { /* ignore */ }
+  }
+  function systemPrefersDark() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+  function resolveInitial() {
+    var saved = readSaved();
+    if (saved === 'dark' || saved === 'light') return saved;
+    return systemPrefersDark() ? 'dark' : 'light';
+  }
+  function apply(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      btn.setAttribute('aria-label',
+        theme === 'dark' ? 'Switch to light mode / ライトモードへ切替' : 'Switch to dark mode / ダークモードへ切替');
+    }
+  }
+
+  // 1) ページ描画前に即時適用（フラッシュ防止）
+  apply(resolveInitial());
+
+  // 2) DOM 構築後にトグルボタンを body に挿入
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.createElement('button');
+    btn.id = 'theme-toggle';
+    btn.className = 'theme-toggle';
+    btn.type = 'button';
+    btn.title = 'Toggle dark / light';
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      writeSaved(next);
+      apply(next);
+    });
+    document.body.appendChild(btn);
+    apply(document.documentElement.getAttribute('data-theme') || resolveInitial());
+  });
+
+  // 3) システム設定が変わったら、ユーザーが明示選択していない時のみ追従
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var handler = function (e) {
+      var saved = readSaved();
+      if (saved !== 'dark' && saved !== 'light') {
+        apply(e.matches ? 'dark' : 'light');
+      }
+    };
+    if (mq.addEventListener) mq.addEventListener('change', handler);
+    else if (mq.addListener) mq.addListener(handler);
+  }
+})();
+</script>
