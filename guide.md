@@ -4,7 +4,7 @@ title: Quick Guide (Apple Watch & iPhone)
 
 # Quick Guide / 簡易取説 — MaxSauna Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-05
+**Last updated / 最終更新:** 2026-06-10
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
 
@@ -67,6 +67,13 @@ recent HR peak / bottom (last 5 minutes). Configured phase times act as
 - **Optional chart overlays** — Settings → Display lets you add a 60-second
   and/or 10-minute moving-average line to the HR chart, and hide the
   preparation phase to re-baseline X axis to sauna entry. All default OFF.
+- **Protect Apple Watch from sauna heat** — direct sauna heat can trigger
+  sensor temperature warnings. Wrap the Watch with a small towel as a heat
+  shield; heart-rate measurement continues fine through the fabric.
+
+  <img src="assets/towel_wrap_en.jpg" alt="Wrapping Apple Watch with a towel"
+       style="max-width:360px;width:100%;border-radius:8px;">
+
 - The Afterglow Score is a **reference value**, not a medical metric.
 
 ### 7. Typical workflow — time-limited sauna venues
@@ -156,6 +163,13 @@ Watch には現在のフェーズ・経過時間・心拍数・直近 5 分の�
 - **任意のチャート表示オプション** — 設定 → 表示 で、心拍グラフに 60 秒移動平均
   線・10 分移動平均線を重ねたり、準備フェーズを除外して X 軸をサウナ入室時を
   0:00 として再表示できます。すべてデフォルト OFF。
+- **サウナ熱から Apple Watch を守る** — サウナの直接熱でセンサー温度警告が出る
+  ことがあるので、タオルで Watch をすっぽり覆うのが効果的。心拍計測は布越しで
+  も問題なく続きます。
+
+  <img src="assets/towel_wrap_jp.jpg" alt="タオルで Apple Watch を覆う方法"
+       style="max-width:360px;width:100%;border-radius:8px;">
+
 - ととのい度スコアは **参考値** であり、医療指標ではありません。
 
 ### 7. 典型的な使用例 — 時間制限のあるサウナ施設
