@@ -4,7 +4,7 @@ title: Quick Guide (Apple Watch & iPhone)
 
 # Quick Guide / 簡易取説 — MaxSauna Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-10
+**Last updated / 最終更新:** 2026-06-11
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
 
@@ -103,6 +103,34 @@ doing **3 sets of sauna → cold plunge → cool-down**.
 Total double-taps per 3-set session: **~9** (3 sauna + 3 plunge + 3 cool-down).
 The first double-tap (preparation → sauna) counts in this total.
 
+### 8. Plank exercise (optional add-on)
+
+A built-in plank timer is available as an opt-in. Turn it on in
+**Settings → Add-ons → "Enable plank exercise"**. A new "Plank" tab appears
+between Analytics and Settings.
+
+- **Countdown mode** — pick a target between **1 and 30 minutes** in 1-minute
+  steps. After a **3-2-1 pre-countdown**, the timer runs down to 0:00. When
+  the target is reached a strong haptic fires and the display switches to
+  **bonus time** (count-up); keep going as long as you can, then double-tap
+  the bottom button to end.
+- **Count-up mode** — starts at 0:00 and runs until you double-tap the bottom
+  button. Used to measure how long you can hold a plank.
+- **Apple Watch HR** — if MaxSauna is open on your Watch when you start a
+  plank, the Watch starts a `Core Training` HKWorkout session and streams
+  heart rate to the iPhone for the whole plank. The Watch shows the current
+  elapsed/remaining time and HR until you stop on iPhone.
+- **Result screen** — calories burned (estimated via METs), current streak
+  days, personal best seconds, total seconds, total days, and max HR.
+- **Trend chart** — 1 day = 1 bar (cumulative duration). Color-coded by
+  result: green = target reached, orange = under target, blue = count-up
+  only. A period picker (1 week / 1 month / 3 months / All) lets you focus.
+- **History** — swipe a row left to delete (same as sauna history).
+- **Apple Health** — each plank is written as a `Core Training` workout you
+  can review in the Health app.
+
+Sessions sync via iCloud so your plank history follows you across devices.
+
 ---
 
 ## 日本語
@@ -198,6 +226,34 @@ Watch には現在のフェーズ・経過時間・心拍数・直近 5 分の�
 
 3 セットでのダブルタップ合計：**約 9 回**（サウナ 3 + 水風呂 3 + 外気浴 3）。
 最初の「準備 → サウナ」のダブルタップもこの合計に含まれます。
+
+### 8. プランク運動（任意の追加機能）
+
+体幹トレ用のプランクタイマーを内蔵しています。**設定 → 追加機能 →
+「プランク運動を有効化」** で ON にすると、タブバーの「分析」と「設定」の
+間に「プランク」タブが追加されます。
+
+- **カウントダウンモード** — 目標時間を **1〜30 分の 1 分刻み**で選択。
+  **3-2-1 のプリカウントダウン**後に計測開始。目標 0:00 に到達すると強い
+  haptic で達成通知 → 表示が **追加時間（ボーナス）** のカウントアップに
+  切り替わり、限界まで続けたら下部のボタンを **ダブルタップで終了**。
+- **カウントアップモード** — 0:00 から開始し、ダブルタップで終了するまで
+  何分でも計測。限界耐久時間の記録に。
+- **Apple Watch の心拍計測** — プランク開始時に Watch で MaxSauna を起動
+  していれば、Watch が `Core Training` の HKWorkout セッションを開始し、
+  心拍を iPhone へリアルタイム送信。Watch 側には経過 / 残り時間と心拍数が
+  表示されます。終了は iPhone 側で操作。
+- **結果画面** — 消費カロリー（MET 法で推定）、連続日数、過去最高秒数、
+  累計秒数、累計日数、最大心拍を表示。
+- **推移グラフ** — 1 日 1 本の累積棒グラフ。色分けは緑=目標達成 /
+  オレンジ=未達 / 青=カウントアップのみ。期間ピッカー（1 週間 / 1 ヶ月
+  / 3 ヶ月 / 全期間）で表示範囲を絞れます。
+- **履歴** — 行を左にスワイプで削除（サウナ履歴と同じ操作）。
+- **Apple ヘルスケア連携** — 各プランクは `Core Training` ワークアウト
+  としてヘルスケアアプリに記録されます。
+
+セッションは iCloud 同期されるので、端末を変えてもプランク履歴は引き
+継がれます。
 
 ---
 

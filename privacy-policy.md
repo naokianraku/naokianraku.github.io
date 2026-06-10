@@ -61,6 +61,9 @@ sleep analysis and respiratory rate (for recovery analytics).
 - Health data is **never sold or shared** with the developer or any third party.
 - Health data is processed on your device and synced only to your private
   iCloud. Health data is never sent to Google AdMob.
+- When you record a plank with the optional Plank exercise add-on, an
+  `HKWorkoutSession` of type `Core Training` is started on Apple Watch and
+  the resulting workout (with HR samples) is written to your Health app.
 
 ### 5. Advertising (free version)
 
@@ -168,6 +171,9 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
 - 健康データを開発者や第三者に**販売・共有することはありません**。
 - 健康データは端末内で処理され、利用者のプライベートな iCloud にのみ同期
   されます。Google AdMob に送信されることはありません。
+- 任意のプランク運動計測機能を使った場合、Apple Watch 上で
+  `HKWorkoutSession (Core Training)` を開始し、得られたワークアウト（HR
+  サンプルを含む）が利用者の Apple ヘルスケアに書き込まれます。
 
 ### 5. 広告（無料版）
 

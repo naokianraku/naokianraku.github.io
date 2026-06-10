@@ -4,7 +4,7 @@ title: FAQ (Apple Watch & iPhone)
 
 # FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-07
+**Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 > 🐛 **不具合・改善要望はこちら → [フィードバックフォーム](feedback.html)** / Report bugs & suggestions: **[Feedback form](feedback.html)**
@@ -233,6 +233,56 @@ only blocks taps within the app, not the OS-level gestures. The fix is to enable
 
 To unlock, rotate the Digital Crown (this also ejects water from the speaker
 via sound waves — Apple's standard behavior).
+
+### 5. Plank exercise (optional)
+
+**Q. What is the Plank exercise feature?**
+A built-in plank timer that you can enable in **Settings → Add-ons → Enable
+plank exercise**. When on, a "Plank" tab appears between Analytics and
+Settings. Two modes:
+- **Countdown**: pick a target between 1 and 30 minutes (1-minute steps).
+  After a 3-2-1 pre-countdown, the timer counts down to 0:00. When the
+  target is reached, a strong haptic fires and the display switches to
+  **bonus time** (count-up) so you can keep going. Double-tap the bottom
+  button to stop.
+- **Count-up**: starts at 0:00 and runs until you double-tap. Used to
+  measure your endurance.
+
+**Q. Does the Apple Watch measure heart rate during a plank?**
+Yes. Open MaxSauna on your Watch before starting a plank on iPhone. The
+Watch starts an `HKWorkoutSession` (`Core Training`) and streams heart
+rate to the iPhone for the whole plank. Each session is also written to
+Apple Health as a Core Training workout. If MaxSauna is not running on the
+Watch, the iPhone timer still works but no HR is recorded.
+
+**Q. What does the result screen show after a plank?**
+- Calories burned (estimated using a 3.8 MET assumption × 65 kg default
+  weight × duration in hours)
+- Current streak days (consecutive days with at least one plank)
+- Personal best seconds
+- Total seconds (across all sessions)
+- Total days (distinct calendar days with at least one plank)
+- Max heart rate observed during the session (if Watch was connected)
+
+**Q. How is the plank trend chart organized?**
+1 day = 1 bar showing the **cumulative plank duration** for that day. Color
+rules:
+- Green: at least one countdown session on that day reached the target
+- Blue: all sessions on that day were count-up
+- Orange: countdown only, target not reached on any session
+
+A period picker (1 week / 1 month / 3 months / All) lets you focus on a
+range. Within a window of 14 days, every day gets a label; for longer
+ranges the label stride widens automatically.
+
+**Q. How do I delete an old plank record?**
+Swipe a row in the history list to the left and tap the red trash button —
+same gesture as sauna history.
+
+**Q. Is Plank a Premium-only feature?**
+No, it's a free add-on. The toggle to enable it is in the Settings tab. The
+plank tab is invisible unless you turn it on, so it does not crowd the UI
+for sauna-only users.
 
 ### 5. Other
 
@@ -467,6 +517,49 @@ Watch との通信が大きく欠落した場合は計算不可になります�
   アイコンをタップ。
 
 解除は **Digital Crown を回転**（音波で水を排出する副作用つき・Apple 標準）。
+
+### 5. プランク運動（任意）
+
+**Q. プランク機能とは何ですか？**
+内蔵のプランクタイマーです。**設定 → 追加機能 → 「プランク運動を有効化」**
+を ON にすると、タブバーの「分析」と「設定」の間に「プランク」タブが
+表示されます。2 モードあります:
+- **カウントダウン**: 1〜30 分の 1 分刻みで目標時間を選択。3-2-1 のプリ
+  カウントダウン後に開始し、0:00 で強い haptic 通知 → そのまま追加時間
+  （ボーナス）のカウントアップに切替。下部ボタンをダブルタップで終了。
+- **カウントアップ**: 0:00 からスタートし、ダブルタップで終了するまで
+  耐久時間を計測。
+
+**Q. プランク中、Apple Watch は心拍を測りますか？**
+測ります。プランク開始前に Watch で MaxSauna を開いておくと、Watch が
+`HKWorkoutSession (Core Training)` を開始し、心拍を iPhone へリアルタイム
+送信します。各セッションは Apple ヘルスケアにも `Core Training` ワーク
+アウトとして書き込まれます。Watch でアプリが起動していないと、iPhone の
+タイマーは動きますが心拍は記録されません。
+
+**Q. プランク終了後の結果画面に表示される項目は？**
+- 消費カロリー（MET 法で推定 = 3.8 MET × 体重 65 kg デフォルト × 時間）
+- 連続日数（1 日 1 回以上プランクをした連続した日数）
+- 過去最高秒数
+- 累計秒数（全セッション合計）
+- 累計日数（1 日 1 回以上プランクをした異なる日の総数）
+- 最大心拍（Watch 接続時のみ）
+
+**Q. プランクの推移グラフはどう見ますか？**
+1 日 = 1 本で、その日の **累積プランク時間**を縦軸に描画します。色のルール:
+- 緑: その日に 1 件でもカウントダウンで目標達成があった
+- 青: その日のセッションがすべてカウントアップ
+- オレンジ: カウントダウンしたが目標未達のみ
+
+期間ピッカー（1 週間 / 1 ヶ月 / 3 ヶ月 / 全期間）で表示範囲を絞れます。
+14 日以内は毎日にラベルが付き、それより長い期間は自動で間隔を広げます。
+
+**Q. プランクの履歴を削除するには？**
+履歴行を **左にスワイプ → 赤いゴミ箱をタップ**（サウナ履歴と同じ操作）。
+
+**Q. プランクは Premium 限定ですか？**
+いいえ、無料の追加機能です。設定タブで ON にしない限りタブは出ません。
+サウナだけ使う方の UI を圧迫しない設計です。
 
 ### 5. その他
 
