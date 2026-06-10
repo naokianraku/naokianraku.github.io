@@ -33,29 +33,68 @@
     --table-stripe: rgba(255, 255, 255, 0.03);
   }
 
-  /* ===== 適用 ===== */
+  /* ===== 適用（jekyll-theme-minimal の固有色を上書き） ===== */
   html, body {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
-  h1, h2, h3, h4, h5, h6 { color: var(--heading); }
-  a { color: var(--link); }
-  a:hover { color: var(--link-hover); }
-  hr { border-color: var(--hr); background-color: var(--hr); }
-  code, pre {
-    background-color: var(--code-bg);
-    color: var(--text);
-    border-color: var(--border);
+  /* 見出し */
+  h1, h2, h3, h4, h5, h6 { color: var(--heading) !important; }
+  /* サイドバー（テーマの header 要素） */
+  header h1, header h2, header h3, header p, header a { color: var(--heading) !important; }
+  /* 本文テキスト */
+  p, li, dd, td, span { color: var(--text); }
+  /* 強調系（テーマが #222 固定にしている） */
+  strong, b, dt { color: var(--heading) !important; font-weight: 700; }
+  em, i { color: var(--text); }
+  /* リンク */
+  a, a:visited { color: var(--link) !important; }
+  a:hover, a:focus { color: var(--link-hover) !important; }
+  /* 区切り線 */
+  hr {
+    border-color: var(--hr) !important;
+    background-color: var(--hr) !important;
+    color: var(--hr) !important;
   }
+  /* コード */
+  code {
+    background-color: var(--code-bg) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+  }
+  pre, pre code {
+    background-color: var(--code-bg) !important;
+    color: var(--text) !important;
+  }
+  pre { border: 1px solid var(--border) !important; }
+  kbd {
+    background-color: var(--code-bg) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+  }
+  /* 引用 */
   blockquote {
-    border-left-color: var(--hr);
-    color: var(--text);
-    background-color: var(--blockquote);
+    border-left-color: var(--hr) !important;
+    color: var(--text) !important;
+    background-color: var(--blockquote) !important;
   }
-  table, th, td { border-color: var(--border); color: var(--text); }
-  th { background-color: var(--code-bg); }
-  tbody tr:nth-child(2n) { background-color: var(--table-stripe); }
+  /* テーブル */
+  table { color: var(--text) !important; border-color: var(--border) !important; }
+  th, td { border-color: var(--border) !important; color: var(--text) !important; }
+  th { background-color: var(--code-bg) !important; color: var(--heading) !important; }
+  tbody tr:nth-child(2n), tbody tr:nth-child(2n) td {
+    background-color: var(--table-stripe) !important;
+  }
+  /* 取消線・追加 */
+  del, s { color: var(--text); opacity: 0.6; }
+  ins { color: var(--text); text-decoration: underline; }
+  /* マーク */
+  mark { background-color: var(--code-bg) !important; color: var(--heading) !important; }
+  /* 画像（ダーク時にコントラスト保持） */
+  html[data-theme="dark"] img { opacity: 0.95; }
+  /* リストの bullet */
+  ul li::marker, ol li::marker { color: var(--text); }
 
   /* ===== トグルボタン ===== */
   .theme-toggle {
