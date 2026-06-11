@@ -67,13 +67,12 @@ recent HR peak / bottom (last 5 minutes). Configured phase times act as
 - **Optional chart overlays** — Settings → Display lets you add a 60-second
   and/or 10-minute moving-average line to the HR chart, and hide the
   preparation phase to re-baseline X axis to sauna entry. All default OFF.
-- **Protect Apple Watch from sauna heat** — direct sauna heat can trigger
-  sensor temperature warnings. Wrap the Watch with a small towel as a heat
-  shield; heart-rate measurement continues fine through the fabric.
-
-  <img src="assets/towel_wrap_en.jpg" alt="Wrapping Apple Watch with a towel"
-       style="max-width:360px;width:100%;border-radius:8px;">
-
+- **About using Apple Watch** — please use Apple Watch and iPhone within
+  Apple's recommended operating temperature range (standard models:
+  0–35°C / 32–95°F; Apple Watch Ultra: -20–55°C / -4–130°F). How you
+  handle Apple Watch around a sauna environment is at your sole discretion.
+  Heart-rate measurement is optional — sessions, history, and analytics
+  are fully available on iPhone alone without an Apple Watch.
 - The Afterglow Score is a **reference value**, not a medical metric.
 
 ### 7. Typical workflow — time-limited sauna venues
