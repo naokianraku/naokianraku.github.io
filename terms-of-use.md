@@ -34,6 +34,14 @@ Use. If you do not agree, please do not use the App.
   fainting, and cardiac stress. **You use saunas at your own risk.** Consult a
   physician before sauna use if you have any health condition or concern, and
   stop immediately and seek help if you feel unwell.
+- **Hardware usage is at your discretion.** Please use Apple Watch and iPhone
+  within Apple's recommended operating temperature range (standard models:
+  0–35°C / 32–95°F; Apple Watch Ultra: -20–55°C / -4–130°F; refer to Apple's
+  official specifications for details). Whether and how to wear or place these
+  devices around a sauna, cold plunge, or other environments is at your sole
+  discretion. The App does not instruct or require you to bring the Apple
+  Watch or iPhone into the sauna room, and we accept no responsibility for
+  damage to devices caused by use outside Apple's recommended environment.
 
 ### 3. Subscriptions and billing
 
@@ -114,6 +122,13 @@ MaxSauna Timer（以下「本アプリ」）をダウンロードまたは利用
   に伴います。**サウナの利用は利用者自身の責任で行ってください。** 健康状態に
   不安がある場合は利用前に医師に相談し、体調に異変を感じたら直ちに利用を中止
   して助けを求めてください。
+- **ハードウェアの使用環境は利用者の判断によります。** Apple Watch および
+  iPhone は、Apple が推奨する動作温度範囲（通常モデル 0–35°C、Apple Watch
+  Ultra -20–55°C。詳細は Apple 公式仕様を参照）内でご使用ください。サウナ・
+  水風呂等の環境でこれらの機器をどう装着・配置するかは利用者の判断に委ね
+  られます。本アプリは Apple Watch / iPhone をサウナ室内に持ち込むよう
+  指示・要求するものではなく、Apple が推奨する環境外で使用した結果生じた
+  機器の損傷について、当方は一切の責任を負いません。
 
 ### 3. サブスクリプションと課金
 
