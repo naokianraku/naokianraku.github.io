@@ -4,7 +4,7 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 
 # 対応状況 — MaxSauna Timer
 
-**最終更新:** 2026-06-24（v0.1.6 を準備中／v0.1.5・Phone v0.1.11 は配信済み）
+**最終更新:** 2026-06-24（v0.1.6 を配信／v0.1.5・Phone v0.1.11 も配信済み）
 
 テスターの皆さまからいただいた不具合のご報告・ご要望と、その対応内容です。ご協力ありがとうございます！
 
@@ -82,10 +82,8 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 - 状態：✅ 追加・配信済み（Phone v0.1.11）
 - 内容：セット毎の各フェーズ時間・閾値1/2もPhoneの「ウォッチ設定」で編集できるようにしました。
 
-### 🔧 次回アップデートで配信（Watch v0.1.6）
-
 **F-022 手首をひねると意図せず次フェーズへ進む**
-- 状態：🔧 修正・次回配信（v0.1.6）
+- 状態：✅ 修正・配信済み（v0.1.6）
 - 対策：実験機能「本体ダブルタップで次へ」が、手首をひねる動きを誤ってダブルタップと判定していました。ジャイロ（回転）センサーを併用し、**手首をひねっている間はタップ判定を無視**するようにし、検知のしきい値も上げました。
 
 **F-023 防水ロック中にクラウンも効かない**
@@ -93,18 +91,18 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 - 内容：Wear OS の「水ロック」は**クラウンを回して解除する**仕様のため、ロック中はクラウン操作もできません。セッション中はアプリが既に画面タッチを無視するので、**水ロックは使わずクラウンで操作**してください（取説・FAQに追記）。
 
 **F-024 セッション中画面に現在時刻を表示**
-- 状態：🔧 追加・次回配信（v0.1.6）
+- 状態：✅ 追加・配信済み（v0.1.6）
 - 内容：セッション中の画面上部に現在時刻を常時表示します。
 
 **F-025 セッション中画面に最大・最小心拍を表示**
-- 状態：🔧 追加・次回配信（v0.1.6）
+- 状態：✅ 追加・配信済み（v0.1.6）
 - 内容：セッション開始からの最大・最小心拍を表示します（「全」がセッション全体、「↓↑」が直近5分）。
 
 ---
 
 # Fixed issues — MaxSauna Timer (English)
 
-**Last updated:** 2026-06-24 (v0.1.6 in preparation; v0.1.5 / Phone v0.1.11 released)
+**Last updated:** 2026-06-24 (v0.1.6 released; v0.1.5 / Phone v0.1.11 also released)
 
 This page summarizes the bug reports & requests from testers and how each was addressed. Thank you for your help!
 
@@ -182,10 +180,8 @@ This page summarizes the bug reports & requests from testers and how each was ad
 - Status: ✅ Added & released (Phone v0.1.11)
 - What: Per-set phase durations and thresholds (1/2) can now be edited from the phone's Watch settings too.
 
-### 🔧 Shipping in the next update (Watch v0.1.6)
-
 **F-022 Twisting the wrist unintentionally advances to the next phase**
-- Status: 🔧 Fix, shipping next (v0.1.6)
+- Status: ✅ Fixed & released (v0.1.6)
 - Fix: The experimental "Double-tap body to advance" was mis-reading a wrist twist as a double-tap. We now use the gyroscope to ignore taps while the wrist is rotating, and raised the detection threshold.
 
 **F-023 Crown also locked during the system Water Lock**
@@ -193,11 +189,11 @@ This page summarizes the bug reports & requests from testers and how each was ad
 - What: Wear OS Water Lock is exited by turning the crown, so the crown is unavailable while it's on. During a session the app already ignores screen touch, so just leave Water Lock off and use the crown (added to the guide / FAQ).
 
 **F-024 Show the current time on the session screen**
-- Status: 🔧 Added, shipping next (v0.1.6)
+- Status: ✅ Added & released (v0.1.6)
 - What: The current time is shown at the top of the session screen.
 
 **F-025 Show session max / min heart rate on the session screen**
-- Status: 🔧 Added, shipping next (v0.1.6)
+- Status: ✅ Added & released (v0.1.6)
 - What: The session's max / min heart rate is shown ("全" = whole session, "↓↑" = last 5 minutes).
 
 ---
