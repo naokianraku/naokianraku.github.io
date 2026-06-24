@@ -65,6 +65,10 @@ the **rotary crown**:
   "Double-tap body to advance (beta)" uses the accelerometer so a quick **double-tap**
   advances to the next phase hands-free. Experimental and may misfire; keep it off
   if you see unwanted advances, and use **Go back** to undo.
+- **Don't use the system "Water Lock" during a session** — Wear OS Water Lock is
+  exited by **turning the crown**, so while it is on the crown can't change phase or
+  pause either. During a session the app **already ignores screen touch** (to prevent
+  mis-taps), so Water Lock isn't needed — just keep using the crown.
 
 The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic

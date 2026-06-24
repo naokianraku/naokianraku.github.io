@@ -170,6 +170,12 @@ running session. There is also an optional **"Double-tap body to advance"** gest
 (beta, OFF by default). Phase times are **haptic alerts only** — the app does not
 auto-advance, so you choose when to move on.
 
+**Q. Can I use the system "Water Lock" during a session?**
+**It's best not to.** Wear OS Water Lock is exited by **turning the crown**, so
+while it's on the crown can't change phase or pause either. The app **already
+ignores screen touch during a session** (to prevent wet-hand / splash mis-taps), so
+Water Lock isn't needed — leave it off and just use the crown.
+
 **Q. Does recording keep running in the background during a session?**
 While a session screen is on, the watch keeps the display awake and runs a
 **foreground service with an ongoing notification**, so the timer and heart-rate
