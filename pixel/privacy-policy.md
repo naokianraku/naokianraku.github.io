@@ -271,7 +271,7 @@ Questions about this Privacy Policy: maxsaunatimer@gmail.com
 
 ### 1. 概要
 
-MaxRecover Timer（以下「本アプリ」）は、サウナセッションを計測し心拍ベースの
+MaxRecover Timer（以下「本アプリ」）は、温浴セッションを計測し心拍ベースの
 データを記録する Pixel Watch（Wear OS）/ Android スマートフォン用アプリです。
 本ポリシーは、本アプリが扱うデータとその取扱いを説明します。
 

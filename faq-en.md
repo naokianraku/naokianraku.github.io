@@ -84,7 +84,7 @@ for details.
 
 **Q. What is the Afterglow Score?**
 A 0–100 score estimating how quickly your parasympathetic nervous system
-("rest mode") engages after a sauna session, derived from your heart-rate
+("rest mode") engages after a hot-bath session, derived from your heart-rate
 recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese sauna culture
 calls "totonou". Reference value only — not a medical metric.
 
@@ -92,7 +92,7 @@ calls "totonou". Reference value only — not a medical metric.
 The timer works on iPhone alone, but heart-rate measurement and the Afterglow
 Score require an Apple Watch.
 
-**Q. Do I need to touch the screen during a sauna session?**
+**Q. Do I need to touch the screen during a hot-bath session session?**
 No. Once you start a session, measurement continues hands-free — useful with
 wet hands or a towel.
 
@@ -135,7 +135,7 @@ preparation phase are unaffected.
 
 **Q. What is the Movement Quality score?**
 A score (0–100, Excellent / Good / Average / Needs work) that measures how
-many heart-rate spikes occur after each sauna peak. Long walking distances
+many heart-rate spikes occur after each hot-phase peak. Long walking distances
 between sauna → cold plunge → cool-down area cause HR rebounds; fewer spikes =
 better facility flow. The per-session score is shown in session detail (free).
 The period-average is also included in the Premium PDF report.
@@ -149,7 +149,7 @@ exact value shown in the Apple Health app.
 
 **Q. What is "Exclude walking from recovery" in Settings?**
 A Premium toggle, off by default. Apple Watch's distance-based walking
-detection sometimes misfires during sauna sessions (e.g. flagging sitting or
+detection sometimes misfires during hot-bath sessions (e.g. flagging sitting or
 the cold plunge as "walking"). With the toggle off, recovery slope
 calculations use all heart-rate samples. Turning it on excludes samples
 flagged as walking — useful only when the Watch's walking detection is
@@ -197,7 +197,7 @@ the issue persists, rebuild the app from the App Store update or restart your
 iPhone.
 
 **Q. Watch battery drains quickly.**
-A 60-minute sauna session uses about 10–15% of an Apple Watch Series 7+
+A 60-minute hot-bath session uses about 10–15% of an Apple Watch Series 7+
 battery in our testing. Disable Always-On Display in the Watch system settings
 if you need more headroom. The app also auto-ends after 60 minutes of
 inactivity to protect the battery.
@@ -207,14 +207,14 @@ This is the standard Apple Watch behavior: while Always-On Display is in its
 **dim state**, touch and gesture inputs (including Double Tap) are disabled to
 save battery and prevent accidental input. Lift your wrist, lightly turn the
 Digital Crown, or wave your other hand over the screen to wake it to full
-brightness — then Double Tap will respond. In a real sauna session you usually
+brightness — then Double Tap will respond. In a real hot-bath session you usually
 move when transitioning phases (sauna → plunge, plunge → cool-down chair),
 so the screen wakes naturally, but be aware of this if you sit still and try
 to tap after a long pause.
 
 **Q. The Afterglow Score didn't appear after my session.**
 The score needs valid heart-rate data after the peak. If you ended the session
-within 1 minute of the sauna peak, or the watch lost contact (dropouts), the
+within 1 minute of the hot-phase peak, or the watch lost contact (dropouts), the
 score may be missing. Sessions with too few samples are marked as unscored.
 
 **Q. The app switches away when water hits the Watch screen.**

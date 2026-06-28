@@ -10,10 +10,12 @@ title: Anraku Tech
 
 ### MaxRecover Timer
 
-サウナセッションを計測し、心拍ベースのデータを記録するアプリ。
+温浴セッション（採暖室・温泉・ホットヨガ・赤外線サウナなど）を計測し、
+心拍ベースのデータを記録する温浴ウェルネスアプリ。
 **Apple Watch / iPhone** 版と **Pixel Watch / Android** 版があります。
 
-An app for timing sauna sessions and recording heart-rate-based data,
+A hot-bath wellness app for timing sessions (warming room, hot spring,
+hot yoga, infrared sauna, etc.) and recording heart-rate-based data,
 available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 
 #### Apple Watch & iPhone version / Apple Watch・iPhone 版
