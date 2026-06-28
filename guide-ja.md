@@ -40,6 +40,7 @@ Watch / iPhone で計測し、心拍数の回復度合いを可視化する **�
   る環境を選びます（デフォルトは **採暖室 / Ondol**）。
   - **採暖室 (Ondol / Warming Room)** — 床暖式の低温浴室
   - **温泉 (Onsen / Hot Spring)**
+  - **お風呂 (Hot Bath / Hot Tub / Jacuzzi)** — 自宅・ホテル等の日常的な温浴
   - **ホットヨガ (Hot Yoga)**
   - **赤外線サウナ (Infrared Sauna)**
   - **蒸し風呂 (Steam Bath - mild)**

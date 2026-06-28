@@ -35,6 +35,7 @@ Supported hot environments include **warming rooms (ondol)**, **hot springs
 - Choose your **hot environment type** in iPhone Settings → Session:
   - **Warming Room (Ondol)** — default
   - **Hot Spring (Onsen)**
+  - **Hot Bath / Hot Tub / Jacuzzi** — everyday hot baths at home or hotel spa
   - **Hot Yoga**
   - **Infrared Room**
   - **Steam Bath (mild)**
