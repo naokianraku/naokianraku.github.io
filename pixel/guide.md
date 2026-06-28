@@ -2,7 +2,7 @@
 title: Quick Guide (Pixel Watch & Android)
 ---
 
-# Quick Guide / 簡易取説 — MaxSauna Timer for Pixel Watch & Android
+# Quick Guide / 簡易取説 — MaxRecover Timer for Pixel Watch & Android
 
 🌐 **言語 / Language:**
 

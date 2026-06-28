@@ -2,7 +2,7 @@
 title: FAQ / よくある質問 (Apple Watch & iPhone)
 ---
 
-# FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
+# FAQ / よくある質問 — MaxRecover Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
@@ -34,7 +34,7 @@ title: FAQ / よくある質問 (Apple Watch & iPhone)
 
 **Q. キャンセル方法は？**
 iPhone の「設定」アプリ → 上部の Apple ID → 「サブスクリプション」 →
-「MaxSauna Premium」 → 「サブスクリプションをキャンセル」。キャンセル後も、
+「MaxRecover Premium」 → 「サブスクリプションをキャンセル」。キャンセル後も、
 現在の請求期間の終わりまで Premium 機能を利用できます。
 
 **Q. キャンセルするとデータは消えますか？**
@@ -175,7 +175,7 @@ AirDrop・メール・ファイル保存・プリントで共有可能。
 ### 4. トラブルシューティング
 
 **Q. Watch のセッションデータが iPhone に届きません。**
-両デバイスで MaxSauna を開いて近くに置き、Bluetooth を確認、両方のアプリを再
+両デバイスで MaxRecover を開いて近くに置き、Bluetooth を確認、両方のアプリを再
 起動してください。Watch 側に保留中のデータがあれば自動再送されます。iPhone の
 設定からも手動再送できます（設定 → Apple Watch → 同期ステータス）。
 
@@ -185,7 +185,7 @@ Watch を手首にしっかり装着しているか、手首検知が有効か�
 データアクセスとデバイス）。
 
 **Q. 「写真への保存」が失敗します。**
-iPhone の「設定」 → MaxSauna → 「写真」を「追加のみ」以上に設定してください。
+iPhone の「設定」 → MaxRecover → 「写真」を「追加のみ」以上に設定してください。
 それでも改善しない場合は App Store からのアップデート後にやり直すか、iPhone を
 再起動してください。
 
@@ -212,11 +212,11 @@ Watch との通信が大きく欠落した場合は計算不可になります�
 **Q. 準備中（シャワーなど）に画面が濡れて、アプリが別画面に切り替わってしまいます。**
 これは Apple Watch の仕様で、濡れた画面のタッチセンサーが水を多点タッチとして誤検
 知し、OS のシステムジェスチャ（コントロールセンター呼び出し・アプリ切替・文字盤
-に戻る等）を誤発火させることがあります。MaxSauna 内の「画面タップ無反応」設定は
+に戻る等）を誤発火させることがあります。MaxRecover 内の「画面タップ無反応」設定は
 **アプリ内のタップしか抑制できず、OS のジェスチャは止められません**。対策は
 **Apple Watch の Water Lock（水ロック）** を有効にすることです:
 
-- **アプリ内設定（推奨）**: iPhone の MaxSauna → 設定 → セッション →
+- **アプリ内設定（推奨）**: iPhone の MaxRecover → 設定 → セッション →
   「準備フェーズで Water Lock を自動有効化」/「休憩フェーズで Water Lock を
   自動有効化」をオン。該当フェーズに入ると Watch が自動で Water Lock を有効化します。
 - **手動**: Apple Watch のコントロールセンター（画面下端から上スワイプ）→ 💧
@@ -237,7 +237,7 @@ Watch との通信が大きく欠落した場合は計算不可になります�
   耐久時間を計測。
 
 **Q. プランク中、Apple Watch は心拍を測りますか？**
-測ります。プランク開始前に Watch で MaxSauna を開いておくと、Watch が
+測ります。プランク開始前に Watch で MaxRecover を開いておくと、Watch が
 `HKWorkoutSession (Core Training)` を開始し、心拍を iPhone へリアルタイム
 送信します。各セッションは Apple ヘルスケアにも `Core Training` ワーク
 アウトとして書き込まれます。Watch でアプリが起動していないと、iPhone の

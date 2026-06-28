@@ -2,7 +2,7 @@
 title: Quick Guide (Apple Watch & iPhone)
 ---
 
-# Quick Guide / 簡易取説 — MaxSauna Timer for Apple Watch & iPhone
+# Quick Guide / 簡易取説 — MaxRecover Timer for Apple Watch & iPhone
 
 🌐 **言語 / Language:**
 

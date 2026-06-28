@@ -2,7 +2,7 @@
 title: 簡易取説 (Pixel Watch & Android)
 ---
 
-# 簡易取説 — MaxSauna Timer for Pixel Watch & Android
+# 簡易取説 — MaxRecover Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 
@@ -14,9 +14,9 @@ title: 簡易取説 (Pixel Watch & Android)
 
 ### 1. セットアップ
 
-- Android スマホの **Google Play** から **MaxSauna Timer** をインストール。
+- Android スマホの **Google Play** から **MaxRecover Timer** をインストール。
 - まず **Pixel Watch / Wear OS** アプリで Pixel Watch をペアリングし、続けて
-  ウォッチアプリ（**MaxSauna Timer**）を腕時計側にインストールします（スマホの
+  ウォッチアプリ（**MaxRecover Timer**）を腕時計側にインストールします（スマホの
   Play ストア / Wear OS アプリ経由）。
 - 初回起動時に **ボディーセンサー**（心拍。ウォッチ側）・（任意）**位置情報** の
   権限を許可してください。位置情報はセッション終了時に施設をタグ付けする目的の
@@ -34,7 +34,7 @@ title: 簡易取説 (Pixel Watch & Android)
 
 ### 2. セッションを開始
 
-1. Pixel Watch で **MaxSauna** を開く。
+1. Pixel Watch で **MaxRecover** を開く。
 2. **標準モード** / **シンプルモード** を選ぶ（スマホ 設定 → ウォッチ設定）。
 3. **「標準モード開始」**（または「シンプルモード開始」）をタップ。
 
@@ -115,7 +115,7 @@ title: 簡易取説 (Pixel Watch & Android)
   **Premium：** **グラフを写真に保存** + **グラフを共有** で、詳細テキストに
   **心拍チャートの PNG 画像** を添えて共有します。**「情報 + 心拍グラフ」** か
   **「心拍グラフのみ」** を選べます。保存画像は端末自身の写真
-  （Pictures/MaxSaunaTimer）に入り、アップロードはされません。
+  （Pictures/MaxRecoverTimer）に入り、アップロードはされません。
 - **翌日ステータス（Health Connect 連携時）** — 連携している場合、セッションの
   **翌晩** の参考 **睡眠スコア（無料）** と **平均呼吸数** を表示します。
 - **分析タブ（Analytics）** — **一部無料**。無料: 履歴から移動した概要カード —

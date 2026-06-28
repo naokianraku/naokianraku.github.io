@@ -8,7 +8,7 @@ title: Anraku Tech
 
 ## Projects / プロジェクト
 
-### MaxSauna Timer
+### MaxRecover Timer
 
 サウナセッションを計測し、心拍ベースのデータを記録するアプリ。
 **Apple Watch / iPhone** 版と **Pixel Watch / Android** 版があります。

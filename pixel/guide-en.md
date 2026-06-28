@@ -2,7 +2,7 @@
 title: Quick Guide (Pixel Watch & Android)
 ---
 
-# Quick Guide — MaxSauna Timer for Pixel Watch & Android
+# Quick Guide — MaxRecover Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 
@@ -14,9 +14,9 @@ title: Quick Guide (Pixel Watch & Android)
 
 ### 1. Setup
 
-- Install **MaxSauna Timer** from **Google Play** on your Android phone.
+- Install **MaxRecover Timer** from **Google Play** on your Android phone.
 - Pair your **Pixel Watch** first using the **Pixel Watch / Wear OS** app, then
-  install the **MaxSauna Timer** watch app to the watch (via the phone's Play
+  install the **MaxRecover Timer** watch app to the watch (via the phone's Play
   Store / Wear OS app).
 - On first launch, grant **Body Sensors** (heart rate, on the watch) and
   (optional) **Location** when prompted. Location is only used to tag the venue
@@ -34,7 +34,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 ### 2. Start a session
 
-1. Open MaxSauna on your **Pixel Watch**.
+1. Open MaxRecover on your **Pixel Watch**.
 2. Choose **Standard** or **Simple** mode (set in phone Settings → Watch settings).
 3. Tap **Standard** (or **Simple**) to start. *The watch buttons are shown in
    Japanese — **標準モード開始** (Standard) / **シンプルモード開始** (Simple); the
@@ -126,7 +126,7 @@ hardware.)
   **PREMIUM:** **Save graph to Photos** + **Share graph** shares detailed text
   **plus a PNG of the HR chart**; choose **"Info + HR graph"** or **"HR graph
   only"**. Saved images go to your device's own Photos
-  (Pictures/MaxSaunaTimer) — nothing is uploaded.
+  (Pictures/MaxRecoverTimer) — nothing is uploaded.
 - **Next-day status (with Health Connect)** — if connected, for the night
   **after** a session the app shows a reference **Sleep score (FREE)** and your
   **average respiratory rate**.

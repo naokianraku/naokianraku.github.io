@@ -2,7 +2,7 @@
 title: Terms of Use (Pixel Watch & Android)
 ---
 
-# Terms of Use / 利用規約 — MaxSauna Timer for Pixel Watch & Android
+# Terms of Use / 利用規約 — MaxRecover Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-05
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
@@ -15,7 +15,7 @@ title: Terms of Use (Pixel Watch & Android)
 
 ### 1. Acceptance
 
-By downloading or using MaxSauna Timer ("the App"), you agree to these Terms of
+By downloading or using MaxRecover Timer ("the App"), you agree to these Terms of
 Use. If you do not agree, please do not use the App.
 
 ### 2. Health and safety disclaimer — important
@@ -97,7 +97,7 @@ Questions about these Terms: maxsaunatimer@gmail.com
 
 ### 1. 同意
 
-MaxSauna Timer（以下「本アプリ」）をダウンロードまたは利用することにより、
+MaxRecover Timer（以下「本アプリ」）をダウンロードまたは利用することにより、
 利用者は本利用規約に同意したものとみなされます。同意いただけない場合は本
 アプリを利用しないでください。
 

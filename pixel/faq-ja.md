@@ -2,7 +2,7 @@
 title: FAQ / よくある質問 (Pixel Watch & Android)
 ---
 
-# FAQ / よくある質問 — MaxSauna Timer for Pixel Watch & Android
+# FAQ / よくある質問 — MaxRecover Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
@@ -54,7 +54,7 @@ Layer 経由で自動転送され、全員が利用できます。任意の Goog
 
 **Q. キャンセル方法は？**
 Google Play ストアを開く → プロフィール → 「**お支払いと定期購入**」 →
-「**定期購入**」 → 「MaxSauna Premium」 → 「定期購入を解約」。キャンセル後も、
+「**定期購入**」 → 「MaxRecover Premium」 → 「定期購入を解約」。キャンセル後も、
 現在の請求期間の終わりまで Premium 機能を利用できます。
 
 **Q. キャンセルするとデータは消えますか？**
@@ -249,7 +249,7 @@ HRR1/3/5・ベストセット位置・ベスト HRR1・回復の完了度・底�
 **無料：**心拍チャートの**共有**ボタンは**テキストのみ**（基本情報）を共有します。
 **Premium：**「グラフを写真に保存」＋「グラフを共有」で、詳細テキストに**加えて
 心拍チャートの PNG 画像**を共有できます。「情報 + 心拍グラフ」か「心拍グラフのみ」
-を選べます。保存した画像は端末自身の写真（Pictures/MaxSaunaTimer）に入り、どこにも
+を選べます。保存した画像は端末自身の写真（Pictures/MaxRecoverTimer）に入り、どこにも
 アップロードされません。
 
 **Q. 回復カーブの傾きの線とは？**
@@ -284,7 +284,7 @@ GPS トラッキングはありません。各セッションには 1〜5 の星
 ### 4. トラブルシューティング
 
 **Q. Watch のセッションデータが Android スマホに届きません。**
-両デバイスで MaxSauna を開いて近くに置き、Bluetooth（または Wi-Fi）を確認、
+両デバイスで MaxRecover を開いて近くに置き、Bluetooth（または Wi-Fi）を確認、
 両方のアプリを再起動してください。再接続すると、ウォッチ側に保留中のセッション
 があれば Wearable Data Layer 経由で自動再送されます。
 

@@ -2,7 +2,7 @@
 title: FAQ (Pixel Watch & Android)
 ---
 
-# FAQ / よくある質問 — MaxSauna Timer for Pixel Watch & Android
+# FAQ / よくある質問 — MaxRecover Timer for Pixel Watch & Android
 
 🌐 **言語 / Language:**
 

@@ -2,7 +2,7 @@
 title: FAQ (Apple Watch & iPhone)
 ---
 
-# FAQ / よくある質問 — MaxSauna Timer for Apple Watch & iPhone
+# FAQ / よくある質問 — MaxRecover Timer for Apple Watch & iPhone
 
 🌐 **言語 / Language:**
 

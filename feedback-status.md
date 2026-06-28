@@ -1,8 +1,8 @@
 ---
-title: 対応状況 / Fixed issues — MaxSauna Timer
+title: 対応状況 / Fixed issues — MaxRecover Timer
 ---
 
-# 対応状況 — MaxSauna Timer
+# 対応状況 — MaxRecover Timer
 
 **最終更新:** 2026-06-24（v0.1.6 を配信／v0.1.5・Phone v0.1.11 も配信済み）
 
@@ -100,7 +100,7 @@ title: 対応状況 / Fixed issues — MaxSauna Timer
 
 ---
 
-# Fixed issues — MaxSauna Timer (English)
+# Fixed issues — MaxRecover Timer (English)
 
 **Last updated:** 2026-06-24 (v0.1.6 released; v0.1.5 / Phone v0.1.11 also released)
 

@@ -2,7 +2,7 @@
 title: FAQ (Apple Watch & iPhone)
 ---
 
-# FAQ — MaxSauna Timer for Apple Watch & iPhone
+# FAQ — MaxRecover Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
@@ -36,7 +36,7 @@ are not charged.
 
 **Q. How do I cancel?**
 On your iPhone: Settings → tap your Apple ID at the top → Subscriptions →
-MaxSauna Premium → Cancel Subscription. After canceling, you keep Premium
+MaxRecover Premium → Cancel Subscription. After canceling, you keep Premium
 features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
@@ -182,7 +182,7 @@ Tap a suggestion to populate the venue field instantly.
 ### 4. Troubleshooting
 
 **Q. Watch session data isn't reaching my iPhone.**
-Open the MaxSauna app on both devices, keep them nearby with Bluetooth on, and
+Open the MaxRecover app on both devices, keep them nearby with Bluetooth on, and
 relaunch both apps. The Watch resends pending data automatically. You can also
 trigger a manual resend in iPhone Settings → Apple Watch sync status.
 
@@ -192,7 +192,7 @@ that you granted Health permissions when first launching the app
 (iPhone Settings → Health → Data Access & Devices).
 
 **Q. "Save to Photos" fails after I tap save.**
-Check iPhone Settings → MaxSauna → Photos → set to "Add Only" or higher. If
+Check iPhone Settings → MaxRecover → Photos → set to "Add Only" or higher. If
 the issue persists, rebuild the app from the App Store update or restart your
 iPhone.
 
@@ -224,7 +224,7 @@ switching, returning to the watch face). The app's own "no screen tap" policy
 only blocks taps within the app, not the OS-level gestures. The fix is to enable
 **Apple Watch's Water Lock**:
 
-- **In-app setting (recommended)**: iPhone MaxSauna → Settings → Session →
+- **In-app setting (recommended)**: iPhone MaxRecover → Settings → Session →
   toggle on "Auto Water Lock in Pre-sauna" and/or "Auto Water Lock in
   Cool-down". The Watch turns on Water Lock automatically when those phases
   start.
@@ -249,10 +249,10 @@ Settings. Two modes:
   measure your endurance.
 
 **Q. Does the Apple Watch measure heart rate during a plank?**
-Yes. Open MaxSauna on your Watch before starting a plank on iPhone. The
+Yes. Open MaxRecover on your Watch before starting a plank on iPhone. The
 Watch starts an `HKWorkoutSession` (`Core Training`) and streams heart
 rate to the iPhone for the whole plank. Each session is also written to
-Apple Health as a Core Training workout. If MaxSauna is not running on the
+Apple Health as a Core Training workout. If MaxRecover is not running on the
 Watch, the iPhone timer still works but no HR is recorded.
 
 **Q. What does the result screen show after a plank?**

@@ -2,7 +2,7 @@
 title: FAQ (Pixel Watch & Android)
 ---
 
-# FAQ — MaxSauna Timer for Pixel Watch & Android
+# FAQ — MaxRecover Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
@@ -61,7 +61,7 @@ are not charged.
 
 **Q. How do I cancel?**
 Open the Google Play Store → tap your profile → **Payments & subscriptions** →
-**Subscriptions** → MaxSauna Premium → Cancel subscription. After canceling,
+**Subscriptions** → MaxRecover Premium → Cancel subscription. After canceling,
 you keep Premium features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
@@ -270,7 +270,7 @@ front-loading), and the PDF report button. A period filter (All / 30 days /
 (basic info). **Premium:** "Save graph to Photos" + "Share graph" share detailed
 text **plus a PNG image** of the HR chart; you can choose "Info + HR graph" or
 "HR graph only". Saved images go to your device's own Photos
-(Pictures/MaxSaunaTimer) — nothing is uploaded.
+(Pictures/MaxRecoverTimer) — nothing is uploaded.
 
 **Q. What are the recovery-curve slope lines?**
 Premium feature. On the per-set recovery curve the app overlays a straight
@@ -307,7 +307,7 @@ Each session can also have a 1–5 star rating.
 ### 4. Troubleshooting
 
 **Q. Watch session data isn't reaching my Android phone.**
-Open the MaxSauna app on both devices, keep them nearby with Bluetooth (or
+Open the MaxRecover app on both devices, keep them nearby with Bluetooth (or
 Wi-Fi) on, and relaunch both apps. The watch resends pending sessions
 automatically over the Wearable Data Layer once they reconnect.
 

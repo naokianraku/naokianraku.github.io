@@ -2,7 +2,7 @@
 title: Privacy Policy (Apple Watch & iPhone)
 ---
 
-# Privacy Policy / プライバシーポリシー — MaxSauna Timer for Apple Watch & iPhone
+# Privacy Policy / プライバシーポリシー — MaxRecover Timer for Apple Watch & iPhone
 
 **Effective date / 施行日:** (set on App Store release / App Store 公開日に設定)
 **Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer
@@ -14,7 +14,7 @@ title: Privacy Policy (Apple Watch & iPhone)
 
 ### 1. Overview
 
-MaxSauna Timer ("the App") is an Apple Watch and iPhone app that times sauna
+MaxRecover Timer ("the App") is an Apple Watch and iPhone app for hot-bath wellness — timing
 sessions and records heart-rate-based data. This Privacy Policy explains what
 data the App handles and how.
 
@@ -107,7 +107,7 @@ For requests or questions, contact the developer at the address above.
 
 ### 8. Children
 
-The App is a sauna tool intended for general audiences and is not directed at
+The App is a wellness tool intended for general audiences and is not directed at
 children. It does not knowingly collect data from children.
 
 ### 9. Data retention
@@ -130,7 +130,7 @@ Questions about this Privacy Policy: maxsaunatimer@gmail.com
 
 ### 1. 概要
 
-MaxSauna Timer（以下「本アプリ」）は、サウナセッションを計測し心拍ベースの
+MaxRecover Timer（以下「本アプリ」）は、温浴セッションを計測し心拍ベースの
 データを記録する Apple Watch / iPhone 用アプリです。本ポリシーは、本アプリが
 扱うデータとその取扱いを説明します。
 
@@ -224,7 +224,7 @@ Premium は Apple の App 内課金で販売される自動更新サブスクリ
 
 ### 8. 子どもについて
 
-本アプリは一般利用者向けのサウナ用ツールであり、子どもを対象としていません。
+本アプリは一般利用者向けの温浴ウェルネスツールであり、子どもを対象としていません。
 子どものデータを意図的に収集することはありません。
 
 ### 9. データの保持期間
