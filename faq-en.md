@@ -26,7 +26,7 @@ report, sharing with a heart-rate chart image, CSV export, a dedicated
 Premium app icon, and no banner ads.
 
 **Q. iCloud sync — is it Premium?**
-No. iCloud sync is free for everyone. Data protection is infrastructure, not a
+No. iCloud sync is included for everyone. Data protection is infrastructure, not a
 paid feature.
 
 **Q. What happens when the free trial ends?**
@@ -42,7 +42,7 @@ features until the current billing period ends.
 **Q. Does canceling delete my data?**
 No. Your sessions, history, settings, and iCloud sync all stay. Only the
 Premium features (advanced analytics, PDF report, chart-image sharing, CSV
-export, Premium app icon, ad-free) revert to the free tier.
+export, Premium app icon, ad-free) revert to the standard features included with the app.
 
 **Q. I paid but Premium isn't active on a new device.**
 Make sure the new device is signed in to the App Store with the **same Apple
@@ -74,8 +74,8 @@ export as a manual backup.
 Yes. With your permission, the app reads heart rate during a session and
 writes the session as a HealthKit workout, visible in the Apple Health app.
 
-**Q. Does the free version share my data with advertisers?**
-The free version shows AdMob banner ads in the History, Analytics, and Session
+**Q. Do the ads (shown without Premium) share my data with advertisers?**
+Without a Premium subscription, the App shows AdMob banner ads in the History, Analytics, and Session
 Detail screens. Ad network data handling follows Google's policies and your
 device's privacy settings (ATT / Limit Ad Tracking). See the Privacy Policy
 for details.

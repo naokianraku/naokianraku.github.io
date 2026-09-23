@@ -45,7 +45,7 @@ Use. If you do not agree, please do not use the App.
 
 ### 3. Subscriptions and billing
 
-The App is free to use with advertising. An optional **Premium** subscription
+The App is a paid app (one-time purchase) that shows advertising to users without a Premium subscription. An optional **Premium** subscription
 removes ads and unlocks additional features.
 
 - Plans: monthly and yearly auto-renewing subscriptions. Pricing is shown in the
@@ -132,7 +132,7 @@ MaxRecovery Timer（以下「本アプリ」）をダウンロードまたは利
 
 ### 3. サブスクリプションと課金
 
-本アプリは広告付きで無料で利用できます。任意の **Premium** サブスクリプション
+本アプリは有料（買い切り）のアプリで、Premium サブスクリプション未加入の場合は広告が表示されます。任意の **Premium** サブスクリプション
 により広告が非表示となり、追加機能が利用可能になります。
 
 - プラン: 月額および年額の自動更新サブスクリプション。価格はアプリ内および
@@ -143,7 +143,7 @@ MaxRecovery Timer（以下「本アプリ」）をダウンロードまたは利
   更新されます。
 - 購入および更新は Apple が処理します。サブスクリプションの管理・解約は
   Apple アカウントの設定から行えます。
-- iCloud 同期はすべての利用者が無料で利用できます。
+- iCloud 同期はすべての利用者が追加料金なしで利用できます。
 
 ### 4. 禁止事項
 

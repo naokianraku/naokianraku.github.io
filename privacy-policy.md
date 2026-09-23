@@ -30,7 +30,7 @@ account. The developer has no access to it.
 | Health data | Heart rate, heart rate variability (HRV), resting heart rate, walking distance, sleep analysis, respiratory rate, active energy (read from Apple Health) | Show session history, heart-rate charts, recovery analytics, next-day metrics, and the "Afterglow Score" |
 | Location data | Approximate location at the end of a session | Saved with the session as the venue location, for your reference |
 | Session data | Session times, phases, scores, ratings, venue name and memo you enter | Core app functionality |
-| Advertising data | Device and ad-interaction information collected by Google AdMob (free version only) | Show banner ads |
+| Advertising data | Device and ad-interaction information collected by Google AdMob (non-Premium users only) | Show banner ads |
 
 The App has no account or login. It does not ask for your name or email. A
 short export-name label you may optionally enter is stored only on your device.
@@ -71,9 +71,9 @@ sleep analysis and respiratory rate (for recovery analytics).
   Apple Watch and iPhone within Apple's recommended operating temperature
   range (see the Terms of Use for details).
 
-### 5. Advertising (free version)
+### 5. Advertising (non-Premium users)
 
-The free version of the App shows banner ads through **Google AdMob**. AdMob is
+For users without a Premium subscription, the App shows banner ads through **Google AdMob**. AdMob is
 a third-party service operated by Google and may collect device information, an
 advertising identifier, and ad-interaction data to deliver and measure ads.
 
@@ -146,7 +146,7 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
 | 健康データ | 心拍数・心拍変動（HRV）・安静時心拍数・歩行距離・睡眠・呼吸数・消費エネルギー（Apple ヘルスケアから読取） | セッション履歴・心拍チャート・回復分析・翌日指標・「ととのい度」の表示 |
 | 位置情報 | セッション終了時のおおよその位置 | セッションの場所として参考用に保存 |
 | セッションデータ | セッション時刻・フェーズ・スコア・評価・入力した施設名/メモ | アプリの中核機能 |
-| 広告データ | Google AdMob が収集する端末情報・広告操作情報（無料版のみ） | バナー広告の表示 |
+| 広告データ | Google AdMob が収集する端末情報・広告操作情報（Premium 未加入時のみ） | バナー広告の表示 |
 
 本アプリにアカウント登録・ログインはありません。氏名やメールアドレスを求める
 こともありません。任意で入力できる短いエクスポート名ラベルは端末内にのみ
@@ -186,9 +186,9 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
   するものではありません。Apple Watch および iPhone は Apple が推奨する
   動作温度範囲内でご使用ください（詳細は利用規約をご確認ください）。
 
-### 5. 広告（無料版）
+### 5. 広告（Premium 未加入時）
 
-無料版は **Google AdMob** を通じてバナー広告を表示します。AdMob は Google が
+Premium 未加入の場合、**Google AdMob** を通じてバナー広告を表示します。AdMob は Google が
 運営する第三者サービスで、広告の配信・計測のため端末情報・広告識別子・広告
 操作データを収集する場合があります。
 
