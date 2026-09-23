@@ -8,7 +8,7 @@ title: Anraku Tech
 
 ## Projects / プロジェクト
 
-### MaxRecover Timer
+### MaxRecovery Timer
 
 温浴セッション（採暖室・温泉・ホットヨガ・赤外線サウナなど）を計測し、
 心拍ベースのデータを記録する温浴ウェルネスアプリ。

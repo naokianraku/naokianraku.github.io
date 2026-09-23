@@ -2,7 +2,7 @@
 title: Privacy Policy (Pixel Watch & Android)
 ---
 
-# Privacy Policy / プライバシーポリシー — MaxRecover Timer for Pixel Watch & Android
+# Privacy Policy / プライバシーポリシー — MaxRecovery Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-05
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
@@ -15,7 +15,7 @@ title: Privacy Policy (Pixel Watch & Android)
 
 ### 1. Overview
 
-MaxRecover Timer ("the App") is a Pixel Watch (Wear OS) and Android phone app that
+MaxRecovery Timer ("the App") is a Pixel Watch (Wear OS) and Android phone app that
 times sauna sessions and records heart-rate-based data. This Privacy Policy
 explains what data the App handles and how.
 
@@ -271,7 +271,7 @@ Questions about this Privacy Policy: maxsaunatimer@gmail.com
 
 ### 1. 概要
 
-MaxRecover Timer（以下「本アプリ」）は、温浴セッションを計測し心拍ベースの
+MaxRecovery Timer（以下「本アプリ」）は、温浴セッションを計測し心拍ベースの
 データを記録する Pixel Watch（Wear OS）/ Android スマートフォン用アプリです。
 本ポリシーは、本アプリが扱うデータとその取扱いを説明します。
 

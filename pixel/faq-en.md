@@ -2,7 +2,7 @@
 title: FAQ (Pixel Watch & Android)
 ---
 
-# FAQ — MaxRecover Timer for Pixel Watch & Android
+# FAQ — MaxRecovery Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 **Contact / 連絡先:** maxsaunatimer@gmail.com
@@ -44,7 +44,7 @@ picker**, the **basic Analytics** (Afterglow-over-time, by-mode average, and the
 period summary), sharing the heart-rate graph as **text**, watch-settings
 editing, and the Force-English toggle. The **free overview cards** in the
 **Analytics** tab (current / longest streak and total count, the **Best Sessions
-TOP 10**, the visit-frequency calendar heatmap, and the Sauna Map of your
+TOP 10**, the visit-frequency calendar heatmap, and the Venue Map of your
 visited venues) are also free, as are the **Sleep score** and the **resting-HR
 reference line** when you connect Health Connect.
 
@@ -61,7 +61,7 @@ are not charged.
 
 **Q. How do I cancel?**
 Open the Google Play Store → tap your profile → **Payments & subscriptions** →
-**Subscriptions** → MaxRecover Premium → Cancel subscription. After canceling,
+**Subscriptions** → MaxRecovery Premium → Cancel subscription. After canceling,
 you keep Premium features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
@@ -230,7 +230,7 @@ overview cards (streak, best sessions, heatmap, map) have moved to the
 **Free.** Those overview cards moved from the History tab to the **Analytics**
 tab. The app shows your **current and longest streak** plus your **total session
 count**, a **Best Sessions TOP 10** ranking (by Afterglow score), a
-**visit-frequency calendar heatmap**, and a **Sauna Map** that plots all of your
+**visit-frequency calendar heatmap**, and a **Venue Map** that plots all of your
 visited venues on one map. These are all free and live in the app (no Premium and
 no PDF required).
 
@@ -258,7 +258,7 @@ versions as part of the exported report.
 The Analytics tab is **partly free**. **Free:** Afterglow-over-time, average
 Afterglow by mode, the period summary, and the free overview cards (current /
 longest streak and total count, Best Sessions TOP 10, the visit-frequency
-heatmap, and the Sauna Map). **Premium:** the HRR trend (1/3/5), the
+heatmap, and the Venue Map). **Premium:** the HRR trend (1/3/5), the
 recovery-slope trend, average Afterglow by set count / by session length,
 set-position HRR, a recovery-curve overlay, the recovery summary (avg HRR1/3/5,
 best set position, best HRR1, recovery completeness, time-to-bottom,
@@ -270,7 +270,7 @@ front-loading), and the PDF report button. A period filter (All / 30 days /
 (basic info). **Premium:** "Save graph to Photos" + "Share graph" share detailed
 text **plus a PNG image** of the HR chart; you can choose "Info + HR graph" or
 "HR graph only". Saved images go to your device's own Photos
-(Pictures/MaxRecoverTimer) — nothing is uploaded.
+(Pictures/MaxRecoveryTimer) — nothing is uploaded.
 
 **Q. What are the recovery-curve slope lines?**
 Premium feature. On the per-set recovery curve the app overlays a straight
@@ -307,7 +307,7 @@ Each session can also have a 1–5 star rating.
 ### 4. Troubleshooting
 
 **Q. Watch session data isn't reaching my Android phone.**
-Open the MaxRecover app on both devices, keep them nearby with Bluetooth (or
+Open the MaxRecovery app on both devices, keep them nearby with Bluetooth (or
 Wi-Fi) on, and relaunch both apps. The watch resends pending sessions
 automatically over the Wearable Data Layer once they reconnect.
 

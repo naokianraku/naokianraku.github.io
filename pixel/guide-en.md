@@ -2,7 +2,7 @@
 title: Quick Guide (Pixel Watch & Android)
 ---
 
-# Quick Guide — MaxRecover Timer for Pixel Watch & Android
+# Quick Guide — MaxRecovery Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** 2026-06-11
 
@@ -14,9 +14,9 @@ title: Quick Guide (Pixel Watch & Android)
 
 ### 1. Setup
 
-- Install **MaxRecover Timer** from **Google Play** on your Android phone.
+- Install **MaxRecovery Timer** from **Google Play** on your Android phone.
 - Pair your **Pixel Watch** first using the **Pixel Watch / Wear OS** app, then
-  install the **MaxRecover Timer** watch app to the watch (via the phone's Play
+  install the **MaxRecovery Timer** watch app to the watch (via the phone's Play
   Store / Wear OS app).
 - On first launch, grant **Body Sensors** (heart rate, on the watch) and
   (optional) **Location** when prompted. Location is only used to tag the venue
@@ -34,7 +34,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 ### 2. Start a session
 
-1. Open MaxRecover on your **Pixel Watch**.
+1. Open MaxRecovery on your **Pixel Watch**.
 2. Choose **Standard** or **Simple** mode (set in phone Settings → Watch settings).
 3. Tap **Standard** (or **Simple**) to start. *The watch buttons are shown in
    Japanese — **標準モード開始** (Standard) / **シンプルモード開始** (Simple); the
@@ -126,14 +126,14 @@ hardware.)
   **PREMIUM:** **Save graph to Photos** + **Share graph** shares detailed text
   **plus a PNG of the HR chart**; choose **"Info + HR graph"** or **"HR graph
   only"**. Saved images go to your device's own Photos
-  (Pictures/MaxRecoverTimer) — nothing is uploaded.
+  (Pictures/MaxRecoveryTimer) — nothing is uploaded.
 - **Next-day status (with Health Connect)** — if connected, for the night
   **after** a session the app shows a reference **Sleep score (FREE)** and your
   **average respiratory rate**.
 - **Analytics tab (分析)** — **partly free**. FREE: the overview cards moved here
   from History — **Streaks & count** (current / longest streak + total count),
   **Best Sessions TOP 10** (by Afterglow score), the **visit-frequency calendar
-  heatmap**, and the **Sauna Map** — plus afterglow over time, average by mode,
+  heatmap**, and the **Venue Map** — plus afterglow over time, average by mode,
   and the period summary. Premium: HRR trend (1/3/5), the recovery-slope trend,
   averages by set count / session length, set-position HRR, a recovery-curve
   overlay, and a recovery summary. The period filter (All / 30 days / 7 days) is
@@ -207,7 +207,7 @@ integration.
 - Turn on the **moving-average overlays** and **Hide preparation phase** under
   **Settings → Display** to read the curve more clearly.
 - Fill in the **venue** (from the nearby candidates or your past-visited venues
-  within ~500 m — free) in a session's detail to power the Sauna Map, the
+  within ~500 m — free) in a session's detail to power the Venue Map, the
   visit heatmap, and the PDF report.
 - Add a **1–5 star rating** to each session (entered on the watch; it then shows
   in the detail header).

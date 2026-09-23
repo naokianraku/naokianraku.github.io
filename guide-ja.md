@@ -2,7 +2,7 @@
 title: 簡易取説 (Apple Watch & iPhone)
 ---
 
-# 簡易取説 — MaxRecover Timer for Apple Watch & iPhone
+# 簡易取説 — MaxRecovery Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-24
 
@@ -14,7 +14,7 @@ title: 簡易取説 (Apple Watch & iPhone)
 
 ### 1. 概要 — 温浴ととのい計測アプリ
 
-**MaxRecover Timer** は、**温浴 (Hot phase) → 休憩 (Rest)** のフェーズ進行を Apple
+**MaxRecovery Timer** は、**温浴 (Hot phase) → 休憩 (Rest)** のフェーズ進行を Apple
 Watch / iPhone で計測し、心拍数の回復度合いを可視化する **温浴ととのい計測アプ
 リ** です。
 
@@ -30,7 +30,7 @@ Watch / iPhone で計測し、心拍数の回復度合いを可視化する **�
 
 ### 2. セットアップ
 
-- iPhone の App Store から **MaxRecover Timer** をインストール。Apple Watch をペア
+- iPhone の App Store から **MaxRecovery Timer** をインストール。Apple Watch をペア
   リング済みなら、Watch コンパニオンアプリは自動でインストールされます。
 - 初回起動時に **ヘルスケア**・**通知**・（任意）**位置情報** の権限を許可してく
   ださい。
@@ -52,7 +52,7 @@ Watch / iPhone で計測し、心拍数の回復度合いを可視化する **�
 
 ### 3. セッションを開始
 
-1. Apple Watch で **MaxRecover** を開く。
+1. Apple Watch で **MaxRecovery** を開く。
 2. **標準モード** / **シンプルモード** を選ぶ（iPhone 設定 → セッション）。
 3. **開始** をタップ。
 
@@ -183,7 +183,7 @@ Watch には現在のフェーズ・経過時間・心拍数・直近 5 分の�
   続けたら下部のボタンを **ダブルタップで終了**。
 - **カウントアップモード** — 0:00 から開始し、ダブルタップで終了するまで何分でも
   計測。限界耐久時間の記録に。
-- **Apple Watch の心拍計測** — プランク開始時に Watch で MaxRecover を起動していれ
+- **Apple Watch の心拍計測** — プランク開始時に Watch で MaxRecovery を起動していれ
   ば、Watch が `Core Training` の HKWorkout セッションを開始し、心拍を iPhone へ
   リアルタイム送信。Watch 側には経過 / 残り時間と心拍数が表示されます。終了は
   iPhone 側で操作。

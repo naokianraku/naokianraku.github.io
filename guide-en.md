@@ -2,7 +2,7 @@
 title: Quick Guide (Apple Watch & iPhone)
 ---
 
-# Quick Guide — MaxRecover Timer for Apple Watch & iPhone
+# Quick Guide — MaxRecovery Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-24
 
@@ -12,9 +12,9 @@ title: Quick Guide (Apple Watch & iPhone)
 
 ---
 
-### 1. About MaxRecover Timer
+### 1. About MaxRecovery Timer
 
-MaxRecover Timer is a **hot bath wellness tracking** companion for Apple Watch
+MaxRecovery Timer is a **hot bath wellness tracking** companion for Apple Watch
 and iPhone. It helps you log hot-bath sessions, track your heart rate, and
 review **Heart Rate Recovery (HRR)** — a well-established physiological
 indicator of how quickly your heart rate falls after a thermal load — as a
@@ -26,7 +26,7 @@ Supported hot environments include **warming rooms (ondol)**, **hot springs
 
 ### 2. Setup
 
-- Install **MaxRecover Timer** from the App Store on your iPhone. The Apple
+- Install **MaxRecovery Timer** from the App Store on your iPhone. The Apple
   Watch companion app installs automatically when your Watch is paired.
 - On first launch, grant **Health**, **Notifications**, and (optional)
   **Location** permissions when prompted.
@@ -57,7 +57,7 @@ can switch to the **three-phase flow** in iPhone Settings → Session →
 
 To start:
 
-1. Open MaxRecover on your **Apple Watch**.
+1. Open MaxRecovery on your **Apple Watch**.
 2. Choose **Standard** or **Simple** mode (set in iPhone Settings → Session).
 3. Tap **Start**.
 
@@ -105,7 +105,7 @@ End the session:
 - **If you select "Sauna" as your hot environment**, please note that
   traditional sauna interiors typically exceed Apple's recommended
   operating temperature range. **How you handle Apple Watch around a
-  sauna environment is entirely at your own discretion and risk** — MaxRecover
+  sauna environment is entirely at your own discretion and risk** — MaxRecovery
   Timer does not encourage taking Apple devices into a sauna.
 - Heart-rate measurement is **optional**. Sessions, history, and analytics
   are fully available on iPhone alone, without an Apple Watch.
@@ -180,7 +180,7 @@ between Analytics and Settings.
   then double-tap the bottom button to end.
 - **Count-up mode** — starts at 0:00 and runs until you double-tap the
   bottom button. Used to measure how long you can hold a plank.
-- **Apple Watch HR** — if MaxRecover is open on your Watch when you start a
+- **Apple Watch HR** — if MaxRecovery is open on your Watch when you start a
   plank, the Watch starts a `Core Training` HKWorkout session and streams
   heart rate to the iPhone for the whole plank. The Watch shows the current
   elapsed/remaining time and HR until you stop on iPhone.
