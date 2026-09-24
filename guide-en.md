@@ -26,7 +26,7 @@ Supported hot environments include **warming rooms (ondol)**, **hot springs
 
 ### 2. Setup
 
-- Install **MaxRecovery Timer** from the App Store on your iPhone. The Apple
+- Install **MaxRecovery Timer** from the [App Store](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404) on your iPhone. The Apple
   Watch companion app installs automatically when your Watch is paired.
 - On first launch, grant **Health**, **Notifications**, and (optional)
   **Location** permissions when prompted.

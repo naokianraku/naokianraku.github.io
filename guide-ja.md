@@ -30,7 +30,7 @@ Watch / iPhone で計測し、心拍数の回復度合いを可視化する **�
 
 ### 2. セットアップ
 
-- iPhone の App Store から **MaxRecovery Timer** をインストール。Apple Watch をペア
+- iPhone の [App Store](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) から **MaxRecovery Timer** をインストール。Apple Watch をペア
   リング済みなら、Watch コンパニオンアプリは自動でインストールされます。
 - 初回起動時に **ヘルスケア**・**通知**・（任意）**位置情報** の権限を許可してく
   ださい。
