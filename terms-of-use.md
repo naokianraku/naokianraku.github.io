@@ -25,23 +25,19 @@ Use. If you do not agree, please do not use the App.
   are reference information only. They are estimates, not medical or diagnostic
   results, and must not be used for medical diagnosis or treatment decisions.
 - Heart-rate readings come from Apple Watch sensors and may be inaccurate,
-  especially in the hot, humid, wet conditions of a sauna. Apple Watch is not
-  rated for such environments.
+  especially in hot, humid or wet conditions.
 - Safety-related features (such as the low-heart-rate alert and the inactivity
   auto-end) are best-effort aids only. They may fail to trigger, or trigger
   incorrectly, and must not be relied on for your safety.
-- Sauna use carries inherent health risks, including heat stroke, dehydration,
-  fainting, and cardiac stress. **You use saunas at your own risk.** Consult a
-  physician before sauna use if you have any health condition or concern, and
-  stop immediately and seek help if you feel unwell.
-- **Hardware usage is at your discretion.** Please use Apple Watch and iPhone
-  within Apple's recommended operating temperature range (standard models:
-  0–35°C / 32–95°F; Apple Watch Ultra: -20–55°C / -4–130°F; refer to Apple's
-  official specifications for details). Whether and how to wear or place these
-  devices around a sauna, cold plunge, or other environments is at your sole
-  discretion. The App does not instruct or require you to bring the Apple
-  Watch or iPhone into the sauna room, and we accept no responsibility for
-  damage to devices caused by use outside Apple's recommended environment.
+- Hot-bath sessions (hot springs, baths, warming rooms, hot yoga and similar
+  heat exposure) carry inherent health risks, including heat stroke,
+  dehydration, fainting, and cardiac stress. **You use them at your own risk.**
+  Consult a physician before use if you have any health condition or concern,
+  and stop immediately and seek help if you feel unwell.
+- **Hardware usage is at your discretion.** Whether and how to wear or place
+  Apple Watch and iPhone during a session is your decision; please follow
+  Apple's guidance for your environment. We accept no responsibility for
+  damage to devices caused by use outside the conditions Apple recommends.
 
 ### 3. Subscriptions and billing
 
@@ -112,23 +108,19 @@ MaxRecovery Timer（以下「本アプリ」）をダウンロードまたは利
 - 「ととのい度」スコア、心拍数値、チャート、その他表示される数値はすべて
   参考情報です。推定値であって医学的・診断的結果ではなく、医学的診断や治療の
   判断に使用してはなりません。
-- 心拍数値は Apple Watch のセンサーによるもので、特にサウナの高温・多湿・
-  濡れた環境では誤差を含むことがあります。Apple Watch はこうした環境での
-  使用を想定していません。
+- 心拍数値は Apple Watch のセンサーによるもので、特に高温・多湿・濡れた
+  環境では誤差を含むことがあります。
 - 安全関連の機能（低心拍警告、操作なし自動終了など）はあくまで補助的なもの
   です。発動しないことや誤って発動することがあり、利用者の安全をこれらに
   依存してはなりません。
-- サウナの利用には、熱中症・脱水・失神・心臓への負担などの健康リスクが本質的
-  に伴います。**サウナの利用は利用者自身の責任で行ってください。** 健康状態に
-  不安がある場合は利用前に医師に相談し、体調に異変を感じたら直ちに利用を中止
-  して助けを求めてください。
-- **ハードウェアの使用環境は利用者の判断によります。** Apple Watch および
-  iPhone は、Apple が推奨する動作温度範囲（通常モデル 0–35°C、Apple Watch
-  Ultra -20–55°C。詳細は Apple 公式仕様を参照）内でご使用ください。サウナ・
-  水風呂等の環境でこれらの機器をどう装着・配置するかは利用者の判断に委ね
-  られます。本アプリは Apple Watch / iPhone をサウナ室内に持ち込むよう
-  指示・要求するものではなく、Apple が推奨する環境外で使用した結果生じた
-  機器の損傷について、当方は一切の責任を負いません。
+- 温浴（温泉・お風呂・採暖室・ホットヨガなどの温熱への曝露）には、熱中症・
+  脱水・失神・心臓への負担などの健康リスクが本質的に伴います。**温浴の利用は
+  利用者自身の責任で行ってください。** 健康状態に不安がある場合は利用前に医師
+  に相談し、体調に異変を感じたら直ちに利用を中止して助けを求めてください。
+- **ハードウェアの使用環境は利用者の判断によります。** セッション中に Apple
+  Watch および iPhone をどう装着・配置するかは利用者の判断に委ねられます。
+  Apple が案内する使用環境の範囲でご使用ください。Apple が推奨する条件の外で
+  使用した結果生じた機器の損傷について、当方は一切の責任を負いません。
 
 ### 3. サブスクリプションと課金
 

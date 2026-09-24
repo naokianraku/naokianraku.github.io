@@ -39,7 +39,7 @@ Supported hot environments include **warming rooms (ondol)**, **hot springs
   - **Hot Yoga**
   - **Infrared Room**
   - **Steam Bath (mild)**
-  - **Sauna** — please see the temperature note in §6
+  - **Sauna**
   - **Other / Custom** — name it yourself
 
 ### 3. Start a session — Standard Mode
@@ -97,16 +97,10 @@ End the session:
 
 ### 6. About using Apple Watch
 
-- Please use Apple Watch and iPhone **within Apple's recommended operating
-  temperature range** (standard models: **0–35°C / 32–95°F**; Apple Watch
-  Ultra: **−20–55°C / −4–130°F**). See Apple Support article
-  [109522](https://support.apple.com/en-us/109522) and
-  [108766](https://support.apple.com/en-us/108766).
-- **If you select "Sauna" as your hot environment**, please note that
-  traditional sauna interiors typically exceed Apple's recommended
-  operating temperature range. **How you handle Apple Watch around a
-  sauna environment is entirely at your own discretion and risk** — MaxRecovery
-  Timer does not encourage taking Apple devices into a sauna.
+- Whether and how to wear Apple Watch and iPhone during a session is your
+  decision; please follow Apple's guidance for your environment. If you
+  select "Sauna" or "Steam Bath" as your hot environment, the app shows a
+  short reminder to that effect.
 - Heart-rate measurement is **optional**. Sessions, history, and analytics
   are fully available on iPhone alone, without an Apple Watch.
 - Wear your Watch snugly for stable heart-rate readings.

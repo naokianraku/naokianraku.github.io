@@ -65,11 +65,9 @@ sleep analysis and respiratory rate (for recovery analytics).
   `HKWorkoutSession` of type `Core Training` is started on Apple Watch and
   the resulting workout (with HR samples) is written to your Health app.
 - Heart-rate data is produced by Apple Watch sensors at your wrist. Whether
-  and how to wear Apple Watch during any session — including around a sauna,
-  cold plunge, or other environments — is at your discretion, and the App
-  does not require continuous wrist-wearing in any environment. Please use
-  Apple Watch and iPhone within Apple's recommended operating temperature
-  range (see the Terms of Use for details).
+  and how to wear Apple Watch during a session is at your discretion, and the
+  App does not require continuous wrist-wearing. Please follow Apple's
+  guidance for your environment (see the Terms of Use).
 
 ### 5. Advertising (non-Premium users)
 
@@ -180,11 +178,10 @@ iCloud を有効にしている場合は利用者自身のプライベートな 
 - 任意のプランク運動計測機能を使った場合、Apple Watch 上で
   `HKWorkoutSession (Core Training)` を開始し、得られたワークアウト（HR
   サンプルを含む）が利用者の Apple ヘルスケアに書き込まれます。
-- 心拍データは利用者の Apple Watch のセンサーから取得されます。サウナ・
-  水風呂等を含む任意の環境において、Apple Watch をどのように装着するかは
-  利用者のご判断に委ねられ、本アプリはいかなる環境でも継続的な装着を要求
-  するものではありません。Apple Watch および iPhone は Apple が推奨する
-  動作温度範囲内でご使用ください（詳細は利用規約をご確認ください）。
+- 心拍データは利用者の Apple Watch のセンサーから取得されます。セッション中
+  に Apple Watch をどのように装着するかは利用者のご判断に委ねられ、本アプリ
+  は継続的な装着を要求するものではありません。Apple が案内する使用環境の範囲
+  でご使用ください（詳細は利用規約をご確認ください）。
 
 ### 5. 広告（Premium 未加入時）
 

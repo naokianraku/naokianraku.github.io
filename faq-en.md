@@ -85,19 +85,19 @@ for details.
 **Q. What is the Afterglow Score?**
 A 0–100 score estimating how quickly your parasympathetic nervous system
 ("rest mode") engages after a hot-bath session, derived from your heart-rate
-recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese sauna culture
+recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese bathing culture
 calls "totonou". Reference value only — not a medical metric.
 
 **Q. Can I use the app without an Apple Watch?**
 The timer works on iPhone alone, but heart-rate measurement and the Afterglow
 Score require an Apple Watch.
 
-**Q. Do I need to touch the screen during a hot-bath session session?**
+**Q. Do I need to touch the screen during a hot-bath session?**
 No. Once you start a session, measurement continues hands-free — useful with
 wet hands or a towel.
 
 **Q. What's the difference between Standard and Simple mode?**
-Standard mode tracks distinct phases (sauna → cold plunge → cool-down) per
+Standard mode tracks distinct phases (hot phase → cool-down → rest) per
 set. Simple mode runs as one continuous session and detects sets afterwards
 from heart-rate peaks.
 
@@ -129,15 +129,16 @@ chart shows a legend at the top.
 **Q. Can I hide the preparation phase from the heart rate chart?**
 Yes. Settings → Display → **"Hide preparation phase from HR chart"** (default
 OFF). When ON, preparation-phase samples (clothes change, body wash, etc.)
-are removed from the chart and the X axis re-bases to sauna entry as 0:00,
-making the actual sauna portion easier to read. Sessions without a
+are removed from the chart and the X axis re-bases to hot-phase entry as
+0:00, making the hot-phase portion easier to read. Sessions without a
 preparation phase are unaffected.
 
 **Q. What is the Movement Quality score?**
 A score (0–100, Excellent / Good / Average / Needs work) that measures how
 many heart-rate spikes occur after each hot-phase peak. Long walking distances
-between sauna → cold plunge → cool-down area cause HR rebounds; fewer spikes =
-better facility flow. The per-session score is shown in session detail (free).
+between the hot phase, cool-down and rest area cause HR rebounds; fewer
+spikes = better facility flow. The per-session score is shown in session
+detail (no Premium needed).
 The period-average is also included in the Premium PDF report.
 
 **Q. What is the Sleep Score (reference)?**
@@ -150,7 +151,7 @@ exact value shown in the Apple Health app.
 **Q. What is "Exclude walking from recovery" in Settings?**
 A Premium toggle, off by default. Apple Watch's distance-based walking
 detection sometimes misfires during hot-bath sessions (e.g. flagging sitting or
-the cold plunge as "walking"). With the toggle off, recovery slope
+the cool-down as "walking"). With the toggle off, recovery slope
 calculations use all heart-rate samples. Turning it on excludes samples
 flagged as walking — useful only when the Watch's walking detection is
 reliable for that session.
@@ -175,7 +176,7 @@ When you open a session's detail and the venue field is empty, the app shows
 nearby candidates based on the session's GPS location:
 - **Past visits** (orange clock icon): venues you previously entered within
   500 m, prioritized at the top.
-- **Bath facilities** (blue map-pin icon): nearby spa / sauna / public bath
+- **Bath facilities** (blue map-pin icon): nearby spa / onsen / public bath
   found via Apple Maps keyword search (within 500 m).
 Tap a suggestion to populate the venue field instantly.
 
@@ -208,7 +209,7 @@ This is the standard Apple Watch behavior: while Always-On Display is in its
 save battery and prevent accidental input. Lift your wrist, lightly turn the
 Digital Crown, or wave your other hand over the screen to wake it to full
 brightness — then Double Tap will respond. In a real hot-bath session you usually
-move when transitioning phases (sauna → plunge, plunge → cool-down chair),
+move when transitioning phases (hot phase → cool-down, cool-down → rest chair),
 so the screen wakes naturally, but be aware of this if you sit still and try
 to tap after a long pause.
 
@@ -225,8 +226,8 @@ only blocks taps within the app, not the OS-level gestures. The fix is to enable
 **Apple Watch's Water Lock**:
 
 - **In-app setting (recommended)**: iPhone MaxRecovery → Settings → Session →
-  toggle on "Auto Water Lock in Pre-sauna" and/or "Auto Water Lock in
-  Cool-down". The Watch turns on Water Lock automatically when those phases
+  toggle on "Auto Water Lock in Pre-session" and/or "Auto Water Lock in
+  Rest". The Watch turns on Water Lock automatically when those phases
   start.
 - **Manual**: On the Watch, swipe up to open Control Center → tap the 💧
   droplet icon.
@@ -277,12 +278,12 @@ ranges the label stride widens automatically.
 
 **Q. How do I delete an old plank record?**
 Swipe a row in the history list to the left and tap the red trash button —
-same gesture as sauna history.
+same gesture as session history.
 
 **Q. Is Plank a Premium-only feature?**
 No, it's a free add-on. The toggle to enable it is in the Settings tab. The
 plank tab is invisible unless you turn it on, so it does not crowd the UI
-for sauna-only users.
+for users who do not need it.
 
 ### 5. Other
 
@@ -293,8 +294,8 @@ for diagnosis or treatment decisions. Consult a physician if you have
 concerns.
 
 **Q. What is the Recommended use?**
-Personal wellness tracking. Use saunas at your own risk and follow your local
-sauna's rules. Avoid alcohol before and during sauna use.
+Personal wellness tracking. Use hot baths at your own risk and follow the
+facility's rules. Avoid alcohol before and during sessions.
 
 **Q. How do I contact support?**
 Email **maxsaunatimer@gmail.com**. Please include your iOS / watchOS versions
