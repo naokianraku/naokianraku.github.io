@@ -4,7 +4,7 @@ title: FAQ (Pixel Watch & Android)
 
 # FAQ — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-09-25
+**Last updated / 最終更新:** (set on release / 公開時に設定)
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
@@ -16,9 +16,12 @@ title: FAQ (Pixel Watch & Android)
 ### 1. Subscription & Billing
 
 **Q. How much is Premium?**
-Premium is an auto-renewing subscription. The available plans, the price for
-your region, and whether any free period is offered are shown on the Google
-Play purchase screen.
+Premium is an auto-renewing subscription with a **Monthly plan** and a **Yearly
+plan**. Prices are loaded from Google Play and shown on the app's Premium screen and
+on the Google Play purchase screen, in your local currency. First-time Premium
+subscribers get a free period (such as **"Premium: first month free"**). Google Play
+decides eligibility; if you are eligible, the free period is shown on the Premium
+screen and the purchase screen.
 
 **Q. What does Premium unlock?**
 Per-set **recovery curves** with the straight **slope line** for each set (the
@@ -54,27 +57,58 @@ automatically over the Wearable Data Layer, for everyone. The optional Google
 Drive cloud sync (see "How does cloud sync / backup work?" below) is also
 **free** — there is nothing to gate behind Premium here.
 
+**Q. Where do I subscribe?**
+Open **Settings → Premium → "Upgrade to Premium"**, or tap **"See Premium"** on any
+locked feature, to reach the Premium screen, then tap the button for the Monthly or
+Yearly plan. If you're eligible for the free period, the button reads "Start … free,
+then …"; otherwise it reads "Subscribe for …". The price after the free period,
+automatic renewal and how to cancel are shown right next to each plan's button.
+
 **Q. How does auto-renewal work?**
-Your subscription renews automatically at the end of each billing period. If you
-cancel in Google Play before the next renewal date, you are not charged for
-later periods. The same applies if a free period was shown when you subscribed:
-cancel before it ends and you are not charged.
+When the free period ends, your subscription automatically becomes a paid
+subscription at the plan's price and renews every month (Monthly plan) or every year
+(Yearly plan) until you cancel. If you cancel in Google Play before the next renewal
+date, you are not charged for later periods. Cancel during the free period and you
+won't be charged.
+
+**Q. How do I switch between the Monthly and Yearly plans?**
+Open **Settings → Premium → "Premium member (view or change plan)"** and tap "Switch
+to yearly" or "Switch to monthly". The new plan starts right away and the new price
+applies from your next billing date. (Plans can't be changed from the Google Play
+Store's subscription screen.)
 
 **Q. How do I cancel?**
 Open the Google Play Store → tap your profile → **Payments & subscriptions** →
-**Subscriptions** → this app's Premium → Cancel subscription. After canceling,
-you keep Premium features until the current billing period ends.
+**Subscriptions** → this app's Premium (MaxRecovery Premium) → Cancel subscription.
+While subscribed, **"Manage subscription (cancel, payment)"** on the app's Premium
+screen opens it too. After canceling, you keep Premium features until the end of the
+period you've paid for.
 
 **Q. Does canceling delete my data?**
 No. Your sessions, history, and settings all stay (they are stored locally on
 each device). Only the Premium features (recovery curves and slope
 lines, the advanced Analytics, the PDF report, CSV import/export, the HR-graph
 image share / save, the β experimental value, the Premium app icon, ad-free)
-revert to the free tier.
+revert to the free tier. If you used the Premium app icon, the app icon switches
+back to the default once Google Play confirms that Premium has ended (if you
+subscribe again and the setting is still on, the Premium icon comes back).
+
+**Q. It says "Your subscription is on hold".**
+Your subscription is on hold because of a payment problem or because it's paused,
+and Premium isn't available until it's resumed. Tap **"Open Google Play (payment,
+resume)"** in Settings or on the Premium screen, then update your payment method or
+resume the subscription in Google Play; Premium comes back once it's active. During a
+payment grace period you keep Premium, and Google Play asks you to fix your payment
+method.
 
 **Q. I paid but Premium isn't active on a new device.**
-Open Settings and tap **Restore purchase** to re-check your Google Play
-entitlement.
+Make sure you're signed in to Google Play with the Google account you used to
+subscribe, then open the Premium screen from **Settings → Premium** and tap
+**Restore purchase** to re-check your Google Play entitlement.
+
+**Q. Can I use Premium I bought on the iPhone version?**
+No. Premium on the iPhone version (App Store) and on the Android version (Google
+Play) are separate purchases and don't carry over to each other.
 
 **Q. Refunds?**
 Google handles all refund requests for Google Play purchases. Use your Google
@@ -93,8 +127,10 @@ version (AdMob), see the question below.
 **Q. Where is my data stored?**
 By default, locally on your Android phone and your Pixel Watch (local JSON
 files). When the two are paired, finished sessions transfer Watch → Phone
-directly over the Wearable Data Layer (Bluetooth / Wi-Fi). Watch settings sync
-bidirectionally, so you can edit watch settings from the phone. There is **no**
+directly over the Wearable Data Layer (Bluetooth / Wi-Fi); the watch keeps each
+session and resends it until the phone confirms it was received. Watch settings sync
+bidirectionally, so you can edit watch settings from the phone (if you change them
+on both, the newer change to each item is kept). There is **no**
 developer server and **no** login to the developer. **Optionally**, you can turn
 on **Cloud sync (Google Drive)** to back up a snapshot of your sessions to
 **your own** Google Drive — see "How does cloud sync / backup work?" below.
@@ -106,7 +142,12 @@ you tap **Sync with Google Drive**: the app signs you in with Google and uses
 the `drive.appdata` permission to store and retrieve a snapshot of your sessions
 in **your own** Google Drive — in its app-private, hidden "App Data" folder
 under your Google account. The purpose is to back up your sessions and move them
-between devices; sync is **two-way and merges by session**. Importantly, **the
+between devices; sync is **two-way and merges by session**. Syncing happens when
+you tap the button (not automatically). If the cloud data can't be fetched or read,
+or if saving would reduce the number of sessions in the cloud, the app **stops
+without changing the cloud** and tells you why. Deletions are synced too (see the
+next question). If you sync two or more devices, update the app on all of them
+before syncing. Importantly, **the
 developer still operates no server and stores nothing**: your data goes to your
 own Google Drive, not to the developer, and the developer cannot access it. It
 stays **off** until you sign in / tap Sync — if you do not use it, your data
@@ -115,6 +156,17 @@ before. You can **delete** the synced data from your own Google Drive at any
 time, and **revoke** the app's access whenever you like by deleting its
 connection in your Google Account → Security → "Your connections to third-party
 apps & services" (the app itself has no disconnect setting).
+
+**Q. Are deleted sessions also removed from the cloud and my other devices?**
+Yes. Both a single-session delete (left-swipe → trash) and **Settings → Data →
+"Delete all received data"** are applied, if you use Google Drive sync, to **the
+cloud and your other synced devices at the next sync**. Deleted sessions don't come
+back from a watch resend or from Drive sync (the app keeps only each deleted
+session's ID and the time it was deleted, to keep it from coming back). To bring
+sessions back, restore them explicitly with CSV import (Premium); the restore also
+reaches your other devices at the next sync. Devices running an older version of the
+app can't read the deletion records, so deleted sessions stay on those devices —
+update the app on all of them.
 
 **Q. What if I delete the app?**
 Data is stored on-device by default, so deleting the app removes its local data.
@@ -125,15 +177,19 @@ import/export) as a manual backup and re-import after reinstalling.
 
 **Q. Where does the heart rate come from?**
 The app reads heart rate live from the Pixel Watch's optical sensor via Wear OS
-Health Services during a session (while the session screen is on). On an
-emulator without a real sensor, it falls back to mock heart-rate data.
+Health Services (the watch's workout feature) during a session. If heart rate can't
+be read (no body sensor permission, no sensor, no readings, etc.), the watch **keeps
+timing without heart rate** and shows **"Heart rate unavailable"**. On the phone,
+that session is marked "No heart-rate data (reason)" and is not used for scores (see
+below).
 **Optionally**, if you connect **Health Connect** (Settings → Health Connect,
 with your permission), the app can also read your **Resting heart rate** and
 draw it as a reference line on the session HR chart, and **export your
 sessions** to Health Connect as exercise + heart-rate records with **"Export
 sessions to Health Connect"** in Settings, so other apps can use them (export is
-manual, not automatic). Health Connect is entirely optional — if you do not
-connect it, the app works exactly as before with no health-data integration.
+manual, not automatic, and exporting again never creates duplicates). Health
+Connect is entirely optional — if you do not connect it, the app works exactly as
+before with no health-data integration.
 
 **Q. What is the Sleep score / Next-day status?**
 If you connect **Health Connect** and you have **sleep data** recorded there,
@@ -144,11 +200,20 @@ require both Health Connect to be connected and sleep data to be present — if
 either is missing, the section simply does not appear.
 
 **Q. Does the free version share my data with advertisers?**
-The free version shows an AdMob banner ad. Ad-network data handling follows
+Without Premium, the app shows an AdMob banner ad. Ad-network data handling follows
 Google's policies and your device's privacy settings (Android advertising-ID
-controls under system Settings → Privacy → Ads). The app is currently
-distributed only in Japan. Premium removes ads. See the Privacy Policy for
-details.
+controls under system Settings → Privacy → Ads). In the EEA, the UK and
+Switzerland, the app shows Google's consent form (UMP) before ads are loaded. Where
+the law requires it, such as in some US states, you can choose how your data is used
+for ads (see the next question). Heart-rate, location and Health Connect data are
+never used for ads or given to ad networks. Premium removes ads. See the Privacy
+Policy for details.
+
+**Q. How do I change my ad consent (privacy settings)?**
+Use **Settings → Help & legal → "Ad privacy settings"**. This item appears only where
+a way to change consent or opt out is required, such as the EEA, the UK, Switzerland
+and some US states (it normally doesn't appear in Japan). To reset or delete your
+advertising ID, use Android Settings → Privacy → Ads.
 
 ### 3. Usage & Features
 
@@ -170,24 +235,44 @@ analyzing the sessions sent from the watch.
 Use the **rotary crown**: rotate **up** to advance to the next phase, rotate
 **down** to pause. To resume, rotate **up** again. **During a running session the
 screen does not respond to touch** (to prevent wet-hand misfires) — the crown is
-the only control. **While paused**, an on-screen menu appears with **Resume / Go
-back one phase / End**. If you prefer touch controls, turn on **Settings → Watch
+the only control. **On Pixel Watch 3 and later you can also double pinch (tap your
+thumb and index finger together twice) to advance** (a Next button is shown while
+running). **While paused**, an on-screen menu appears with **Resume / Back / End**.
+If you prefer touch controls, turn on **Settings → Watch
 settings → "Show control buttons"** to also show Next/Pause buttons during a
 running session. There is also an optional **"Double-tap body to advance"** gesture
-(beta, OFF by default). Phase times are **haptic alerts only** — the app does not
-auto-advance, so you choose when to move on.
+(beta, OFF by default; for watches without double pinch). Phase times are **haptic
+alerts only** — the app does not auto-advance, so you choose when to move on.
+
+**Q. The second "Next" in a row doesn't respond.**
+To prevent skipping two phases by accident, **a Next within 1 second of the previous
+input is ignored**, whether it comes from the crown, double pinch, the Next button or
+the body double-tap. Also, the crown works as **one turn, one phase**: keeping on
+turning doesn't advance a second phase. To advance again, stop and wait at least 1
+second.
+
+**Q. Turning my wrist shows "End session?".**
+In the latest version, **wrist turn is disabled during a session** (Pixel Watch 3 and
+later). It only closes a confirmation or heart-rate alert that is already open. Even
+in earlier versions, that confirmation closes by itself after 5 seconds and the
+session doesn't end unless you tap **End**. Please update the app.
 
 **Q. Can I use the system "Water Lock" during a session?**
 **It's best not to.** Wear OS Water Lock is exited by **turning the crown**, so
 while it's on the crown can't change phase or pause either. The app **already
-ignores screen touch during a session** (to prevent wet-hand / splash mis-taps), so
-Water Lock isn't needed — leave it off and just use the crown.
+ignores screen touch during a session** (to prevent wet-hand / splash mis-taps,
+except for buttons such as Next), so Water Lock isn't needed — leave it off and just
+use the crown.
 
 **Q. Does recording keep running in the background during a session?**
-While a session screen is on, the watch keeps the display awake and runs a
-**foreground service with an ongoing notification**, so the timer and heart-rate
-measurement keep running for the duration of the session. (Fully screen-off
-background recording is still being finalized and verified on real hardware.)
+The session runs in a **foreground service with an ongoing notification**. While a
+session runs, an ongoing-activity icon appears on the watch face, and the session
+keeps running if you go back to the watch face or the screen turns off (tap the icon
+or the notification to return to the session screen). While the session screen is
+shown, the display is kept on by default. When the watch's workout feature can't be
+used (for example while another app is recording a workout), heart rate may stop
+while the screen is off, so keeping the session screen open during a session is
+recommended.
 
 **Q. Can I interact with the heart-rate chart?**
 Yes — the HR chart is interactive. **Tap a point** to see a value card showing
@@ -203,9 +288,9 @@ toggle that re-bases the X axis so 0:00 is your sauna entry. All three default
 to **OFF**.
 
 **Q. What's the difference between Standard and Simple mode?**
-Standard mode tracks distinct phases (sauna → cold water → cool-down) per set,
-with per-set times and HR thresholds, plus an optional Preparation phase and an
-optional "Other/extra" phase. Simple mode runs as one continuous session and
+Standard mode tracks distinct phases (Sauna → Cold bath → Cool-down) per set,
+with per-set times and HR thresholds, plus an optional Prep phase and an
+optional extra phase. Simple mode runs as one continuous session and
 estimates sets automatically (no manual phases).
 
 **Q. What is HRR (HRR1 / HRR3 / HRR5)?**
@@ -245,11 +330,13 @@ no PDF required).
 In the **History** tab, **left-swipe** the session row to reveal a **trash
 button**, then **tap the trash button** to delete just that one session. There is
 no confirmation dialog — deletion is immediate. This left-swipe is the only
-per-session delete.
+per-session delete. If you use Google Drive sync, the session is also removed from
+the cloud and your other devices at the next sync.
 
 **Q. How do I generate a PDF report?**
 Premium feature. From the **Analytics** tab, generate the report and share it via
-the Android share sheet. An A4-portrait, 3-page report is produced:
+the Android share sheet (file name `MaxRecovery_Report_<start>_<end>.pdf`). An
+A4-portrait, 3-page report is produced:
 - **Page 1**: sessions summary, Afterglow trend, heart-rate trend, and recovery
   data (HRR1 / HRR3 / HRR5, plus recovery details)
 - **Page 2**: recovery-curve small multiples (latest 11 sessions) plus a
@@ -257,9 +344,10 @@ the Android share sheet. An A4-portrait, 3-page report is produced:
 - **Page 3**: **Best Sessions TOP 5**, a recent-sessions table, and a
   visit-frequency heatmap
 
-The Best Sessions ranking and the visit/calendar heatmap are **also available
-free in the Analytics tab** (TOP 10 there); the PDF still includes its own
-versions as part of the exported report.
+Sessions without heart-rate data are not used for the score and recovery-curve
+pages; they only appear in the recent-sessions table. The Best Sessions ranking and
+the visit/calendar heatmap are **also available free in the Analytics tab** (TOP 10
+there); the PDF still includes its own versions as part of the exported report.
 
 **Q. What is in the Analytics tab?**
 The Analytics tab is **partly free**. **Free:** Afterglow-over-time, average
@@ -276,8 +364,16 @@ front-loading), and the PDF report button. A period filter (All / 30 days /
 **Free:** the **Share** button on the heart-rate chart shares **text only**
 (basic info). **Premium:** "Save graph to Photos" + "Share graph" share detailed
 text **plus a PNG image** of the HR chart; you can choose "Info + HR graph" or
-"HR graph only". Saved images go to your device's own Photos
-(Pictures/MaxRecoveryTimer) — nothing is uploaded.
+"HR graph only". Saved images (`MaxRecovery_<date-time>.png`) go to your device's
+own Photos (Pictures/MaxRecoveryTimer) — nothing is uploaded. **Images saved with
+earlier versions stay in Pictures/MaxSaunaTimer** (they are not moved).
+
+**Q. The CSV file names changed.**
+With the new app name, exported files are named `maxrecovery_*.csv` (sessions),
+`maxrecovery_sets_*.csv`, `maxrecovery_phases_*.csv` and
+`maxrecovery_hr_samples_*.csv` (the same as the iPhone version). The columns haven't
+changed, and files exported by earlier versions (`max_sauna_*.csv`) can still be
+imported.
 
 **Q. What are the recovery-curve slope lines?**
 Premium feature. On the per-set recovery curve the app overlays a straight
@@ -298,7 +394,8 @@ section is hidden.
 
 **Q. What is the Premium app icon?**
 A Premium-only option. In **Settings → Premium**, "Use Premium app icon"
-switches your home-screen app icon to the Premium logo.
+switches your home-screen app icon to the Premium logo. When Premium ends, the icon
+switches back to the default.
 
 **Q. The self-rating ★ I entered on the watch — where does it show?**
 In the session detail header, e.g. "Standard • 2 sets • 58min • ★5".
@@ -349,14 +446,29 @@ again to bring them back (CSV import/export is Premium).
 ### 4. Troubleshooting
 
 **Q. Watch session data isn't reaching my Android phone.**
-Open the MaxRecovery app on both devices, keep them nearby with Bluetooth (or
-Wi-Fi) on, and relaunch both apps. The watch resends pending sessions
-automatically over the Wearable Data Layer once they reconnect.
+Open the MaxRecovery Timer app on both devices, keep them nearby with Bluetooth (or
+Wi-Fi) on, and relaunch both apps. The watch keeps each session until the phone
+confirms it was received and resends it automatically once they reconnect (the
+phone app also picks up sessions it missed when it starts). If there is still no
+confirmation after 1 hour, the watch history marks the session **"Not on phone
+yet"**. If the watch home screen says **"Update the phone app to receive N
+session(s)."**, the phone app is too old to receive long sessions — update it from
+Google Play and the sessions arrive automatically.
 
 **Q. Heart rate isn't showing on the watch.**
-Make sure the watch is worn snugly and that you granted the **Body Sensors**
-(heart rate) permission when the app first launched. If that permission is
-denied, the app falls back to demo / mock data instead of your real heart rate.
+Make sure the watch is worn snugly and that the body sensor (heart rate) permission
+is allowed. When heart rate can't be read, the heart-rate field shows "—" (the last
+reading is more than 10 seconds old) or "♡×" (unavailable), and a **"Heart rate
+unavailable"** notice appears. The timer keeps running and the session is recorded
+without heart rate. If the permission is off, allow "Body sensors" in the watch's
+**Settings → Apps → MaxRecovery Timer → Permissions** (you can also allow it from the
+"Before you start" screen when starting a session).
+
+**Q. The watch says "Unfinished session".**
+If the app stopped unexpectedly during a session, the session kept restarting, or
+the last save was more than 60 minutes ago, the watch asks instead of resuming
+automatically. Tap **Continue** to resume, **Save** to save what was recorded and
+end, or **Discard** to throw that session away.
 
 **Q. Watch battery drains during a session.**
 While a session screen is on, the display is kept awake and a foreground
@@ -369,6 +481,28 @@ warning during cold water / cool-down.
 The score needs valid heart-rate data after the peak. If you ended the session
 within 1 minute of the sauna peak, or the watch lost contact (dropouts), the
 score may be missing. Sessions with too few samples are marked as unscored.
+Sessions where the watch couldn't read heart rate are marked **"No heart-rate data
+(reason)"** and are not used for the Afterglow Score, personal comparisons, recovery
+curves, trends or the PDF report (they still count toward visits, total time and
+streaks).
+
+**Q. A red banner says the history file couldn't be read.**
+Your phone's history file (or some records in it) was damaged and couldn't be read,
+so the app **set it aside and kept it** instead of overwriting it. Tap **"Export the
+set-aside file"** on the banner and choose where to save it. Set-aside files are also
+listed under **Settings → Data import/export → "Set-aside history files"**, and you
+can export them without Premium. Attaching them when you contact support helps us
+investigate. If the banner asks you to restart the app, please do so.
+
+**Q. Health Connect has duplicate sessions / names still say "Sauna".**
+The latest version never creates duplicates, however many times you export. Records
+exported by earlier versions may be duplicated and keep the name "Sauna" (the latest
+version names records without a venue "MaxRecovery"). Tap **Settings → Health Connect
+→ "Clean up duplicates from earlier exports"**: for the time ranges of the sessions
+on your phone, the exercise and heart-rate records this app exported earlier are
+deleted and exported again. Data from other apps is not affected. Records of
+sessions you deleted from the phone remain; delete them in Health Connect if you
+don't need them.
 
 **Q. The resting-HR line, Sleep score, or Next-day status isn't showing.**
 These come from **Health Connect**. Make sure you connected it in **Settings →
@@ -380,10 +514,13 @@ items simply do not appear and the rest of the app is unaffected.
 ### 5. Other
 
 **Q. Can I switch the app to English?**
-The phone app, yes. It is available in Japanese and English; open Settings and
-turn on the **Force English** toggle to force the English UI regardless of your
-system language. The watch app is currently shown in Japanese only (the toggle
-does not apply to the watch).
+Yes. Both the phone app and the watch app are available in English and Japanese. The
+watch follows your phone's system language (languages other than Japanese show
+English). Turn on the **Force English** toggle in the phone's Settings to show both
+the phone and the watch in English regardless of your system language (if you switch
+it while a session is running on the watch, the watch changes after the session
+ends). If your phone uses a language other than English or Japanese, this toggle also
+shows the phone app in English.
 
 **Q. Can I use this for medical purposes?**
 No. The Afterglow Score, heart-rate values, HRR, the Sleep score, and all other
@@ -392,8 +529,9 @@ not be used for diagnosis or treatment decisions. Consult a physician if you
 have concerns.
 
 **Q. What is the recommended use?**
-Personal wellness tracking. Use saunas at your own risk and follow your local
-sauna's rules. Avoid alcohol before and during sauna use.
+Personal wellness tracking. Go at a pace that suits how you feel, and follow the
+venue's rules. Avoid using it after drinking alcohol. Follow the manufacturer's
+guidance on where to wear your watch.
 
 **Q. How do I contact support?**
 Email **maxsaunatimer@gmail.com**. Please include your Android / Wear OS
