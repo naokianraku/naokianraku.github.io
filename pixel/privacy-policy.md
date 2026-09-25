@@ -47,8 +47,8 @@ see Section 5 for details.
 | Category | Examples | Purpose |
 |---|---|---|
 | Heart-rate data | Heart-rate samples read live from the watch's optical sensor during a session | Show session history, heart-rate charts, recovery analytics, and the "Afterglow Score" |
-| Location data | Precise location (latitude/longitude) captured at the end of each session, only if you grant Location (approximate if you choose "Approximate" in the system dialog) | Saved with each session as the venue location, and used to show that session's map, the Venue Map of all your sessions' locations, and the nearby-venue picker (including your past-visited venues within about 500 m) |
-| Session data | Session times, phases, computed scores, the venue you pick and a 1–5 star rating | Core app functionality |
+| Location data | Precise location (latitude/longitude) captured at the end of each session, only if you grant Location (approximate if you choose "Approximate" in the system dialog) | Saved with each session as the venue location, and used to show that session's map, the Venue Map of all your sessions' locations, and your past-visited venues within about 500 m; sent to Google to load the maps, and for a nearby-venue search only when you tap "Find nearby venues" |
+| Session data | Session times, phases, computed scores, the venue name you enter and a 1–5 star rating | Core app functionality |
 | Health Connect data (optional) | Resting heart rate, Sleep, and Respiratory rate **read** from Health Connect; exercise + heart-rate records **written** to Health Connect — only if you connect it | Show a resting-HR reference line, a next-day Sleep score / respiratory-rate reference, and let other apps use your sessions |
 | Cloud sync data (optional) | A snapshot of your sessions stored in **your own** Google Drive's app-private folder, only if you turn on Cloud sync | Back up your sessions and move them between your devices |
 | Advertising data | Device and ad-interaction information collected by Google AdMob (free version only) | Show banner ads |
@@ -62,14 +62,23 @@ you connect it, the App reads and writes specific data through it (see Section
 5). The App does not access any other apps' health data except through Health
 Connect with your permission.
 
-When you open the session map / venue feature, the App shows
-a Google Map and looks up nearby sauna/bath facility candidates through Google
-Maps / Google Places. This sends that session's end-location coordinates to
-Google so it can load the map and fetch the nearby places. Google's handling of
+When you open the session map / venue feature, the App shows a Google Map of
+that session's end location, which sends those coordinates to Google so it can
+load the map. The App looks up nearby sauna/bath facility suggestions through
+Google Maps / Google Places **only when you tap "Find nearby venues"** (up to 5
+searches a day per device); it never searches automatically. Each search sends
+that session's end-location coordinates (the device location recorded when the
+session ended) to Google so it can fetch the nearby places. Google's handling of
 that data is governed by Google's own privacy policy
-(https://policies.google.com/privacy); the developer receives nothing. Your
-past-visited venues used in venue suggestions are read from the local session
-files on your device and are not sent to the developer.
+(https://policies.google.com/privacy); the developer receives nothing.
+
+The suggestions are shown for reference only. They are kept only in the phone's
+memory for up to 30 minutes and are **never saved** — not in your session files,
+backups, Cloud sync, CSV, PDF, or Health Connect. **The only venue names the App
+saves are the ones you type in yourself** (or bring in with CSV import). Your
+past-visited venues within about 500 m, shown before any search, are those
+names read from the local session files on your device; showing them does not
+search Google, and they are not sent to the developer.
 
 ### 3. Where your data is stored
 
@@ -181,8 +190,9 @@ The App requests only the permissions it needs:
 - **Location (watch, optional):** used only to capture your location once at
   the end of each session (precise location, unless you choose "Approximate" in
   the system dialog). The location is saved with that session, so you can tag
-  the session venue, see it on the session map and the Venue Map, and get
-  suggestions from your past-visited venues. Because each session keeps its
+  the session venue, see it on the session map and the Venue Map, get
+  suggestions from your past-visited venues, and search for nearby venues when
+  you tap "Find nearby venues". Because each session keeps its
   location, your session history shows where each session took place until you
   delete that session. There is no continuous GPS tracking; the location is
   read only when a session ends. If you deny it, the App works normally without
@@ -195,8 +205,8 @@ The App requests only the permissions it needs:
   turn on Cloud sync, to store and retrieve a snapshot of your sessions in your
   own Google Drive's app-private folder (see Section 6). It is limited to this
   app's own App Data folder and can be revoked at any time.
-- **Internet (phone):** used by the phone app for maps, ads, optional Cloud sync,
-  and Google Play Billing.
+- **Internet (phone):** used by the phone app for maps, nearby-venue search (only
+  when you tap it), ads, optional Cloud sync, and Google Play Billing.
 
 ### 8. Advertising (free version)
 
@@ -316,8 +326,8 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 | 種別 | 例 | 目的 |
 |---|---|---|
 | 心拍データ | セッション中にウォッチの光学センサーからリアルタイムで読み取る心拍サンプル | セッション履歴・心拍チャート・回復分析・「ととのい度」の表示 |
-| 位置情報 | 各セッションの終了時に取得する正確な位置（緯度・経度。位置情報を許可した場合のみ。システムの許可画面で「おおよその位置」を選んだ場合はおおよその位置） | 各セッションの場所として保存し、そのセッションの地図、全セッションの場所を示す施設マップ、近隣施設の選択（約 500 m 以内の過去に訪れた施設を含む）に使用 |
-| セッションデータ | セッション時刻・フェーズ・算出スコア・選択した施設・1〜5 の星評価 | アプリの中核機能 |
+| 位置情報 | 各セッションの終了時に取得する正確な位置（緯度・経度。位置情報を許可した場合のみ。システムの許可画面で「おおよその位置」を選んだ場合はおおよその位置） | 各セッションの場所として保存し、そのセッションの地図、全セッションの場所を示す施設マップ、約 500 m 以内の過去に訪れた施設の表示に使用。地図の読み込みのため Google に送信するほか、近隣施設の検索のためには「近くの施設を探す」をタップしたときだけ Google に送信 |
+| セッションデータ | セッション時刻・フェーズ・算出スコア・入力した施設名・1〜5 の星評価 | アプリの中核機能 |
 | Health Connect データ（任意） | Health Connect から**読み取る**安静時心拍数・睡眠・呼吸数、Health Connect へ**書き込む**運動＋心拍レコード（接続した場合のみ） | 安静時心拍の基準線、翌日の睡眠スコア／呼吸数の参考表示、他アプリでのセッション利用 |
 | クラウド同期データ（任意） | クラウド同期をオンにした場合のみ、**利用者自身の** Google Drive のアプリ専用フォルダに保存されるセッションのスナップショット | セッションのバックアップと端末間の移行 |
 | 広告データ | Google AdMob が収集する端末情報・広告操作情報（無料版のみ） | バナー広告の表示 |
@@ -332,13 +342,23 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 します（第 5 条参照）。本アプリは、Health Connect を通じて利用者が許可した
 場合を除き、他アプリの健康データにアクセスすることはありません。
 
-セッションの地図／施設機能を開くと、本アプリは Google マップを
-表示し、Google マップ／Google プレイス を通じて近隣のサウナ・入浴施設の候補を
-検索します。これにより該当セッションの終了位置の座標が Google に送信され、
-地図の読み込みと近隣施設の取得に使われます。この座標の Google による取扱いは
-Google のプライバシーポリシー（https://policies.google.com/privacy）に従います。
-開発者は何も受け取りません。施設候補に使う過去に訪れた施設は、端末内の
-ローカルセッションファイルから読み出すもので、開発者に送信されることはありません。
+セッションの地図／施設機能を開くと、本アプリは該当セッションの終了位置の
+Google マップを表示します。地図の読み込みのため、その座標が Google に送信され
+ます。近隣のサウナ・入浴施設の候補は、**「近くの施設を探す」をタップしたとき
+だけ**（1 台につき 1 日 5 回まで）、Google マップ／Google プレイス を通じて検索
+します。自動で検索することはありません。検索のたびに、該当セッションの終了位置
+（セッション終了時に端末が取得した位置）の座標が Google に送信され、近隣施設の
+取得に使われます。この座標の Google による取扱いは Google のプライバシー
+ポリシー（https://policies.google.com/privacy）に従います。開発者は何も受け
+取りません。
+
+検索で表示される候補は参考表示です。スマートフォンのメモリ上に最長 30 分保持
+するだけで、**保存はしません**（セッションファイル・バックアップ・クラウド同期・
+CSV・PDF・Health Connect のいずれにも残りません）。**本アプリが保存する施設名は、
+利用者が自分で入力したもの**（と CSV で取り込んだもの）**だけ**です。検索の前に
+表示する約 500 m 以内の過去に訪れた施設は、端末内のローカルセッションファイル
+から読み出したこれらの施設名です。表示のために Google を検索することはなく、
+開発者に送信されることもありません。
 
 ### 3. データの保存場所
 
@@ -447,7 +467,8 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 - **位置情報（ウォッチ・任意）:** 各セッションの終了時に一度だけ位置を取得する
   ためだけに利用します（システムの許可画面で「おおよその位置」を選ばない限り
   正確な位置）。取得した位置はそのセッションに保存され、施設の記録、セッションの
-  地図と施設マップの表示、過去に訪れた施設の候補表示に使います。各セッションが
+  地図と施設マップの表示、過去に訪れた施設の候補表示、「近くの施設を探す」を
+  タップしたときの近隣施設の検索に使います。各セッションが
   位置を保持するため、セッションを削除するまでは、履歴から各セッションを行った
   場所が分かります。連続的な GPS トラッキングは行わず、位置を読み取るのは
   セッション終了時だけです。拒否しても、施設の位置なしで通常どおり動作します。
@@ -458,8 +479,9 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
   オンにした場合のみ、利用者自身の Google Drive のアプリ専用フォルダに
   セッションのスナップショットを保存・取得するために使用します（第 6 条参照）。
   本アプリ自身のアプリデータフォルダに限定され、いつでも取り消せます。
-- **インターネット（スマートフォン）:** スマートフォン側アプリが地図・広告・
-  任意のクラウド同期・Google Play Billing のために利用します。
+- **インターネット（スマートフォン）:** スマートフォン側アプリが地図・近隣施設の
+  検索（タップしたときのみ）・広告・任意のクラウド同期・Google Play Billing の
+  ために利用します。
 
 ### 8. 広告（無料版）
 

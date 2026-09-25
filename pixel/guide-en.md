@@ -113,11 +113,28 @@ hardware.)
     as a reference line on the chart (see Health Connect below).
 - **History tab (履歴)** — now just the **list of past sessions**. **Tap a row**
   to open that session's analysis (same screen as Home), including the
-  **end-location map (FREE)** with venue candidates you tap to set the venue
-  (nearby Places search **and your past-visited venues within about 500 m**).
+  **end-location map (FREE)** and venue-name entry (see the next item).
   **Left-swipe a row** to reveal a **trash button**, then **tap it** to delete that
   single session (no confirmation dialog — deletion is immediate; this is the only
   per-session delete).
+- **Venue name (FREE)** — tap "**+ Add venue name**" (or the venue name, once
+  set) in the session-detail header to type or edit it. This works even for
+  sessions without a location. For sessions with a location, you can also set
+  it from the **Venue / end location** card:
+  - **Your past venues (within 500 m)** — names you entered before are listed
+    first. **One tap sets the venue**, with no Google search. For a venue you
+    have visited before, this is all you need.
+  - **"Find nearby venues (N left today)"** — searches Google Maps for nearby
+    venues **only when you tap it** (never automatically) and lists the
+    suggestions with the **Google Maps logo**.
+  - **Tap a suggestion** to open the venue-name dialog. The text field starts
+    empty, and the suggested name is shown outside it for reference. Type the
+    name you want to keep and save (under Google's terms, suggested names are
+    never saved as-is).
+  - Searches are limited to **5 per day per device** (Premium included; the
+    count resets when your device's date changes). If you reach the limit or
+    search is unavailable (when the app-wide search limit is reached, the time
+    it resumes is shown), type the name in with **"Enter venue name"**.
 - **Recovery curve slope lines (Premium)** — on the recovery-curve chart the app
   overlays a straight **slope line** for each set, with a **"Show slope lines"**
   toggle and dashed **1-min / 3-min** guide lines. A per-set legend shows the
@@ -149,8 +166,8 @@ hardware.)
   optional (see the Cloud sync section below).
 
 **Free vs Premium:** the personal z-score / vs-previous, the movement-quality
-(Flow) score, the **Detailed data** card, the end-location map / venue picker,
-the **basic Analytics** (afterglow-over-time, by-mode, summary), cloud sync
+(Flow) score, the **Detailed data** card, the end-location map / venue-name
+entry (nearby-venue search up to 5 times a day), the **basic Analytics** (afterglow-over-time, by-mode, summary), cloud sync
 (Google Drive), the overview cards (streaks / Best Sessions / heatmap / Venue
 Map), the Sleep score, and the resting-HR reference line are all **FREE**;
 sharing the HR graph as **text** is also free. The β score, the recovery curve
@@ -212,9 +229,9 @@ integration.
   **pinch to zoom** into the part you care about.
 - Turn on the **moving-average overlays** and **Hide preparation phase** under
   **Settings → Display** to read the curve more clearly.
-- Fill in the **venue** (from the nearby candidates or your past-visited venues
-  within ~500 m — free) in a session's detail to power the Venue Map, the
-  visit heatmap, and the PDF report.
+- Add the **venue name** in a session's detail (typed in; for a venue you have
+  visited before, one tap from your past venues within ~500 m — free) to power
+  the Venue Map, the visit heatmap, and the PDF report.
 - Add a **1–5 star rating** to each session (entered on the watch; it then shows
   in the detail header).
 - Check the **Analytics tab** for your streaks, Best Sessions and visit heatmap —

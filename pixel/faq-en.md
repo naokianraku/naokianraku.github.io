@@ -39,8 +39,8 @@ The heart-rate chart with phase bands, the absolute Afterglow score, the
 per-set breakdown, the **Detailed data** card (Max / Min / Avg HR, HR drop,
 HRR1 / HRR3 / HRR5), the history list (left-swipe a row to reveal a trash button,
 then tap it to delete a single session), the **personal z-score (個人比) and vs-previous (前回比)** comparisons,
-the movement-quality (Flow) score, the **end-location map with the nearby-venue
-picker**, the **basic Analytics** (Afterglow-over-time, by-mode average, and the
+the movement-quality (Flow) score, the **end-location map with venue-name
+entry** (nearby-venue search up to 5 times a day), the **basic Analytics** (Afterglow-over-time, by-mode average, and the
 period summary), sharing the heart-rate graph as **text**, watch-settings
 editing, and the Force-English toggle. The **free overview cards** in the
 **Analytics** tab (current / longest streak and total count, the **Best Sessions
@@ -302,11 +302,46 @@ In the session detail header, e.g. "Standard • 2 sets • 58min • ★5".
 
 **Q. How does the venue / map work?**
 **Free.** If Location permission is granted, the app captures the session **end**
-location once when the session ends, shows it on a Google Map in the session
-detail, and lists nearby sauna / bath facility candidates. The candidates come
-from a Google Places search **plus your own past-visited venues within about
-500 m**. Tap a candidate to set the venue. There is no continuous GPS tracking.
-Each session can also have a 1–5 star rating.
+location once when the session ends and shows it on a Google Map in the session
+detail. You can set the venue name in these ways:
+- **Your past venues (within 500 m)**: names you entered before are listed
+  first, and **one tap sets the venue** (no Google search). For a venue you
+  have visited before, this is all you need.
+- **"Find nearby venues"**: searches Google Maps for nearby sauna / bath
+  facilities **only when you tap it** (never automatically) and lists the
+  suggestions with the Google Maps logo. Tap a suggestion to open an empty
+  venue-name dialog, with the suggested name shown outside the text field for
+  reference. Type the name you want to keep and save.
+- **Type it in**: use "Enter venue name", or "**+ Add venue name**" in the
+  session-detail header. This works even for sessions without a location.
+
+There is no continuous GPS tracking. Each session can also have a 1–5 star
+rating.
+
+**Q. Why doesn't tapping a suggestion fill in the venue name?**
+Because the Google Maps Platform terms don't allow the app to store venue names
+from Google's suggestions. Suggestions are shown for reference only, and the app
+saves **only the venue names you type in** (the suggestion list itself is never
+saved on your device; it is kept in memory for up to 30 minutes). Once you have
+typed a name, it appears under "Your past venues" for nearby sessions (within
+about 500 m), ready to set with one tap.
+
+**Q. Is there a limit on nearby-venue searches?**
+Yes — **5 per day per device** (Premium included). The count resets when your
+device's date changes. A search that finds no suggestions still counts as one.
+If you reopen a session at the same place within 30 minutes, the previous
+suggestions are shown again without using a search (they can be cleared sooner,
+for example when the app is fully closed). If the app-wide daily search limit is
+reached, the app tells you so and shows when search will resume. Either way,
+you can type the venue name in with "**Enter venue name**".
+
+**Q. The venue names I set earlier are gone.**
+Venue names picked from suggestions in earlier versions can't be stored under
+Google's terms, so they are removed the first time the updated app starts (the
+app tells you how many, once). You can add them again by typing. Venue names
+imported from CSV are removed too, because earlier versions couldn't tell them
+apart from picked suggestions — import the CSV exported from the iPhone app
+again to bring them back (CSV import/export is Premium).
 
 ### 4. Troubleshooting
 
