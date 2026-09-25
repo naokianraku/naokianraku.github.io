@@ -20,7 +20,7 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 
 #### Apple Watch & iPhone version / Apple Watch・iPhone 版
 
-**App Store:** [日本 / Japan](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [United States](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
+**App Store:** [日本語](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [English](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
 
 | | 日本語 | English |
 |---|---|---|
