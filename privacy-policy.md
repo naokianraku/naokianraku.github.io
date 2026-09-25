@@ -75,6 +75,9 @@ For users without a Premium subscription, the App shows banner ads through **Goo
 a third-party service operated by Google and may collect device information, an
 advertising identifier, and ad-interaction data to deliver and measure ads.
 
+- AdMob also receives your IP address, which Google may use to estimate the
+  approximate location of your device for ad delivery. The App itself never
+  shares the venue location it records with AdMob.
 - On iOS, access to the advertising identifier (IDFA) is governed by Apple's
   **App Tracking Transparency**. The App asks for your permission; if you
   decline, you still see ads, but they are non-personalized.
@@ -189,6 +192,9 @@ Premium 未加入の場合、**Google AdMob** を通じてバナー広告を表�
 運営する第三者サービスで、広告の配信・計測のため端末情報・広告識別子・広告
 操作データを収集する場合があります。
 
+- AdMob には IP アドレスも送信され、Google が広告配信のために端末のおおよその
+  位置を推定することがあります。本アプリが記録する施設の位置情報を AdMob に
+  渡すことはありません。
 - iOS では広告識別子（IDFA）へのアクセスは Apple の **App Tracking
   Transparency** により管理されます。本アプリは許可を求めますが、拒否しても
   広告は表示されます（その場合は非パーソナライズ広告になります）。
