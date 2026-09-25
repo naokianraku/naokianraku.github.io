@@ -4,7 +4,7 @@ title: FAQ (Pixel Watch & Android)
 
 # FAQ — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-11
+**Last updated / 最終更新:** 2026-09-25
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
@@ -16,9 +16,9 @@ title: FAQ (Pixel Watch & Android)
 ### 1. Subscription & Billing
 
 **Q. How much is Premium?**
-Check the current price for your region in Google Play (Subscriptions). A yearly
-plan is also available at roughly **20% off** vs paying monthly. New
-subscribers get a 30-day free trial.
+Premium is an auto-renewing subscription. The available plans, the price for
+your region, and whether any free period is offered are shown on the Google
+Play purchase screen.
 
 **Q. What does Premium unlock?**
 Per-set **recovery curves** with the straight **slope line** for each set (the
@@ -54,14 +54,15 @@ automatically over the Wearable Data Layer, for everyone. The optional Google
 Drive cloud sync (see "How does cloud sync / backup work?" below) is also
 **free** — there is nothing to gate behind Premium here.
 
-**Q. What happens when the free trial ends?**
-Your subscription auto-renews at the regular price. You can cancel at any time
-during the trial — if you cancel at least 24 hours before the trial ends, you
-are not charged.
+**Q. How does auto-renewal work?**
+Your subscription renews automatically at the end of each billing period. If you
+cancel in Google Play before the next renewal date, you are not charged for
+later periods. The same applies if a free period was shown when you subscribed:
+cancel before it ends and you are not charged.
 
 **Q. How do I cancel?**
 Open the Google Play Store → tap your profile → **Payments & subscriptions** →
-**Subscriptions** → MaxRecovery Premium → Cancel subscription. After canceling,
+**Subscriptions** → this app's Premium → Cancel subscription. After canceling,
 you keep Premium features until the current billing period ends.
 
 **Q. Does canceling delete my data?**
@@ -108,8 +109,9 @@ own Google Drive, not to the developer, and the developer cannot access it. It
 stays **off** until you sign in / tap Sync — if you do not use it, your data
 stays on your devices (Watch ↔ Phone over the Wearable Data Layer) exactly as
 before. You can **delete** the synced data from your own Google Drive at any
-time, and **revoke** the app's access whenever you like in your Google Account
-permissions (or from Settings).
+time, and **revoke** the app's access whenever you like by deleting its
+connection in your Google Account → Security → "Your connections to third-party
+apps & services" (the app itself has no disconnect setting).
 
 **Q. What if I delete the app?**
 Data is stored on-device by default, so deleting the app removes its local data.
@@ -124,10 +126,11 @@ Health Services during a session (while the session screen is on). On an
 emulator without a real sensor, it falls back to mock heart-rate data.
 **Optionally**, if you connect **Health Connect** (Settings → Health Connect,
 with your permission), the app can also read your **Resting heart rate** and
-draw it as a reference line on the session HR chart, and **write each finished
-session back** to Health Connect as an exercise + heart-rate record so other
-apps can use it. Health Connect is entirely optional — if you do not connect
-it, the app works exactly as before with no health-data integration.
+draw it as a reference line on the session HR chart, and **export your
+sessions** to Health Connect as exercise + heart-rate records with **"Export
+sessions to Health Connect"** in Settings, so other apps can use them (export is
+manual, not automatic). Health Connect is entirely optional — if you do not
+connect it, the app works exactly as before with no health-data integration.
 
 **Q. What is the Sleep score / Next-day status?**
 If you connect **Health Connect** and you have **sleep data** recorded there,
@@ -140,9 +143,9 @@ either is missing, the section simply does not appear.
 **Q. Does the free version share my data with advertisers?**
 The free version shows an AdMob banner ad. Ad-network data handling follows
 Google's policies and your device's privacy settings (Android advertising-ID
-controls under system Settings → Privacy → Ads, and the Google UMP / GDPR
-consent prompt where applicable). Premium removes ads. See the Privacy Policy
-for details.
+controls under system Settings → Privacy → Ads). The app is currently
+distributed only in Japan. Premium removes ads. See the Privacy Policy for
+details.
 
 ### 3. Usage & Features
 
@@ -156,8 +159,9 @@ value **β** is Premium (and only when you turn it on in Settings →
 Experimental). Reference value only — not a medical metric.
 
 **Q. Can I use the app without a Pixel Watch?**
-The timer works on the Android phone alone, but heart-rate measurement and the
-Afterglow Score require a Pixel Watch (or other Wear OS smartwatch).
+No. **Timing and heart-rate measurement run in the watch app, so a Pixel Watch
+(or other Wear OS smartwatch) is required.** The phone app is for reviewing and
+analyzing the sessions sent from the watch.
 
 **Q. How do I control the timer with wet hands during a session?**
 Use the **rotary crown**: rotate **up** to advance to the next phase, rotate
@@ -338,9 +342,10 @@ items simply do not appear and the rest of the app is unaffected.
 ### 5. Other
 
 **Q. Can I switch the app to English?**
-Yes. The app is available in Japanese and English. Open Settings and turn on
-the **Force English** toggle to force the English UI regardless of your system
-language.
+The phone app, yes. It is available in Japanese and English; open Settings and
+turn on the **Force English** toggle to force the English UI regardless of your
+system language. The watch app is currently shown in Japanese only (the toggle
+does not apply to the watch).
 
 **Q. Can I use this for medical purposes?**
 No. The Afterglow Score, heart-rate values, HRR, the Sleep score, and all other

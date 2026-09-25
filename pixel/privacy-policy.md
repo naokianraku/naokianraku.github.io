@@ -4,9 +4,9 @@ title: Privacy Policy (Pixel Watch & Android)
 
 # Privacy Policy / プライバシーポリシー — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-05
+**Last updated / 最終更新:** 2026-09-25
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
-**Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer
+**Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 ---
@@ -47,7 +47,7 @@ see Section 5 for details.
 | Category | Examples | Purpose |
 |---|---|---|
 | Heart-rate data | Heart-rate samples read live from the watch's optical sensor during a session | Show session history, heart-rate charts, recovery analytics, and the "Afterglow Score" |
-| Location data | Approximate location captured once at the end of a session (latitude/longitude), only if you grant Location | Saved with the session as the venue location, for your reference, and to show the map / nearby-venue picker (including your past-visited venues within about 500 m) |
+| Location data | Precise location (latitude/longitude) captured at the end of each session, only if you grant Location (approximate if you choose "Approximate" in the system dialog) | Saved with each session as the venue location, and used to show that session's map, the Venue Map of all your sessions' locations, and the nearby-venue picker (including your past-visited venues within about 500 m) |
 | Session data | Session times, phases, computed scores, the venue you pick and a 1–5 star rating | Core app functionality |
 | Health Connect data (optional) | Resting heart rate, Sleep, and Respiratory rate **read** from Health Connect; exercise + heart-rate records **written** to Health Connect — only if you connect it | Show a resting-HR reference line, a next-day Sleep score / respiratory-rate reference, and let other apps use your sessions |
 | Cloud sync data (optional) | A snapshot of your sessions stored in **your own** Google Drive's app-private folder, only if you turn on Cloud sync | Back up your sessions and move them between your devices |
@@ -102,9 +102,10 @@ Score and HRR (heart-rate recovery at 1/3/5 minutes after the sauna peak).
   party.
 - Heart-rate data is processed on your devices and kept in local files. It is
   never sent to Google AdMob.
-- If you connect Health Connect, the App **writes** each session's heart-rate
-  record to Health Connect on your device (see Section 5). This is a local,
-  on-device exchange governed by Health Connect; it is not sent to the developer.
+- If you connect Health Connect and export your sessions, the App **writes**
+  each session's heart-rate record to Health Connect on your device (see
+  Section 5). This is a local, on-device exchange governed by Health Connect; it
+  is not sent to the developer.
 
 ### 5. Health Connect (optional)
 
@@ -112,8 +113,8 @@ Health Connect is **optional** and off until you connect it in **Settings →
 Health Connect**. If you do not connect it, the App works exactly as before,
 with no health-data integration. When you connect it, you grant each permission
 explicitly through the system Health Connect screen, and you can change or revoke
-those permissions at any time in Health Connect or in **Settings → Health
-Connect**.
+those permissions at any time in Health Connect (your device's system settings
+on Android 14 and later, or the Health Connect app on earlier versions).
 
 With your permission, the App:
 
@@ -122,8 +123,10 @@ With your permission, the App:
 - **Reads your Sleep and average Respiratory rate** for the night *after* a
   session and shows them in a "Next-day status" section (Sleep is shown as a
   reference "Sleep score").
-- **Writes each session to Health Connect** as an exercise record plus a
-  heart-rate record, so other apps you choose can use your sessions.
+- **Writes your sessions to Health Connect** as an exercise record plus a
+  heart-rate record, so other apps you choose can use your sessions. This
+  happens only when you tap **Settings → Health Connect → "Export sessions to
+  Health Connect"**; sessions are not written automatically.
 
 **This data flows only between the App and Health Connect on your device.** It is
 governed entirely by your Health Connect permissions and stays on your device.
@@ -157,7 +160,10 @@ You stay in control:
 - **Delete the synced data** at any time from your own Google Drive (the App Data
   / hidden app data of your Drive).
 - **Revoke the app's access** at any time in your **Google Account → Security →
-  Third-party access** permissions, or from **Settings** in the App.
+  Your connections to third-party apps & services**
+  (https://myaccount.google.com/connections): select the app and delete its
+  connection. (It may be listed as "MaxSauna Timer".) The
+  App itself has no disconnect setting.
 
 ### 7. Permissions
 
@@ -172,11 +178,15 @@ The App requests only the permissions it needs:
 - **Notifications (watch):** used to show the ongoing notification for the
   foreground service that keeps a session recording while the session screen is
   on. The notification simply indicates that a session is in progress.
-- **Location (watch, optional):** used only to capture your approximate location
-  once at the end of a session, so you can tag the session venue and see it on
-  the map. There is no continuous GPS tracking and no
-  past-visit history. If you deny it, the App works normally without a venue
-  location.
+- **Location (watch, optional):** used only to capture your location once at
+  the end of each session (precise location, unless you choose "Approximate" in
+  the system dialog). The location is saved with that session, so you can tag
+  the session venue, see it on the session map and the Venue Map, and get
+  suggestions from your past-visited venues. Because each session keeps its
+  location, your session history shows where each session took place until you
+  delete that session. There is no continuous GPS tracking; the location is
+  read only when a session ends. If you deny it, the App works normally without
+  a venue location.
 - **Health Connect (optional):** used only if you connect Health Connect, to
   read Resting heart rate, Sleep, and Respiratory rate, and to write exercise
   and heart-rate records (see Section 5). Each permission is granted explicitly
@@ -195,16 +205,18 @@ a third-party service operated by Google and may collect device information, an
 advertising identifier, and ad-interaction data to deliver and measure ads, in
 accordance with Google's policies.
 
+- AdMob also receives your IP address, which Google may use to estimate the
+  approximate location of your device for ad delivery. The App itself never
+  shares the venue location it records with AdMob.
 - On Android, the advertising identifier is governed by the system's
   **advertising-ID controls**. You can reset or delete the advertising ID in
   **Settings → Privacy → Ads** (the exact path varies by device/Android
   version); if you do, you still see ads, but they are non-personalized.
-- In the EEA, UK, and Switzerland, the App shows a **consent form (Google UMP)**
-  before serving ads, as required by GDPR.
+- The App is currently distributed only in Japan. If distribution expands to
+  other regions, this policy will be updated accordingly.
 - Google's handling of advertising data is governed by Google's own privacy
   policy: https://policies.google.com/privacy
-- The **Premium version shows no ads**, and the App does not request tracking or
-  ad consent from Premium users.
+- The **Premium version shows no ads**.
 
 ### 9. Other Google services (diagnostics)
 
@@ -231,15 +243,16 @@ side database to access, correct, or delete. You remain in full control:
   Records the App wrote to Health Connect can be deleted in Health Connect.
 - **Delete your cloud backup (if you used Cloud sync):** Remove the synced
   snapshot from your own Google Drive's app-private ("App Data") folder, and/or
-  revoke the App's access in your Google Account → Security → Third-party access
-  (or from Settings in the App). Because the developer holds nothing, there is no
-  developer-side copy to delete.
+  revoke the App's access in your Google Account → Security → Your connections
+  to third-party apps & services (see Section 6). Because the developer holds
+  nothing, there is no developer-side copy to delete.
 - **Export your data:** You can export your session data as CSV files from
   Settings → Data import/export.
-- **Withdraw ad consent:** Adjust the advertising-ID setting in Android Settings
-  → Privacy → Ads, or use the in-app consent options where shown.
+- **Limit ad personalization:** Reset or delete the advertising ID in Android
+  Settings → Privacy → Ads.
 - **Manage Health Connect:** Revoke the App's Health Connect permissions at any
-  time in Health Connect or in Settings → Health Connect.
+  time in Health Connect (your device's system settings on Android 14 and
+  later, or the Health Connect app on earlier versions).
 
 For requests or questions, contact the developer at the address above.
 
@@ -303,7 +316,7 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 | 種別 | 例 | 目的 |
 |---|---|---|
 | 心拍データ | セッション中にウォッチの光学センサーからリアルタイムで読み取る心拍サンプル | セッション履歴・心拍チャート・回復分析・「ととのい度」の表示 |
-| 位置情報 | セッション終了時に一度だけ取得するおおよその位置（緯度・経度。位置情報を許可した場合のみ） | セッションの場所として参考用に保存し、地図／近隣施設の選択（約 500 m 以内の過去に訪れた施設を含む）に使用 |
+| 位置情報 | 各セッションの終了時に取得する正確な位置（緯度・経度。位置情報を許可した場合のみ。システムの許可画面で「おおよその位置」を選んだ場合はおおよその位置） | 各セッションの場所として保存し、そのセッションの地図、全セッションの場所を示す施設マップ、近隣施設の選択（約 500 m 以内の過去に訪れた施設を含む）に使用 |
 | セッションデータ | セッション時刻・フェーズ・算出スコア・選択した施設・1〜5 の星評価 | アプリの中核機能 |
 | Health Connect データ（任意） | Health Connect から**読み取る**安静時心拍数・睡眠・呼吸数、Health Connect へ**書き込む**運動＋心拍レコード（接続した場合のみ） | 安静時心拍の基準線、翌日の睡眠スコア／呼吸数の参考表示、他アプリでのセッション利用 |
 | クラウド同期データ（任意） | クラウド同期をオンにした場合のみ、**利用者自身の** Google Drive のアプリ専用フォルダに保存されるセッションのスナップショット | セッションのバックアップと端末間の移行 |
@@ -357,25 +370,28 @@ Services 経由で）心拍サンプルを読み取り、機能を提供しま�
 - 心拍データを開発者や第三者に**販売・共有することはありません**。
 - 心拍データは端末内で処理され、ローカルファイルに保持されます。Google AdMob
   に送信されることはありません。
-- Health Connect を接続した場合、本アプリは各セッションの心拍レコードを端末上の
-  Health Connect に**書き込みます**（第 5 条参照）。これは Health Connect が
-  管理する端末内・ローカルのやり取りであり、開発者に送信されることはありません。
+- Health Connect を接続してセッションを書き出した場合、本アプリは各セッションの
+  心拍レコードを端末上の Health Connect に**書き込みます**（第 5 条参照）。
+  これは Health Connect が管理する端末内・ローカルのやり取りであり、開発者に
+  送信されることはありません。
 
 ### 5. Health Connect（任意）
 
 Health Connect は**任意**で、**設定 → Health Connect** で接続するまでは無効
 です。接続しない場合、本アプリは従来どおり動作し、健康データの連携は一切あり
 ません。接続する際は、システムの Health Connect 画面で各権限を明示的に許可
-します。権限はいつでも Health Connect または **設定 → Health Connect** から
-変更・取り消しできます。
+します。権限はいつでも Health Connect（Android 14 以降は端末のシステム設定、
+それより前は Health Connect アプリ）から変更・取り消しできます。
 
 利用者の許可のもとで、本アプリは以下を行います。
 
 - **安静時心拍数を読み取り**、セッションの心拍チャートに基準線として表示します。
 - セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、「翌日のコンディ
   ション」セクションに表示します（睡眠は参考の「睡眠スコア」として表示）。
-- 各セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、
-  利用者が選んだ他アプリでセッションを利用できるようにします。
+- セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、
+  利用者が選んだ他アプリでセッションを利用できるようにします。書き込みは
+  **設定 → Health Connect →「セッションを Health Connect に書き出し」** を
+  タップしたときだけ行い、自動では書き込みません。
 
 **これらのデータは、端末上の本アプリと Health Connect の間でのみやり取りされ
 ます。** すべて利用者の Health Connect 権限によって管理され、端末内に留まり
@@ -410,8 +426,10 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 - **同期データの削除:** 利用者自身の Google Drive（Drive のアプリデータ／隠し
   アプリデータ）から、いつでも削除できます。
 - **アプリのアクセス権の取り消し:** **Google アカウント → セキュリティ →
-  サードパーティによるアクセス** の権限、またはアプリの**設定**から、いつでも
-  取り消せます。
+  サードパーティ製のアプリとサービスとの接続**
+  （https://myaccount.google.com/connections）で本アプリを選び、接続を削除
+  すれば、いつでも取り消せます（一覧には「MaxSauna Timer」と表示される
+  場合があります）。アプリ内に接続を解除する設定はありません。
 
 ### 7. 権限について
 
@@ -426,10 +444,13 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 - **通知（ウォッチ）:** セッション画面が表示されている間、セッションを記録し
   続けるフォアグラウンドサービスの常駐通知を表示するために使用します。この通知
   はセッションが進行中であることを示すだけのものです。
-- **位置情報（ウォッチ・任意）:** セッション終了時に一度だけおおよその位置を
-  取得し、施設の記録や地図表示に使うためだけに利用します。
-  連続的な GPS トラッキングや過去の来訪履歴はありません。拒否しても、施設の
-  位置なしで通常どおり動作します。
+- **位置情報（ウォッチ・任意）:** 各セッションの終了時に一度だけ位置を取得する
+  ためだけに利用します（システムの許可画面で「おおよその位置」を選ばない限り
+  正確な位置）。取得した位置はそのセッションに保存され、施設の記録、セッションの
+  地図と施設マップの表示、過去に訪れた施設の候補表示に使います。各セッションが
+  位置を保持するため、セッションを削除するまでは、履歴から各セッションを行った
+  場所が分かります。連続的な GPS トラッキングは行わず、位置を読み取るのは
+  セッション終了時だけです。拒否しても、施設の位置なしで通常どおり動作します。
 - **Health Connect（任意）:** Health Connect を接続した場合のみ、安静時心拍数・
   睡眠・呼吸数の読み取りと、運動・心拍レコードの書き込みに使用します（第 5 条
   参照）。各権限は明示的に許可するもので、いつでも取り消せます。
@@ -446,16 +467,18 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 運営する第三者サービスで、Google のポリシーに従い、広告の配信・計測のため
 端末情報・広告識別子・広告操作データを収集する場合があります。
 
+- AdMob には IP アドレスも送信され、Google が広告配信のために端末のおおよその
+  位置を推定することがあります。本アプリが記録する施設の位置情報を AdMob に
+  渡すことはありません。
 - Android では広告識別子はシステムの **広告 ID 設定** により管理されます。
   **設定 → プライバシー → 広告** で広告 ID をリセット／削除できます（正確な
   経路は端末や Android バージョンにより異なります）。リセットしても広告は
   表示されますが、その場合は非パーソナライズ広告になります。
-- EEA・英国・スイスでは、GDPR の要請に従い、広告配信前に **同意フォーム
-  （Google UMP）** を表示します。
+- 本アプリは現在、日本国内のみで配信しています。配信地域を広げる場合は、
+  それに合わせて本ポリシーを更新します。
 - 広告データの Google による取扱いは Google のプライバシーポリシーに従います:
   https://policies.google.com/privacy
-- **Premium 版では広告は表示されず**、Premium 利用者にトラッキングや広告同意
-  を求めることもありません。
+- **Premium 版では広告は表示されません**。
 
 ### 9. その他の Google サービス（診断）
 
@@ -482,15 +505,16 @@ Premium は **Google Play Billing** で販売される自動更新サブスク�
   に書き込んだレコードは Health Connect 内で削除できます。
 - **クラウドバックアップの削除（クラウド同期を利用した場合）:** 利用者自身の
   Google Drive のアプリ専用（「アプリデータ」）フォルダから同期スナップショットを
-  削除する、かつ／または Google アカウント → セキュリティ → サードパーティに
-  よるアクセス（もしくはアプリの設定）から本アプリのアクセス権を取り消します。
+  削除する、かつ／または Google アカウント → セキュリティ → サードパーティ製の
+  アプリとサービスとの接続 から本アプリのアクセス権を取り消します（第 6 条参照）。
   開発者は何も保持していないため、開発者側に削除すべきコピーは存在しません。
 - **データのエクスポート:** 設定 → データ入出力 から、セッションデータを
   CSV で書き出せます。
-- **広告同意の撤回:** Android の設定 → プライバシー → 広告 で広告 ID 設定を
-  変更するか、アプリ内の同意オプションを利用してください。
+- **広告のパーソナライズの制限:** Android の設定 → プライバシー → 広告 で
+  広告 ID をリセット／削除できます。
 - **Health Connect の管理:** 本アプリの Health Connect 権限は、Health Connect
-  または 設定 → Health Connect からいつでも取り消せます。
+  （Android 14 以降は端末のシステム設定、それより前は Health Connect アプリ）
+  からいつでも取り消せます。
 
 ご要望・ご質問は上記の連絡先までお問い合わせください。
 

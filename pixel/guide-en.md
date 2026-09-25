@@ -4,7 +4,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 # Quick Guide — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-11
+**Last updated / 最終更新:** 2026-09-25
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](guide-ja.html)
 
@@ -19,8 +19,9 @@ title: Quick Guide (Pixel Watch & Android)
   install the **MaxRecovery Timer** watch app to the watch (via the phone's Play
   Store / Wear OS app).
 - On first launch, grant **Body Sensors** (heart rate, on the watch) and
-  (optional) **Location** when prompted. Location is only used to tag the venue
-  at the end of a session.
+  (optional) **Location** when prompted. Location is read once at the end of
+  each session, saved with that session, and used only to tag the venue and
+  show it on the map.
 - When paired, finished sessions transfer from the **watch to the phone
   automatically** over the Wearable Data Layer (Bluetooth / Wi-Fi). Watch
   settings sync both ways, so you can edit them from the phone. By default
@@ -150,7 +151,7 @@ hardware.)
 **Free vs Premium:** the personal z-score / vs-previous, the movement-quality
 (Flow) score, the **Detailed data** card, the end-location map / venue picker,
 the **basic Analytics** (afterglow-over-time, by-mode, summary), cloud sync
-(Google Drive), the overview cards (streaks / Best Sessions / heatmap / Sauna
+(Google Drive), the overview cards (streaks / Best Sessions / heatmap / Venue
 Map), the Sleep score, and the resting-HR reference line are all **FREE**;
 sharing the HR graph as **text** is also free. The β score, the recovery curve
 (with slope / R² / lag), the **advanced Analytics**, the PDF report, the
@@ -160,9 +161,10 @@ session-detail screen on FREE (no ads on Settings); **Premium removes all ads**.
 Premium also unlocks a **Premium app icon** (Settings → Premium → "Use Premium
 app icon").
 
-**Bilingual:** the entire app — every screen, the shared graph image, and the
-PDF report — is fully Japanese / English. Use **Settings → Display → "Force
-English"** to force English regardless of your system language.
+**Bilingual:** the phone app — including the shared graph image and the PDF
+report — is available in Japanese / English. Use **Settings → Display → "Force
+English"** to force English regardless of your system language. The watch app
+is currently shown in Japanese only (this setting does not apply to the watch).
 
 ### 5a. Cloud sync (optional, FREE)
 
@@ -181,8 +183,9 @@ exactly as before.
   **your own** Google Drive, not to the developer; the developer **cannot
   access it**.
 - You can **delete the synced data** from your own Google Drive at any time, and
-  **revoke the app's access** anytime in your **Google Account permissions** (or
-  from Settings).
+  **revoke the app's access** anytime by deleting its connection in **Google
+  Account → Security → "Your connections to third-party apps & services"** (the
+  app itself has no disconnect setting).
 
 ### 6. Health Connect (optional)
 
@@ -195,9 +198,12 @@ integration.
 - For the night **after** a session, **reads your Sleep** (shown as a reference
   **Sleep score**, free) and your **average respiratory rate**, in the
   **Next-day status** section.
-- **Writes each session** to Health Connect as an **exercise + heart-rate
-  record**, so other apps can use it.
-- Connect or manage it any time under **Settings → Health Connect**.
+- Tap **Settings → Health Connect → "Export sessions to Health Connect"** to
+  **write your sessions** to Health Connect as **exercise + heart-rate
+  records**, so other apps can use them (export is manual, not automatic).
+- Connect and export under **Settings → Health Connect**; revoke permissions in
+  Health Connect (your device's system settings on Android 14 and later, or the
+  Health Connect app on earlier versions).
 
 ### 7. Tips
 
@@ -223,7 +229,7 @@ doing **3 sets of sauna → cold plunge → cool-down**.
 
 **Setup before you arrive**:
 - Use **Standard mode** (phone Settings → Watch settings).
-- Enable **"Use Pre-sauna phase"** in Settings → Watch settings.
+- Enable **"Start with prep time"** in Settings → Watch settings.
 
 **At the venue**:
 1. When the venue starts your timer (entry tag / locker), tap **Standard**
@@ -256,7 +262,7 @@ Terms in the app and in this guide that refer to the same thing.
 | クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
 | 標準モード（開始ボタン「標準モード開始」） | Standard | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold → cool-down cycle |
 | シンプルモード | Simple | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
-| 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Pre-sauna / Preparation | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |
+| 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Start with prep time → Prep | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |
 | 外気浴 | Cool down | 休憩・外気浴のフェーズ / The rest / cool-down phase |
 | その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ） | Extra phase | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
 | クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |

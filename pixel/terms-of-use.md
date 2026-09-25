@@ -4,9 +4,9 @@ title: Terms of Use (Pixel Watch & Android)
 
 # Terms of Use / 利用規約 — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-06-05
+**Last updated / 最終更新:** 2026-09-25
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
-**Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer
+**Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
 **Contact / 連絡先:** maxsaunatimer@gmail.com
 
 ---
@@ -41,13 +41,15 @@ Use. If you do not agree, please do not use the App.
 The App is free to use with advertising. An optional **Premium** subscription
 removes ads and unlocks additional features.
 
-- Plans: monthly and yearly auto-renewing subscriptions. The yearly plan is
-  roughly 20% cheaper than paying monthly. Pricing is shown in the App and in
-  Google Play and may vary by region — check the current price in Google Play.
-- A free introductory trial period (up to 30 days) may be offered. If you do not
-  cancel before the trial ends, the subscription auto-renews at the stated price.
-- Subscriptions renew automatically unless cancelled at least 24 hours before
-  the end of the current period.
+- Premium is an auto-renewing subscription. The available plans, the price, and
+  whether any free period is offered are shown on the Google Play purchase
+  screen before you subscribe, and may vary by region.
+- If a free period is shown when you subscribe and you do not cancel before it
+  ends, the subscription starts automatically at the price shown.
+- The subscription renews automatically at the end of each billing period. If
+  you cancel in Google Play before the next renewal date, you are not charged
+  for later periods, and Premium stays available until the end of the current
+  period.
 - Purchases and renewals are processed by Google through Google Play Billing.
   Manage or cancel your subscription in Google Play (Subscriptions). A "Restore
   purchase" button in the App restores your Premium entitlement.
@@ -124,13 +126,14 @@ MaxRecovery Timer（以下「本アプリ」）をダウンロードまたは利
 本アプリは広告付きで無料で利用できます。任意の **Premium** サブスクリプション
 により広告が非表示となり、追加機能が利用可能になります。
 
-- プラン: 月額および年額の自動更新サブスクリプション。年額プランは月額で
-  支払う場合より約 20% 割安です。価格はアプリ内および Google Play に表示され、
-  地域により異なる場合があります。最新の価格は Google Play でご確認ください。
-- 無料の試用期間（最大 30 日）が提供される場合があります。試用期間終了前に
-  解約しない場合、表示された価格で自動的に更新されます。
-- サブスクリプションは、現在の期間終了の 24 時間以上前に解約しない限り自動
-  更新されます。
+- Premium は自動更新のサブスクリプションです。提供中のプラン・価格・無料期間の
+  有無は、購入前に Google Play の購入画面に表示され、地域により異なる場合が
+  あります。
+- 購入時に無料期間が表示されていた場合、その期間の終了までに解約しなければ、
+  表示された価格で自動的に課金が始まります。
+- サブスクリプションは各請求期間の終わりに自動で更新されます。次の更新日より
+  前に Google Play で解約すれば、それ以降は請求されず、現在の期間の終わりまで
+  Premium を利用できます。
 - 購入および更新は Google Play Billing を通じて Google が処理します。
   サブスクリプションの管理・解約は Google Play（定期購入）から行えます。
   アプリ内の「購入を復元」ボタンで Premium の権利を復元できます。
