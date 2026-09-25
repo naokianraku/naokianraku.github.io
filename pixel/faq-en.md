@@ -84,8 +84,11 @@ Play order history at [play.google.com](https://play.google.com).
 
 **Q. What data do you collect?**
 The developer does not collect, receive, or store any of your data. There is no
-server and no account. All session data, heart-rate data, and locations stay
-on your devices and are **not** sent to the developer.
+server and no account. Session data, heart-rate data, and locations are stored
+on your devices (and, if you use cloud sync, in your own Google Drive) and are
+**not** sent to the developer. Note that showing maps and searching for nearby
+venues sends the session's end location to Google. For ads in the free
+version (AdMob), see the question below.
 
 **Q. Where is my data stored?**
 By default, locally on your Android phone and your Pixel Watch (local JSON
