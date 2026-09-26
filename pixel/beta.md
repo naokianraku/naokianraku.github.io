@@ -8,8 +8,6 @@ image:
 
 <!--
 公開前に差し替えるもの / Replace before publishing:
-- {GROUP_URL} → テスター用 Google グループ（誰でも参加できる設定）のページの URL。
-  本文に 4 か所（日本語・English の「参加の手順 / How to join」1 番、各 2 つ）。
 - {OPTIN_URL} → Google Play の参加用リンク（通常は https://play.google.com/apps/testing/com.anraku.maxsaunatimer の形）。
   本文に 6 か所（日本語・English の「参加の手順 / How to join」2 番に各 2 つ、「ご注意 / Please note」の退出方法に各 1 つ）。
 - 公開前に確認: グループを「Alpha」と Wear OS 専用トラック「Wear Alpha」の両方のテスターに登録したか。
@@ -62,7 +60,7 @@ MaxRecovery Timer は、温泉・お風呂・サウナなどの温浴のひと�
 
 ### 参加の手順
 
-1. **Google グループに参加する：** [{GROUP_URL}]({GROUP_URL}) を開き、「グループに参加」を押します。スマホの Google Play で使っているのと同じ Google アカウントで参加してください。
+1. **Google グループに参加する：** [https://groups.google.com/g/maxrecovery-testers](https://groups.google.com/g/maxrecovery-testers) を開き、「グループに参加」を押します。スマホの Google Play で使っているのと同じ Google アカウントで参加してください。
 2. **テスターになる：** 参加用リンク [{OPTIN_URL}]({OPTIN_URL}) を開き、「テスターになる」を押します。
 3. **スマホにインストールする：** Google Play からインストールします（いまは旧名の「MaxSauna Timer」で表示されます）。
 4. **ウォッチをお持ちの方は、ウォッチにも入れる：** スマホの Play ストアのアプリのページでインストール先にウォッチを選ぶか、ウォッチの Play ストアからインストールします。ウォッチでも、テスターになったのと同じ Google アカウントを使います。
@@ -128,7 +126,7 @@ settings, and shows your heart-rate recovery as an Afterglow score.
 
 ### How to join
 
-1. **Join the Google Group:** Open [{GROUP_URL}]({GROUP_URL}) and tap "Join group".
+1. **Join the Google Group:** Open [https://groups.google.com/g/maxrecovery-testers](https://groups.google.com/g/maxrecovery-testers) and tap "Join group".
    Use the same Google account that you use for Google Play on your phone.
 2. **Become a tester:** Open the opt-in link [{OPTIN_URL}]({OPTIN_URL}) and tap "Become a tester".
 3. **Install on your phone:** Install from Google Play (listed as "MaxSauna Timer" for now).
