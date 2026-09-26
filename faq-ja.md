@@ -5,7 +5,7 @@ title: FAQ / よくある質問 (Apple Watch & iPhone)
 # FAQ / よくある質問 — MaxRecovery Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-11
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **日本語** / [🇺🇸 English](faq-en.html)
 
@@ -279,7 +279,7 @@ Watch との通信が大きく欠落した場合は計算不可になります�
 さい。利用前・利用中の飲酒は避けてください。
 
 **Q. お問い合わせは？**
-**maxsaunatimer@gmail.com** までメールしてください。iOS / watchOS のバージョン
+**anraku.tech@gmail.com** までメールしてください。iOS / watchOS のバージョン
 と、症状の簡単な説明を添えていただけると助かります。
 
 **Q. プライバシーポリシー・利用規約はどこ？**

@@ -4,10 +4,10 @@ title: Privacy Policy (Pixel Watch & Android)
 
 # Privacy Policy / プライバシーポリシー — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-09-25
+**Last updated / 最終更新:** 2026-09-26 (contact address changed / 連絡先を変更)
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 ---
 
@@ -276,7 +276,7 @@ page with a new effective date.
 
 ### 15. Contact
 
-Questions about this Privacy Policy: maxsaunatimer@gmail.com
+Questions about this Privacy Policy: anraku.tech@gmail.com
 
 ---
 
@@ -539,7 +539,7 @@ Connect に書き込まれたレコードは、利用者が Health Connect 内�
 
 ### 15. お問い合わせ
 
-本ポリシーに関するお問い合わせ: maxsaunatimer@gmail.com
+本ポリシーに関するお問い合わせ: anraku.tech@gmail.com
 
 ---
 

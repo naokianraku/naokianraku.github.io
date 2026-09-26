@@ -5,7 +5,7 @@ title: FAQ (Apple Watch & iPhone)
 # FAQ — MaxRecovery Timer for Apple Watch & iPhone
 
 **Last updated / 最終更新:** 2026-06-11
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
 
@@ -298,7 +298,7 @@ Personal wellness tracking. Use hot baths at your own risk and follow the
 facility's rules. Avoid alcohol before and during sessions.
 
 **Q. How do I contact support?**
-Email **maxsaunatimer@gmail.com**. Please include your iOS / watchOS versions
+Email **anraku.tech@gmail.com**. Please include your iOS / watchOS versions
 and a brief description of the issue.
 
 **Q. Where can I find the Privacy Policy and Terms of Use?**

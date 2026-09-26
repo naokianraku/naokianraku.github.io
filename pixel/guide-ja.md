@@ -260,4 +260,4 @@ cool-down, with a selectable name (rest / hot bath / hydration / shower / stretc
 - [Privacy Policy / プライバシーポリシー](privacy-policy.html)
 - [Terms of Use / 利用規約](terms-of-use.html)
 
-**Support / お問い合わせ:** maxsaunatimer@gmail.com
+**Support / お問い合わせ:** anraku.tech@gmail.com

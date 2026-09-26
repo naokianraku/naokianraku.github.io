@@ -47,4 +47,5 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 
 - Feedback / フィードバック: [フォーム / form](feedback.html)
 - 対応状況 / Fixed issues: [対応済みの不具合一覧 / list](feedback-status.html)
-- Contact / 連絡先: maxsaunatimer@gmail.com
+- Contact / 連絡先: anraku.tech@gmail.com
+- お知らせ / News: [X @anraku_tech](https://x.com/anraku_tech)

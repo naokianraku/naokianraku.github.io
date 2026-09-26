@@ -4,9 +4,10 @@ title: Privacy Policy (Apple Watch & iPhone)
 
 # Privacy Policy / プライバシーポリシー — MaxRecovery Timer for Apple Watch & iPhone
 
+**Last updated / 最終更新:** 2026-09-26 (contact address changed / 連絡先を変更)
 **Effective date / 施行日:** 2026-09-25
 **Developer / 開発者:** Naoki Anraku (安樂直樹), an individual developer
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 ---
 
@@ -123,7 +124,7 @@ page with a new effective date.
 
 ### 11. Contact
 
-Questions about this Privacy Policy: maxsaunatimer@gmail.com
+Questions about this Privacy Policy: anraku.tech@gmail.com
 
 ---
 
@@ -242,4 +243,4 @@ Premium は Apple の App 内課金で販売される自動更新サブスクリ
 
 ### 11. お問い合わせ
 
-本ポリシーに関するお問い合わせ: maxsaunatimer@gmail.com
+本ポリシーに関するお問い合わせ: anraku.tech@gmail.com
