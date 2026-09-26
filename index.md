@@ -31,6 +31,8 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 
 #### Pixel Watch & Android version / Pixel Watch・Android 版
 
+**テスター募集中 / Testers wanted:** [参加方法 / How to join](pixel/beta.html)（Google Play のクローズドテスト・日本のみ / closed test on Google Play, Japan only）
+
 | | 日本語 | English |
 |---|---|---|
 | 簡易取説 / Quick Guide | [pixel/guide-ja.html](pixel/guide-ja.html) | [pixel/guide-en.html](pixel/guide-en.html) |
