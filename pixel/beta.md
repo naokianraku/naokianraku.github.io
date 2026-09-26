@@ -3,7 +3,7 @@ title: テスター募集 / Join the beta (Pixel Watch & Android)
 description: MaxRecovery Timer の Android 版（Pixel Watch / Wear OS ＋ Android スマホ）の Google Play クローズドテストに参加してくださる方を募集しています。
 image:
   path: /assets/img/og-beta.png
-  alt: MaxRecovery Timer「心拍の回復を、見える化。」Android（Pixel Watch）版 テスター募集（Anraku Tech）
+  alt: MaxRecovery Timer「心拍の回復を、見える化。」Android 版 テスター募集中（Anraku Tech）
 ---
 
 <!--
