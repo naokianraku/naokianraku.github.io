@@ -4,13 +4,34 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 # 対応状況 — MaxRecovery Timer
 
-**最終更新:** 2026-06-24（v0.1.6 を配信／v0.1.5・Phone v0.1.11 も配信済み）
+**最終更新:** 2026-09-XX（v0.1.7／Phone v0.2.0 を配信）
 
 テスターの皆さまからいただいた不具合のご報告・ご要望と、その対応内容です。ご協力ありがとうございます！
 
 > 🐛 新しいご報告はこちら → **[フィードバックフォーム](feedback.html)**
 
 ## Pixel Watch / Android
+
+### ⚠️ ご注意
+
+**手首を返すと「セッション終了？」が出ることがある（2026年9月の Pixel Watch アップデート）**
+- 状態：⚠️ v0.1.7 までの注意点（今後の版で対応予定）
+- 内容：2026年9月の Pixel Watch のアップデートで、手首をひねる（返す）動作がシステムの「戻る」になりました。v0.1.7 までは、計測中にこの動作をすると「セッション終了？」の確認が出ることがあります。**5秒で自動的に取り消され、記録は続きます。** 今後の版で、計測中はこの動作に反応しないようにする予定です。（F-022「手首をひねると意図せず次フェーズへ進む」とは別の現象です）
+
+### 🔎 調査中
+
+**F-026 2セット目以降の記録が途切れ、同じ頃に「計測中」の通知が消えた（重大）**
+- 状態：🔎 調査中（v0.1.7 で対策の第1段を配信）
+- 内容：2セット目以降の心拍・フェーズの記録が途切れ、同じ頃に「計測中」の通知も消えていた、とのご報告です（画面のタイマーは動いていました）。原因はまだ特定できていません。
+- 対策（v0.1.7）：
+  - 計測中の前面サービス（「計測中」の通知を出して計測を続けるための仕組み）を、画面の作り直し（文字サイズの変更など）で止めないようにしました。
+  - 心拍が届かないときは、画面に「心拍を取得できません」と出るようにしました（止まった数字を出し続けません）。
+  - 異常があったときの診断メモを、記録に残すようにしました。
+- 次の版：計測を画面から完全に切り離す対策を準備中です。
+- お願い：同じ症状が出たら、[フィードバックフォーム](feedback.html)で次の点を教えてください。
+  - ウォッチの機種とアプリの版
+  - 何セット目で、どんな操作をしたか（画面を手で覆った・文字盤に戻った など）
+  - 「計測中」の通知が消えた時刻
 
 ### ✅ 修正・配信済み
 
@@ -43,8 +64,8 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 - 内容：フェーズ移行に必要なクラウンの回転量を「少なめ／標準／多め／最多」から選べるようにしました（不意の接触による誤操作を防げます）。設定 → ウォッチ設定。
 
 **F-010 1つ前のフェーズに戻れるように（要望）**
-- 状態：✅ 追加・配信済み（v0.1.4）
-- 内容：誤って進めてしまったとき、画面長押し（確認あり）または「戻る」ボタンで1つ前のフェーズに戻せるようにしました。
+- 状態：✅ 追加・配信済み（v0.1.4）→ v0.1.7 で修正（下の「F-010 / F-015 訂正とお詫び」）
+- 内容：誤って進めてしまったとき、1つ前のフェーズに戻せる機能です。v0.1.7 からは、一時停止中に画面の「戻る」→確認で戻ります（画面長押しでの操作は v0.1.5 で廃止）。
 
 **F-011 本体ダブルタップで次へ（実験・要望）**
 - 状態：✅ 実験的に追加・配信済み（v0.1.4／既定OFF）
@@ -60,10 +81,10 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 **F-016 操作方法の見直し：濡れ・水しぶきによる誤操作の防止（重要）**
 - 状態：✅ 実装・配信済み（v0.1.5）
-- 内容：**計測中は画面タッチに反応しません（クラウンのみ）**。上＝次へ／下＝一時停止。**一時停止中だけ**画面に「再開／戻る／終了」のメニューが出ます。「操作ボタンを表示」をONにすると実行中も 次へ／停止 をタッチできます。（F-010「1つ前に戻る」は長押し→一時停止メニューに変更）
+- 内容：**計測中は画面タッチに反応しません（クラウンのみ）**。上＝次へ／下＝一時停止。**一時停止中だけ**画面に「再開／戻る／終了」のメニューが出ます。「操作ボタンを表示」をONにすると実行中も 次へ／停止 をタッチできます。（F-010「1つ前に戻る」は長押し→一時停止メニューに変更。実際に戻れるのは v0.1.7 から＝下の「F-010 / F-015 訂正とお詫び」）
 
 **F-015 フェーズを戻したとき経過時間を引き継ぐ**
-- 状態：✅ 実装・配信済み（v0.1.5）
+- 状態：✅ 実装・配信済み（v0.1.5）→ 実際に使えるのは v0.1.7 から（下の「F-010 / F-015 訂正とお詫び」）
 - 内容：1つ前のフェーズに戻ると、タイマーが0でなく**戻り先の経過時間から続く**ようにしました。
 
 **F-011 本体ダブルタップの感度を改善**
@@ -98,17 +119,66 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 - 状態：✅ 追加・配信済み（v0.1.6）
 - 内容：セッション開始からの最大・最小心拍を表示します（「全」がセッション全体、「↓↑」が直近5分）。
 
+**F-010 / F-015 訂正とお詫び：1つ前のフェーズに戻れなかった**
+- 状態：✅ 修正・配信済み（v0.1.7）
+- 内容：v0.1.6 までは、一時停止メニューに「戻る」が表示されず、1つ前のフェーズに実際には戻れない不具合がありました（そのため F-015 の経過時間の引き継ぎも使えませんでした）。「戻れる」とご案内していたのに使えない状態が続き、申し訳ありませんでした。
+- 対策：v0.1.7 で修正しました。クラウンを下に回して一時停止 → 画面の「戻る」→ 確認で、1つ前のフェーズに戻ります。戻ったフェーズは経過時間を引き継ぎ、戻ったあとも**一時停止のまま**です。クラウンを上に回すと再開します。（「戻る」は、戻れるフェーズがあるときだけ表示されます）
+
+**F-027 経過時間の小数点以下（1/10秒）を表示しない**
+- 状態：✅ 対応・配信済み（v0.1.7）
+- 内容：セッション画面の経過時間を「分:秒」（例 01:23）で表示し、1/10秒の桁をなくしました。
+
+**v0.1.7 のその他の改善**
+- 状態：✅ 配信済み（v0.1.7）
+- 内容：
+  - 心拍を取得できないときは、仮の心拍を記録せず、画面に「心拍を取得できません」と表示します。
+  - 心拍（身体センサー）の権限を許可しなかったときに、アプリが落ちる問題を直しました。
+  - 前回の計測が途中で止まっていたときは、「続ける／保存して終了／破棄」を選べるようにしました。
+  - クラウンを1回回すと、1フェーズだけ進むようにしました（続けて進めるときは、いったん手を止めてから回してください）。
+  - 丸い画面の端で文字が欠けないよう、配置を見直しました。
+  - 記録と設定の保存を壊れにくくしました。
+
+**Phone v0.2.0 の変更点**
+- 状態：✅ 配信済み（Phone v0.2.0）
+- 内容：
+  - 最新の Android に対応しました。
+  - プレミアムを購入済みでも、無料版として扱われることがある問題を直しました。
+  - 施設名は、手入力した名前だけを保存するようにしました。近くの施設は「近くの施設を探す」を押したときだけ検索します（1日5回まで）。以前に保存した施設名は消去されます（アプリ内でお知らせします）。
+  - 位置情報の権限を使わなくなりました。
+  - Health Connect の設定から、データの使い方とプライバシーポリシーを確認できるようにしました。
+
 ---
 
 # Fixed issues — MaxRecovery Timer (English)
 
-**Last updated:** 2026-06-24 (v0.1.6 released; v0.1.5 / Phone v0.1.11 also released)
+**Last updated:** 2026-09-XX (v0.1.7 / Phone v0.2.0 released)
 
 This page summarizes the bug reports & requests from testers and how each was addressed. Thank you for your help!
 
 > 🐛 Report new issues → **[Feedback form](feedback.html)**
 
 ## Pixel Watch / Android
+
+### ⚠️ Please note
+
+**Turning your wrist can bring up "End session?" (September 2026 Pixel Watch update)**
+- Status: ⚠️ Applies up to v0.1.7 (to be addressed in a future version)
+- What: With the September 2026 Pixel Watch update, twisting (turning) your wrist became the system "Back" gesture. Up to v0.1.7, doing this during a session may bring up the "End session?" confirmation. **It cancels itself after 5 seconds and recording continues.** In a future version, the app will ignore this gesture during a session. (This is different from F-022, "Twisting the wrist unintentionally advances to the next phase".)
+
+### 🔎 Investigating
+
+**F-026 Recording stopped from the 2nd set onward, and the "recording" notification disappeared around the same time (serious)**
+- Status: 🔎 Investigating (first round of countermeasures released in v0.1.7)
+- What: A tester reported that heart-rate and phase recording stopped from the 2nd set onward, and that the "recording" notification had disappeared around the same time (the timer on screen kept running). We have not identified the cause yet.
+- Countermeasures (v0.1.7):
+  - The foreground service that keeps the session recording (and shows the "recording" notification) is no longer stopped when the screen is rebuilt (for example, when the font size changes).
+  - When no heart rate is coming in, the screen now shows "Heart rate unavailable" (instead of keeping a frozen number).
+  - When something goes wrong, a short diagnostic note is saved with the session.
+- Next version: We are preparing a fix that fully separates recording from the screen.
+- Request: If you see the same problem, please tell us the following via the [Feedback form](feedback.html):
+  - Your watch model and the app version
+  - Which set it happened in, and what you did (covered the screen with your hand, went back to the watch face, etc.)
+  - The time the "recording" notification disappeared
 
 ### ✅ Fixed & released
 
@@ -141,8 +211,8 @@ This page summarizes the bug reports & requests from testers and how each was ad
 - What: You can now choose how far to turn the crown to act — Light / Standard / More / Most — to avoid accidental triggers. Settings → Watch settings.
 
 **F-010 Go back one phase (request)**
-- Status: ✅ Added & released (v0.1.4)
-- What: If you advance by mistake, long-press the screen (with a confirmation) or use the Back button to return to the previous phase.
+- Status: ✅ Added & released (v0.1.4) → fixed in v0.1.7 (see "F-010 / F-015 Correction and apology" below)
+- What: If you advance by mistake, you can return to the previous phase. From v0.1.7, while paused, tap "Go back" on the screen and confirm (the long-press was removed in v0.1.5).
 
 **F-011 Double-tap the watch body to advance (beta, request)**
 - Status: ✅ Added (experimental) & released (v0.1.4 / off by default)
@@ -158,10 +228,10 @@ This page summarizes the bug reports & requests from testers and how each was ad
 
 **F-016 Controls revised to prevent wet/splash mis-taps (important)**
 - Status: ✅ Implemented & released (v0.1.5)
-- What: During a running session the screen no longer responds to touch (crown only): up = next, down = pause. Only while paused does an on-screen menu (Resume / Go back / End) appear. Turn on "Show control buttons" to also use Next/Pause by touch while running. (Go back, F-010, moved from long-press to the pause menu.)
+- What: During a running session the screen no longer responds to touch (crown only): up = next, down = pause. Only while paused does an on-screen menu (Resume / Go back / End) appear. Turn on "Show control buttons" to also use Next/Pause by touch while running. (Go back, F-010, moved from long-press to the pause menu. It actually works from v0.1.7 — see "F-010 / F-015 Correction and apology" below.)
 
 **F-015 Carry over elapsed time when going back a phase**
-- Status: ✅ Implemented & released (v0.1.5)
+- Status: ✅ Implemented & released (v0.1.5) → actually usable from v0.1.7 (see "F-010 / F-015 Correction and apology" below)
 - What: Going back one phase now resumes from that phase's previous elapsed time instead of resetting to 0.
 
 **F-011 Improved double-tap sensitivity**
@@ -195,6 +265,34 @@ This page summarizes the bug reports & requests from testers and how each was ad
 **F-025 Show session max / min heart rate on the session screen**
 - Status: ✅ Added & released (v0.1.6)
 - What: The session's max / min heart rate is shown ("全" = whole session, "↓↑" = last 5 minutes).
+
+**F-010 / F-015 Correction and apology: going back one phase did not work**
+- Status: ✅ Fixed & released (v0.1.7)
+- What: Up to v0.1.6, "Go back" did not appear in the pause menu, so you could not actually return to the previous phase (which also meant F-015's elapsed-time carry-over could not be used). We said it was available when it wasn't — we're sorry.
+- Fix: Fixed in v0.1.7. Rotate the crown down to pause → tap "Go back" on the screen → confirm, and you return to the previous phase. The phase keeps its elapsed time, and the session **stays paused** after going back. Rotate the crown up to resume. ("Go back" only appears when there is a previous phase to return to.)
+
+**F-027 Remove the tenths of a second from the elapsed time**
+- Status: ✅ Done & released (v0.1.7)
+- What: The elapsed time on the session screen is now shown as minutes:seconds (e.g. 01:23), without the 1/10-second digit.
+
+**Other improvements in v0.1.7**
+- Status: ✅ Released (v0.1.7)
+- What:
+  - When heart rate can't be read, the app no longer records a placeholder heart rate; it shows "Heart rate unavailable" on the screen instead.
+  - Fixed a crash when the heart-rate (body sensors) permission was not granted.
+  - If your previous session stopped partway, you can now choose "Continue", "Save" (save and end) or "Discard".
+  - One turn of the crown now advances exactly one phase (to advance again, pause your hand briefly before turning).
+  - Adjusted the layout so text isn't cut off at the edge of round screens.
+  - Made saving of sessions and settings more robust.
+
+**Changes in Phone v0.2.0**
+- Status: ✅ Released (Phone v0.2.0)
+- What:
+  - Supports the latest Android.
+  - Fixed an issue where Premium could be treated as the free version even after purchase.
+  - Venue names are now saved only when you type them yourself. Nearby venues are searched only when you tap "Find nearby venues" (up to 5 times a day). Venue names saved previously are deleted (the app lets you know).
+  - The app no longer uses the location permission.
+  - You can now check how data is used and the privacy policy from Health Connect's settings.
 
 ---
 
