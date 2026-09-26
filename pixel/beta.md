@@ -24,7 +24,7 @@ Play の掲載名が MaxRecovery Timer に変わったら更新するもの / Up
 **App / アプリ:** MaxRecovery Timer (Pixel Watch & Android; listed on Google Play as "MaxSauna Timer" until the rename is published)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹)
 **Contact / 連絡先:** [フィードバックフォーム / Feedback form](../feedback.html)
-**Last updated / 最終更新:** 2026-09-26
+**Last updated / 最終更新:** 2026-09-27
 
 > 言語 / Language: [日本語](#ja) ・ [English](#en)
 
@@ -36,13 +36,13 @@ MaxRecovery Timer の **Android 版（Pixel Watch / Wear OS ＋ Android スマ�
 
 ### どんなアプリか
 
-MaxRecovery Timer は、サウナの記録アプリです。サウナ→水風呂→外気浴のセットごとに心拍を記録し、心拍が落ち着く速さを「ととのい度」として見える化します。温泉やお風呂でも使えます。
+MaxRecovery Timer は、心拍の回復を「ととのい度」で見える化するアプリです。iPhone / Apple Watch 版と、開発中の Android 版があります。
 
-- **iPhone / Apple Watch 版**は、2026 年 9 月 25 日に App Store で公開しました（本体は無料）。
-  [App Store（日本語）](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [App Store（English）](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
-- **Android 版**は開発中で、いまは Google Play のクローズドテスト中です。**ウォッチアプリで計測し、スマホで振り返ります。**
+- **Android 版**（このページで募集しているテスト）は、サウナ→水風呂→外気浴のセットごとに心拍を記録し、心拍が落ち着く速さを「ととのい度」で表します。温泉やお風呂でも使えます。いまは Google Play のクローズドテスト中です。**ウォッチアプリで計測し、スマホで振り返ります。**
   - ウォッチ（Pixel Watch などの Wear OS）：フェーズごとの時間と心拍を記録
   - スマホ（Android）：心拍チャート、ととのい度（参考値）、履歴、分析
+- **iPhone / Apple Watch 版**（温浴の記録アプリ）は、2026 年 9 月 25 日に App Store で公開しました（基本機能は無料）。
+  [App Store（日本語）](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [App Store（English）](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
 - Android 版の機能は、iPhone 版と一部異なります（例：プランク計測や温浴環境の選択は Android 版にはありません）。
 - Google Play では、いまはまだ旧名の **「MaxSauna Timer」** で表示されます（今後の更新で MaxRecovery Timer に変わる予定です）。
 
@@ -90,18 +90,19 @@ Wear OS + Android phone).** Join the closed test on Google Play and tell us what
 
 ### About the app
 
-MaxRecovery Timer is a sauna tracker. It records your heart rate for each round of
-sauna, cold plunge and rest, and shows how quickly it settles as an Afterglow Score.
-It also works for hot springs and baths.
+MaxRecovery Timer turns heart-rate recovery into an Afterglow Score. There is an
+iPhone / Apple Watch version, and an Android version in development.
 
-- The **iPhone / Apple Watch version** was released on the App Store on September 25, 2026
-  (the app itself is free).
-  [App Store (Japanese)](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・
-  [App Store (English)](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
-- The **Android version** is in development and is currently in a closed test on Google Play.
+- The **Android version** (the test on this page) records your heart rate for each round of
+  sauna, cold bath and cool-down, and shows how quickly it settles as an Afterglow Score.
+  It also works for hot springs and baths. It is currently in a closed test on Google Play.
   **You record with the watch app and review on your phone.**
   - Watch (Wear OS, such as Pixel Watch): records the time of each phase and your heart rate
   - Phone (Android): heart-rate chart, Afterglow score (reference only), history and analytics
+- The **iPhone / Apple Watch version** (a hot-bath tracker) was released on the App Store on
+  September 25, 2026 (core features are free).
+  [App Store (Japanese)](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・
+  [App Store (English)](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
 - Some features differ from the iPhone version (for example, plank timing and choosing the
   type of hot bath are not in the Android version).
 - On Google Play the app is still listed under its old name, **"MaxSauna Timer"**. The new
