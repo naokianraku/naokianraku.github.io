@@ -5,7 +5,11 @@ logo: /assets/img/anraku-tech-logo.png
 
 # リンクカード（X などにリンクを貼ったときに出る画像）。テーマの {% seo %}（jekyll-seo-tag）が
 # og:image・twitter:image を出す。全ページ共通は下の defaults の画像。ページごとに変えるときは、そのページの
-# front matter に image: を path・alt の形で書く（width・height はここから引き継がれるので、画像は 1200×630 で作る）。
+# front matter に image: を path・alt の形で書く。ページの image: は下の defaults と項目ごとに混ざる（深いマージ）ので:
+#   - alt は必ず書く（書かないと、共通画像の説明文が別の画像に付く）。
+#   - 画像は 1200×630 で作る（width・height はここから引き継がれる）。ほかの大きさなら width・height も書く。
+# author: を足すときは author: {name: …, twitter: anraku_tech} の形にする（twitter: があるので、文字列で
+# author: 安樂直樹 と書くと twitter:creator が「@安樂直樹」になる）。
 # 画像は MaxRecovery Timer（Pixel）のリポジトリの store_assets/tools/gen_og.py で作る。
 # url: は書かない：GitHub Pages が site.url に https://naokianraku.github.io を入れるので、画像の URL は絶対 URL になる。
 twitter:
