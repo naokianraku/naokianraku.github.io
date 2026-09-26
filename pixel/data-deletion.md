@@ -25,6 +25,12 @@ maxsaunatimer@gmail.com if you need help.
 - **All sessions:** Settings → Data → "Delete all received data".
 - **Everything:** Android Settings → Apps → the app → Storage → Clear storage,
   or uninstall the app. Uninstalling removes all of the app's data on the phone.
+- **Android backup:** if Android's automatic backup ("Backup by Google One") is
+  on, the app's data may also be in your device backup and can come back when
+  you reinstall the app. To remove it, delete the sessions in the app after
+  reinstalling, or delete the device backup in Google Drive → Storage →
+  Backups (or Google One → Storage). The developer cannot see or access this
+  backup.
 
 ### 2. Data on your Pixel Watch (up to the latest 20 sessions, settings, an in-progress draft)
 - Watch Settings → Apps → the app → Clear storage, or uninstall the app from
@@ -74,6 +80,12 @@ maxsaunatimer@gmail.com if you need help.
 - **すべて:** Android の設定 → アプリ → 本アプリ → ストレージ → ストレージを消去、
   またはアプリをアンインストール。アンインストールすると、スマホ上の本アプリの
   データはすべて削除されます。
+- **Android のバックアップ:** Android の自動バックアップ（「Google One バックアップ」）
+  が有効な場合、本アプリのデータが端末のバックアップにも含まれ、再インストール時に
+  戻ることがあります。不要な場合は、再インストール後にアプリ内で削除するか、
+  Google ドライブ → 保存容量 → バックアップ（または Google One → 保存容量）から
+  端末のバックアップを削除してください。開発者はこのバックアップを見ることも、
+  取り出すこともできません。
 
 ### 2. Pixel Watch のデータ（直近 20 件までのセッション・設定・計測中の下書き）
 - ウォッチの設定 → アプリ → 本アプリ → ストレージを消去、またはウォッチから
