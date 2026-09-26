@@ -85,7 +85,8 @@ buttons"):
   zero). You **stay paused** afterwards — rotate the crown UP or tap **Resume** to
   continue.
 - **Double pinch (Pixel Watch 3 and later, Wear OS 7)** — while running, a **Next**
-  button is shown at the bottom of the screen; tapping your thumb and index finger
+  button (**Next set** in Simple mode) is shown at the bottom of the screen; tapping
+  your thumb and index finger
   together twice does the same as that button (next phase; at the end of the final
   set it opens the **One more set / End / Cancel** screen). On a confirmation (end,
   go back, final-set choice) it **cancels**, on the rating screen it **saves**, on
@@ -132,10 +133,12 @@ Services). While a session runs, an **ongoing-activity icon** appears on the wat
 face and the notification shows the current phase (e.g. "Sauna 1/3") and
 "Measuring". The session keeps running if you go back to the watch face or the
 screen turns off; tap the icon or the notification to return to the session screen.
-While the session screen is shown, the display is **kept on** by default. When the
+While the session screen is shown, the display is **kept on** by default. However,
+**without the Body sensors permission** the foreground service can't run, so
+recording may stop when the screen turns off (the watch tells you). Also, when the
 workout feature can't be used (for example while another app is recording a
-workout), heart rate may stop while the screen is off, so keeping the session
-screen open during a session is recommended.
+workout), heart rate may stop while the screen is off. Keeping the session screen
+open during a session is recommended.
 
 ### 4. End the session
 
@@ -260,7 +263,8 @@ Premium also unlocks a **Premium app icon** (Settings → Premium → "Use Premi
 app icon").
 
 **Getting Premium:** open **Settings → Premium → "Upgrade to Premium"** (or **"See
-Premium"** on any locked feature) to reach the Premium screen, then choose the
+Premium"** on the locked recovery curve, advanced Analytics or CSV import/export) to
+reach the Premium screen, then choose the
 **Monthly plan** or the **Yearly plan**. Prices are loaded from Google Play and shown
 in your local currency. First-time Premium subscribers get a free period (such as
 **"Premium: first month free"**; Google Play decides eligibility). When the free

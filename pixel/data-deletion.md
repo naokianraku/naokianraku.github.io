@@ -68,8 +68,9 @@ maxsaunatimer@gmail.com if you need help.
 - The steps above delete the data **immediately and permanently** on the device
   or in your Drive. Nothing is kept by the developer, because the developer never
   receives it.
-- Data processed by Google services the app uses (Google Mobile Ads and ad
-  consent without Premium, Google Maps / Places for maps and nearby-venue search)
+- Data processed by Google services the app uses (Google Mobile Ads without
+  Premium, Google's ad-consent service (UMP), Google Maps / Places for maps and
+  nearby-venue search)
   is handled by Google under the Google Privacy Policy
   (https://policies.google.com/privacy). You can reset or delete your advertising
   ID in Android Settings → Privacy → Ads, and, where shown, change your ad consent
@@ -131,8 +132,8 @@ maxsaunatimer@gmail.com if you need help.
 ### 削除されるデータと保持されるデータ
 - 上記の手順で、端末上またはドライブ上のデータは**直ちに完全に**削除されます。
   開発者はデータを受け取っていないため、開発者側に保持されるデータはありません。
-- 本アプリが利用する Google のサービス（Premium 未加入時の Google モバイル広告と
-  広告の同意、地図と近くの施設の検索に使う Google Maps / Places）で処理される
+- 本アプリが利用する Google のサービス（Premium 未加入時の Google モバイル広告、
+  広告の同意の確認（UMP）、地図と近くの施設の検索に使う Google Maps / Places）で処理される
   データは、Google のプライバシーポリシー（https://policies.google.com/privacy）に
   従って Google が取り扱います。広告 ID は Android の設定 → プライバシー → 広告
   からリセット・削除でき、表示されている場合は本アプリの 設定 → ヘルプ・規約 →

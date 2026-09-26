@@ -58,8 +58,9 @@ Drive cloud sync (see "How does cloud sync / backup work?" below) is also
 **free** — there is nothing to gate behind Premium here.
 
 **Q. Where do I subscribe?**
-Open **Settings → Premium → "Upgrade to Premium"**, or tap **"See Premium"** on any
-locked feature, to reach the Premium screen, then tap the button for the Monthly or
+Open **Settings → Premium → "Upgrade to Premium"**, or tap **"See Premium"** on the
+locked recovery curve, advanced Analytics or CSV import/export, to reach the Premium
+screen, then tap the button for the Monthly or
 Yearly plan. If you're eligible for the free period, the button reads "Start … free,
 then …"; otherwise it reads "Subscribe for …". The price after the free period,
 automatic renewal and how to cancel are shown right next to each plan's button.
@@ -234,8 +235,8 @@ analyzing the sessions sent from the watch.
 **Q. How do I control the timer with wet hands during a session?**
 Use the **rotary crown**: rotate **up** to advance to the next phase, rotate
 **down** to pause. To resume, rotate **up** again. **During a running session the
-screen does not respond to touch** (to prevent wet-hand misfires) — the crown is
-the only control. **On Pixel Watch 3 and later you can also double pinch (tap your
+screen does not respond to touch** (to prevent wet-hand misfires) — on watches
+without double pinch, the crown is the only control. **On Pixel Watch 3 and later you can also double pinch (tap your
 thumb and index finger together twice) to advance** (a Next button is shown while
 running). **While paused**, an on-screen menu appears with **Resume / Back / End**.
 If you prefer touch controls, turn on **Settings → Watch
@@ -269,10 +270,11 @@ The session runs in a **foreground service with an ongoing notification**. While
 session runs, an ongoing-activity icon appears on the watch face, and the session
 keeps running if you go back to the watch face or the screen turns off (tap the icon
 or the notification to return to the session screen). While the session screen is
-shown, the display is kept on by default. When the watch's workout feature can't be
-used (for example while another app is recording a workout), heart rate may stop
-while the screen is off, so keeping the session screen open during a session is
-recommended.
+shown, the display is kept on by default. However, **without the Body sensors
+permission** the foreground service can't run, so recording may stop when the screen
+turns off (the watch tells you). Also, when the watch's workout feature can't be used
+(for example while another app is recording a workout), heart rate may stop while the
+screen is off. Keeping the session screen open during a session is recommended.
 
 **Q. Can I interact with the heart-rate chart?**
 Yes — the HR chart is interactive. **Tap a point** to see a value card showing
@@ -461,8 +463,8 @@ is allowed. When heart rate can't be read, the heart-rate field shows "—" (the
 reading is more than 10 seconds old) or "♡×" (unavailable), and a **"Heart rate
 unavailable"** notice appears. The timer keeps running and the session is recorded
 without heart rate. If the permission is off, allow "Body sensors" in the watch's
-**Settings → Apps → MaxRecovery Timer → Permissions** (you can also allow it from the
-"Before you start" screen when starting a session).
+**Settings → Apps → MaxRecovery Timer → Permissions** (if you declined only once, the
+"Before you start" screen asks again when you start a session).
 
 **Q. The watch says "Unfinished session".**
 If the app stopped unexpectedly during a session, the session kept restarting, or
