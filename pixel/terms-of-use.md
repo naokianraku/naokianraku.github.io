@@ -7,7 +7,7 @@ title: Terms of Use (Pixel Watch & Android)
 **Last updated / 最終更新:** (set on release / 公開時に設定)
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 ---
 
@@ -118,7 +118,7 @@ consumer-protection rights you have under the law of your country of residence.
 
 ### 10. Contact
 
-Questions about these Terms: maxsaunatimer@gmail.com
+Questions about these Terms: anraku.tech@gmail.com
 
 ---
 
@@ -224,7 +224,7 @@ Google Maps End User Additional Terms of Service
 
 ### 10. お問い合わせ
 
-本規約に関するお問い合わせ: maxsaunatimer@gmail.com
+本規約に関するお問い合わせ: anraku.tech@gmail.com
 
 ---
 

@@ -5,7 +5,7 @@ title: FAQ (Pixel Watch & Android)
 # FAQ — MaxRecovery Timer for Pixel Watch & Android
 
 **Last updated / 最終更新:** (set on release / 公開時に設定)
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
 
@@ -555,7 +555,7 @@ venue's rules. Avoid using it after drinking alcohol. Follow the manufacturer's
 guidance on where to wear your watch.
 
 **Q. How do I contact support?**
-Email **maxsaunatimer@gmail.com**. Please include your Android / Wear OS
+Email **anraku.tech@gmail.com**. Please include your Android / Wear OS
 versions and a brief description of the issue.
 
 **Q. Where can I find the Privacy Policy and Terms of Use?**

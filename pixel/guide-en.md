@@ -443,4 +443,4 @@ cool-down, with a selectable name (Rest / Hot bath / Hydration / Shower / Stretc
 - [Privacy Policy / プライバシーポリシー](privacy-policy.html)
 - [Terms of Use / 利用規約](terms-of-use.html)
 
-**Support / お問い合わせ:** maxsaunatimer@gmail.com
+**Support / お問い合わせ:** anraku.tech@gmail.com

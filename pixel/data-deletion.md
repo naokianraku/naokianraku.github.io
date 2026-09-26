@@ -6,7 +6,7 @@ title: Delete your data (Pixel Watch & Android)
 
 **App / アプリ:** MaxRecovery Timer (Pixel Watch & Android; formerly MaxSauna Timer / 旧名 MaxSauna Timer)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹)
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 **Last updated / 最終更新:** (set on release / 公開時に設定)
 
 ---
@@ -17,7 +17,7 @@ The developer has no server and no user accounts, and **does not receive or keep
 any of your data**. Your data lives on your own devices and, only if you turn on
 cloud sync, in your own Google Drive. You can delete all of it yourself, at any
 time, with the steps below. You do not need to contact us, but you can email
-maxsaunatimer@gmail.com if you need help.
+anraku.tech@gmail.com if you need help.
 
 ### 1. Data on your phone (sessions, heart rate, venue names, settings)
 - **One session:** History tab → swipe the session to the left → tap the trash
@@ -83,7 +83,7 @@ maxsaunatimer@gmail.com if you need help.
 開発者はサーバーもユーザーアカウントも持っておらず、**皆さまのデータを受け取ったり
 保管したりしていません**。データはお使いの端末と、クラウド同期を有効にした場合に限り
 ご自身の Google ドライブにだけ保存されます。以下の手順で、いつでもご自身ですべて
-削除できます。開発者への連絡は不要ですが、お困りの場合は maxsaunatimer@gmail.com
+削除できます。開発者への連絡は不要ですが、お困りの場合は anraku.tech@gmail.com
 までご連絡ください。
 
 ### 1. スマホのデータ（セッション・心拍・施設名・設定）
