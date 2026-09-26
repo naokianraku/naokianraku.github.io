@@ -4,10 +4,10 @@ title: Terms of Use (Pixel Watch & Android)
 
 # Terms of Use / 利用規約 — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** 2026-09-25
+**Last updated / 最終更新:** 2026-09-26 (contact address changed / 連絡先を変更)
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
-**Contact / 連絡先:** maxsaunatimer@gmail.com
+**Contact / 連絡先:** anraku.tech@gmail.com
 
 ---
 
@@ -91,7 +91,7 @@ consumer-protection rights you have under the law of your country of residence.
 
 ### 9. Contact
 
-Questions about these Terms: maxsaunatimer@gmail.com
+Questions about these Terms: anraku.tech@gmail.com
 
 ---
 
@@ -173,7 +173,7 @@ MaxRecovery Timer（以下「本アプリ」）をダウンロードまたは利
 
 ### 9. お問い合わせ
 
-本規約に関するお問い合わせ: maxsaunatimer@gmail.com
+本規約に関するお問い合わせ: anraku.tech@gmail.com
 
 ---
 
