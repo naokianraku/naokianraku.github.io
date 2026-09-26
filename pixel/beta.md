@@ -9,9 +9,14 @@ description: MaxRecovery Timer の Android 版（Pixel Watch / Wear OS ＋ Andro
   本文に 4 か所（日本語・English の「参加の手順 / How to join」1 番、各 2 つ）。
 - {OPTIN_URL} → Google Play の参加用リンク（通常は https://play.google.com/apps/testing/com.anraku.maxsaunatimer の形）。
   本文に 6 か所（日本語・English の「参加の手順 / How to join」2 番に各 2 つ、「ご注意 / Please note」の退出方法に各 1 つ）。
+- {X_URL} → X のプロフィールの URL（例: https://x.com/anraku_tech。ユーザー名が決まってから）。
+  本文に 2 か所（日本語・English の「お問い合わせ / Contact」の X の行に各 1 つ）。
+- {X_HANDLE} → X のユーザー名（例: @anraku_tech）。本文に 2 か所（{X_URL} と同じ行）。
+  X のアカウントが公開までにできていなければ、X の行（日本語・English の各 1 行）を消して公開する。
 - 公開前に確認: グループを「Alpha」と Wear OS 専用トラック「Wear Alpha」の両方のテスターに登録したか。
   「Wear Alpha」の参加用リンクが「Alpha」と別なら、手順 2 にウォッチ用のリンクを足す。
-  グループの「メンバーを表示できるユーザー」を管理者のみにしたか（参加者どうしでメールアドレスが見えないように）。
+  グループの「メンバー一覧を表示できるユーザー」を管理者のみにしたか（参加者どうしでメールアドレスが見えないように）。
+- このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
 - 差し替えたら、このコメントごと削除する。
 
 Play の掲載名が MaxRecovery Timer に変わったら更新するもの / Update when the Play listing is renamed:
@@ -77,6 +82,8 @@ MaxRecovery Timer は、温泉・お風呂・サウナなどの温浴のひと�
 ### お問い合わせ
 
 ご質問やご意見は、[フィードバックフォーム](../feedback.html) からお送りください（「ご連絡の種別」で「その他のお問い合わせ」を選べます）。
+
+お知らせや進み具合（参加人数など）は、X（[{X_HANDLE}]({X_URL})）でも投稿します。
 
 ---
 
@@ -148,3 +155,5 @@ show up yet. If that happens, wait a little and open it again.
 
 Send questions or comments through the [feedback form](../feedback.html). Under "ご連絡の種別"
 (type), choose "その他のお問い合わせ" (other inquiries).
+
+We also post news and progress (such as the number of testers) on X: [{X_HANDLE}]({X_URL}).
