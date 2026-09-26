@@ -135,7 +135,9 @@ on both, the newer change to each item is kept). There is **no**
 developer server and **no** login to the developer. **Optionally**, you can turn
 on **Cloud sync (Google Drive)** to back up a snapshot of your sessions to
 **your own** Google Drive — see "How does cloud sync / backup work?" below.
-Cloud sync is **off** until you sign in and tap Sync.
+Cloud sync is **off** until you sign in and tap Sync. Note that if Android backup is
+on for your phone, Android may back up a copy of the app's data to your Google
+Account (see "What if I delete the app?" below).
 
 **Q. How does cloud sync / backup work?**
 Cloud sync is **optional and free**. In **Settings → Cloud sync (Google Drive)**
@@ -170,16 +172,24 @@ app can't read the deletion records, so deleted sessions stay on those devices �
 update the app on all of them.
 
 **Q. What if I delete the app?**
-Data is stored on-device by default, so deleting the app removes its local data.
-The free way to back up is **Cloud sync (Google Drive)** — once enabled, your
-sessions are stored in your own Google Drive and can be re-synced after
-reinstalling. Premium members can also use **CSV export** (Settings → Data
-import/export) as a manual backup and re-import after reinstalling.
+Data is stored on-device by default, so deleting the app removes its data from the
+device. However, if **Android backup** (backup to your Google Account) is on for your
+phone, Android may have backed up the app's data (such as your sessions, deletion
+records and settings) automatically, so **your sessions may come back** when you
+reinstall the app with the same Google Account or move to a new phone (the watch
+app's data may likewise be included in the watch's backup). That backup is handled
+by Google and is separate from the app's Cloud sync (the developer can't access it).
+If you don't want the restored sessions, delete them from History or with
+**Settings → Data → "Delete all received data"**.
+The free way to keep a reliable backup is **Cloud sync (Google Drive)** — once
+enabled, your sessions are stored in your own Google Drive and can be re-synced after
+reinstalling. Premium members can also use CSV export in **Settings → Data
+import/export (CSV)** as a manual backup and re-import after reinstalling.
 
 **Q. Where does the heart rate come from?**
 The app reads heart rate live from the Pixel Watch's optical sensor via Wear OS
 Health Services (the watch's workout feature) during a session. If heart rate can't
-be read (no body sensor permission, no sensor, no readings, etc.), the watch **keeps
+be read (no heart rate permission, no sensor, no readings, etc.), the watch **keeps
 timing without heart rate** and shows **"Heart rate unavailable"**. On the phone,
 that session is marked "No heart-rate data (reason)" and is not used for scores (see
 below).
@@ -241,9 +251,12 @@ thumb and index finger together twice) to advance** (a Next button is shown whil
 running). **While paused**, an on-screen menu appears with **Resume / Back / End**.
 If you prefer touch controls, turn on **Settings → Watch
 settings → "Show control buttons"** to also show Next/Pause buttons during a
-running session. There is also an optional **"Double-tap body to advance"** gesture
+running session. There is also an optional **"Double-tap to advance"** gesture
 (beta, OFF by default; for watches without double pinch). Phase times are **haptic
-alerts only** — the app does not auto-advance, so you choose when to move on.
+alerts only** — the app does not auto-advance, so you choose when to move on. When a
+confirmation or warning appears, turning the crown (either way) closes it too (it
+cancels a confirmation and continues on the inactivity warning, without changing
+phase); End is tap-only.
 
 **Q. The second "Next" in a row doesn't respond.**
 To prevent skipping two phases by accident, **a Next within 1 second of the previous
@@ -254,9 +267,11 @@ second.
 
 **Q. Turning my wrist shows "End session?".**
 In the latest version, **wrist turn is disabled during a session** (Pixel Watch 3 and
-later). It only closes a confirmation or heart-rate alert that is already open. Even
-in earlier versions, that confirmation closes by itself after 5 seconds and the
-session doesn't end unless you tap **End**. Please update the app.
+later). It only closes a confirmation or heart-rate alert that is already open. If
+the confirmation does appear, close it by **turning the crown** (either way), with a
+double pinch, or by tapping **Cancel**; the session keeps running. Even in earlier
+versions, that confirmation closes by itself after 5 seconds and the session doesn't
+end unless you tap **End**. Please update the app.
 
 **Q. Can I use the system "Water Lock" during a session?**
 **It's best not to.** Wear OS Water Lock is exited by **turning the crown**, so
@@ -270,7 +285,7 @@ The session runs in a **foreground service with an ongoing notification**. While
 session runs, an ongoing-activity icon appears on the watch face, and the session
 keeps running if you go back to the watch face or the screen turns off (tap the icon
 or the notification to return to the session screen). While the session screen is
-shown, the display is kept on by default. However, **without the Body sensors
+shown, the display is kept on by default. However, **without the Heart rate
 permission** the foreground service can't run, so recording may stop when the screen
 turns off (the watch tells you). Also, when the watch's workout feature can't be used
 (for example while another app is recording a workout), heart rate may stop while the
@@ -284,16 +299,20 @@ view.
 
 **Q. Can I add moving-average lines or hide the preparation phase on the chart?**
 Yes. In **Settings → Display** you can toggle two trailing moving-average
-overlays on the HR chart — a **60-second** average and a **10-minute** average —
-each independently. There is also a **"Hide preparation phase from chart"**
+overlays on the HR chart — **"Show 60s moving average"** and **"Show 10min moving
+average"** — each independently. There is also a **"Hide prep phase from chart"**
 toggle that re-bases the X axis so 0:00 is your sauna entry. All three default
 to **OFF**.
 
 **Q. What's the difference between Standard and Simple mode?**
 Standard mode tracks distinct phases (Sauna → Cold bath → Cool-down) per set,
 with per-set times and HR thresholds, plus an optional Prep phase and an
-optional extra phase. Simple mode runs as one continuous session and
-estimates sets automatically (no manual phases).
+optional extra phase. Simple mode doesn't split the cold bath and cool-down into
+phases: at each set break **you move to the next set yourself** (rotate the crown
+up, or use the Next set button / double pinch). There is no set limit; to finish,
+pause and tap End. One sauna time and one pair of HR thresholds apply to every set,
+and the Prep phase can be used too. On the phone, the per-set breakdown and the
+recovery curves are found from your heart-rate peaks.
 
 **Q. What is HRR (HRR1 / HRR3 / HRR5)?**
 HRR = Heart Rate Recovery. HRR1 is your heart-rate drop 1 minute after the
@@ -458,13 +477,14 @@ session(s)."**, the phone app is too old to receive long sessions — update it 
 Google Play and the sessions arrive automatically.
 
 **Q. Heart rate isn't showing on the watch.**
-Make sure the watch is worn snugly and that the body sensor (heart rate) permission
-is allowed. When heart rate can't be read, the heart-rate field shows "—" (the last
-reading is more than 10 seconds old) or "♡×" (unavailable), and a **"Heart rate
-unavailable"** notice appears. The timer keeps running and the session is recorded
-without heart rate. If the permission is off, allow "Body sensors" in the watch's
-**Settings → Apps → MaxRecovery Timer → Permissions** (if you declined only once, the
-"Before you start" screen asks again when you start a session).
+Make sure the watch is worn snugly and that the Heart rate permission is allowed.
+When heart rate can't be read, the heart-rate field shows "—" (the last reading is
+more than 10 seconds old) or "♡×" (unavailable), and a **"Heart rate unavailable"**
+notice appears. The timer keeps running and the session is recorded without heart
+rate. If the permission is off, allow "Heart rate" ("Sensors" on earlier watch
+software) in the watch's **Settings → Apps → MaxRecovery Timer → Permissions** (if you
+declined only once, the "Before you start" screen asks again when you start a
+session).
 
 **Q. The watch says "Unfinished session".**
 If the app stopped unexpectedly during a session, the session kept restarting, or
@@ -492,7 +512,7 @@ streaks).
 Your phone's history file (or some records in it) was damaged and couldn't be read,
 so the app **set it aside and kept it** instead of overwriting it. Tap **"Export the
 set-aside file"** on the banner and choose where to save it. Set-aside files are also
-listed under **Settings → Data import/export → "Set-aside history files"**, and you
+listed under **Settings → Data import/export (CSV) → "Set-aside history files"**, and you
 can export them without Premium. Attaching them when you contact support helps us
 investigate. If the banner asks you to restart the app, please do so.
 
@@ -517,12 +537,11 @@ items simply do not appear and the rest of the app is unaffected.
 
 **Q. Can I switch the app to English?**
 Yes. Both the phone app and the watch app are available in English and Japanese. The
-watch follows your phone's system language (languages other than Japanese show
-English). Turn on the **Force English** toggle in the phone's Settings to show both
-the phone and the watch in English regardless of your system language (if you switch
-it while a session is running on the watch, the watch changes after the session
-ends). If your phone uses a language other than English or Japanese, this toggle also
-shows the phone app in English.
+phone app follows the phone's language setting, and the watch app follows the watch's
+own language setting (on both, languages other than Japanese show English). Turn on
+**Settings → Display → "Force English"** on the phone to show both the phone and the
+watch in English regardless of their language settings (if you switch it while a
+session is running on the watch, the watch changes after the session ends).
 
 **Q. Can I use this for medical purposes?**
 No. The Afterglow Score, heart-rate values, HRR, the Sleep score, and all other

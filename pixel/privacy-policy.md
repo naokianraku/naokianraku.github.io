@@ -27,7 +27,8 @@ has no developer-side cloud account and no login to the developer. When your
 watch and phone are paired, finished sessions are transferred directly from the
 watch to the phone over the Wearable Data Layer (Bluetooth/Wi-Fi); they are not
 routed through the developer or any cloud of the App. The developer has no
-access to your data.
+access to your data. (If Android's backup is turned on for your devices, Android
+may also back up a copy of the App's data to your Google Account — see Section 3.)
 
 **Cloud sync is optional and goes only to your own Google Drive.** If you choose
 to turn it on (**Settings → Cloud sync (Google Drive) → "Sync with Google
@@ -98,6 +99,16 @@ search Google, and they are not sent to the developer.
   it aside on the phone instead of overwriting it, so you can export it (for example
   to attach it when contacting support). It stays on the device until you clear the
   App's storage or uninstall it.
+- **Android backup (by Google):** The phone app allows Android's automatic backup.
+  If backup to your Google Account is turned on in your phone's settings, Android may
+  back up a copy of the App's data (such as your session history, deletion records
+  and settings) to your Google Account, and restore it when you reinstall the App or
+  set up a new phone with the same account. This means your sessions may come back
+  after you uninstall and reinstall the App. The watch app's data may likewise be
+  included in the watch's backup (except a session in progress). This backup is
+  handled by Google under your Google Account and is separate from the App's
+  optional Cloud sync; the developer cannot access it. You can turn backup on or off
+  in your device's settings (the exact path varies by device / Android version).
 - **Cloud sync (optional):** If you turn on Cloud sync, a snapshot of your
   sessions is stored in **your own** Google Drive's app-private ("App Data")
   folder, under your Google account. The developer operates no server and stores
@@ -126,12 +137,12 @@ Score and HRR (heart-rate recovery at 1/3/5 minutes after the sauna peak).
 - The watch reads heart rate through Wear OS Health Services' workout feature,
   requesting heart rate only (no GPS).
 
-**Sessions without heart rate.** If heart rate can't be read — for example, the Body
-sensors permission is not granted, the watch has no heart-rate sensor, or no
-readings arrive — the App keeps timing without heart rate and shows "Heart rate
+**Sessions without heart rate.** If heart rate can't be read — for example, the Heart
+rate permission is not granted, the watch has no heart-rate sensor, or no readings
+arrive — the App keeps timing without heart rate and shows "Heart rate
 unavailable" on the watch. It never substitutes demo or estimated values. The
 session is saved with its times and phases, marked as recorded without heart rate,
-and, if known, the reason (for example, "body sensor permission off"). Such
+and, if known, the reason (for example, "heart rate permission off"). Such
 sessions are stored, transferred and synced like other sessions, are not used to
 calculate scores, and are exported to Health Connect as exercise only.
 
@@ -219,11 +230,13 @@ The App requests only the permissions it needs. On the watch, the permissions
 below are explained on a "Before you start" screen and requested when you first
 start a session, not at app launch.
 
-- **Body Sensors (watch):** required to read your real heart rate from the
-  watch's optical sensor during a session. If you deny it, the App keeps timing
-  without heart rate and shows "Heart rate unavailable"; it does not use substitute
-  data (see Section 4). The App does not request background body-sensor access;
-  heart rate is read only while a session is running in the foreground service.
+- **Heart rate (watch):** required to read your real heart rate from the watch's
+  optical sensor during a session. The watch shows this permission as "Heart rate",
+  or as "Sensors" on earlier watch software (Android's `BODY_SENSORS` permission). If
+  you deny it, the App keeps timing without heart rate and shows "Heart rate
+  unavailable"; it does not use substitute data (see Section 4). The App does not
+  request background access for it; heart rate is read only while a session is
+  running in the foreground service.
 - **Notifications (watch):** used to show the ongoing notification and the
   ongoing-activity icon on the watch face for the foreground service that keeps a
   session recording. The notification simply indicates that a session is in
@@ -309,7 +322,9 @@ Because the developer holds none of your personal data, there is no developer-
 side database to access, correct, or delete. You remain in full control:
 
 - **Delete your data:** Delete sessions in the App, or uninstall the App from
-  your watch and phone. Uninstalling removes the local data files on that device.
+  your watch and phone. Uninstalling removes the local data files on that device
+  (if Android's backup is on, a backed-up copy may be restored when you reinstall
+  the App — see Section 3; you can delete restored sessions in the App).
   If you use Cloud sync, sessions you delete in the App are also removed from your
   Drive and your other synced devices at the next sync. Records the App wrote to
   Health Connect can be deleted in Health Connect. See also the
@@ -320,7 +335,7 @@ side database to access, correct, or delete. You remain in full control:
   to third-party apps & services (see Section 6). Because the developer holds
   nothing, there is no developer-side copy to delete.
 - **Export your data:** You can export your session data as CSV files from
-  Settings → Data import/export (a Premium feature).
+  Settings → Data import/export (CSV) (a Premium feature).
 - **Limit ad personalization:** Reset or delete the advertising ID in Android
   Settings → Privacy → Ads.
 - **Change your ad consent or opt out:** Use Settings → Help & legal → "Ad privacy
@@ -345,7 +360,9 @@ finished sessions the phone has not yet confirmed receiving. Deletion records
 storage or uninstall it. If you used Cloud sync, the synced snapshot and deletion
 list stay in your own Google Drive's app-private folder until you delete them there
 or revoke the App's access. Any records written to Health Connect remain there until
-you delete them in Health Connect. The developer retains nothing.
+you delete them in Health Connect. If Android's backup is on, a copy of the App's data
+may also be kept in your Google Account's backup, as managed by Google (see Section 3).
+The developer retains nothing.
 
 ### 14. Changes
 
@@ -374,6 +391,9 @@ MaxRecovery Timer（以下「本アプリ」。旧名 MaxSauna Timer）は、温
 ペアリングしている場合、終了したセッションは Wearable Data Layer（Bluetooth /
 Wi-Fi）を通じてウォッチからスマートフォンへ直接転送され、開発者やアプリの
 クラウドを経由することはありません。開発者はこれらにアクセスできません。
+（端末で Android のバックアップがオンになっている場合は、Android が本アプリの
+データのコピーを利用者の Google アカウントにバックアップすることもあります。
+第 3 条参照）
 
 **クラウド同期は任意で、保存先は利用者自身の Google Drive のみです。** オンに
 する場合は、**設定 → クラウド同期（Google Drive） → 「Google Drive と同期」**
@@ -446,6 +466,18 @@ CSV・PDF・Health Connect のいずれにも残りません）。**本アプリ
   本アプリは上書きせずに端末内に退避し、利用者が書き出せるようにします（お問い
   合わせの際の添付など）。退避したファイルは、アプリのストレージを消去するか
   アンインストールするまで端末内に残ります。
+- **Android のバックアップ（Google による）:** スマートフォン側アプリは、Android の
+  自動バックアップを許可しています。スマートフォンの設定で Google アカウントへの
+  バックアップがオンになっている場合、Android が本アプリのデータ（セッションの履歴、
+  削除の記録、設定など）のコピーを利用者の Google アカウントにバックアップし、
+  同じアカウントで本アプリを再インストールしたときや、新しいスマートフォンを
+  設定したときに復元することがあります。そのため、アンインストールしたあとに
+  再インストールすると、記録が戻ることがあります。ウォッチ側アプリのデータも、
+  ウォッチのバックアップの対象になることがあります（計測中の下書きを除きます）。
+  このバックアップは、利用者の Google アカウントのもとで Google が扱うもので、
+  本アプリのクラウド同期とは別であり、開発者はアクセスできません。バックアップの
+  オン・オフは、端末の設定で変更できます（正確な経路は端末や Android の
+  バージョンにより異なります）。
 - **クラウド同期（任意）:** クラウド同期をオンにした場合、セッションの
   スナップショットが、利用者の Google アカウント配下にある **利用者自身の**
   Google Drive のアプリ専用（「アプリデータ」）フォルダに保存されます。開発者は
@@ -473,11 +505,11 @@ Services 経由で）心拍サンプルを読み取り、機能を提供しま�
 - ウォッチは Wear OS Health Services のワークアウト機能で心拍を読み取ります。
   要求するのは心拍だけで、GPS は使いません。
 
-**心拍なしのセッション：** 心拍を読み取れない場合（身体センサーの権限がない、
+**心拍なしのセッション：** 心拍を読み取れない場合（心拍数の権限がない、
 ウォッチに心拍センサーがない、心拍が届かない など）、本アプリは心拍なしで計時を
 続け、ウォッチに「心拍を取得できません」と表示します。デモや推定の値で置き換える
 ことはありません。そのセッションは時刻とフェーズとともに、心拍なしで記録した旨と、
-分かる場合はその理由（例：「身体センサーの権限なし」）を付けて保存されます。
+分かる場合はその理由（例：「心拍数の権限なし」）を付けて保存されます。
 こうしたセッションは他のセッションと同じように保存・転送・同期されますが、スコアの
 計算には使わず、Health Connect には運動の記録だけを書き出します。
 
@@ -492,8 +524,9 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 利用者の許可のもとで、本アプリは以下を行います。
 
 - **安静時心拍数を読み取り**、セッションの心拍チャートに基準線として表示します。
-- セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、「翌日のコンディ
-  ション」セクションに表示します（睡眠は参考の「睡眠スコア」として表示）。
+- セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、
+  「翌日のコンディション」セクションに表示します（睡眠は参考の「睡眠スコア」として
+  表示）。
 - セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、
   利用者が選んだ他アプリでセッションを利用できるようにします。書き込みは
   **設定 → Health Connect →「セッションを Health Connect に書き出し」** を
@@ -561,11 +594,13 @@ Google Drive のデータは、利用者にクラウド同期を提供するた�
 本アプリは必要な権限のみを要求します。ウォッチでは、以下の権限をアプリの起動時
 ではなく、最初にセッションを始めるときに「計測の前に」画面で説明してから求めます。
 
-- **ボディーセンサー（身体センサー・ウォッチ）:** セッション中にウォッチの光学
-  センサーから実際の心拍を読み取るために必要です。拒否した場合は、心拍なしで計時を
-  続け、「心拍を取得できません」と表示します。代わりのデータは使いません（第 4 条
-  参照）。バックグラウンドでのボディーセンサーの利用は求めず、心拍はフォアグラウンド
-  サービスでセッションを実行している間だけ読み取ります。
+- **心拍数（ウォッチ）:** セッション中にウォッチの光学センサーから実際の心拍を
+  読み取るために必要です。ウォッチには、この権限が「心拍数」として表示されます
+  （以前の版のウォッチでは、センサーの権限として表示されます。Android の権限名は
+  `BODY_SENSORS`）。拒否した場合は、心拍なしで計時を続け、「心拍を取得できません」と
+  表示します。代わりのデータは使いません（第 4 条参照）。この権限をバックグラウンドで
+  使うことは求めず、心拍はフォアグラウンドサービスでセッションを実行している間だけ
+  読み取ります。
 - **通知（ウォッチ）:** セッションを記録し続けるフォアグラウンドサービスの常駐
   通知と、文字盤の進行中のアイコンを表示するために使用します。この通知は
   セッションが進行中であることと、今のフェーズを示すだけのものです。
@@ -646,8 +681,10 @@ Premium は **Google Play Billing** で販売される自動更新サブスク�
 
 - **データの削除:** アプリ内でセッションを削除する、またはウォッチと
   スマートフォンからアプリをアンインストールします。アンインストールすると、
-  その端末上のローカルデータファイルが削除されます。クラウド同期を利用している
-  場合、アプリ内で削除したセッションは、次の同期で Drive と同期しているほかの
+  その端末上のローカルデータファイルが削除されます（Android のバックアップが
+  オンの場合は、再インストールしたときに、バックアップのコピーが復元されることが
+  あります。第 3 条参照。復元されたセッションは、アプリ内で削除できます）。
+  クラウド同期を利用している場合、アプリ内で削除したセッションは、次の同期で Drive と同期しているほかの
   端末からも削除されます。本アプリが Health Connect に書き込んだレコードは
   Health Connect 内で削除できます。[データの削除](data-deletion.html)の
   ページもご覧ください。
@@ -656,12 +693,12 @@ Premium は **Google Play Billing** で販売される自動更新サブスク�
   削除する、かつ／または Google アカウント → セキュリティ → サードパーティ製の
   アプリとサービスとの接続 から本アプリのアクセス権を取り消します（第 6 条参照）。
   開発者は何も保持していないため、開発者側に削除すべきコピーは存在しません。
-- **データのエクスポート:** 設定 → データ入出力 から、セッションデータを
+- **データのエクスポート:** 設定 → データ入出力（CSV） から、セッションデータを
   CSV で書き出せます（Premium 機能）。
 - **広告のパーソナライズの制限:** Android の設定 → プライバシー → 広告 で
   広告 ID をリセット／削除できます。
-- **広告の同意の変更・オプトアウト:** 設定 → ヘルプ・規約 →「広告のプライバシー
-  設定」（必要な地域でのみ表示。第 8 条参照）から行えます。
+- **広告の同意の変更・オプトアウト:** 設定 → ヘルプ・規約 →
+  「広告のプライバシー設定」（必要な地域でのみ表示。第 8 条参照）から行えます。
 - **Health Connect の管理:** 本アプリの Health Connect 権限は、Health Connect
   （Android 14 以降は端末のシステム設定、それより前は Health Connect アプリ）
   からいつでも取り消せます。
@@ -683,7 +720,9 @@ Premium は **Google Play Billing** で販売される自動更新サブスク�
 スナップショットと削除の一覧は、利用者が利用者自身の Google Drive のアプリ専用
 フォルダで削除するか本アプリのアクセス権を取り消すまで、そこに保持されます。
 Health Connect に書き込まれたレコードは、利用者が Health Connect 内で削除する
-までそこに保持されます。開発者は何も保持しません。
+までそこに保持されます。Android のバックアップがオンの場合は、本アプリのデータの
+コピーが、Google の管理のもとで、利用者の Google アカウントのバックアップにも
+保持されることがあります（第 3 条参照）。開発者は何も保持しません。
 
 ### 14. 変更
 

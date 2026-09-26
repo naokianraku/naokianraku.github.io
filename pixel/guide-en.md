@@ -24,17 +24,18 @@ title: Quick Guide (Pixel Watch & Android)
 - **Permissions are explained and requested when you first start a session.**
   When you tap "Start Standard" (or "Start Simple") on the watch, a **"Before you
   start"** screen lists what the app needs and why:
-  - **Body sensors** — to measure your heart rate.
+  - **Heart rate** — to record your heart rate during the session.
   - **Notifications** — to show the running session on the watch face.
   - **Location (optional)** — to record where the session ended.
 
   Tap **"Allow and start"** to grant them and start, or **"Start without"** to
-  start anyway (anything you don't allow is not used; without Body sensors the
-  session is timed without heart rate). The screen doesn't appear once everything
-  it needs is granted. Location is asked only once; to change it later, go to the
-  watch's **Settings → Apps → MaxRecovery Timer → Permissions**. Location is read
-  once at the end of each session, saved with that session, and used only to tag
-  the venue and show it on the map.
+  start anyway (anything you don't allow is not used; if you don't allow heart
+  rate, the session is timed without heart rate). The screen doesn't appear once
+  everything it needs is granted. Location is asked only once; to change it later,
+  go to the watch's **Settings → Apps → MaxRecovery Timer → Permissions**. In the
+  watch's settings the heart-rate permission is called "Heart rate" ("Sensors" on
+  earlier watch software). Location is read once at the end of each session, saved
+  with that session, and used only to tag the venue and show it on the map.
 - When paired, finished sessions transfer from the **watch to the phone
   automatically** over the Wearable Data Layer (Bluetooth / Wi-Fi). The watch
   keeps each session and resends it until the phone confirms it was received.
@@ -102,19 +103,32 @@ buttons"):
   on Settings → Watch settings → "Show control buttons"** (off by default). On Pixel
   Watch 3 and later with double pinch available, **Next** is always shown (Pause
   only when the setting is on).
-- **Crown rotation amount** — Settings → Watch settings lets you choose how far you must
+- **Crown rotation** — Settings → Watch settings lets you choose how far you must
   turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
   triggers from incidental contact.
 - **Double-tap the watch body (beta, off by default)** — Settings → Watch settings →
-  "Double-tap body to advance (beta)" uses the accelerometer so a quick **double-tap**
+  "Double-tap to advance (beta)" uses the accelerometer so a quick **double-tap**
   advances to the next phase hands-free. It's meant for watches without double pinch
   (such as Pixel Watch 2) and is turned off automatically where double pinch is
   available (it follows your setting again if you turn hand gestures off on the
   watch). Experimental and may misfire; keep it off if you see unwanted advances,
   and use **Back** to undo.
 - **Swipe right** to open the end confirmation ("End session?"; it closes by itself
-  after 5 seconds and the session keeps running). Tap **Cancel** (or double pinch) to
-  close it, or tap **End** to finish.
+  after 5 seconds and the session keeps running). Tap **Cancel** (or **turn the
+  crown**, or double pinch) to close it, or tap **End** to finish. The screen shows
+  "Turn the crown to cancel".
+- **The crown closes confirmations and warnings** — while a confirmation (end, go
+  back, final-set choice) or a warning is open, turning the crown (either way)
+  **cancels** the confirmation, **continues** on the inactivity warning, and presses
+  **OK** on the low-HR warning and on "Heart rate unavailable". It doesn't change
+  phase or pause. **End, Go back and One more set are tap-only.** On the rating
+  screen, while saving, and on the "Unfinished session" prompt, turning the crown
+  does nothing.
+  - If a confirmation or warning opens, or closes by itself (for example when it
+    times out), while you are turning the crown, that turn stops there (so you don't
+    dismiss a warning you haven't seen, or advance or pause after it closes). Stop
+    turning, then turn again.
+  - For 1 second after the crown closes one, Next is ignored.
 - **Don't use the system "Water Lock" during a session** — Wear OS Water Lock is
   exited by **turning the crown**, so while it is on the crown can't change phase or
   pause either. During a session the app **already ignores screen touch** (to prevent
@@ -125,7 +139,8 @@ The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
 alerts** — the app does not auto-advance. If heart rate can't be read, the heart-rate
 field shows "—" or "♡×" and a **"Heart rate unavailable"** notice appears (it closes
-after 10 seconds); the timer keeps running (see the FAQ).
+after 10 seconds, or when you turn the crown or tap **OK**); the timer keeps running
+(see the FAQ).
 
 **Background recording:** the session runs in a **foreground service with an ongoing
 notification**, and heart rate is read with the watch's workout feature (Health
@@ -134,7 +149,7 @@ face and the notification shows the current phase (e.g. "Sauna 1/3") and
 "Measuring". The session keeps running if you go back to the watch face or the
 screen turns off; tap the icon or the notification to return to the session screen.
 While the session screen is shown, the display is **kept on** by default. However,
-**without the Body sensors permission** the foreground service can't run, so
+**without the Heart rate permission** the foreground service can't run, so
 recording may stop when the screen turns off (the watch tells you). Also, when the
 workout feature can't be used (for example while another app is recording a
 workout), heart rate may stop while the screen is off. Keeping the session screen
@@ -144,12 +159,13 @@ open during a session is recommended.
 
 - **Standard mode:** moving past the last phase of the final set shows **"What
   next?"** with **One more set / End / Cancel**. It closes by itself after 8 seconds
-  and the session keeps running.
+  and the session keeps running (you can also close it with **Cancel** or by turning
+  the crown).
 - **Simple mode:** pause and tap **End**.
 - In either mode you can also end from the pause menu (**End**) or from the
   right-swipe end confirmation.
 - The app **auto-ends after 60 minutes** with no input (you get a warning first;
-  tap **Continue** to keep going).
+  tap **Continue** or turn the crown to keep going).
 - After ending, rate the session 1–5 stars on the **"Nice work!"** screen and tap
   **Save** (or **Skip**).
 - The finished session is transferred to your phone automatically over the
@@ -171,7 +187,7 @@ open during a session is recommended.
   HRR3 / HRR5), personal z-score / vs-previous, movement quality, and (Premium)
   the β score & recovery curve.
 - **Sessions without heart rate** — sessions where the watch couldn't read your
-  heart rate (body sensor permission off, no readings received, etc.) are marked
+  heart rate (heart rate permission off, no readings received, etc.) are marked
   **"No heart-rate data (reason)"**. They count toward visits, total time, streaks,
   the heatmap and the recent-sessions list, but are not used for the Afterglow
   Score, personal comparisons, recovery curves, trends or the PDF report.
@@ -183,9 +199,9 @@ open during a session is recommended.
   - **Double-tap to reset** the view.
 - **Chart display options (Settings → Display)** — optional overlays and views
   for the HR chart, all **default OFF**:
-  - **60-second moving average** — a trailing 60 s moving-average line.
-  - **10-minute moving average** — a trailing 10 min moving-average line.
-  - **Hide preparation phase from chart** — re-bases the X axis so it starts at
+  - **"Show 60s moving average"** — a trailing 60 s moving-average line.
+  - **"Show 10min moving average"** — a trailing 10 min moving-average line.
+  - **"Hide prep phase from chart"** — re-bases the X axis so it starts at
     **sauna entry (0:00)**.
   - If you connect Health Connect, your **Resting heart rate** can also appear
     as a reference line on the chart (see Health Connect below).
@@ -240,7 +256,7 @@ open during a session is recommended.
   Android share sheet (file name `MaxRecovery_Report_<start>_<end>.pdf`). A4
   portrait, 3 pages, including **Best Sessions** and a **visit-frequency heatmap**
   (these are also available in-app for free, in the Analytics tab).
-- **Settings → Data import/export** — CSV import/export (Premium) for offline
+- **Settings → Data import/export (CSV)** — CSV import/export (Premium) for offline
   backup or analysis. Exported files are named `maxrecovery_*.csv` (sessions),
   `maxrecovery_sets_*.csv`, `maxrecovery_phases_*.csv` and
   `maxrecovery_hr_samples_*.csv`; files exported by earlier versions
@@ -274,13 +290,12 @@ payment)" on the Premium screen opens it too). See "Subscription & Billing" in t
 FAQ.
 
 **Languages:** the phone app (including the shared graph image and the PDF report)
-and the watch app are available in English and Japanese. The watch follows your
-phone's system language (languages other than Japanese show English). Turn on
-**Settings → Display → "Force English"** on the phone to show both the phone and the
-watch in English regardless of your system language (if you switch it while a
-session is running on the watch, the watch changes after the session ends). If your
-phone uses a language other than English or Japanese, this toggle also shows the
-phone app in English.
+and the watch app are available in English and Japanese. The phone app follows the
+phone's language setting, and the watch app follows the watch's own language setting
+(on both, languages other than Japanese show English). Turn on **Settings → Display →
+"Force English"** on the phone to show both the phone and the watch in English
+regardless of their language settings (if you switch it while a session is running on
+the watch, the watch changes after the session ends).
 
 ### 5a. Cloud sync (optional, FREE)
 
@@ -351,7 +366,7 @@ integration.
 - To advance several phases in a row, wait **at least 1 second** between inputs.
 - **Tap a point** on the HR chart to read its exact bpm / time / phase, and
   **pinch to zoom** into the part you care about.
-- Turn on the **moving-average overlays** and **Hide preparation phase** under
+- Turn on the **moving averages** and **"Hide prep phase from chart"** under
   **Settings → Display** to read the curve more clearly.
 - Add the **venue name** in a session's detail (typed in; for a venue you have
   visited before, one tap from your past venues within ~500 m — free) to power
@@ -409,7 +424,7 @@ Terms in the app and in this guide that refer to the same thing (English = the w
 | 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Start with prep time → Prep | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |
 | サウナ | Sauna | 温まるフェーズ / The heat phase |
 | 水風呂 | Cold bath | 冷水のフェーズ / The cold-water phase |
-| 外気浴 | Cool-down | 休憩・外気浴のフェーズ（スマホアプリの英語表示では現在「Rest」） / The outdoor-rest phase (currently shown as "Rest" in the phone app's English UI) |
+| 外気浴 | Cool-down | 休憩・外気浴のフェーズ / The outdoor-rest phase |
 | その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ） | Extra phase (Rest / Hot bath / Hydration / Shower / Stretch) | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
 | クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |
 | スマホ未転送 | Not on phone yet | スマホの受信確認がまだの記録 / Not yet confirmed as received by the phone |
