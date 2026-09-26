@@ -4,7 +4,7 @@ title: FAQ (Apple Watch & iPhone)
 
 # FAQ — MaxRecovery Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-11
+**Last updated / 最終更新:** 2026-09-27
 **Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
@@ -89,8 +89,10 @@ recovery (HRR1 / HRR3 / HRR5). It puts a number on what Japanese bathing culture
 calls "totonou". Reference value only — not a medical metric.
 
 **Q. Can I use the app without an Apple Watch?**
-The timer works on iPhone alone, but heart-rate measurement and the Afterglow
-Score require an Apple Watch.
+No. Hot-bath sessions (phase times and heart rate) are **recorded on Apple
+Watch**; the iPhone app cannot time a session on its own. On iPhone you review
+the history and analytics of sessions recorded on the Watch, and you can time
+plank exercises (an optional add-on).
 
 **Q. Do I need to touch the screen during a hot-bath session?**
 No. Once you start a session, measurement continues hands-free — useful with
@@ -257,11 +259,11 @@ Apple Health as a Core Training workout. If MaxRecovery is not running on the
 Watch, the iPhone timer still works but no HR is recorded.
 
 **Q. What does the result screen show after a plank?**
-- Calories burned (estimated using a 3.8 MET assumption × 65 kg default
-  weight × duration in hours)
-- Current streak days (consecutive days with at least one plank)
-- Personal best seconds
-- Total seconds (across all sessions)
+- Calories (estimated as 3.8 MET × 65 kg × duration in hours; the weight is
+  fixed at 65 kg and cannot be changed)
+- Streak (consecutive days with at least one plank)
+- Personal best (your longest single plank)
+- Total time (across all sessions)
 - Total days (distinct calendar days with at least one plank)
 - Max heart rate observed during the session (if Watch was connected)
 
@@ -270,7 +272,8 @@ Watch, the iPhone timer still works but no HR is recorded.
 rules:
 - Green: at least one countdown session on that day reached the target
 - Blue: all sessions on that day were count-up
-- Orange: countdown only, target not reached on any session
+- Orange: any other day — at least one countdown missed its target and none
+  reached it (count-up planks may also be on that day)
 
 A period picker (1 week / 1 month / 3 months / All) lets you focus on a
 range. Within a window of 14 days, every day gets a label; for longer

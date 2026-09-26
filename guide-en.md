@@ -4,7 +4,7 @@ title: Quick Guide (Apple Watch & iPhone)
 
 # Quick Guide — MaxRecovery Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-06-24
+**Last updated / 最終更新:** 2026-09-27
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](guide-ja.html)
 
@@ -12,182 +12,127 @@ title: Quick Guide (Apple Watch & iPhone)
 
 ---
 
-### 1. About MaxRecovery Timer
+### 1. About
 
-MaxRecovery Timer is a **hot bath wellness tracking** companion for Apple Watch
-and iPhone. It helps you log hot-bath sessions, track your heart rate, and
-review **Heart Rate Recovery (HRR)** — a well-established physiological
-indicator of how quickly your heart rate falls after a thermal load — as a
-reference value for your own wellness routine.
+Record **hot phase → rest** and your heart rate on Apple Watch, then review
+your heart rate recovery (HRR) on iPhone.
 
-Supported hot environments include **warming rooms (ondol)**, **hot springs
-(onsen)**, **hot yoga studios**, **infrared rooms**, **mild steam baths**,
-**saunas**, and other custom hot environments you can configure yourself.
+- Sessions are recorded on **Apple Watch** (the iPhone can't record one on
+  its own).
+- The **Afterglow Score (0–100)** is a reference value based on how far your
+  heart rate drops after the hot phase. It is not a medical metric.
 
 ### 2. Setup
 
-- Install **MaxRecovery Timer** from the [App Store](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404) on your iPhone. The Apple
-  Watch companion app installs automatically when your Watch is paired.
-- On first launch, grant **Health**, **Notifications**, and (optional)
-  **Location** permissions when prompted.
-- Optional: enable **iCloud sync** so sessions back up automatically.
-  Settings → Apple Watch / Data.
-- Choose your **hot environment type** in iPhone Settings → Session:
-  - **Warming Room (Ondol)** — default
-  - **Hot Spring (Onsen)**
-  - **Hot Bath / Hot Tub / Jacuzzi** — everyday hot baths at home or hotel spa
-  - **Hot Yoga**
-  - **Infrared Room**
-  - **Steam Bath (mild)**
-  - **Sauna**
-  - **Other / Custom** — name it yourself
+- Install [MaxRecovery Timer](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
+  from the App Store. The Watch app installs automatically (if not, install
+  it from the Watch app on your iPhone).
+- On first launch, allow **Health** and **Location** (optional). On the
+  Watch, tap **I Understand**.
+- If your iPhone is signed in to iCloud, your history is backed up
+  automatically (no setting needed).
+- Choose your hot environment in the iPhone **Settings tab → Hot phase →
+  Hot phase environment** (Warming Room, Hot Spring, Hot Bath, Hot Yoga,
+  Infrared Sauna, Steam Bath, Sauna, Other; default: Warming Room).
 
-### 3. Start a session — Standard Mode
+<p align="center"><img src="images/guide/en/iphone_settings.jpg" width="240" alt="iPhone Settings tab"></p>
 
-By default, Standard Mode uses a **two-phase flow**:
+### 3. Start a session
 
-> **Hot phase → Rest**
+Open MaxRecovery on your Apple Watch and tap **Start Standard** or
+**Start Simple**.
 
-If you also want a brief cool-down between the hot phase and rest (for
-example, a short shower or splash of water at temperate temperature), you
-can switch to the **three-phase flow** in iPhone Settings → Session →
-"Insert Cool-Down phase":
+<p align="center"><img src="images/guide/en/watch_home.png" width="170" alt="Apple Watch home screen"></p>
 
-> **Hot phase → Cool-Down → Rest**
+- **Standard** — each set is Hot phase → Rest. Add more in the iPhone
+  Settings tab:
+  - Cool-Down: Hot phase → "Use Cool-Down phase" (Hot → Cool-Down → Rest)
+  - Pre-session: Session → "Use Pre-session phase" (once at the start; no
+    heart rate)
+  - Extra: Session → "Use extra phase" (after Rest in each set)
+- **Simple** — no phases. Double Tap starts the next set.
 
-To start:
+### 4. During the session
 
-1. Open MaxRecovery on your **Apple Watch**.
-2. Choose **Standard** or **Simple** mode (set in iPhone Settings → Session).
-3. Tap **Start**.
+| Action | What it does |
+|---|---|
+| Double Tap | Next phase (next set in Simple mode) |
+| Digital Crown up | Pause / resume |
+| Digital Crown down | End confirmation; turn down again to end |
 
-### 4. During the session — hands-free
+- Double Tap: tap the thumb and index finger of the hand wearing the Watch
+  together twice (Series 9 / Ultra 2 or newer, or another supported model).
+- While paused, Double Tap does nothing.
+- Phases never switch on their own. During the hot phase, the Watch
+  vibrates when your heart rate reaches TH1 and TH2.
 
-Once started, you don't need to touch the screen. You can advance phases and
-end the session using any of these:
+<p align="center"><img src="images/guide/en/watch_hot.png" width="140" alt="Hot phase screen"> <img src="images/guide/en/watch_cool.png" width="140" alt="Cool-Down phase screen"> <img src="images/guide/en/watch_rest.png" width="140" alt="Rest phase screen"></p>
+<p align="center"><sub>Hot phase, Cool-Down, Rest. The yellow and red dots on the gauge are TH1 and TH2</sub></p>
 
-- **Apple Watch Double Tap** (Series 9 / Ultra 2 or newer) — pinch your thumb
-  and index finger. This is the recommended hands-free gesture.
-- **Digital Crown rotation** — rotate either direction to advance.
-- **Screen tap** — only if you enable it under Settings → Session →
-  "Screen tap to advance phase" (off by default).
+### 5. End the session
 
-The Watch displays the current phase, elapsed time, heart rate, and your
-recent HR peak / bottom (last 5 minutes). Configured phase times act as
-**haptic alerts** — the app does not auto-advance.
+- Turn the **Digital Crown down twice** to end.
+- In Standard mode, Double Tap during the final set's rest opens "What's
+  next?". **Tap** End or +1 set.
+- Then pick 1–5 stars with the Crown and Double Tap to confirm, or tap
+  Skip. **The session is saved and sent to your iPhone only at this point.**
+- After 60 minutes without input the session ends automatically. The rating
+  screen still waits, so open MaxRecovery and confirm or skip.
 
-### 5. Advance phases with Double Tap during the hot phase
+### 6. Review on iPhone
 
-Apple Watch's **Double Tap** gesture works well when your hands are busy or
-wet. Use it during the hot phase to advance to the next phase without
-touching the screen:
+<p align="center"><img src="images/guide/en/iphone_home.jpg" width="200" alt="Home tab"> <img src="images/guide/en/iphone_history.jpg" width="200" alt="History tab"></p>
 
-- During the **hot phase**, when you're ready to move on (you feel warmed
-  through and want to rest), **double-tap** → advances to **Cool-Down** (if
-  enabled) or directly to **Rest**.
-- During **Cool-Down**, double-tap → advances to **Rest**.
-- During **Rest**, double-tap → starts the next set's hot phase.
+- **History** — tap a session for its heart-rate chart, Afterglow Score and
+  per-set breakdown. Edit the venue and rating there.
+- **Analytics** — trends, calendar, streak, Top sessions, and the Venue map
+  (sessions with a location only).
+- **PDF report** (Premium) — Analytics tab → Generate PDF report → pick a
+  period → Generate and share. Three A4 pages.
+- **CSV** (Premium) — Settings tab → Data → Data export / import.
 
-End the session:
+<p align="center"><img src="images/guide/en/iphone_analytics.jpg" width="200" alt="Analytics tab"></p>
 
-- Move past the final phase, or scroll the **Digital Crown** to finish, or
-- The app **auto-ends after 60 minutes** with no input.
-- The session is transferred to your iPhone automatically. With iCloud sync,
-  it also propagates to your other devices.
+<p align="center"><a href="images/guide/en/report_p1.jpg"><img src="images/guide/en/report_p1.jpg" width="140" alt="PDF report page 1" style="border:1px solid #ddd"></a> <a href="images/guide/en/report_p2.jpg"><img src="images/guide/en/report_p2.jpg" width="140" alt="PDF report page 2" style="border:1px solid #ddd"></a> <a href="images/guide/en/report_p3.jpg"><img src="images/guide/en/report_p3.jpg" width="140" alt="PDF report page 3" style="border:1px solid #ddd"></a></p>
+<p align="center"><sub>Sample PDF report (fictional data, all 3 pages). Tap to enlarge</sub></p>
 
-### 6. About using Apple Watch
+### 7. Tips
 
-- Whether and how to wear Apple Watch and iPhone during a session is your
-  decision; please follow Apple's guidance for your environment. If you
-  select "Sauna" or "Steam Bath" as your hot environment, the app shows a
-  short reminder to that effect.
-- Heart-rate measurement is **optional**. Sessions, history, and analytics
-  are fully available on iPhone alone, without an Apple Watch.
-- Wear your Watch snugly for stable heart-rate readings.
-- A 60-minute session uses ~10–15 % of the Watch battery (Series 7 +). Turn
-  off Always-On Display if you need extra headroom.
+- Wear the Watch snugly for steady heart-rate readings.
+- Add a venue name to show it on the Venue map and in Top sessions.
+- Turn on moving-average lines for the heart-rate chart in Settings tab →
+  Display.
+- Choosing "Sauna" or "Steam Bath" shows a short note about where to use
+  the devices. Follow Apple's guidance for Apple Watch and iPhone.
+- To save battery, turn off Always On on your Watch.
 
-### 7. Typical use — at a hot bath facility
+### 8. Example — 3 sets at a hot bath facility
 
-A recommended workflow when visiting a hot bath facility (warming room,
-hot spring, hot yoga studio, etc.), running through multiple hot/rest sets.
+Before you go, in the iPhone Settings tab: turn on the pre-session phase,
+choose your hot environment, and check that the set count is 3 (Default
+sets → Defaults).
 
-**Setup before you arrive**:
+1. When you arrive, tap Start Standard (it begins in the pre-session phase).
+2. Entering the hot phase: Double Tap → Hot phase.
+3. Leaving it: Double Tap → Rest (with Cool-Down: twice, Cool-Down → Rest).
+4. Entering the next hot phase: Double Tap → next set. Repeat 3–4 until
+   you enter the 3rd hot phase.
+5. After the 3rd rest, turn the Crown down twice to end, then confirm the
+   rating.
 
-- Use **Standard mode** (iPhone Settings → Session).
-- Pick your **hot environment type** (Warming Room, Hot Spring, Hot Yoga,
-  Infrared Room, Steam Bath, Sauna, or Other).
-- Decide whether to use the two-phase flow (Hot → Rest) or the three-phase
-  flow (Hot → Cool-Down → Rest) and toggle it in Settings → Session.
-- Optional: enable **"Use Preparation phase"** in Settings → Session if you
-  want to log time before the first hot phase (e.g. changing clothes,
-  showering).
+That is 6 Double Taps in total (9 with Cool-Down).
 
-**At the venue**:
+### 9. Plank (optional)
 
-1. Tap **Standard** on the Watch to start the session. If Preparation is
-   enabled, the session begins in the **Preparation** phase — use it for
-   changing clothes and body wash.
-2. Just before entering the hot environment for the **1st time**,
-   **double-tap** the Watch → advances to the **Hot phase**.
-3. When you finish the hot phase, double-tap → advances to **Cool-Down**
-   (three-phase flow) or directly to **Rest** (two-phase flow).
-4. In the three-phase flow, after a brief cool-down, double-tap →
-   advances to **Rest**.
-5. When you start the next hot phase, double-tap again → begins the next
-   set.
-6. Repeat until your final rest ends, then **scroll the Digital Crown down
-   twice** to end the session.
+Settings tab → Add-ons → Enable plank exercise adds a Plank tab.
 
-### 8. Review on iPhone
-
-- **History tab** — list of sessions. Tap a session to see its heart-rate
-  chart, Afterglow Score, set-level breakdown, and (Premium) recovery
-  curves based on HRR.
-- **Analytics tab** — trends, calendar heatmap, streaks, **Best Sessions**
-  ranking, and a **Venue Map** of facilities you've visited.
-- **Settings → Data → Export CSV** (Premium) for offline backup or analysis.
-
-### 9. Tips
-
-- Fill in the **venue** in each session's detail to populate the Venue Map.
-- Add a **1–5 star rating** to power the rating-vs-score correlation chart.
-- **Optional chart overlays** — Settings → Display lets you add a 60-second
-  and/or 10-minute moving-average line to the HR chart, and hide the
-  preparation phase to re-baseline the X axis to your first hot phase.
-  All default OFF.
-- The Afterglow Score is computed from **Heart Rate Recovery (HRR)** at 1,
-  3, and 5 minutes after each hot phase. HRR is a widely recognized
-  physiological measurement; the score itself is a **reference value for
-  your own wellness routine and is not a medical metric**.
-
-### 10. Plank exercise (optional add-on)
-
-A built-in plank timer is available as an opt-in. Turn it on in
-**Settings → Add-ons → "Enable plank exercise"**. A new "Plank" tab appears
-between Analytics and Settings.
-
-- **Countdown mode** — pick a target between **1 and 30 minutes** in
-  1-minute steps. After a **3-2-1 pre-countdown**, the timer runs down to
-  0:00. When the target is reached a strong haptic fires and the display
-  switches to **bonus time** (count-up); keep going as long as you can,
-  then double-tap the bottom button to end.
-- **Count-up mode** — starts at 0:00 and runs until you double-tap the
-  bottom button. Used to measure how long you can hold a plank.
-- **Apple Watch HR** — if MaxRecovery is open on your Watch when you start a
-  plank, the Watch starts a `Core Training` HKWorkout session and streams
-  heart rate to the iPhone for the whole plank. The Watch shows the current
-  elapsed/remaining time and HR until you stop on iPhone.
-- **Result screen** — calories burned (estimated via METs), current streak
-  days, personal best seconds, total seconds, total days, and max HR.
-- **Trend chart** — 1 day = 1 bar (cumulative duration). Color-coded by
-  result: green = target reached, orange = under target, blue = count-up
-  only. A period picker (1 week / 1 month / 3 months / All) lets you focus.
-- **History** — swipe a row left to delete (same as session history).
-- **Apple Health** — each plank is written as a `Core Training` workout you
-  can review in the Health app.
-
-Sessions sync via iCloud so your plank history follows you across devices.
+- **Countdown** (1–30 min) — keeps counting bonus time after 0:00.
+  Double-tap the bottom button to end.
+- **Count-up** — runs until you double-tap to end.
+- Start with MaxRecovery on your Watch's screen to record heart rate too;
+  the Watch saves it to Health as a Core Training workout.
+- Set iPhone Auto-Lock longer than your target so the phone doesn't lock
+  mid-plank.
 
 ---
 
