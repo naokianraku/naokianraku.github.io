@@ -48,6 +48,13 @@
   h1, h2, h3, h4, h5, h6 { color: var(--heading) !important; }
   /* サイドバー（テーマの header 要素） */
   header h1, header h2, header h3, header p, header a { color: var(--heading) !important; }
+  /* サイドバーのロゴ（_config.yml の logo:）。テーマは大きさを決めていないので 120px に。
+     高さも決めて、画像が届く前から場所を取っておく（読み込み時に画面がずれないように） */
+  header img { display: block; width: 120px; height: 120px; margin: 0 0 20px; }
+  /* 幅 960px 以下ではテーマが header を本文の上に積むので、ロゴを小さくして本文を押し下げすぎない */
+  @media print, screen and (max-width: 960px) {
+    header img { width: 64px; height: 64px; margin: 0 0 12px; }
+  }
   /* 本文テキスト */
   p, li, dd, td, span { color: var(--text); }
   /* 強調系（テーマが #222 固定にしている） */
