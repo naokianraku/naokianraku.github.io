@@ -2,3 +2,21 @@ title: Anraku Tech
 description: 技術公開ページ / Tech publishing site
 theme: jekyll-theme-minimal
 logo: /assets/img/anraku-tech-logo.png
+
+# リンクカード（X などにリンクを貼ったときに出る画像）。テーマの {% seo %}（jekyll-seo-tag）が
+# og:image・twitter:image を出す。全ページ共通は下の defaults の画像。ページごとに変えるときは、そのページの
+# front matter に image: を path・alt の形で書く（width・height はここから引き継がれるので、画像は 1200×630 で作る）。
+# 画像は MaxRecovery Timer（Pixel）のリポジトリの store_assets/tools/gen_og.py で作る。
+# url: は書かない：GitHub Pages が site.url に https://naokianraku.github.io を入れるので、画像の URL は絶対 URL になる。
+twitter:
+  username: anraku_tech  # twitter: を書くと twitter:site が出るので、アカウント名も書く（空だと「@」だけになる）
+  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/og-default.png
+        width: 1200
+        height: 630
+        alt: Anraku Tech のロゴ（金の輪と赤い心拍線の AT）と「技術公開ページ / Tech publishing site」
