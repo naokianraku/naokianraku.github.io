@@ -267,13 +267,18 @@ turning doesn't advance a second phase. To advance again, stop and wait at least
 second.
 
 **Q. Can I use double pinch?**
-Only as a beta, on Pixel Watch 3 and later (Wear OS 7) when double pinch is available
-on the watch. Turn on **Settings → Options → "Use Double pinch (beta)"** on the watch
-(the option only appears on watches where double pinch is available; it's OFF by
-default). When it's on, a Next button is shown while running and a double pinch
-presses it. While it's off, nothing happens in the app when you double pinch, even if
-double pinch is on for the watch (it won't close a confirmation or save a rating, for
-example). While it's on, "Double-tap to advance" isn't used.
+You can try it as an experimental feature on Pixel Watch 3 and later (Wear OS 7); it's
+OFF by default. On the watch, go to the MaxRecovery home → **Settings → Options → "Use
+Double pinch (beta)"** and turn it on. The option only appears when hand gestures
+(double pinch) are turned on in the watch's own system settings. When it's on, a Next
+button is shown while running and a double pinch presses it (the button can also react
+to wet fingers or water drops). If it doesn't respond well, the crown works as usual.
+While it's on and double pinch is available, "Double-tap to advance" isn't used.
+
+While it's off, the app doesn't accept double pinch (it won't close a confirmation or
+save a rating, for example). However, if "Double-tap to advance" is on, the finger
+movement of a pinch may be picked up and advance to the next phase. If that bothers
+you, turn "Double-tap to advance" off.
 
 **Q. Turning my wrist shows "End session?".**
 In the latest version, **wrist turn is disabled during a session** (Pixel Watch 3 and

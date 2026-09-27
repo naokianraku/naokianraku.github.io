@@ -84,19 +84,6 @@ similar options). It works the same on every watch:
   phase and its **previous elapsed time is carried over** (it does not reset to
   zero). You **stay paused** afterwards — rotate the crown UP or tap **Resume** to
   continue.
-- **Double pinch (beta, off by default; Pixel Watch 3 and later, Wear OS 7)** — on
-  supported watches you can try it by turning on **Settings → Options → "Use Double
-  pinch (beta)"** on the watch (the option only appears on watches where double pinch
-  is available). It's off by default because it's experimental. While it's off,
-  nothing happens in the app when you double pinch, even if double pinch is on for
-  the watch. When it's on, a **Next** button (**Next set** in Simple mode) is shown
-  at the bottom of the screen while running; tapping your thumb and index finger
-  together twice does the same as that button (next phase; at the end of the final
-  set it opens the **One more set / End / Cancel** screen). On a confirmation (end,
-  go back, final-set choice) it **cancels**, on the rating screen it **saves**, on
-  the inactivity warning it **continues**, and on a heart-rate alert it
-  **dismisses**. It does nothing while paused or saving. Note: the Next button can
-  also react to wet fingers or water drops.
 - **Wrist turn** is disabled during a session (so it can't bring up the end
   confirmation by accident); it only closes a confirmation or heart-rate alert that
   is already open. Turn gestures on/off and change hint frequency in the watch's
@@ -104,16 +91,18 @@ similar options). It works the same on every watch:
   software version).
 - **On-screen Next / Pause buttons** during a running session appear **only if you turn
   on Settings → Watch settings → "Show control buttons"** (off by default). If you
-  turn on "Use Double pinch (beta)" on the watch (supported watches only), **Next**
-  is always shown (Pause only when the setting is on).
+  turn on the experimental "Use Double pinch (beta)" on the watch (see the last item
+  in this list), **Next** is always shown (Pause only when the setting is on).
 - **Crown rotation** — Settings → Watch settings lets you choose how far you must
   turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
   triggers from incidental contact.
 - **Double-tap the watch body (beta, off by default)** — Settings → Watch settings →
   "Double-tap to advance (beta)" uses the accelerometer so a quick **double-tap**
   advances to the next phase hands-free. It's turned off while "Use Double pinch
-  (beta)" is on for the watch (so one move can't advance twice). Experimental and
-  may misfire; keep it off if you see unwanted advances, and use **Back** to undo.
+  (beta)" is on for the watch and double pinch is available (so one move can't
+  advance twice). Experimental and may misfire (it can also react to the finger
+  movement of a double pinch); keep it off if you see unwanted advances, and use
+  **Back** to undo.
 - **Swipe right** to open the end confirmation ("End session?"; it closes by itself
   after 5 seconds and the session keeps running). Tap **Cancel** (or **turn the
   crown**) to close it, or tap **End** to finish. The screen shows
@@ -135,6 +124,24 @@ similar options). It works the same on every watch:
   pause either. During a session the app **already ignores screen touch** (to prevent
   mis-taps, except for the buttons above), so Water Lock isn't needed — just keep
   using the crown.
+- **Double pinch (beta, off by default; Pixel Watch 3 and later, Wear OS 7)** — it's
+  off by default because it's experimental. To try it, on the watch go to the
+  MaxRecovery home → **Settings → Options → "Use Double pinch (beta)"** and turn it
+  on. The option only appears on Pixel Watch 3 and later when hand gestures (double
+  pinch) are turned on in the watch's own system settings. When it's on, a **Next**
+  button (**Next set** in Simple mode) is shown at the bottom of the screen while
+  running; tapping your thumb and index finger together twice does the same as that
+  button (next phase; at the end of the final set it opens the **One more set / End /
+  Cancel** screen). On a confirmation (end, go back, final-set choice) it
+  **cancels**, on the rating screen it **saves**, on the inactivity warning it
+  **continues**, and on a heart-rate alert it **dismisses**. It does nothing while
+  paused or saving. If it doesn't respond well, the crown works as usual. If you turn
+  hand gestures off in the watch's system settings, double pinch isn't used even
+  with this option on, and the usual controls come back. Note: the Next button can
+  also react to wet fingers or water drops.
+  While the option is off, the app doesn't accept double pinch (it won't close a
+  confirmation or save a rating). However, if "Double-tap to advance (beta)" is on,
+  the finger movement of a pinch may be picked up and advance to the next phase.
 
 The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
@@ -418,7 +425,7 @@ Terms in the app and in this guide that refer to the same thing (English = the w
 | 日本語（アプリ表記） | English (app) | 説明 / Notes |
 |---|---|---|
 | クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
-| ダブルピンチ | Double pinch | Pixel Watch 3 以降・試験的（設定「ダブルピンチを使う（試験的）」を ON にしたときだけ。既定オフ）。計測中は「次へ」と同じ / Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on; off by default); same as Next while running |
+| ダブルピンチ | Double pinch | Pixel Watch 3 以降・実験（ウォッチの設定「ダブルピンチを使う（実験）」を ON にしたときだけ。既定オフ）。計測中は「次へ」と同じ / Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on in the watch app's settings; off by default); same as Next while running |
 | 手首ターン | Wrist turn | セッション中は無効（確認画面と心拍の警告を閉じるだけ） / Disabled in a session (only closes confirmations and heart-rate alerts) |
 | 標準モード（開始ボタン「標準モード開始」） | Standard (Start Standard) | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold bath → cool-down cycle |
 | シンプルモード（開始ボタン「シンプルモード開始」） | Simple (Start Simple) | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
