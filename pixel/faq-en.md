@@ -245,14 +245,15 @@ analyzing the sessions sent from the watch.
 **Q. How do I control the timer with wet hands during a session?**
 Use the **rotary crown**: rotate **up** to advance to the next phase, rotate
 **down** to pause. To resume, rotate **up** again. **During a running session the
-screen does not respond to touch** (to prevent wet-hand misfires) — on watches
-without double pinch, the crown is the only control. **On Pixel Watch 3 and later you can also double pinch (tap your
-thumb and index finger together twice) to advance** (a Next button is shown while
-running). **While paused**, an on-screen menu appears with **Resume / Back / End**.
-If you prefer touch controls, turn on **Settings → Watch
+screen does not respond to touch** (to prevent wet-hand misfires) — the crown is the
+only control, on every watch. **While paused**, an on-screen menu appears with
+**Resume / Back / End**. If you prefer touch controls, turn on **Settings → Watch
 settings → "Show control buttons"** to also show Next/Pause buttons during a
 running session. There is also an optional **"Double-tap to advance"** gesture
-(beta, OFF by default; for watches without double pinch). Phase times are **haptic
+(beta, OFF by default). On Pixel Watch 3 and later you can also try advancing with a
+double pinch (tap your thumb and index finger together twice) by turning on **"Use
+Double pinch (beta)"** (OFF by default) in the watch's settings (see below).
+Phase times are **haptic
 alerts only** — the app does not auto-advance, so you choose when to move on. When a
 confirmation or warning appears, turning the crown (either way) closes it too (it
 cancels a confirmation and continues on the inactivity warning, without changing
@@ -260,16 +261,25 @@ phase); End is tap-only.
 
 **Q. The second "Next" in a row doesn't respond.**
 To prevent skipping two phases by accident, **a Next within 1 second of the previous
-input is ignored**, whether it comes from the crown, double pinch, the Next button or
-the body double-tap. Also, the crown works as **one turn, one phase**: keeping on
+input is ignored**, whether it comes from the crown, the Next button, the body
+double-tap or any other input. Also, the crown works as **one turn, one phase**: keeping on
 turning doesn't advance a second phase. To advance again, stop and wait at least 1
 second.
+
+**Q. Can I use double pinch?**
+Only as a beta, on Pixel Watch 3 and later (Wear OS 7) when double pinch is available
+on the watch. Turn on **Settings → Options → "Use Double pinch (beta)"** on the watch
+(the option only appears on watches where double pinch is available; it's OFF by
+default). When it's on, a Next button is shown while running and a double pinch
+presses it. While it's off, nothing happens in the app when you double pinch, even if
+double pinch is on for the watch (it won't close a confirmation or save a rating, for
+example). While it's on, "Double-tap to advance" isn't used.
 
 **Q. Turning my wrist shows "End session?".**
 In the latest version, **wrist turn is disabled during a session** (Pixel Watch 3 and
 later). It only closes a confirmation or heart-rate alert that is already open. If
-the confirmation does appear, close it by **turning the crown** (either way), with a
-double pinch, or by tapping **Cancel**; the session keeps running. Even in earlier
+the confirmation does appear, close it by **turning the crown** (either way) or by
+tapping **Cancel**; the session keeps running. Even in earlier
 versions, that confirmation closes by itself after 5 seconds and the session doesn't
 end unless you tap **End**. Please update the app.
 
@@ -309,7 +319,7 @@ Standard mode tracks distinct phases (Sauna → Cold bath → Cool-down) per set
 with per-set times and HR thresholds, plus an optional Prep phase and an
 optional extra phase. Simple mode doesn't split the cold bath and cool-down into
 phases: at each set break **you move to the next set yourself** (rotate the crown
-up, or use the Next set button / double pinch). There is no set limit; to finish,
+up, or use the Next set button). There is no set limit; to finish,
 pause and tap End. One sauna time and one pair of HR thresholds apply to every set,
 and the Prep phase can be used too. On the phone, the per-set breakdown and the
 recovery curves are found from your heart-rate peaks.

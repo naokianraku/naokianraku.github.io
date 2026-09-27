@@ -66,16 +66,15 @@ The watch app is shown in English or Japanese (see "Languages" in section 5).
 
 Once started, you don't need to touch the screen. **During a running session the
 screen does not respond to touch** (to prevent wet-hand mis-taps) — you operate with
-the **rotary crown** and, on supported watches, **double pinch** (except for the
-**Next** button shown on those watches and the buttons you get with "Show control
-buttons"):
+the **rotary crown** (except for the buttons you get with "Show control buttons" and
+similar options). It works the same on every watch:
 
 - **Rotate the crown UP** = advance to the next phase. This is the recommended
   hands-free action.
 - **One turn, one phase** — once a turn advances a phase, the rest of that turn is
   ignored (so a long turn can't skip two phases). To advance again, stop turning
-  and wait **at least 1 second** — a second Next within 1 second (crown, double
-  pinch or button) is ignored.
+  and wait **at least 1 second** — a second Next within 1 second (from the crown, a
+  button or any other input) is ignored.
 - **Rotate the crown DOWN** = pause. To resume, **rotate the crown UP** again (or
   tap **Resume** in the pause menu).
 - **While paused**, an on-screen touch menu appears: **Resume / Back / End**.
@@ -85,9 +84,13 @@ buttons"):
   phase and its **previous elapsed time is carried over** (it does not reset to
   zero). You **stay paused** afterwards — rotate the crown UP or tap **Resume** to
   continue.
-- **Double pinch (Pixel Watch 3 and later, Wear OS 7)** — while running, a **Next**
-  button (**Next set** in Simple mode) is shown at the bottom of the screen; tapping
-  your thumb and index finger
+- **Double pinch (beta, off by default; Pixel Watch 3 and later, Wear OS 7)** — on
+  supported watches you can try it by turning on **Settings → Options → "Use Double
+  pinch (beta)"** on the watch (the option only appears on watches where double pinch
+  is available). It's off by default because it's experimental. While it's off,
+  nothing happens in the app when you double pinch, even if double pinch is on for
+  the watch. When it's on, a **Next** button (**Next set** in Simple mode) is shown
+  at the bottom of the screen while running; tapping your thumb and index finger
   together twice does the same as that button (next phase; at the end of the final
   set it opens the **One more set / End / Cancel** screen). On a confirmation (end,
   go back, final-set choice) it **cancels**, on the rating screen it **saves**, on
@@ -100,22 +103,20 @@ buttons"):
   system settings (Gestures → Hand gestures or similar; names can differ by watch
   software version).
 - **On-screen Next / Pause buttons** during a running session appear **only if you turn
-  on Settings → Watch settings → "Show control buttons"** (off by default). On Pixel
-  Watch 3 and later with double pinch available, **Next** is always shown (Pause
-  only when the setting is on).
+  on Settings → Watch settings → "Show control buttons"** (off by default). If you
+  turn on "Use Double pinch (beta)" on the watch (supported watches only), **Next**
+  is always shown (Pause only when the setting is on).
 - **Crown rotation** — Settings → Watch settings lets you choose how far you must
   turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
   triggers from incidental contact.
 - **Double-tap the watch body (beta, off by default)** — Settings → Watch settings →
   "Double-tap to advance (beta)" uses the accelerometer so a quick **double-tap**
-  advances to the next phase hands-free. It's meant for watches without double pinch
-  (such as Pixel Watch 2) and is turned off automatically where double pinch is
-  available (it follows your setting again if you turn hand gestures off on the
-  watch). Experimental and may misfire; keep it off if you see unwanted advances,
-  and use **Back** to undo.
+  advances to the next phase hands-free. It's turned off while "Use Double pinch
+  (beta)" is on for the watch (so one move can't advance twice). Experimental and
+  may misfire; keep it off if you see unwanted advances, and use **Back** to undo.
 - **Swipe right** to open the end confirmation ("End session?"; it closes by itself
   after 5 seconds and the session keeps running). Tap **Cancel** (or **turn the
-  crown**, or double pinch) to close it, or tap **End** to finish. The screen shows
+  crown**) to close it, or tap **End** to finish. The screen shows
   "Turn the crown to cancel".
 - **The crown closes confirmations and warnings** — while a confirmation (end, go
   back, final-set choice) or a warning is open, turning the crown (either way)
@@ -391,8 +392,8 @@ set time limit (e.g. 60–90 minutes).
 1. When your time at the venue starts (entry / locker), tap **Start Standard** on
    the watch to start the session. The session enters the **Prep** phase — use this
    time for changing clothes and washing.
-2. When you start the **1st sauna**, **rotate the crown UP** (or double pinch on
-   supported watches) → advances to the **Sauna** phase.
+2. When you start the **1st sauna**, **rotate the crown UP** → advances to the
+   **Sauna** phase.
 3. When entering the **cold water** (cold bath, lake, pool), rotate the crown
    **UP** → advances to **Cold bath**.
 4. When you sit or lie down to rest, rotate the crown **UP** → advances to
@@ -417,7 +418,7 @@ Terms in the app and in this guide that refer to the same thing (English = the w
 | 日本語（アプリ表記） | English (app) | 説明 / Notes |
 |---|---|---|
 | クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
-| ダブルピンチ | Double pinch | Pixel Watch 3 以降。計測中は「次へ」と同じ / Pixel Watch 3+; same as Next while running |
+| ダブルピンチ | Double pinch | Pixel Watch 3 以降・試験的（設定「ダブルピンチを使う（試験的）」を ON にしたときだけ。既定オフ）。計測中は「次へ」と同じ / Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on; off by default); same as Next while running |
 | 手首ターン | Wrist turn | セッション中は無効（確認画面と心拍の警告を閉じるだけ） / Disabled in a session (only closes confirmations and heart-rate alerts) |
 | 標準モード（開始ボタン「標準モード開始」） | Standard (Start Standard) | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold bath → cool-down cycle |
 | シンプルモード（開始ボタン「シンプルモード開始」） | Simple (Start Simple) | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
