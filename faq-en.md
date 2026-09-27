@@ -4,7 +4,7 @@ title: FAQ (Apple Watch & iPhone)
 
 # FAQ — MaxRecovery Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-09-27
+**Last updated / 最終更新:** 2026-09-28
 **Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
@@ -223,8 +223,8 @@ score may be missing. Sessions with too few samples are marked as unscored.
 **Q. The app switches away when water hits the Watch screen.**
 This is an Apple Watch system behavior — water on the touchscreen registers as
 multi-touch input, which can trigger OS-level gestures (Control Center, app
-switching, returning to the watch face). The app's own "no screen tap" policy
-only blocks taps within the app, not the OS-level gestures. The fix is to enable
+switching, returning to the watch face). By default the app ignores screen taps
+("Screen tap to advance phase" is off), but it cannot block OS-level gestures. The fix is to enable
 **Apple Watch's Water Lock**:
 
 - **In-app setting (recommended)**: iPhone MaxRecovery → Settings → Session →

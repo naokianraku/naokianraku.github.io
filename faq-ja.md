@@ -4,7 +4,7 @@ title: FAQ / よくある質問 (Apple Watch & iPhone)
 
 # FAQ / よくある質問 — MaxRecovery Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-09-27
+**Last updated / 最終更新:** 2026-09-28
 **Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **日本語** / [🇺🇸 English](faq-en.html)
@@ -211,8 +211,8 @@ Watch との通信が大きく欠落した場合は計算不可になります�
 **Q. 準備中（シャワーなど）に画面が濡れて、アプリが別画面に切り替わってしまいます。**
 これは Apple Watch の仕様で、濡れた画面のタッチセンサーが水を多点タッチとして誤検
 知し、OS のシステムジェスチャ（コントロールセンター呼び出し・アプリ切替・文字盤
-に戻る等）を誤発火させることがあります。MaxRecovery 内の「画面タップ無反応」設定は
-**アプリ内のタップしか抑制できず、OS のジェスチャは止められません**。対策は
+に戻る等）を誤発火させることがあります。MaxRecovery は初期設定では画面タップでフェーズが進みませんが（設定「画面タップでフェーズ進行」がオフ）、
+**OS のジェスチャは止められません**。対策は
 **Apple Watch の Water Lock（水ロック）** を有効にすることです:
 
 - **アプリ内設定（推奨）**: iPhone の MaxRecovery → 設定 → セッション →

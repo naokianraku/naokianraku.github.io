@@ -4,7 +4,7 @@ title: Quick Guide (Apple Watch & iPhone)
 
 # Quick Guide — MaxRecovery Timer for Apple Watch & iPhone
 
-**Last updated / 最終更新:** 2026-09-27
+**Last updated / 最終更新:** 2026-09-28
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](guide-ja.html)
 
@@ -59,10 +59,14 @@ Open MaxRecovery on your Apple Watch and tap **Start Standard** or
 | Double Tap | Next phase (next set in Simple mode) |
 | Digital Crown up | Pause / resume |
 | Digital Crown down | End confirmation; turn down again to end |
+| Screen tap (if enabled) | Same as Double Tap |
 
 - Double Tap: tap the thumb and index finger of the hand wearing the Watch
   together twice (Series 9 / Ultra 2 or newer, or another supported model).
-- While paused, Double Tap does nothing.
+- To advance by tapping the screen, turn on iPhone Settings tab → Session →
+  "Screen tap to advance phase" (off by default). It also works on Watches
+  without Double Tap.
+- While paused, Double Tap and screen taps do nothing.
 - Phases never switch on their own. During the hot phase, the Watch
   vibrates when your heart rate reaches TH1 and TH2.
 
@@ -74,8 +78,8 @@ Open MaxRecovery on your Apple Watch and tap **Start Standard** or
 - Turn the **Digital Crown down twice** to end.
 - In Standard mode, Double Tap during the final set's rest opens "What's
   next?". **Tap** End or +1 set.
-- Then pick 1–5 stars with the Crown and Double Tap to confirm, or tap
-  Skip. **The session is saved and sent to your iPhone only at this point.**
+- Then pick 1–5 stars with the Crown and tap Confirm (Double Tap also
+  works), or tap Skip. **The session is saved and sent to your iPhone only at this point.**
 - After 60 minutes without input the session ends automatically. The rating
   screen still waits, so open MaxRecovery and confirm or skip.
 
@@ -131,8 +135,6 @@ Settings tab → Add-ons → Enable plank exercise adds a Plank tab.
 - **Count-up** — runs until you double-tap to end.
 - Start with MaxRecovery on your Watch's screen to record heart rate too;
   the Watch saves it to Health as a Core Training workout.
-- Set iPhone Auto-Lock longer than your target so the phone doesn't lock
-  mid-plank.
 
 ---
 
