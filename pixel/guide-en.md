@@ -331,6 +331,10 @@ Google Play → Subscriptions (while subscribed, "Manage subscription (cancel,
 payment)" on the Premium screen opens it too). See "Subscription & Billing" in the
 FAQ.
 
+{% comment %}Work memo (not shown on the page): remove the next paragraph when the released version goes live (R6) — also the same note in guide-ja.md and the FAQ.{% endcomment %}
+**In the test version:** all Premium features are free to use (no purchase needed;
+the released version will require a purchase).
+
 **Languages:** the phone app (including the shared graph image and the PDF report)
 and the watch app are available in English and Japanese. The phone app follows the
 phone's language setting, and the watch app follows the watch's own language setting
