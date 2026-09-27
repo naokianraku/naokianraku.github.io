@@ -98,6 +98,14 @@
   tbody tr:nth-child(2n), tbody tr:nth-child(2n) td {
     background-color: var(--table-stripe) !important;
   }
+  /* スマホの幅で、ページが横にはみ出さないようにする。
+     - コード（MaxRecovery_Report_<start>_<end>.pdf など）は、入らないときだけ語の途中でも折り返す。
+     - 長い英単語で広がる表は、表の直後に {: .wrap-cells} を付ける（1 列目の見出し以外を語の途中でも折り返す）。
+       すべての表には掛けない（トップページのリンクの表などで、1 列目が 1 文字ずつに折れるため） */
+  @media (max-width: 480px) {
+    code { overflow-wrap: anywhere; }
+    table.wrap-cells td:not(:first-child), table.wrap-cells th:not(:first-child) { overflow-wrap: anywhere; }
+  }
   /* 取消線・追加 */
   del, s { color: var(--text); opacity: 0.6; }
   ins { color: var(--text); text-decoration: underline; }

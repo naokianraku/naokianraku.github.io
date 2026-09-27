@@ -10,9 +10,14 @@ title: Quick Guide (Pixel Watch & Android)
 
 > 🐛 Report bugs & suggestions: **[Feedback form](../feedback.html)**
 
+{% comment %}Work memo (not shown on the page): update the versions in the next paragraph when a new version ships (also guide-ja.md, faq-ja.md and faq-en.md).{% endcomment %}
+This guide describes v1.0.0 (the 1.0.0 candidate; the phone app is 1.0.0-beta). If your screens look different, update both the watch app and the phone app from Google Play.
+
+**Contents:** [1. Setup](#setup) · [2. Start](#start) · [3. During the session](#during) · [4. End](#end) · [5. Review on your phone](#review) · [5a. Cloud sync](#cloud) · [6. Health Connect](#health-connect) · [7. Tips](#tips) · [8. Recording flow](#flow) · [Terminology](#terms) · [FAQ](faq-en.html)
+
 ---
 
-### 1. Setup
+### 1. Setup {#setup}
 
 - Install **MaxRecovery Timer** (formerly MaxSauna Timer) from **Google Play** on
   your Android phone.
@@ -44,25 +49,26 @@ title: Quick Guide (Pixel Watch & Android)
   is **no cloud account / login**; data stays locally on each device.
 - **Keep both the watch app and the phone app up to date.** An older phone app
   may not be able to receive long sessions (the watch home screen tells you; see
-  section 4).
+  [section 4](#end)).
 - **Cloud sync (optional, FREE):** **Settings → Cloud sync (Google Drive) →
   "Sync with Google Drive"** to back up your sessions to **your own** Google
-  Drive and move them between devices. It is **off until you sign in / tap
-  Sync**, and the developer operates **no server and stores nothing** — your
+  Drive and move them between devices (note: it is rolling out gradually and may
+  not yet be available for your Google account). It is **off until you sign in /
+  tap Sync**, and the developer operates **no server and stores nothing** — your
   data goes to your own Drive's app-private folder, not to the developer. See
-  the Cloud sync section below.
+  [section 5a](#cloud).
 
-### 2. Start a session
+### 2. Start a session {#start}
 
 1. Open **MaxRecovery Timer** on your **Pixel Watch** (the home screen title is
    "MaxRecovery").
 2. Choose **Standard** or **Simple** mode (set in phone Settings → Watch settings).
 3. Tap **Start Standard** (or **Start Simple**). The first time, the "Before you
-   start" screen appears (see section 1).
+   start" screen appears (see [section 1](#setup)).
 
-The watch app is shown in English or Japanese (see "Languages" in section 5).
+The watch app is shown in English or Japanese (see "Languages" in [section 5](#review)).
 
-### 3. During the session — hands-free
+### 3. During the session — hands-free {#during}
 
 Once started, you don't need to touch the screen. **During a running session the
 screen does not respond to touch** (to prevent wet-hand mis-taps) — you operate with
@@ -170,13 +176,15 @@ similar options). It works the same on every watch:
 The session screen on the watch shows the current time, the current phase, the
 elapsed time, the total time, your heart rate (with a heart-rate gauge in the sauna),
 a heart-rate chart, your HR low / high for the whole session and for the last 5
-minutes, and the battery level. While the screen is on, the phase's elapsed time
+minutes, and the battery level (the low / high values are hidden while paused; the
+last-5-minutes range is also hidden in the Prep phase, and you can turn it off with
+Settings → Watch settings → "Recent HR range (last 5 min)", on by default). While the screen is on, the phase's elapsed time
 shows **tenths of a second** (e.g. "01:18.4", with the tenths in smaller type); the
 total time shows seconds. Configured phase times act as **haptic
 alerts** — the app does not auto-advance. If heart rate can't be read, the heart-rate
 field shows "—" or "♡×" and a **"Heart rate unavailable"** notice appears (it closes
 after 10 seconds, or when you turn the crown or tap **OK**); the timer keeps running
-(see the FAQ).
+(see the [FAQ](faq-en.html#q-no-hr)).
 
 **Background recording:** the session runs in a **foreground service with an ongoing
 notification**, and heart rate is read with the watch's workout feature (Health
@@ -199,7 +207,7 @@ workout feature can't be used (for example while another app is recording a
 workout), heart rate may stop while the screen is off. Keeping the session screen
 open during a session is recommended.
 
-### 4. End the session
+### 4. End the session {#end}
 
 - **Standard mode:** moving past the last phase of the final set shows **"What
   next?"** with **One more set / End / Cancel**. It closes by itself after 8 seconds
@@ -209,7 +217,8 @@ open during a session is recommended.
 - In either mode you can also end from the pause menu (**End**) or from the
   right-swipe end confirmation.
 - The app **auto-ends after 60 minutes** with no input (you get a warning first;
-  tap **Continue** or turn the crown to keep going).
+  tap **Continue** or turn the crown to keep going). You can turn this off with
+  Settings → Watch settings → "Auto-end after 60 min idle" (on by default).
 - After ending, rate the session 1–5 stars on the **"Nice work!"** screen and tap
   **Save** (or **Skip**).
 - The finished session is transferred to your phone automatically over the
@@ -222,7 +231,7 @@ open during a session is recommended.
     can't receive long sessions). The sessions arrive automatically after the
     update.
 
-### 5. Review on your Android phone
+### 5. Review on your Android phone {#review}
 
 - **Home tab (ホーム)** — shows the latest session's full analysis directly (no
   tap needed): the detail header with self-rating (e.g. "Standard • 2 sets •
@@ -248,14 +257,14 @@ open during a session is recommended.
   - **"Hide prep phase from chart"** — re-bases the X axis so it starts at
     **sauna entry (0:00)**.
   - If you connect Health Connect, your **Resting heart rate** can also appear
-    as a reference line on the chart (see Health Connect below).
+    as a reference line on the chart (see [section 6](#health-connect)).
 - **History tab (履歴)** — now just the **list of past sessions**. **Tap a row**
   to open that session's analysis (same screen as Home), including the
   **end-location map (FREE)** and venue-name entry (see the next item).
   **Left-swipe a row** to reveal a **trash button**, then **tap it** to delete that
   single session (no confirmation dialog — deletion is immediate; this is the only
   per-session delete). If you use Google Drive sync, the session is also removed
-  from the cloud and your other devices at the next sync (see 5a).
+  from the cloud and your other devices at the next sync (see [5a](#cloud)).
 - **Venue name (FREE)** — tap "**+ Add venue name**" (or the venue name, once
   set) in the session-detail header to type or edit it. This works even for
   sessions without a location. For sessions with a location, you can also set
@@ -308,14 +317,16 @@ open during a session is recommended.
   the file on the save screen, and the app shows the saved file name after
   exporting); files exported by earlier versions
   (`max_sauna_*.csv`) can still be imported. Exporting **set-aside history files**
-  (copies of history that couldn't be read) works without Premium (see the FAQ).
+  (copies of history that couldn't be read) works without Premium (see the
+  [FAQ](faq-en.html#q-set-aside)).
 - **Settings → Cloud sync (Google Drive)** — back up to your own Drive, FREE,
-  optional (see the Cloud sync section below).
+  optional; rolling out gradually, so it may not be available for your account
+  (see [section 5a](#cloud)).
 
 **Free vs Premium:** the personal z-score / vs-previous, the movement-quality
 (Flow) score, the **Detailed data** card, the end-location map / venue-name
 entry (nearby-venue search up to 5 times a day), the **basic Analytics** (afterglow-over-time, by-mode, summary), cloud sync
-(Google Drive), the overview cards (streaks / Best Sessions / heatmap / Venue
+(Google Drive, where available), the overview cards (streaks / Best Sessions / heatmap / Venue
 Map), the Sleep score, and the resting-HR reference line are all **FREE**;
 sharing the HR graph as **text** is also free. The β score, the recovery curve
 (with slope / R² / lag), the **advanced Analytics**, the PDF report, the
@@ -326,6 +337,7 @@ Premium also unlocks a **Premium app icon** (Settings → Premium → "Use Premi
 app icon"; the icon changes when you leave the app, for example by going to the home
 screen).
 
+{% comment %}Work memo (not shown on the page): as of 2026-09-27 only the monthly plan is active in Play (the yearly plan and the first-month-free offer are drafts). Before the released version (R6), activate them in Play and check that the yearly plan and free period in the next paragraph match (also guide-ja.md, the FAQ and the Terms).{% endcomment %}
 **Getting Premium:** open **Settings → Premium → "Upgrade to Premium"** (or **"See
 Premium"** on the locked recovery curve, advanced Analytics or CSV import/export) to
 reach the Premium screen, then choose the
@@ -334,8 +346,8 @@ in your local currency. First-time Premium subscribers get a free period (such a
 **"Premium: first month free"**; Google Play decides eligibility). When the free
 period ends, the subscription renews automatically at the plan's price. Cancel in
 Google Play → Subscriptions (while subscribed, "Manage subscription (cancel,
-payment)" on the Premium screen opens it too). See "Subscription & Billing" in the
-FAQ.
+payment)" on the Premium screen opens it too). See
+["Subscription & Billing" in the FAQ](faq-en.html#billing).
 
 {% comment %}Work memo (not shown on the page): remove the next paragraph when the released version goes live (R6) — also the same note in guide-ja.md and the FAQ.{% endcomment %}
 **In the test version:** all Premium features are free to use (no purchase needed;
@@ -351,7 +363,10 @@ phone's language setting, and the watch app follows the watch's own language set
 regardless of their language settings (if you switch it while a session is running on
 the watch, the watch changes after the session ends).
 
-### 5a. Cloud sync (optional, FREE)
+### 5a. Cloud sync (optional, FREE) {#cloud}
+
+Note: cloud sync is rolling out gradually and may not yet be available for your
+Google account.
 
 Cloud sync is **optional** and **off until you turn it on**. If you do not use
 it, your data stays on your devices (Watch ↔ Phone over the Wearable Data Layer)
@@ -385,7 +400,7 @@ exactly as before.
   Account → Security → "Your connections to third-party apps & services"** (the
   app itself has no disconnect setting).
 
-### 6. Health Connect (optional)
+### 6. Health Connect (optional) {#health-connect}
 
 Health Connect is **optional** and only used **with your permission**. If you do
 not connect it, the app works exactly as before, with no health-data
@@ -414,7 +429,7 @@ integration.
   Health Connect (your device's system settings on Android 14 and later, or the
   Health Connect app on earlier versions).
 
-### 7. Tips
+### 7. Tips {#tips}
 
 - Wear your watch snugly for stable heart-rate readings.
 - To advance several phases in a row, wait **at least 1 second** between inputs.
@@ -432,7 +447,7 @@ integration.
 - The Afterglow Score and the Sleep score are **reference values**, not medical
   metrics.
 
-### 8. Recording flow — a 3-set example
+### 8. Recording flow — a 3-set example {#flow}
 
 An example of recording **3 sets of Sauna → Cold bath → Cool-down** at a venue with a
 set time limit (e.g. 60–90 minutes).
@@ -463,38 +478,36 @@ second between turns.
 
 ---
 
-## 用語対応表 / Terminology
+## Terminology / 用語対応表 {#terms}
 
-アプリ画面と本取説で同じ機能を指す用語の対応です（English はウォッチの英語表示）。
 Terms in the app and in this guide that refer to the same thing (English = the watch's English UI).
 
-| 日本語（アプリ表記） | English (app) | 説明 / Notes |
+| 日本語（アプリ表記） | English (app) | Notes |
 |---|---|---|
-| クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
-| ダブルピンチ | Double pinch | Pixel Watch 3 以降・実験（ウォッチの設定「ダブルピンチを使う（実験）」を ON にしたときだけ。既定オフ）。計測中は「次へ」と同じ / Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on in the watch app's settings; off by default); same as Next while running |
-| 手首ターン | Wrist turn | Pixel Watch 3 以降・実験（ウォッチの設定「手首ターンで一時停止（実験）」を ON にしたときだけ。既定オフ）。計測中は一時停止／再開、確認画面はキャンセル。オフのときはセッション中は無効 / Pixel Watch 3+, beta (only when "Wrist turn to pause (beta)" is on in the watch app's settings; off by default): pauses/resumes in a session and cancels confirmations. When off, disabled in a session |
-| 標準モード（開始ボタン「標準モード開始」） | Standard (Start Standard) | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold bath → cool-down cycle |
-| シンプルモード（開始ボタン「シンプルモード開始」） | Simple (Start Simple) | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
-| 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Start with prep time → Prep | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |
-| サウナ | Sauna | 温まるフェーズ / The heat phase |
-| 水風呂 | Cold bath | 冷水のフェーズ / The cold-water phase |
-| 外気浴 | Cool-down | 休憩・外気浴のフェーズ / The outdoor-rest phase |
-| その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ / その他） | Extra phase (Rest / Hot bath / Hydration / Shower / Stretch / Other) | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
-| クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |
-| スマホ未転送 | Not on phone yet | スマホの受信確認がまだの記録 / Not yet confirmed as received by the phone |
+| クラウン（リューズ） | Crown | The rotating side button |
+| ダブルピンチ | Double pinch | Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on in the watch app's settings; off by default); same as Next while running |
+| 手首ターン | Wrist turn | Pixel Watch 3+, beta (only when "Wrist turn to pause (beta)" is on in the watch app's settings; off by default): pauses/resumes in a session and cancels confirmations. When off, disabled in a session |
+| 標準モード（開始ボタン「標準モード開始」） | Standard (Start Standard) | The full sauna → cold bath → cool-down cycle |
+| シンプルモード（開始ボタン「シンプルモード開始」） | Simple (Start Simple) | Sauna-only simple timing |
+| 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Start with prep time → Prep | Optional first phase before the sauna |
+| サウナ | Sauna | The heat phase |
+| 水風呂 | Cold bath | The cold-water phase |
+| 外気浴 | Cool-down | The outdoor-rest phase |
+| その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ / その他） | Extra phase (Rest / Hot bath / Hydration / Shower / Stretch / Other) | Optional 4th phase after cool-down; name is selectable |
+| クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | How far to turn the crown to act |
+| スマホ未転送 | Not on phone yet | Not yet confirmed as received by the phone |
 
-**「休憩」など第4フェーズを使いたいときは / To add a "rest" 4th phase:** 設定 →
-ウォッチ設定で **「その他フェーズを使う」** を ON にすると、外気浴の後に第4フェーズが
-入り、名称を **休憩・お風呂・給水・シャワー・ストレッチ・その他** から選べます。
-Turn on **"Use extra phase"** in Settings → Watch settings to insert a 4th phase after
-cool-down, with a selectable name (Rest / Hot bath / Hydration / Shower / Stretch / Other).
+**To add a "rest" 4th phase:** turn on **"Use extra phase"** in Settings → Watch
+settings to insert a 4th phase after cool-down, with a selectable name (Rest / Hot
+bath / Hydration / Shower / Stretch / Other).
 
 ---
 
 ## 関連 / See also
 
-- [FAQ / よくある質問](faq.html)
+- [FAQ](faq-en.html)
 - [Privacy Policy / プライバシーポリシー](privacy-policy.html)
 - [Terms of Use / 利用規約](terms-of-use.html)
+- [日本語の取説](guide-ja.html)
 
 **Support / お問い合わせ:** anraku.tech@gmail.com

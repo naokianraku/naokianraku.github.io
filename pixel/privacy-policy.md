@@ -9,6 +9,8 @@ title: Privacy Policy (Pixel Watch & Android)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
 **Contact / 連絡先:** anraku.tech@gmail.com
 
+[English](#english) ・ [日本語](#日本語)
+
 ---
 
 ## English
@@ -34,7 +36,8 @@ may also back up a copy of the App's data to your Google Account — see Section
 to turn it on (**Settings → Cloud sync (Google Drive) → "Sync with Google
 Drive"**), the App stores a snapshot of your sessions in **your own** Google
 Drive's app-private ("App Data") folder, under your Google account. This is
-free. The developer still operates no server and holds nothing — your data goes
+free where it is available (Cloud sync is rolling out gradually and may not yet be
+available for your Google account). The developer still operates no server and holds nothing — your data goes
 to your Drive, not to the developer, and the developer cannot access it. Cloud
 sync is **off until you sign in / tap Sync**; if you never use it, your data
 stays on your devices exactly as before. See Section 6 for details.
@@ -53,11 +56,17 @@ see Section 5 for details.
 | Session data | Session times, phases, computed scores, the venue name you enter, a 1–5 star rating, the reason heart rate was unavailable (if it was), and — only when something went wrong during recording — a short technical note (for example, that the heart-rate sensor stopped or the app restarted) | Core app functionality and troubleshooting recording problems |
 | Health Connect data (optional) | Resting heart rate, Sleep, and Respiratory rate **read** from Health Connect; exercise + heart-rate records **written** to Health Connect — only if you connect it | Show a resting-HR reference line, a next-day Sleep score / respiratory-rate reference, and let other apps use your sessions |
 | Cloud sync data (optional) | A snapshot of your sessions, plus a list of deleted sessions (session IDs and deletion times only), stored in **your own** Google Drive's app-private folder, only if you turn on Cloud sync | Back up your sessions, move them between your devices, and keep deleted sessions from coming back |
+| Settings | Your age (used to estimate your maximum heart rate), phase times, heart-rate thresholds and other settings, synced between the watch and the phone | Run the timer and alerts; the age is also printed on the PDF report |
 | Deletion records | Session IDs and deletion times of the sessions you deleted, kept on your phone (no heart-rate, location or venue data) | Keep deleted sessions from coming back from the watch or from Cloud sync |
 | Advertising data | Device information, the advertising ID, ad-interaction information, the IP address (from which Google may estimate an approximate location), and your ad-consent choices, handled by Google AdMob and Google's User Messaging Platform (only without Premium, except the consent check described in Section 8) | Show banner ads and manage ad consent |
+{: .wrap-cells}
 
-The App has no account or login. It does not ask for your name or email. A short
-export-name label you may optionally enter is stored only on your device.
+The App has no account or login. It does not ask for your name or email. You can
+enter your age in the watch settings (on the watch, or under Settings → Watch
+settings on the phone); it is used to estimate your maximum heart rate, synced
+between the watch and the phone like other settings, and printed on the PDF report
+you create. Like other settings, it stays on your devices and is not sent to the
+developer.
 
 The App reads heart rate **live from the watch's optical sensor** via Wear OS
 Health Services during a session. **Health Connect is optional** and, only when
@@ -73,7 +82,7 @@ searches a day per device); it never searches automatically. Each search sends
 that session's end-location coordinates (the device location recorded when the
 session ended) to Google so it can fetch the nearby places. Google's handling of
 that data is governed by Google's own privacy policy
-(https://policies.google.com/privacy); the developer receives nothing.
+(<https://policies.google.com/privacy>); the developer receives nothing.
 
 The suggestions are shown for reference only. They are kept only in the phone's
 memory for up to 30 minutes and are **never saved** — not in your session files,
@@ -185,7 +194,8 @@ opens for this App shows this policy.
 
 Cloud sync is **optional** and **off until you sign in / tap Sync**. You turn it
 on in **Settings → Cloud sync (Google Drive)** by tapping **"Sync with Google
-Drive"**. It is **free**. If you never use it, your data stays on your devices
+Drive"**. It is **free** where it is available (it is rolling out gradually and may
+not yet be available for your Google account). If you never use it, your data stays on your devices
 (Watch ↔ Phone over the Wearable Data Layer) exactly as before, with no cloud
 involved.
 
@@ -214,12 +224,12 @@ You stay in control:
   / hidden app data of your Drive).
 - **Revoke the app's access** at any time in your **Google Account → Security →
   Your connections to third-party apps & services**
-  (https://myaccount.google.com/connections): select the app and delete its
+  (<https://myaccount.google.com/connections>): select the app and delete its
   connection. (It may be listed under its former name, "MaxSauna Timer".) The
   App itself has no disconnect setting.
 
 The App's use of information received from Google APIs adheres to the Google API
-Services User Data Policy (https://developers.google.com/terms/api-services-user-data-policy),
+Services User Data Policy (<https://developers.google.com/terms/api-services-user-data-policy>),
 including the Limited Use requirements. Data from Google Drive is used only to
 provide Cloud sync to you; it is never transferred to the developer or others,
 never used for advertising, and never read by humans.
@@ -293,24 +303,32 @@ measure ads, in accordance with Google's policies.
   **Settings → Privacy → Ads** (the exact path varies by device/Android
   version); if you do, you still see ads, but they are non-personalized.
 - Google's handling of advertising data is governed by Google's own privacy
-  policy: https://policies.google.com/privacy
+  policy: <https://policies.google.com/privacy>
 - **With Premium, no ads are shown**: the App does not show the consent form or
   start the Mobile Ads SDK. It still checks with UMP (as above) so that "Ad privacy
   settings" can be offered where required.
 
-### 9. Other Google services (diagnostics)
+### 9. Other Google services (diagnostics and in-app review)
 
 The App is built on Google Play Services and may include Firebase components.
 These may collect standard diagnostic and crash logs as part of their normal,
 transparent operation, governed by Google's privacy policy
-(https://policies.google.com/privacy). This is not used to identify you to the
+(<https://policies.google.com/privacy>). This is not used to identify you to the
 developer, and your sauna/heart-rate data is not included.
+
+**In-app review (Google Play):** when you open a session from the History tab, the
+App may ask Google Play to show its in-app review screen (only after you have 3 or
+more sessions, at most once per app version, and at least 120 days apart). Google Play
+decides whether the screen appears, and any rating or review you post is handled by
+Google Play under Google's policies; the developer does not receive it through the
+App. The App only records on your phone when it last asked and for which app
+version.
 
 ### 10. Purchases
 
-Premium is an auto-renewing subscription (monthly or yearly plans, with a free
-period for first-time subscribers where offered) sold through **Google Play
-Billing**. Payments are processed by Google; the App never sees your payment
+Premium is an auto-renewing subscription (with the plans shown on the Premium
+screen — monthly and, where offered, yearly — and a free period for first-time
+subscribers where offered) sold through **Google Play Billing**. Payments are processed by Google; the App never sees your payment
 details. The App receives only the status of your subscription from Google Play
 (for example, whether it is active or on hold) to turn Premium features on or off,
 and keeps that status on your phone. You can see the price, manage, or cancel the
@@ -379,36 +397,17 @@ Questions about this Privacy Policy: anraku.tech@gmail.com
 
 ### 1. 概要
 
-MaxRecovery Timer（以下「本アプリ」。旧名 MaxSauna Timer）は、温浴・サウナの
-セッションを計測し心拍ベースのデータを記録する Pixel Watch（Wear OS）/ Android
-スマートフォン用アプリです。
-本ポリシーは、本アプリが扱うデータとその取扱いを説明します。
+MaxRecovery Timer（以下「本アプリ」。旧名 MaxSauna Timer）は、温浴・サウナのセッションを計測し心拍ベースのデータを記録する Pixel Watch（Wear OS）/ Android
+スマートフォン用アプリです。本ポリシーは、本アプリが扱うデータとその取扱いを説明します。
 
-**開発者はサーバーを一切運用しておらず、利用者の個人データを収集・受領・保管
-しません。** セッションデータ・心拍データ・位置情報は利用者の端末（ウォッチと
-スマートフォン）内にローカルファイルとして留まります。開発者側のクラウド
-アカウントや開発者へのログインはありません。ウォッチとスマートフォンを
-ペアリングしている場合、終了したセッションは Wearable Data Layer（Bluetooth /
-Wi-Fi）を通じてウォッチからスマートフォンへ直接転送され、開発者やアプリの
-クラウドを経由することはありません。開発者はこれらにアクセスできません。
-（端末で Android のバックアップがオンになっている場合は、Android が本アプリの
-データのコピーを利用者の Google アカウントにバックアップすることもあります。
-第 3 条参照）
+**開発者はサーバーを一切運用しておらず、利用者の個人データを収集・受領・保管しません。** セッションデータ・心拍データ・位置情報は利用者の端末（ウォッチとスマートフォン）内にローカルファイルとして留まります。開発者側のクラウドアカウントや開発者へのログインはありません。ウォッチとスマートフォンをペアリングしている場合、終了したセッションは Wearable Data Layer（Bluetooth /
+Wi-Fi）を通じてウォッチからスマートフォンへ直接転送され、開発者やアプリのクラウドを経由することはありません。開発者はこれらにアクセスできません。（端末で Android のバックアップがオンになっている場合は、Android が本アプリのデータのコピーを利用者の Google アカウントにバックアップすることもあります。第 3 条参照）
 
-**クラウド同期は任意で、保存先は利用者自身の Google Drive のみです。** オンに
-する場合は、**設定 → クラウド同期（Google Drive） → 「Google Drive と同期」**
-から行います。これにより本アプリは、利用者の Google アカウント配下にある
-**利用者自身の** Google Drive のアプリ専用（「アプリデータ」）フォルダに
-セッションのスナップショットを保存します。**無料**です。開発者は引き続き
-サーバーを運用せず、何も保持しません——データは開発者ではなく利用者自身の
-Drive に保存され、開発者はアクセスできません。クラウド同期は、**サインインまたは
-同期をタップするまでオフ**です。利用しない場合、データは従来どおり利用者の
-端末内に留まります。詳細は第 6 条をご覧ください。
+**クラウド同期は任意で、保存先は利用者自身の Google Drive のみです。** オンにする場合は、**設定 → クラウド同期（Google Drive） → 「Google Drive と同期」**から行います。これにより本アプリは、利用者の Google アカウント配下にある**利用者自身の** Google Drive のアプリ専用（「アプリデータ」）フォルダにセッションのスナップショットを保存します。提供されている場合は**無料**です（現在は順次提供中のため、お使いの Google アカウントでは使えない場合があります）。開発者は引き続きサーバーを運用せず、何も保持しません——データは開発者ではなく利用者自身の
+Drive に保存され、開発者はアクセスできません。クラウド同期は、**サインインまたは同期をタップするまでオフ**です。利用しない場合、データは従来どおり利用者の端末内に留まります。詳細は第 6 条をご覧ください。
 
 **Health Connect** を接続した場合は、利用者の明示的な許可のもとで、本アプリが
-Health Connect を通じて端末上の一部の健康データを読み書きできます。これらは
-端末内に留まり、**開発者に送信されることはありません**。詳細は第 5 条をご覧
-ください。
+Health Connect を通じて端末上の一部の健康データを読み書きできます。これらは端末内に留まり、**開発者に送信されることはありません**。詳細は第 5 条をご覧ください。
 
 ### 2. 本アプリが扱うデータ
 
@@ -419,315 +418,145 @@ Health Connect を通じて端末上の一部の健康データを読み書き�
 | セッションデータ | セッション時刻・フェーズ・算出スコア・入力した施設名・1〜5 の星評価・心拍を取得できなかった理由（該当する場合）、および記録中に問題があったときだけ付く短い技術的なメモ（心拍センサーが止まった、アプリが再起動した など） | アプリの中核機能と、記録の不具合の調査 |
 | Health Connect データ（任意） | Health Connect から**読み取る**安静時心拍数・睡眠・呼吸数、Health Connect へ**書き込む**運動＋心拍レコード（接続した場合のみ） | 安静時心拍の基準線、翌日の睡眠スコア／呼吸数の参考表示、他アプリでのセッション利用 |
 | クラウド同期データ（任意） | クラウド同期をオンにした場合のみ、**利用者自身の** Google Drive のアプリ専用フォルダに保存されるセッションのスナップショットと、削除したセッションの一覧（セッション ID と削除した時刻のみ） | セッションのバックアップと端末間の移行、削除したセッションが戻らないようにするため |
+| 設定 | 年齢（最大心拍の目安の計算に使用）・フェーズの時間・心拍のしきい値などの設定。ウォッチとスマートフォンの間で同期 | タイマーと通知の動作。年齢は PDF レポートにも表示 |
 | 削除の記録 | 利用者が削除したセッションの ID と削除した時刻（心拍・位置・施設名は含みません）。スマートフォン内に保持 | 削除したセッションがウォッチやクラウド同期から戻らないようにするため |
 | 広告データ | Google AdMob と Google のユーザー向けメッセージ プラットフォーム（UMP）が扱う端末情報・広告 ID・広告操作情報・IP アドレス（Google がおおよその位置を推定する場合があります）・広告の同意の選択（Premium 未加入時のみ。第 8 条の同意の確認を除く） | バナー広告の表示と広告の同意の管理 |
 
-本アプリにアカウント登録・ログインはありません。氏名やメールアドレスを求める
-こともありません。任意で入力できる短いエクスポート名ラベルは端末内にのみ
-保存されます。
+本アプリにアカウント登録・ログインはありません。氏名やメールアドレスを求めることもありません。ウォッチの設定（ウォッチ、またはスマートフォンの 設定 → ウォッチ設定）で年齢を入力できます。年齢は最大心拍の目安の計算に使い、ほかの設定と同じようにウォッチとスマートフォンの間で同期し、利用者が作成する PDF レポートに表示します。ほかの設定と同じく端末内に保存し、開発者に送信することはありません。
 
-本アプリは、セッション中にウォッチの光学センサーから **心拍をリアルタイムで**
-（Wear OS Health Services 経由で）読み取ります。**Health Connect は任意**で、
-接続した場合に限り、本アプリは Health Connect を通じて特定のデータを読み書き
-します（第 5 条参照）。本アプリは、Health Connect を通じて利用者が許可した
-場合を除き、他アプリの健康データにアクセスすることはありません。
+本アプリは、セッション中にウォッチの光学センサーから **心拍をリアルタイムで**（Wear OS Health Services 経由で）読み取ります。**Health Connect は任意**で、接続した場合に限り、本アプリは Health Connect を通じて特定のデータを読み書きします（第 5 条参照）。本アプリは、Health Connect を通じて利用者が許可した場合を除き、他アプリの健康データにアクセスすることはありません。
 
 セッションの地図／施設機能を開くと、本アプリは該当セッションの終了位置の
-Google マップを表示します。地図の読み込みのため、その座標が Google に送信され
-ます。近隣のサウナ・入浴施設の候補は、**「近くの施設を探す」をタップしたとき
-だけ**（1 台につき 1 日 5 回まで）、Google マップ／Google プレイス を通じて検索
-します。自動で検索することはありません。検索のたびに、該当セッションの終了位置
-（セッション終了時に端末が取得した位置）の座標が Google に送信され、近隣施設の
-取得に使われます。この座標の Google による取扱いは Google のプライバシー
-ポリシー（https://policies.google.com/privacy）に従います。開発者は何も受け
-取りません。
+Google マップを表示します。地図の読み込みのため、その座標が Google に送信されます。近隣のサウナ・入浴施設の候補は、**「近くの施設を探す」をタップしたときだけ**（1 台につき 1 日 5 回まで）、Google マップ／Google プレイス を通じて検索します。自動で検索することはありません。検索のたびに、該当セッションの終了位置（セッション終了時に端末が取得した位置）の座標が Google に送信され、近隣施設の取得に使われます。この座標の Google による取扱いは Google のプライバシーポリシー（<https://policies.google.com/privacy>）に従います。開発者は何も受け取りません。
 
-検索で表示される候補は参考表示です。スマートフォンのメモリ上に最長 30 分保持
-するだけで、**保存はしません**（セッションファイル・バックアップ・クラウド同期・
-CSV・PDF・Health Connect のいずれにも残りません）。**本アプリが保存する施設名は、
-利用者が自分で入力したもの**（と CSV で取り込んだもの）**だけ**です。検索の前に
-表示する約 500 m 以内の過去に訪れた施設は、端末内のローカルセッションファイル
-から読み出したこれらの施設名です。表示のために Google を検索することはなく、
-開発者に送信されることもありません。
+検索で表示される候補は参考表示です。スマートフォンのメモリ上に最長 30 分保持するだけで、**保存はしません**（セッションファイル・バックアップ・クラウド同期・CSV・PDF・Health Connect のいずれにも残りません）。**本アプリが保存する施設名は、利用者が自分で入力したもの**（と CSV で取り込んだもの）**だけ**です。検索の前に表示する約 500 m 以内の過去に訪れた施設は、端末内のローカルセッションファイルから読み出したこれらの施設名です。表示のために Google を検索することはなく、開発者に送信されることもありません。
 
 ### 3. データの保存場所
 
-- **端末内:** セッションデータ・心拍データは Pixel Watch と Android スマート
-  フォン内に JSON ファイルとしてローカル保存されます。
-- **ウォッチ→スマートフォンへの転送:** ペアリングしている場合、終了した
-  セッションは Wearable Data Layer を通じてウォッチからスマートフォンへ送信
-  され、ウォッチ設定は双方向に同期されます。ウォッチは、スマートフォンが受け
-  取ったことを確認するまで終了したセッションを保持し、確認後に送信待ちから
-  外します（ウォッチ自身の履歴には直近 20 件を保持します）。これは端末間の
-  直接転送であり、**開発者側のクラウドアカウントや開発者へのログインはありま
-  せん**。端末内のデータにアクセスできるのは利用者本人のみで、開発者はアクセス
-  できません。
-- **読めなかったファイル:** スマートフォンの履歴ファイルを読めなかった場合、
-  本アプリは上書きせずに端末内に退避し、利用者が書き出せるようにします（お問い
-  合わせの際の添付など）。退避したファイルは、アプリのストレージを消去するか
-  アンインストールするまで端末内に残ります。
-- **Android のバックアップ（Google による）:** スマートフォン側アプリは、Android の
-  自動バックアップを許可しています。スマートフォンの設定で Google アカウントへの
-  バックアップがオンになっている場合、Android が本アプリのデータ（セッションの履歴、
-  削除の記録、設定など）のコピーを利用者の Google アカウントにバックアップし、
-  同じアカウントで本アプリを再インストールしたときや、新しいスマートフォンを
-  設定したときに復元することがあります。そのため、アンインストールしたあとに
-  再インストールすると、記録が戻ることがあります。ウォッチ側アプリのデータも、
-  ウォッチのバックアップの対象になることがあります（計測中の下書きを除きます）。
-  このバックアップは、利用者の Google アカウントのもとで Google が扱うもので、
-  本アプリのクラウド同期とは別であり、開発者はアクセスできません。バックアップの
-  オン・オフは、端末の設定で変更できます（正確な経路は端末や Android の
-  バージョンにより異なります）。
-- **クラウド同期（任意）:** クラウド同期をオンにした場合、セッションの
-  スナップショットが、利用者の Google アカウント配下にある **利用者自身の**
-  Google Drive のアプリ専用（「アプリデータ」）フォルダに保存されます。開発者は
-  サーバーを運用せず何も保持しません。データは開発者ではなく利用者自身の
+- **端末内:** セッションデータ・心拍データは Pixel Watch と Android スマートフォン内に JSON ファイルとしてローカル保存されます。
+- **ウォッチ→スマートフォンへの転送:** ペアリングしている場合、終了したセッションは Wearable Data Layer を通じてウォッチからスマートフォンへ送信され、ウォッチ設定は双方向に同期されます。ウォッチは、スマートフォンが受け取ったことを確認するまで終了したセッションを保持し、確認後に送信待ちから外します（ウォッチ自身の履歴には直近 20 件を保持します）。これは端末間の直接転送であり、**開発者側のクラウドアカウントや開発者へのログインはありません**。端末内のデータにアクセスできるのは利用者本人のみで、開発者はアクセスできません。
+- **読めなかったファイル:** スマートフォンの履歴ファイルを読めなかった場合、本アプリは上書きせずに端末内に退避し、利用者が書き出せるようにします（お問い合わせの際の添付など）。退避したファイルは、アプリのストレージを消去するかアンインストールするまで端末内に残ります。
+- **Android のバックアップ（Google による）:** スマートフォン側アプリは、Android の自動バックアップを許可しています。スマートフォンの設定で Google アカウントへのバックアップがオンになっている場合、Android が本アプリのデータ（セッションの履歴、削除の記録、設定など）のコピーを利用者の Google アカウントにバックアップし、同じアカウントで本アプリを再インストールしたときや、新しいスマートフォンを設定したときに復元することがあります。そのため、アンインストールしたあとに再インストールすると、記録が戻ることがあります。ウォッチ側アプリのデータも、ウォッチのバックアップの対象になることがあります（計測中の下書きを除きます）。このバックアップは、利用者の Google アカウントのもとで Google が扱うもので、本アプリのクラウド同期とは別であり、開発者はアクセスできません。バックアップのオン・オフは、端末の設定で変更できます（正確な経路は端末や Android のバージョンにより異なります）。
+- **クラウド同期（任意）:** クラウド同期をオンにした場合、セッションのスナップショットが、利用者の Google アカウント配下にある **利用者自身の**
+  Google Drive のアプリ専用（「アプリデータ」）フォルダに保存されます。開発者はサーバーを運用せず何も保持しません。データは開発者ではなく利用者自身の
   Drive に保存され、開発者はアクセスできません（第 6 条参照）。
 - **Health Connect（任意）:** Health Connect を接続した場合、Health Connect
-  から読み取ったデータや書き込んだデータは、Health Connect 自身の管理のもとで
-  端末内に留まります。開発者やアプリのクラウドにコピーされることはありません。
+  から読み取ったデータや書き込んだデータは、Health Connect 自身の管理のもとで端末内に留まります。開発者やアプリのクラウドにコピーされることはありません。
 
 ### 4. 心拍データ
 
 本アプリは、セッション実行中のみ、ウォッチの光学センサーから（Wear OS Health
-Services 経由で）心拍サンプルを読み取り、機能を提供します：セッション履歴、
-心拍チャート、ととのい度や HRR（サウナのピーク後 1/3/5 分の心拍回復）などの
-回復分析。
+Services 経由で）心拍サンプルを読み取り、機能を提供します：セッション履歴、心拍チャート、ととのい度や HRR（サウナのピーク後 1/3/5 分の心拍回復）などの回復分析。
 
 - 心拍データを**広告に使用することはありません**。
 - 心拍データを開発者や第三者に**販売・共有することはありません**。
 - 心拍データは端末内で処理され、ローカルファイルに保持されます。Google AdMob
   に送信されることはありません。
-- Health Connect を接続してセッションを書き出した場合、本アプリは各セッションの
-  心拍レコードを端末上の Health Connect に**書き込みます**（第 5 条参照）。
-  これは Health Connect が管理する端末内・ローカルのやり取りであり、開発者に
-  送信されることはありません。
-- ウォッチは Wear OS Health Services のワークアウト機能で心拍を読み取ります。
-  要求するのは心拍だけで、GPS は使いません。
+- Health Connect を接続してセッションを書き出した場合、本アプリは各セッションの心拍レコードを端末上の Health Connect に**書き込みます**（第 5 条参照）。これは Health Connect が管理する端末内・ローカルのやり取りであり、開発者に送信されることはありません。
+- ウォッチは Wear OS Health Services のワークアウト機能で心拍を読み取ります。要求するのは心拍だけで、GPS は使いません。
 
-**心拍なしのセッション：** 心拍を読み取れない場合（心拍数の権限がない、
-ウォッチに心拍センサーがない、心拍が届かない など）、本アプリは心拍なしで計時を
-続け、ウォッチに「心拍を取得できません」と表示します。デモや推定の値で置き換える
-ことはありません。そのセッションは時刻とフェーズとともに、心拍なしで記録した旨と、
-分かる場合はその理由（例：「心拍数の権限なし」）を付けて保存されます。
-こうしたセッションは他のセッションと同じように保存・転送・同期されますが、スコアの
-計算には使わず、Health Connect には運動の記録だけを書き出します。
+**心拍なしのセッション：** 心拍を読み取れない場合（心拍数の権限がない、ウォッチに心拍センサーがない、心拍が届かない など）、本アプリは心拍なしで計時を続け、ウォッチに「心拍を取得できません」と表示します。デモや推定の値で置き換えることはありません。そのセッションは時刻とフェーズとともに、心拍なしで記録した旨と、分かる場合はその理由（例：「心拍数の権限なし」）を付けて保存されます。こうしたセッションは他のセッションと同じように保存・転送・同期されますが、スコアの計算には使わず、Health Connect には運動の記録だけを書き出します。
 
 ### 5. Health Connect（任意）
 
-Health Connect は**任意**で、**設定 → Health Connect** で接続するまでは無効
-です。接続しない場合、本アプリは従来どおり動作し、健康データの連携は一切あり
-ません。接続する際は、システムの Health Connect 画面で各権限を明示的に許可
-します。権限はいつでも Health Connect（Android 14 以降は端末のシステム設定、
-それより前は Health Connect アプリ）から変更・取り消しできます。
+Health Connect は**任意**で、**設定 → Health Connect** で接続するまでは無効です。接続しない場合、本アプリは従来どおり動作し、健康データの連携は一切ありません。接続する際は、システムの Health Connect 画面で各権限を明示的に許可します。権限はいつでも Health Connect（Android 14 以降は端末のシステム設定、それより前は Health Connect アプリ）から変更・取り消しできます。
 
 利用者の許可のもとで、本アプリは以下を行います。
 
 - **安静時心拍数を読み取り**、セッションの心拍チャートに基準線として表示します。
-- セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、
-  「翌日の状態」セクションに表示します（睡眠は参考の「睡眠スコア」として
-  表示）。
-- セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、
-  利用者が選んだ他アプリでセッションを利用できるようにします。書き込みは
-  **設定 → Health Connect →「セッションを Health Connect に書き出し」** を
-  タップしたときだけ行い、自動では書き込みません。各レコードにはセッションごとの
-  識別子を付けるため、書き出し直すと以前のレコードが置き換わり、重複しません。
-  運動レコードの名前は、利用者が入力した施設名（無い場合は「MaxRecovery」）です
-  （以前のバージョンで書き出したレコードは「Sauna」の場合があります）。
-  「以前の書き出しの重複を整理」は、スマートフォンにあるセッションについて、本
-  アプリが以前書き出したレコードを削除してから書き出し直すもので、他アプリの
-  データを削除することはありません。
+- セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、「翌日の状態」セクションに表示します（睡眠は参考の「睡眠スコア」として表示）。
+- セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、利用者が選んだ他アプリでセッションを利用できるようにします。書き込みは**設定 → Health Connect →「セッションを Health Connect に書き出し」** をタップしたときだけ行い、自動では書き込みません。各レコードにはセッションごとの識別子を付けるため、書き出し直すと以前のレコードが置き換わり、重複しません。運動レコードの名前は、利用者が入力した施設名（無い場合は「MaxRecovery」）です（以前のバージョンで書き出したレコードは「Sauna」の場合があります）。「以前の書き出しの重複を整理」は、スマートフォンにあるセッションについて、本アプリが以前書き出したレコードを削除してから書き出し直すもので、他アプリのデータを削除することはありません。
 
-**これらのデータは、端末上の本アプリと Health Connect の間でのみやり取りされ
-ます。** すべて利用者の Health Connect 権限によって管理され、端末内に留まり
-ます。**開発者に送信されることはなく**、広告に使用されることも、Google AdMob を
-はじめとする広告ネットワークに渡すことも、第三者に販売・共有されることもあり
-ません。Health Connect データが開発者の運用するサーバーやアプリのクラウドに送信
-されることはありません。Health Connect が本アプリ向けに開くプライバシーの画面
-には、本ポリシーが表示されます。
+**これらのデータは、端末上の本アプリと Health Connect の間でのみやり取りされます。** すべて利用者の Health Connect 権限によって管理され、端末内に留まります。**開発者に送信されることはなく**、広告に使用されることも、Google AdMob をはじめとする広告ネットワークに渡すことも、第三者に販売・共有されることもありません。Health Connect データが開発者の運用するサーバーやアプリのクラウドに送信されることはありません。Health Connect が本アプリ向けに開くプライバシーの画面には、本ポリシーが表示されます。
 
 ### 6. クラウド同期（任意）
 
-クラウド同期は**任意**で、**サインインまたは同期をタップするまでオフ**です。
-**設定 → クラウド同期（Google Drive）** で **「Google Drive と同期」** を
-タップしてオンにします。**無料**です。利用しない場合、データは従来どおり利用者の
-端末内（ウォッチ ↔ スマートフォンの Wearable Data Layer）に留まり、クラウドは
-一切関与しません。
+クラウド同期は**任意**で、**サインインまたは同期をタップするまでオフ**です。**設定 → クラウド同期（Google Drive）** で **「Google Drive と同期」** をタップしてオンにします。提供されている場合は**無料**です（現在は順次提供中のため、お使いの Google アカウントでは使えない場合があります）。利用しない場合、データは従来どおり利用者の端末内（ウォッチ ↔ スマートフォンの Wearable Data Layer）に留まり、クラウドは一切関与しません。
 
-オンにする際は、Google でサインインし、**`drive.appdata`** 権限を許可します。
-この権限により、本アプリは利用者の Google Drive の**アプリ専用（「アプリデータ」）
-フォルダ**——本アプリ用に確保された Drive 内の隠しフォルダ——にセッションの
-スナップショットを保存・取得します。同期は**双方向**で、端末と Drive の間で
-セッションを統合（マージ）するため、**セッションのバックアップと端末間の移行**が
-できます。同期は、利用者が同期のボタンをタップしたときだけ行います。
+オンにする際は、Google でサインインし、**`drive.appdata`** 権限を許可します。この権限により、本アプリは利用者の Google Drive の**アプリ専用（「アプリデータ」）フォルダ**——本アプリ用に確保された Drive 内の隠しフォルダ——にセッションのスナップショットを保存・取得します。同期は**双方向**で、端末と Drive の間でセッションを統合（マージ）するため、**セッションのバックアップと端末間の移行**ができます。同期は、利用者が同期のボタンをタップしたときだけ行います。
 
-このフォルダには、削除したセッションの一覧（セッション ID と削除した時刻のみ）も
-保存します。削除を同期しているほかの端末に伝え、削除したセッションが戻らない
-ようにするためです。クラウドのデータを取得・読み取りできない場合や、保存すると
-クラウドの記録が減る場合は、クラウドのデータを変更せずに同期を中止します。
+このフォルダには、削除したセッションの一覧（セッション ID と削除した時刻のみ）も保存します。削除を同期しているほかの端末に伝え、削除したセッションが戻らないようにするためです。クラウドのデータを取得・読み取りできない場合や、保存するとクラウドの記録が減る場合は、クラウドのデータを変更せずに同期を中止します。
 
 **重要な点として、このスナップショットは開発者ではなく、利用者自身の Google
-アカウント配下にある利用者自身の Google Drive に保存されます。** 開発者は
-引き続き**サーバーを運用せず**、**何も保持しません**。`drive.appdata` の権限は
-本アプリ自身のアプリデータフォルダのみを対象とし、Drive の他の部分へのアクセス
-権を本アプリ（や開発者）に与えるものではありません。**開発者は同期データに
-アクセスできません**。
+アカウント配下にある利用者自身の Google Drive に保存されます。** 開発者は引き続き**サーバーを運用せず**、**何も保持しません**。`drive.appdata` の権限は本アプリ自身のアプリデータフォルダのみを対象とし、Drive の他の部分へのアクセス権を本アプリ（や開発者）に与えるものではありません。**開発者は同期データにアクセスできません**。
 
 利用者が管理権を持ちます。
 
-- **同期データの削除:** 利用者自身の Google Drive（Drive のアプリデータ／隠し
-  アプリデータ）から、いつでも削除できます。
+- **同期データの削除:** 利用者自身の Google Drive（Drive のアプリデータ／隠しアプリデータ）から、いつでも削除できます。
 - **アプリのアクセス権の取り消し:** **Google アカウント → セキュリティ →
-  サードパーティ製のアプリとサービスとの接続**
-  （https://myaccount.google.com/connections）で本アプリを選び、接続を削除
-  すれば、いつでも取り消せます（一覧には旧名の「MaxSauna Timer」と表示される
-  場合があります）。アプリ内に接続を解除する設定はありません。
+  サードパーティ製のアプリとサービスとの接続**（<https://myaccount.google.com/connections>）で本アプリを選び、接続を削除すれば、いつでも取り消せます（一覧には旧名の「MaxSauna Timer」と表示される場合があります）。アプリ内に接続を解除する設定はありません。
 
-本アプリによる Google API から受け取った情報の利用は、Limited Use（利用制限）の
-要件を含む Google API サービスのユーザーデータに関するポリシー
-（https://developers.google.com/terms/api-services-user-data-policy）に準拠します。
-Google Drive のデータは、利用者にクラウド同期を提供するためだけに使い、開発者や
-第三者に移転することも、広告に使うことも、人が読むこともありません。
+本アプリによる Google API から受け取った情報の利用は、Limited Use（利用制限）の要件を含む Google API サービスのユーザーデータに関するポリシー（<https://developers.google.com/terms/api-services-user-data-policy>）に準拠します。Google Drive のデータは、利用者にクラウド同期を提供するためだけに使い、開発者や第三者に移転することも、広告に使うことも、人が読むこともありません。
 
 ### 7. 権限について
 
-本アプリは必要な権限のみを要求します。ウォッチでは、以下の権限をアプリの起動時
-ではなく、最初にセッションを始めるときに「計測の前に」画面で説明してから求めます。
+本アプリは必要な権限のみを要求します。ウォッチでは、以下の権限をアプリの起動時ではなく、最初にセッションを始めるときに「計測の前に」画面で説明してから求めます。
 
-- **心拍数（ウォッチ）:** セッション中にウォッチの光学センサーから実際の心拍を
-  読み取るために必要です。ウォッチには、この権限が「心拍数」として表示されます
-  （以前の版のウォッチでは、センサーの権限として表示されます。Android の権限名は
-  `BODY_SENSORS`）。拒否した場合は、心拍なしで計時を続け、「心拍を取得できません」と
-  表示します。代わりのデータは使いません（第 4 条参照）。この権限をバックグラウンドで
-  使うことは求めず、心拍はフォアグラウンドサービスでセッションを実行している間だけ
-  読み取ります。
-- **通知（ウォッチ）:** セッションを記録し続けるフォアグラウンドサービスの常駐
-  通知と、文字盤の進行中のアイコンを表示するために使用します。この通知は
-  セッションが進行中であることと、今のフェーズを示すだけのものです。
-- **位置情報（ウォッチ・任意）:** 尋ねるのは一度だけです。各セッションの終了時に
-  一度だけ位置を取得するためだけに利用します（システムの許可画面で「おおよその位置」を選ばない限り
-  正確な位置）。取得した位置はそのセッションに保存され、施設の記録、セッションの
-  地図と施設マップの表示、過去に訪れた施設の候補表示、「近くの施設を探す」を
-  タップしたときの近隣施設の検索に使います。各セッションが
-  位置を保持するため、セッションを削除するまでは、履歴から各セッションを行った
-  場所が分かります。連続的な GPS トラッキングは行わず、位置を読み取るのは
-  セッション終了時だけです。拒否しても、施設の位置なしで通常どおり動作します。
-- **Health Connect（任意）:** Health Connect を接続した場合のみ、安静時心拍数・
-  睡眠・呼吸数の読み取りと、運動・心拍レコードの書き込みに使用します（第 5 条
-  参照）。各権限は明示的に許可するもので、いつでも取り消せます。
-- **Google サインイン＋Google Drive `drive.appdata`（任意）:** クラウド同期を
-  オンにした場合のみ、利用者自身の Google Drive のアプリ専用フォルダに
-  セッションのスナップショットを保存・取得するために使用します（第 6 条参照）。
-  本アプリ自身のアプリデータフォルダに限定され、いつでも取り消せます。
-- **インターネット（スマートフォン）:** スマートフォン側アプリが地図・近隣施設の
-  検索（タップしたときのみ）・広告と広告の同意・任意のクラウド同期・Google Play
+- **心拍数（ウォッチ）:** セッション中にウォッチの光学センサーから実際の心拍を読み取るために必要です。ウォッチには、この権限が「心拍数」として表示されます（以前の版のウォッチでは、センサーの権限として表示されます。Android の権限名は
+  `BODY_SENSORS`）。拒否した場合は、心拍なしで計時を続け、「心拍を取得できません」と表示します。代わりのデータは使いません（第 4 条参照）。この権限をバックグラウンドで使うことは求めず、心拍はフォアグラウンドサービスでセッションを実行している間だけ読み取ります。
+- **通知（ウォッチ）:** セッションを記録し続けるフォアグラウンドサービスの常駐通知と、文字盤の進行中のアイコンを表示するために使用します。この通知はセッションが進行中であることと、今のフェーズを示すだけのものです。
+- **位置情報（ウォッチ・任意）:** 尋ねるのは一度だけです。各セッションの終了時に一度だけ位置を取得するためだけに利用します（システムの許可画面で「おおよその位置」を選ばない限り正確な位置）。取得した位置はそのセッションに保存され、施設の記録、セッションの地図と施設マップの表示、過去に訪れた施設の候補表示、「近くの施設を探す」をタップしたときの近隣施設の検索に使います。各セッションが位置を保持するため、セッションを削除するまでは、履歴から各セッションを行った場所が分かります。連続的な GPS トラッキングは行わず、位置を読み取るのはセッション終了時だけです。拒否しても、施設の位置なしで通常どおり動作します。
+- **Health Connect（任意）:** Health Connect を接続した場合のみ、安静時心拍数・睡眠・呼吸数の読み取りと、運動・心拍レコードの書き込みに使用します（第 5 条参照）。各権限は明示的に許可するもので、いつでも取り消せます。
+- **Google サインイン＋Google Drive `drive.appdata`（任意）:** クラウド同期をオンにした場合のみ、利用者自身の Google Drive のアプリ専用フォルダにセッションのスナップショットを保存・取得するために使用します（第 6 条参照）。本アプリ自身のアプリデータフォルダに限定され、いつでも取り消せます。
+- **インターネット（スマートフォン）:** スマートフォン側アプリが地図・近隣施設の検索（タップしたときのみ）・広告と広告の同意・任意のクラウド同期・Google Play
   Billing のために利用します。
 
 ### 8. 広告（Premium 未加入時）
 
 Premium 未加入時は、**Google AdMob** を通じてバナー広告を表示します。AdMob は
-Google が運営する第三者サービスで、Google のポリシーに従い、広告の配信・計測の
-ため端末情報・広告識別子・広告操作データを収集する場合があります。
+Google が運営する第三者サービスで、Google のポリシーに従い、広告の配信・計測のため端末情報・広告識別子・広告操作データを収集する場合があります。
 
-- AdMob には IP アドレスも送信され、Google が広告配信のために端末のおおよその
-  位置を推定することがあります。本アプリが記録する施設の位置情報を AdMob に
-  渡すことはありません。
-- **心拍データ・Health Connect のデータ・本アプリが記録する位置や施設名を広告に
-  使うことはなく**、AdMob をはじめとする広告ネットワークに渡すこともありません。
-- **広告の同意（Google のユーザー向けメッセージ プラットフォーム）:** 本アプリは
-  起動のたびに、Google のユーザー向けメッセージ プラットフォーム（UMP）を使って、
-  利用者のいる地域で広告の同意やオプトアウトの選択が必要かを確認します（判定は
-  Google が IP アドレスなどから行います）。広告は、UMP が許可した場合にだけ
-  リクエストします。
-  - **EEA・英国・スイス** では、GDPR などの要請に従い、広告を読み込む前に同意
-    フォームを表示します。同意しない場合も、法令で認められる範囲で、制限された
-    非パーソナライズ広告が表示されることがあります。
-  - プライバシー法が適用される **米国の州** では、ターゲティング広告のための個人
-    情報の販売・共有をオプトアウトできます。
-  - 選択は **設定 → ヘルプ・規約 →「広告のプライバシー設定」** からいつでも確認・
-    変更できます。この項目は、選択が必要な地域でだけ表示されます（同意フォームを
-    表示しない日本では、通常表示されません）。
-- Android では広告識別子はシステムの **広告 ID 設定** により管理されます。
-  **設定 → プライバシー → 広告** で広告 ID をリセット／削除できます（正確な
-  経路は端末や Android バージョンにより異なります）。リセットしても広告は
-  表示されますが、その場合は非パーソナライズ広告になります。
+- AdMob には IP アドレスも送信され、Google が広告配信のために端末のおおよその位置を推定することがあります。本アプリが記録する施設の位置情報を AdMob に渡すことはありません。
+- **心拍データ・Health Connect のデータ・本アプリが記録する位置や施設名を広告に使うことはなく**、AdMob をはじめとする広告ネットワークに渡すこともありません。
+- **広告の同意（Google のユーザー向けメッセージ プラットフォーム）:** 本アプリは起動のたびに、Google のユーザー向けメッセージ プラットフォーム（UMP）を使って、利用者のいる地域で広告の同意やオプトアウトの選択が必要かを確認します（判定は
+  Google が IP アドレスなどから行います）。広告は、UMP が許可した場合にだけリクエストします。
+  - **EEA・英国・スイス** では、GDPR などの要請に従い、広告を読み込む前に同意フォームを表示します。同意しない場合も、法令で認められる範囲で、制限された非パーソナライズ広告が表示されることがあります。
+  - プライバシー法が適用される **米国の州** では、ターゲティング広告のための個人情報の販売・共有をオプトアウトできます。
+  - 選択は **設定 → ヘルプ・規約 →「広告のプライバシー設定」** からいつでも確認・変更できます。この項目は、選択が必要な地域でだけ表示されます（同意フォームを表示しない日本では、通常表示されません）。
+- Android では広告識別子はシステムの **広告 ID 設定** により管理されます。**設定 → プライバシー → 広告** で広告 ID をリセット／削除できます（正確な経路は端末や Android バージョンにより異なります）。リセットしても広告は表示されますが、その場合は非パーソナライズ広告になります。
 - 広告データの Google による取扱いは Google のプライバシーポリシーに従います:
-  https://policies.google.com/privacy
-- **Premium では広告は表示されません**。同意フォームの表示や Mobile Ads SDK の
-  起動も行いません。ただし、必要な地域で「広告のプライバシー設定」を表示できる
-  よう、上記の UMP による確認は行います。
+  <https://policies.google.com/privacy>
+- **Premium では広告は表示されません**。同意フォームの表示や Mobile Ads SDK の起動も行いません。ただし、必要な地域で「広告のプライバシー設定」を表示できるよう、上記の UMP による確認は行います。
 
-### 9. その他の Google サービス（診断）
+### 9. その他の Google サービス（診断・アプリ内レビュー）
 
-本アプリは Google Play Services 上で動作し、Firebase コンポーネントを含む場合
-があります。これらは通常かつ透明な動作の一環として、標準的な診断ログや
-クラッシュログを収集する場合があり、Google のプライバシーポリシー
-（https://policies.google.com/privacy）に従います。これは利用者を開発者に
-対して特定するためのものではなく、サウナ／心拍データは含まれません。
+本アプリは Google Play Services 上で動作し、Firebase コンポーネントを含む場合があります。これらは通常かつ透明な動作の一環として、標準的な診断ログやクラッシュログを収集する場合があり、Google のプライバシーポリシー（<https://policies.google.com/privacy>）に従います。これは利用者を開発者に対して特定するためのものではなく、サウナ／心拍データは含まれません。
+
+**アプリ内レビュー（Google Play）:** 履歴タブからセッションを開いたときに、本アプリが
+Google Play にアプリ内レビューの画面の表示を求めることがあります（セッションが 3 件以上あるときだけで、同じ版では 1 回まで、前回から 120 日以上あけます）。画面を出すかどうかは
+Google Play が決め、投稿された評価やレビューは Google のポリシーのもとで Google Play が扱います。開発者が本アプリを通じて受け取ることはありません。本アプリは、最後に表示を求めた日時と版だけをスマートフォン内に記録します。
 
 ### 10. 課金
 
-Premium は **Google Play Billing** で販売される自動更新サブスクリプション
-（月額プラン・年額プラン。提供している場合は、初めて登録する方向けの無料期間
-あり）です。決済は Google が処理し、本アプリが決済情報を見ることはありません。
-本アプリが Google Play から受け取るのは定期購入の状態（有効か、一時停止中か など）
-だけで、Premium 機能の有効・無効の切り替えに使い、その状態をスマートフォン内に
-保持します。価格の確認・管理・解約は、Google Play の「定期購入」から行えます。
+Premium は **Google Play Billing** で販売される自動更新サブスクリプション（Premium 画面に表示するプラン：月額プランと、提供している場合は年額プラン。提供している場合は、初めて登録する方向けの無料期間あり）です。決済は Google が処理し、本アプリが決済情報を見ることはありません。本アプリが Google Play から受け取るのは定期購入の状態（有効か、一時停止中か など）だけで、Premium 機能の有効・無効の切り替えに使い、その状態をスマートフォン内に保持します。価格の確認・管理・解約は、Google Play の「定期購入」から行えます。
 
 ### 11. 利用者の権利（GDPR・EU DSA・米国の州のプライバシー法 等）
 
-開発者は利用者の個人データを一切保持していないため、開発者側に閲覧・訂正・
-削除すべきデータベースは存在しません。利用者が完全に管理権を持ちます。
+開発者は利用者の個人データを一切保持していないため、開発者側に閲覧・訂正・削除すべきデータベースは存在しません。利用者が完全に管理権を持ちます。
 
-- **データの削除:** アプリ内でセッションを削除する、またはウォッチと
-  スマートフォンからアプリをアンインストールします。アンインストールすると、
-  その端末上のローカルデータファイルが削除されます（Android のバックアップが
-  オンの場合は、再インストールしたときに、バックアップのコピーが復元されることが
-  あります。第 3 条参照。復元されたセッションは、アプリ内で削除できます）。
-  クラウド同期を利用している場合、アプリ内で削除したセッションは、次の同期で Drive と同期しているほかの
-  端末からも削除されます。本アプリが Health Connect に書き込んだレコードは
-  Health Connect 内で削除できます。[データの削除](data-deletion.html)の
-  ページもご覧ください。
+- **データの削除:** アプリ内でセッションを削除する、またはウォッチとスマートフォンからアプリをアンインストールします。アンインストールすると、その端末上のローカルデータファイルが削除されます（Android のバックアップがオンの場合は、再インストールしたときに、バックアップのコピーが復元されることがあります。第 3 条参照。復元されたセッションは、アプリ内で削除できます）。クラウド同期を利用している場合、アプリ内で削除したセッションは、次の同期で Drive と同期しているほかの端末からも削除されます。本アプリが Health Connect に書き込んだレコードは
+  Health Connect 内で削除できます。[データの削除](data-deletion.html)のページもご覧ください。
 - **クラウドバックアップの削除（クラウド同期を利用した場合）:** 利用者自身の
-  Google Drive のアプリ専用（「アプリデータ」）フォルダから同期スナップショットを
-  削除する、かつ／または Google アカウント → セキュリティ → サードパーティ製の
-  アプリとサービスとの接続 から本アプリのアクセス権を取り消します（第 6 条参照）。
-  開発者は何も保持していないため、開発者側に削除すべきコピーは存在しません。
+  Google Drive のアプリ専用（「アプリデータ」）フォルダから同期スナップショットを削除する、かつ／または Google アカウント → セキュリティ → サードパーティ製のアプリとサービスとの接続 から本アプリのアクセス権を取り消します（第 6 条参照）。開発者は何も保持していないため、開発者側に削除すべきコピーは存在しません。
 - **データのエクスポート:** 設定 → データ入出力（CSV） から、セッションデータを
   CSV で書き出せます（Premium 機能）。
-- **広告のパーソナライズの制限:** Android の設定 → プライバシー → 広告 で
-  広告 ID をリセット／削除できます。
-- **広告の同意の変更・オプトアウト:** 設定 → ヘルプ・規約 →
-  「広告のプライバシー設定」（必要な地域でのみ表示。第 8 条参照）から行えます。
-- **Health Connect の管理:** 本アプリの Health Connect 権限は、Health Connect
-  （Android 14 以降は端末のシステム設定、それより前は Health Connect アプリ）
-  からいつでも取り消せます。
+- **広告のパーソナライズの制限:** Android の設定 → プライバシー → 広告 で広告 ID をリセット／削除できます。
+- **広告の同意の変更・オプトアウト:** 設定 → ヘルプ・規約 →「広告のプライバシー設定」（必要な地域でのみ表示。第 8 条参照）から行えます。
+- **Health Connect の管理:** 本アプリの Health Connect 権限は、Health Connect（Android 14 以降は端末のシステム設定、それより前は Health Connect アプリ）からいつでも取り消せます。
 
 ご要望・ご質問は上記の連絡先までお問い合わせください。
 
 ### 12. 子どもについて
 
-本アプリは一般利用者向けのウェルネス用タイマーであり、子どもを対象としていません。
-子どものデータを意図的に収集することはありません。
+本アプリは一般利用者向けのウェルネス用タイマーであり、子どもを対象としていません。子どものデータを意図的に収集することはありません。
 
 ### 13. データの保持期間
 
-データは、利用者が削除する（セッションの削除またはアンインストール）まで、
-端末内のローカルファイルに保持されます。ウォッチは直近 20 件のセッションと、
-スマートフォンの受信確認がまだの終了したセッションを保持します。削除の記録
-（セッション ID と削除した時刻）は、アプリのストレージを消去するかアンインス
-トールするまでスマートフォン内に保持されます。クラウド同期を利用した場合、同期
-スナップショットと削除の一覧は、利用者が利用者自身の Google Drive のアプリ専用
-フォルダで削除するか本アプリのアクセス権を取り消すまで、そこに保持されます。
-Health Connect に書き込まれたレコードは、利用者が Health Connect 内で削除する
-までそこに保持されます。Android のバックアップがオンの場合は、本アプリのデータの
-コピーが、Google の管理のもとで、利用者の Google アカウントのバックアップにも
-保持されることがあります（第 3 条参照）。開発者は何も保持しません。
+データは、利用者が削除する（セッションの削除またはアンインストール）まで、端末内のローカルファイルに保持されます。ウォッチは直近 20 件のセッションと、スマートフォンの受信確認がまだの終了したセッションを保持します。削除の記録（セッション ID と削除した時刻）は、アプリのストレージを消去するかアンインストールするまでスマートフォン内に保持されます。クラウド同期を利用した場合、同期スナップショットと削除の一覧は、利用者が利用者自身の Google Drive のアプリ専用フォルダで削除するか本アプリのアクセス権を取り消すまで、そこに保持されます。Health Connect に書き込まれたレコードは、利用者が Health Connect 内で削除するまでそこに保持されます。Android のバックアップがオンの場合は、本アプリのデータのコピーが、Google の管理のもとで、利用者の Google アカウントのバックアップにも保持されることがあります（第 3 条参照）。開発者は何も保持しません。
 
 ### 14. 変更
 
-本ポリシーは更新されることがあります。重要な変更はこのページに新しい施行日
-とともに反映されます。
+本ポリシーは更新されることがあります。重要な変更はこのページに新しい施行日とともに反映されます。
 
 ### 15. お問い合わせ
 
@@ -739,5 +568,5 @@ Health Connect に書き込まれたレコードは、利用者が Health Connec
 
 - [User Guide / 取扱説明書](guide.html)
 - [FAQ / よくある質問](faq.html)
-- [Privacy Policy / プライバシーポリシー](privacy-policy.html)
 - [Terms of Use / 利用規約](terms-of-use.html)
+- [Delete your data / データの削除](data-deletion.html)
