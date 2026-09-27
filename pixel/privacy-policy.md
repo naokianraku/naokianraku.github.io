@@ -4,7 +4,7 @@ title: Privacy Policy (Pixel Watch & Android)
 
 # Privacy Policy / プライバシーポリシー — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** (set on release / 公開時に設定)
+**Last updated / 最終更新:** 2026-09-27
 **Effective date / 施行日:** (set on Google Play release / Google Play 公開日に設定)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹, an individual developer / 個人開発者)
 **Contact / 連絡先:** anraku.tech@gmail.com
@@ -525,7 +525,7 @@ Health Connect は**任意**で、**設定 → Health Connect** で接続する�
 
 - **安静時心拍数を読み取り**、セッションの心拍チャートに基準線として表示します。
 - セッション*後*の夜について、**睡眠と平均呼吸数を読み取り**、
-  「翌日のコンディション」セクションに表示します（睡眠は参考の「睡眠スコア」として
+  「翌日の状態」セクションに表示します（睡眠は参考の「睡眠スコア」として
   表示）。
 - セッションを運動レコードと心拍レコードとして **Health Connect に書き込み**、
   利用者が選んだ他アプリでセッションを利用できるようにします。書き込みは

@@ -4,7 +4,7 @@ title: Quick Guide (Pixel Watch & Android)
 
 # Quick Guide — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** (set on release / 公開時に設定)
+**Last updated / 最終更新:** 2026-09-27
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](guide-ja.html)
 
@@ -167,8 +167,10 @@ similar options). It works the same on every watch:
   end confirmation, and it doesn't close confirmations or alerts). Outside a session
   (home, settings, history and so on), wrist turn stays the system's Back either way.
 
-The watch displays the current phase, elapsed time, heart rate, and your recent
-HR peak / bottom (last 5 minutes). While the screen is on, the phase's elapsed time
+The session screen on the watch shows the current time, the current phase, the
+elapsed time, the total time, your heart rate (with a heart-rate gauge in the sauna),
+a heart-rate chart, your HR low / high for the whole session and for the last 5
+minutes, and the battery level. While the screen is on, the phase's elapsed time
 shows **tenths of a second** (e.g. "01:18.4", with the tenths in smaller type); the
 total time shows seconds. Configured phase times act as **haptic
 alerts** — the app does not auto-advance. If heart rate can't be read, the heart-rate
@@ -262,8 +264,9 @@ open during a session is recommended.
     first. **One tap sets the venue**, with no Google search. For a venue you
     have visited before, this is all you need.
   - **"Find nearby venues (N left today)"** — searches Google Maps for nearby
-    venues **only when you tap it** (never automatically) and lists the
-    suggestions with the **Google Maps logo**.
+    venues, mainly saunas, bathhouses and spas, **only when you tap it** (never
+    automatically) and lists the suggestions with the **Google Maps logo** (other
+    places such as beauty salons may also appear).
   - **Tap a suggestion** to open the venue-name dialog. The text field starts
     empty, and the suggested name is shown outside it for reference. Type the
     name you want to keep and save (under Google's terms, suggested names are
@@ -301,7 +304,9 @@ open during a session is recommended.
 - **Settings → Data import/export (CSV)** — CSV import/export (Premium) for offline
   backup or analysis. Exported files are named `maxrecovery_*.csv` (sessions),
   `maxrecovery_sets_*.csv`, `maxrecovery_phases_*.csv` and
-  `maxrecovery_hr_samples_*.csv`; files exported by earlier versions
+  `maxrecovery_hr_samples_*.csv` (`*` is the export date and time; you can rename
+  the file on the save screen, and the app shows the saved file name after
+  exporting); files exported by earlier versions
   (`max_sauna_*.csv`) can still be imported. Exporting **set-aside history files**
   (copies of history that couldn't be read) works without Premium (see the FAQ).
 - **Settings → Cloud sync (Google Drive)** — back up to your own Drive, FREE,
@@ -318,7 +323,8 @@ sharing the HR graph as **text** is also free. The β score, the recovery curve
 **Premium**. Without Premium, banner ads appear on Home / History / Analytics and
 the session-detail screen (no ads on Settings); **Premium removes all ads**.
 Premium also unlocks a **Premium app icon** (Settings → Premium → "Use Premium
-app icon").
+app icon"; the icon changes when you leave the app, for example by going to the home
+screen).
 
 **Getting Premium:** open **Settings → Premium → "Upgrade to Premium"** (or **"See
 Premium"** on the locked recovery curve, advanced Analytics or CSV import/export) to
@@ -473,15 +479,15 @@ Terms in the app and in this guide that refer to the same thing (English = the w
 | サウナ | Sauna | 温まるフェーズ / The heat phase |
 | 水風呂 | Cold bath | 冷水のフェーズ / The cold-water phase |
 | 外気浴 | Cool-down | 休憩・外気浴のフェーズ / The outdoor-rest phase |
-| その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ） | Extra phase (Rest / Hot bath / Hydration / Shower / Stretch) | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
+| その他フェーズ（休憩 / お風呂 / 給水 / シャワー / ストレッチ / その他） | Extra phase (Rest / Hot bath / Hydration / Shower / Stretch / Other) | 外気浴の後に入る任意の第4フェーズ。名称を選択可 / Optional 4th phase after cool-down; name is selectable |
 | クラウン回転量（少なめ / 標準 / 多め / 最多） | Crown rotation (Light / Standard / More / Most) | フェーズ移行に必要な回転量 / How far to turn the crown to act |
 | スマホ未転送 | Not on phone yet | スマホの受信確認がまだの記録 / Not yet confirmed as received by the phone |
 
 **「休憩」など第4フェーズを使いたいときは / To add a "rest" 4th phase:** 設定 →
 ウォッチ設定で **「その他フェーズを使う」** を ON にすると、外気浴の後に第4フェーズが
-入り、名称を **休憩・お風呂・給水・シャワー・ストレッチ** から選べます。
+入り、名称を **休憩・お風呂・給水・シャワー・ストレッチ・その他** から選べます。
 Turn on **"Use extra phase"** in Settings → Watch settings to insert a 4th phase after
-cool-down, with a selectable name (Rest / Hot bath / Hydration / Shower / Stretch).
+cool-down, with a selectable name (Rest / Hot bath / Hydration / Shower / Stretch / Other).
 
 ---
 

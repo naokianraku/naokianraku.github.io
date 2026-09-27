@@ -4,7 +4,7 @@ title: FAQ (Pixel Watch & Android)
 
 # FAQ — MaxRecovery Timer for Pixel Watch & Android
 
-**Last updated / 最終更新:** (set on release / 公開時に設定)
+**Last updated / 最終更新:** 2026-09-27
 **Contact / 連絡先:** anraku.tech@gmail.com
 
 > 🌐 言語 / Language: **English** / [🇯🇵 日本語](faq-ja.html)
@@ -104,9 +104,10 @@ No. Your sessions, history, and settings all stay (they are stored locally on
 each device). Only the Premium features (recovery curves and slope
 lines, the advanced Analytics, the PDF report, CSV import/export, the HR-graph
 image share / save, the β experimental value, the Premium app icon, ad-free)
-revert to the free tier. If you used the Premium app icon, the app icon switches
-back to the default once Google Play confirms that Premium has ended (if you
-subscribe again and the setting is still on, the Premium icon comes back).
+revert to the free tier. If you used the Premium app icon, it switches back to the
+default after Google Play confirms that Premium has ended, when you leave the app
+(for example, go to the home screen). If you subscribe again and the setting is
+still on, the Premium icon comes back.
 
 **Q. It says "Your subscription is on hold".**
 Your subscription is on hold because of a payment problem or because it's paused,
@@ -454,9 +455,10 @@ earlier versions stay in Pictures/MaxSaunaTimer** (they are not moved).
 **Q. The CSV file names changed.**
 With the new app name, exported files are named `maxrecovery_*.csv` (sessions),
 `maxrecovery_sets_*.csv`, `maxrecovery_phases_*.csv` and
-`maxrecovery_hr_samples_*.csv` (the same as the iPhone version). The columns haven't
-changed, and files exported by earlier versions (`max_sauna_*.csv`) can still be
-imported.
+`maxrecovery_hr_samples_*.csv` (the same as the iPhone version; `*` is the export
+date and time). The columns haven't changed, and files exported by earlier versions
+(`max_sauna_*.csv`) can still be imported. You can rename a file on the save screen,
+and after exporting the app shows the name of the saved file.
 
 **Q. What are the recovery-curve slope lines?**
 Premium feature. On the per-set recovery curve the app overlays a straight
@@ -477,8 +479,12 @@ section is hidden.
 
 **Q. What is the Premium app icon?**
 A Premium-only option. In **Settings → Premium**, "Use Premium app icon"
-switches your home-screen app icon to the Premium logo. When Premium ends, the icon
-switches back to the default.
+switches your home-screen app icon to the Premium version. The icon doesn't change
+the moment you switch the setting; it changes **when you leave the app** (for
+example, go to the home screen), and may take a few seconds. If you placed the icon
+on your home screen, you may need to add it again. When Premium ends (including when
+the free access in the test version ends), the icon switches back to the default
+when you leave the app.
 
 **Q. The self-rating ★ I entered on the watch — where does it show?**
 In the session detail header, e.g. "Standard • 2 sets • 58min • ★5".
@@ -490,9 +496,10 @@ detail. You can set the venue name in these ways:
 - **Your past venues (within 500 m)**: names you entered before are listed
   first, and **one tap sets the venue** (no Google search). For a venue you
   have visited before, this is all you need.
-- **"Find nearby venues"**: searches Google Maps for nearby sauna / bath
-  facilities **only when you tap it** (never automatically) and lists the
-  suggestions with the Google Maps logo. Tap a suggestion to open an empty
+- **"Find nearby venues"**: searches Google Maps for nearby venues, mainly
+  saunas, bathhouses and spas, **only when you tap it** (never automatically) and
+  lists the suggestions with the Google Maps logo (other places such as beauty
+  salons may also appear). Tap a suggestion to open an empty
   venue-name dialog, with the suggested name shown outside the text field for
   reference. Type the name you want to keep and save.
 - **Type it in**: use "Enter venue name", or "**+ Add venue name**" in the
