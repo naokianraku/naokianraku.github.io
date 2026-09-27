@@ -16,142 +16,163 @@ image:
 - 差し替えたら、このコメントごと削除する。
 
 Play の掲載名が MaxRecovery Timer に変わったら更新するもの / Update when the Play listing is renamed:
-- 「旧名の MaxSauna Timer」「"MaxSauna Timer"」と書いている行（冒頭の App 行、日本語・English の各 2 か所）。
+- 「旧名「MaxSauna Timer」」と書いている行（日本語・English の「参加の手順 / How to join」の 3）。
+
+画面の画像 / Screenshots: assets/img/beta/（store_assets/screenshots の ja-JP・en-US から縮小）
 -->
+
+<style>
+  /* 画面の画像: ウォッチ 1 : スマホ 2 枚を横に並べる。画像の枠の高さをそろえ、説明の行数が違っても並びがずれないようにする */
+  .beta-shots { display: flex; align-items: flex-start; gap: 12px; margin: 20px 0 24px; }
+  .beta-shots figure { flex: 1 1 0; min-width: 0; margin: 0; text-align: center; }
+  .beta-shots figure.watch { flex-grow: 1.25; }
+  .beta-shots a { display: flex; align-items: center; justify-content: center; }
+  .beta-shots .watch a { aspect-ratio: 45 / 64; }
+  .beta-shots img { display: block; box-sizing: border-box; width: 100%; height: auto; }
+  .beta-shots .phone img { border-radius: 10px; box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.35); }
+  .beta-shots figcaption { margin-top: 6px; font-size: 13px; line-height: 1.4; }
+  .beta-more { margin: -8px 0 20px; }
+  .beta-more summary { cursor: pointer; color: var(--link); }
+  .beta-more ul { margin-top: 8px; }
+  .beta-store a { white-space: nowrap; }
+</style>
 
 # テスター募集 / Join the beta — MaxRecovery Timer for Pixel Watch & Android
 
-**App / アプリ:** MaxRecovery Timer (Pixel Watch & Android; listed on Google Play as "MaxSauna Timer" until the rename is published)
-**Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹)
-**Contact / 連絡先:** [フィードバックフォーム / Feedback form](../feedback.html)
-**Last updated / 最終更新:** 2026-09-27
-
-> 言語 / Language: [日本語](#ja) ・ [English](#en)
+[日本語](#ja) ・ [English](#en) ・ 最終更新 / Last updated: 2026-09-27
 
 ---
 
 ## 日本語 {#ja}
 
-MaxRecovery Timer の **Android 版（Pixel Watch / Wear OS ＋ Android スマホ）のテスターを募集しています。** Google Play のクローズドテストに参加して、使ってみた感想を聞かせてください。
+**MaxRecovery Timer の Android 版のテスターを募集しています。**
+Google Play のクローズドテストで、感想を聞かせてください。
 
-### どんなアプリか
+<div class="beta-shots">
+  <figure class="watch"><a href="../assets/img/beta/ja-watch-cooldown.png"><img src="../assets/img/beta/ja-watch-cooldown.png" width="400" height="400" alt="ウォッチの計測画面。外気浴 1/3、経過 3 分 25 秒、心拍 89 bpm"></a><figcaption>ウォッチで記録</figcaption></figure>
+  <figure class="phone"><a href="../assets/img/beta/ja-phone-heart-rate.jpg"><img src="../assets/img/beta/ja-phone-heart-rate.jpg" width="540" height="960" alt="スマホのホーム画面。3 セット分の心拍のグラフ"></a><figcaption>心拍のグラフ</figcaption></figure>
+  <figure class="phone"><a href="../assets/img/beta/ja-phone-history.jpg"><img src="../assets/img/beta/ja-phone-history.jpg" width="540" height="960" alt="スマホの履歴画面。回ごとのととのい度"></a><figcaption>ととのい度の履歴</figcaption></figure>
+</div>
 
-MaxRecovery Timer は、心拍の回復を「ととのい度」で見える化するアプリです。iPhone / Apple Watch 版と、開発中の Android 版があります。
+### どんなアプリ？
 
-- **Android 版**（このページで募集しているテスト）は、サウナ→水風呂→外気浴のセットごとに心拍を記録し、心拍が落ち着く速さを「ととのい度」で表します。温泉やお風呂でも使えます。いまは Google Play のクローズドテスト中です。**ウォッチアプリで計測し、スマホで振り返ります。**
-  - ウォッチ（Pixel Watch などの Wear OS）：フェーズごとの時間と心拍を記録
-  - スマホ（Android）：心拍チャート、ととのい度（参考値）、履歴、分析
-- **iPhone / Apple Watch 版**（温浴の記録アプリ）は、2026 年 9 月 25 日に App Store で公開しました（基本機能は無料）。
-  [App Store（日本語）](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [App Store（English）](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
-- Android 版の機能は、iPhone 版と一部異なります（例：プランク計測や温浴環境の選択は Android 版にはありません）。
-- Google Play では、いまはまだ旧名の **「MaxSauna Timer」** で表示されます（今後の更新で MaxRecovery Timer に変わる予定です）。
+- サウナ→水風呂→外気浴のセットごとに、心拍を記録します。
+- 心拍が落ち着く速さを「ととのい度」で表します（参考値）。
+- Pixel Watch などの Wear OS ウォッチで記録し、Android スマホで振り返ります。
 
-### テスターにお願いしたいこと
+iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中です：[日本語](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [English](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
+{: .beta-store}
 
-1. **14 日間、テストへの参加を続けてください。** Google Play で製品版を公開するには、12 人以上のテスターが 14 日間続けて参加していることが条件です。途中で退出される方がいると人数が足りなくなることがあるため、期間中はそのまま参加を続けていただけると助かります。
-2. **使ってみて気づいたことを、[フィードバックフォーム](../feedback.html) から送ってください。** 不具合、分かりにくいところ、ほしい機能など、小さなことでもかまいません。フォームの「ご利用のソフトウェア」では「Android版アプリ」を選んでください。
+### お願い（2 つ）
+
+1. **14 日間、参加を続けてください。** 製品版の公開に必要です。
+2. **気づいたことを [フィードバックフォーム](../feedback.html) で送ってください。** 「ご利用のソフトウェア」は「Android版アプリ」を選びます。
 
 ### 参加の条件
 
-- **Android スマホ**（Android 11 以降）
-- **Google Play の国／地域が日本の Google アカウント**（テストの配信は日本のみです）
-- **Pixel Watch などの Wear OS ウォッチ（任意）**：心拍の計測を試したい方のみ。スマホだけでも参加できますが、計測にはウォッチ（Wear OS 3 以降）が必要です。
+- Android 11 以降のスマホ
+- Google Play の国が日本の Google アカウント
+- Wear OS 3 以降のウォッチ（任意。心拍の計測に必要）
 
 ### 参加の手順
 
-1. **Google グループに参加する：** [https://groups.google.com/g/maxrecovery-testers](https://groups.google.com/g/maxrecovery-testers) を開き、「グループに参加」を押します。スマホの Google Play で使っているのと同じ Google アカウントで参加してください。
-2. **テスターになる：** 参加用リンク [https://play.google.com/apps/testing/com.anraku.maxsaunatimer](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) を開き、「テスターになる」を押します。
-3. **スマホにインストールする：** Google Play からインストールします（いまは旧名の「MaxSauna Timer」で表示されます）。
-4. **ウォッチをお持ちの方は、ウォッチにも入れる：** スマホの Play ストアのアプリのページでインストール先にウォッチを選ぶか、ウォッチの Play ストアからインストールします。ウォッチでも、テスターになったのと同じ Google アカウントを使います。
+1. [Google グループ](https://groups.google.com/g/maxrecovery-testers) に参加する（スマホの Google Play と同じアカウントで）
+2. [参加用リンク](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) を開き、「テスターになる」を押す
+3. Google Play からスマホにインストールする（今は旧名「MaxSauna Timer」と表示）
+4. ウォッチがあれば、ウォッチにも入れる（同じ Google アカウントで）
 
-グループに参加した直後やテスターになった直後は、参加用のページやアプリのページが表示されないことがあります。その場合は、少し時間をおいてから開き直してください。
+<details class="beta-more" markdown="1">
+<summary>うまくいかないとき</summary>
+
+- ページが出ないときは、少し待って開き直してください。
+- ウォッチへは、スマホの Play ストアでインストール先に選ぶか、ウォッチの Play ストアから入れます。
+
+</details>
 
 ### ご注意
 
-- **テスト版です。** 不具合が起きることがあります。
-- **Premium を購入する必要はありません。** テスト版でも、購入すると実際に代金が請求されます。
-- **データの扱い**については、[プライバシーポリシー](privacy-policy.html) をご覧ください。
-- **Google グループについて：** グループに参加すると、グループの管理者（開発者）には、参加に使った Google アカウントのメールアドレスが見えます。
-- **テストをやめるとき**は、参加用ページ（https://play.google.com/apps/testing/com.anraku.maxsaunatimer）を開き、「プログラムを終了」を押します。
-- 本アプリは医療機器ではありません。ととのい度や心拍数などの表示はすべて参考情報です。ウォッチの装着は、メーカーが案内する使用環境の範囲でご判断ください。
+- テスト版なので、不具合が起きることがあります。
+- **Premium の購入は不要です。** テスト版でも、購入すると代金が請求されます。
+
+<details class="beta-more" markdown="1">
+<summary>そのほかの注意（データ・やめ方など）</summary>
+
+- グループの管理者（開発者）には、あなたのメールアドレスが見えます。
+- データの扱い：[プライバシーポリシー](privacy-policy.html)
+- やめるとき：[参加用ページ](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) で「プログラムを終了」
+- 医療機器ではありません。表示はすべて参考情報です。
+- ウォッチは、メーカーが案内する使用環境の範囲でお使いください。
+
+</details>
 
 ### お問い合わせ
 
-ご質問やご意見は、[フィードバックフォーム](../feedback.html) からお送りください（「ご連絡の種別」で「その他のお問い合わせ」を選べます）。
-
-お知らせや進み具合（参加人数など）は、X（[@anraku_tech](https://x.com/anraku_tech)）でも投稿します。
+ご質問も [フィードバックフォーム](../feedback.html) からどうぞ。お知らせは X（[@anraku_tech](https://x.com/anraku_tech)）で。
 
 ---
 
 ## English {#en}
 
-We are looking for **testers for the Android version of MaxRecovery Timer (Pixel Watch /
-Wear OS + Android phone).** Join the closed test on Google Play and tell us what you think.
+**We are looking for testers for the Android version of MaxRecovery Timer.**
+Join the closed test on Google Play and tell us what you think.
+
+<div class="beta-shots">
+  <figure class="watch"><a href="../assets/img/beta/en-watch-cooldown.png"><img src="../assets/img/beta/en-watch-cooldown.png" width="400" height="400" alt="Watch recording screen: cool-down 1/3, 3:29 elapsed, heart rate 89 bpm"></a><figcaption>Record on the watch</figcaption></figure>
+  <figure class="phone"><a href="../assets/img/beta/en-phone-heart-rate.jpg"><img src="../assets/img/beta/en-phone-heart-rate.jpg" width="540" height="960" alt="Phone home screen: heart-rate chart for three rounds"></a><figcaption>Heart-rate chart</figcaption></figure>
+  <figure class="phone"><a href="../assets/img/beta/en-phone-history.jpg"><img src="../assets/img/beta/en-phone-history.jpg" width="540" height="960" alt="Phone history screen: Afterglow Score for each visit"></a><figcaption>Score history</figcaption></figure>
+</div>
 
 ### About the app
 
-MaxRecovery Timer turns heart-rate recovery into an Afterglow Score. There is an
-iPhone / Apple Watch version, and an Android version in development.
+- Records your heart rate for each round of sauna, cold bath and cool-down.
+- Shows how quickly it settles as an Afterglow Score (for reference).
+- Record on a Wear OS watch such as Pixel Watch, and review on your Android phone.
 
-- The **Android version** (the test on this page) records your heart rate for each round of
-  sauna, cold bath and cool-down, and shows how quickly it settles as an Afterglow Score.
-  It also works for hot springs and baths. It is currently in a closed test on Google Play.
-  **You record with the watch app and review on your phone.**
-  - Watch (Wear OS, such as Pixel Watch): records the time of each phase and your heart rate
-  - Phone (Android): heart-rate chart, Afterglow score (reference only), history and analytics
-- The **iPhone / Apple Watch version** (a hot-bath tracker) was released on the App Store on
-  September 25, 2026 (core features are free).
-  [App Store (Japanese)](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・
-  [App Store (English)](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
-- Some features differ from the iPhone version (for example, plank timing and choosing the
-  type of hot bath are not in the Android version).
-- On Google Play the app is still listed under its old name, **"MaxSauna Timer"**. The new
-  name will appear in a later update.
+The iPhone / Apple Watch version (a hot-bath tracker) is on the App Store: [Japanese](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [English](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
+{: .beta-store}
 
-### What we ask of testers
+### Two requests
 
-1. **Stay in the test for 14 days.**
-   To publish the production version on Google Play, at least 12 testers must stay in the
-   test for 14 days in a row. If testers leave early we may fall short, so please stay in
-   for the whole period.
-2. **Tell us what you notice through the [feedback form](../feedback.html).**
-   Bugs, anything confusing, features you would like: small things are welcome too.
-   The form is in Japanese: under "ご利用のソフトウェア" (software), choose "Android版アプリ".
+1. **Stay in the test for 14 days.** We need this to publish the app.
+2. **Send what you notice through the [feedback form](../feedback.html).** Under "ご利用のソフトウェア" (software), choose "Android版アプリ".
 
 ### Requirements
 
-- An **Android phone** (Android 11 or later)
-- A **Google account whose Google Play country is Japan** (the test is available in Japan only)
-- **Optional: a Wear OS watch such as Pixel Watch**, if you want to try recording your heart
-  rate. You can join with just a phone, but recording requires a watch (Wear OS 3 or later).
+- An Android phone (Android 11 or later)
+- A Google account whose Google Play country is Japan
+- A Wear OS 3+ watch (optional; needed to record heart rate)
 
 ### How to join
 
-1. **Join the Google Group:** Open [https://groups.google.com/g/maxrecovery-testers](https://groups.google.com/g/maxrecovery-testers) and tap "Join group".
-   Use the same Google account that you use for Google Play on your phone.
-2. **Become a tester:** Open the opt-in link [https://play.google.com/apps/testing/com.anraku.maxsaunatimer](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) and tap "Become a tester".
-3. **Install on your phone:** Install from Google Play (listed as "MaxSauna Timer" for now).
-4. **If you have a watch, install it there too:** On the app's page in the Play Store on
-   your phone, choose your watch as a device to install on, or install from the Play Store
-   on the watch. Use the same Google account on the watch that you used to become a tester.
+1. Join the [Google Group](https://groups.google.com/g/maxrecovery-testers) (same account as Google Play on your phone)
+2. Open the [opt-in link](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) and tap "Become a tester"
+3. Install from Google Play on your phone (listed as "MaxSauna Timer" for now)
+4. If you have a watch, install it there too (same Google account)
 
-Right after you join the group or become a tester, the opt-in page or the app's page may not
-show up yet. If that happens, wait a little and open it again.
+<details class="beta-more" markdown="1">
+<summary>If something does not show up</summary>
+
+- Pages may take a while to appear. Wait and open them again.
+- For the watch, pick it as the device in the Play Store on your phone, or use the Play Store on the watch.
+
+</details>
 
 ### Please note
 
-- **This is a test version**, so you may run into bugs.
-- **You do not need to buy Premium.** Even in the test version, a purchase is charged for real.
-- **How your data is handled:** see the [Privacy Policy](privacy-policy.html).
-- **About the Google Group:** when you join the group, the group's manager (the developer)
-  can see the email address of the Google account you joined with.
-- **To leave the test,** open the opt-in page (https://play.google.com/apps/testing/com.anraku.maxsaunatimer) and tap "Leave the program".
-- MaxRecovery Timer is not a medical device. All scores and heart-rate values are for
-  reference only. Follow your watch manufacturer's guidance on where to wear your watch.
+- This is a test version, so there may be bugs.
+- **You do not need to buy Premium.** Purchases in the test version are charged for real.
+
+<details class="beta-more" markdown="1">
+<summary>More notes (data, leaving, etc.)</summary>
+
+- The group's manager (the developer) can see your email address.
+- Your data: see the [Privacy Policy](privacy-policy.html).
+- To leave: tap "Leave the program" on the [opt-in page](https://play.google.com/apps/testing/com.anraku.maxsaunatimer).
+- Not a medical device. All values are for reference only.
+- Use your watch as its manufacturer advises.
+
+</details>
 
 ### Contact
 
-Send questions or comments through the [feedback form](../feedback.html). Under "ご連絡の種別"
-(type), choose "その他のお問い合わせ" (other inquiries).
-
-We also post news and progress (such as the number of testers) on X: [@anraku_tech](https://x.com/anraku_tech).
+Questions are welcome through the [feedback form](../feedback.html). News is on X: [@anraku_tech](https://x.com/anraku_tech).
