@@ -4,7 +4,7 @@ title: Delete your data (Pixel Watch & Android)
 
 # Delete your data / データの削除 — MaxRecovery Timer for Pixel Watch & Android
 
-**App / アプリ:** MaxRecovery Timer (Pixel Watch & Android; listed on Google Play as "MaxSauna Timer" until the rename is published)
+**App / アプリ:** MaxRecovery Timer (Pixel Watch & Android; the installed app may show the old name "MaxSauna Timer" until its next update / インストールしたアプリは、次の更新まで旧名「MaxSauna Timer」と表示されることがあります)
 **Developer / 開発者:** Anraku Tech (Naoki Anraku / 安樂直樹)
 **Contact / 連絡先:** anraku.tech@gmail.com
 **Last updated / 最終更新:** 2026-09-26 (contact address changed / 連絡先を変更)
