@@ -168,7 +168,9 @@ similar options). It works the same on every watch:
   (home, settings, history and so on), wrist turn stays the system's Back either way.
 
 The watch displays the current phase, elapsed time, heart rate, and your recent
-HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
+HR peak / bottom (last 5 minutes). While the screen is on, the phase's elapsed time
+shows **tenths of a second** (e.g. "01:18.4", with the tenths in smaller type); the
+total time shows seconds. Configured phase times act as **haptic
 alerts** — the app does not auto-advance. If heart rate can't be read, the heart-rate
 field shows "—" or "♡×" and a **"Heart rate unavailable"** notice appears (it closes
 after 10 seconds, or when you turn the crown or tap **OK**); the timer keeps running
@@ -180,7 +182,15 @@ Services). While a session runs, an **ongoing-activity icon** appears on the wat
 face and the notification shows the current phase (e.g. "Sauna 1/3") and
 "Measuring". The session keeps running if you go back to the watch face or the
 screen turns off; tap the icon or the notification to return to the session screen.
-While the session screen is shown, the display is **kept on** by default. However,
+While the session screen is shown, the display is **kept on** by default. If the
+**screen dims** anyway (for example when you cover it with your palm), the app stays
+on screen instead of going back to the watch face, in a **low-power view**: the
+phase name, the elapsed time **in whole minutes** (e.g. "8 min"; "0 min" for the first
+minute) and the heart rate on a black background. It refreshes about once a minute,
+so the heart rate is the value at that moment. Tap the screen or turn the crown to
+bring back the full view; while the screen is dim, a tap or crown turn only wakes the
+screen and never moves to the next phase or pauses (if you woke it with the crown,
+pause briefly before turning again). However,
 **without the Heart rate permission** the foreground service can't run, so
 recording may stop when the screen turns off (the watch tells you). Also, when the
 workout feature can't be used (for example while another app is recording a

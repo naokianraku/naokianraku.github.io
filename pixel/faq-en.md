@@ -325,6 +325,20 @@ turns off (the watch tells you). Also, when the watch's workout feature can't be
 (for example while another app is recording a workout), heart rate may stop while the
 screen is off. Keeping the session screen open during a session is recommended.
 
+**Q. How is the elapsed time shown, and what happens when the screen dims?**
+While the screen is on, the current phase's elapsed time shows **tenths of a second**
+(e.g. "01:18.4", with the tenths in smaller type). The total time shows seconds (e.g.
+"Total 18:40"). If the **screen dims** (for example when you cover it with your palm),
+the app does not go back to the watch face; it shows a **low-power view** on a black
+background with the **phase name, the elapsed time in whole minutes (e.g. "8 min";
+"0 min" for the first minute) and the heart rate**. This view refreshes about once a
+minute, which is why it shows whole minutes (the heart rate is also the value at that
+moment). The gauge, chart and battery are hidden while the screen is dim. Tap the
+screen or turn the crown to bring back the full view with tenths right away. While
+the screen is dim, a tap or crown turn **only wakes the screen**: it never moves to the
+next phase or pauses (if you woke it with the crown, pause briefly before turning
+again). On other screens (home and so on), the dimmed view shows only the time.
+
 **Q. Can I interact with the heart-rate chart?**
 Yes — the HR chart is interactive. **Tap a point** to see a value card showing
 the bpm, the elapsed time, and the phase at that point. **Pinch to zoom** in up
@@ -529,7 +543,8 @@ end, or **Discard** to throw that session away.
 **Q. Watch battery drains during a session.**
 While a session screen is on, the display is kept awake and a foreground
 service runs so the timer and heart-rate keep running, which uses more battery
-than an idle watch. The app auto-ends after 60 minutes with no input (it warns
+than an idle watch (if the screen dims, the session stays on screen in a low-power
+view). The app auto-ends after 60 minutes with no input (it warns
 first, then auto-ends) to protect the battery. There is also an optional low-HR
 warning during cold water / cool-down.
 
