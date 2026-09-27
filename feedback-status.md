@@ -18,6 +18,19 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 - 状態：⚠️ v1.0.0 の注意点
 - 内容：ウォッチだけを v1.0.0 に更新して、スマホのアプリが古いままだと、長い記録がスマホに届かず、ウォッチに残ります（ウォッチのホームに「スマホのアプリを更新してください（N 件未転送）」と出ます）。スマホのアプリを更新すると、自動で届きます。
 
+### 🆕 最新の版
+
+**v1.0.0／Phone v1.0.0-beta（1.0.0 候補）の主な変更点**
+- 状態：✅ 配信済み（9/27）
+- 内容：
+  - アプリの名前を「MaxRecovery Timer」に変え、アイコンを新しくしました。
+  - テスト版では、Premium の機能をすべて無料で使えます（購入は不要です。無料で使える期限は Premium 画面に出ます）。製品版では購入が必要です。
+  - ウォッチ：英語表示に対応しました（スマホの「英語表示（強制）」もウォッチに反映されます）。
+  - ウォッチ：計測画面を新しいデザインにしました（サウナ中は心拍のゲージ）。
+  - ウォッチ：画面が暗くなっても文字盤に戻らず、計測画面を省電力の表示（経過時間は分まで）で出し続けます。
+  - 近くの施設の検索を、サウナ・銭湯・スパ中心にしました。
+  - [取説](pixel/guide-ja.html)・[FAQ](pixel/faq-ja.html) を v1.0.0 の内容に更新しました。
+
 ### 🔎 調査中
 
 **F-026 2セット目以降の記録が途切れ、同じ頃に「計測中」の通知が消えた（重大）**
@@ -160,17 +173,6 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 - 状態：✅ 実験的に追加・配信済み（v1.0.0／既定OFF）
 - 内容：ウォッチの設定に「手首ターンで一時停止（実験）」を加えました。ONにすると、計測中に手首を返すと一時停止、もう一度返すと再開します。あわせて「ダブルピンチを使う（実験）」も加えました（ONにすると、計測中に「次へ」ボタンが出て、ダブルピンチでも押せます）。どちらも Pixel Watch 3 以降で、ウォッチ本体のジェスチャーがオンのときだけ設定に出ます。うまく反応しないときも、クラウンはいつもどおり使えます。「本体ダブルタップで次へ」もONにしていると、手首を返す動きやピンチの指の動きで次へ進むことがあるので、そのときはどちらかをOFFにしてください。使った感想を[フィードバックフォーム](feedback.html)で教えてください。
 
-**v1.0.0／Phone v1.0.0-beta（1.0.0 候補）の主な変更点**
-- 状態：✅ 配信済み（9/27）
-- 内容：
-  - アプリの名前を「MaxRecovery Timer」に変え、アイコンを新しくしました。
-  - テスト版では、Premium の機能をすべて無料で使えます（購入は不要です。無料で使える期限は Premium 画面に出ます）。製品版では購入が必要です。
-  - ウォッチ：英語表示に対応しました（スマホの「英語表示（強制）」もウォッチに反映されます）。
-  - ウォッチ：計測画面を新しいデザインにしました（サウナ中は心拍のゲージ）。
-  - ウォッチ：画面が暗くなっても文字盤に戻らず、計測画面を省電力の表示（経過時間は分まで）で出し続けます。
-  - 近くの施設の検索を、サウナ・銭湯・スパ中心にしました。
-  - [取説](pixel/guide.html)・[FAQ](pixel/faq.html) を v1.0.0 の内容に更新しました。
-
 ---
 
 # Fixed issues — MaxRecovery Timer (English)
@@ -188,6 +190,19 @@ This page summarizes the bug reports & requests from testers and how each was ad
 **Update both the watch app and the phone app**
 - Status: ⚠️ Note for v1.0.0
 - What: If you update only the watch to v1.0.0 and the phone app is still an older version, long sessions can't reach the phone and stay on the watch (the watch home screen says "Update the phone app to receive N session(s)."). Once you update the phone app, they arrive automatically.
+
+### 🆕 Latest version
+
+**Main changes in v1.0.0 / Phone v1.0.0-beta (the 1.0.0 candidate)**
+- Status: ✅ Released (9/27)
+- What:
+  - Renamed the app to "MaxRecovery Timer", with a new icon.
+  - In the test version, all Premium features are free to use (no purchase needed; the Premium screen shows the date the free access ends). The released version will require a purchase.
+  - Watch: English is now supported ("Force English" on the phone applies to the watch too).
+  - Watch: New session screen design (a heart-rate gauge in the sauna).
+  - Watch: When the screen dims, the app stays on the session screen in a low-power view (elapsed time in minutes) instead of going back to the watch face.
+  - Nearby venue search now focuses on saunas, bathhouses and spas.
+  - Updated the [Guide](pixel/guide-en.html) and [FAQ](pixel/faq-en.html) for v1.0.0.
 
 ### 🔎 Investigating
 
@@ -330,17 +345,6 @@ This page summarizes the bug reports & requests from testers and how each was ad
 **F-011 Pause with a gesture (request)**
 - Status: ✅ Added (experimental) & released (v1.0.0 / off by default)
 - What: We added "Wrist turn to pause (beta)" to the watch settings. When it's on, turning your wrist pauses a running session and turning it again resumes. We also added "Use Double pinch (beta)" (when it's on, a Next button appears during a session and a double pinch presses it). Both appear in the settings only on Pixel Watch 3 and later, when the gesture is turned on in the watch's own settings. If they don't respond well, the crown works as usual. If "Double-tap to advance" is also on, a wrist turn or the finger movement of a pinch may advance to the next phase; if that happens, turn one of them off. Please tell us how they work for you via the [Feedback form](feedback.html).
-
-**Main changes in v1.0.0 / Phone v1.0.0-beta (the 1.0.0 candidate)**
-- Status: ✅ Released (9/27)
-- What:
-  - Renamed the app to "MaxRecovery Timer", with a new icon.
-  - In the test version, all Premium features are free to use (no purchase needed; the Premium screen shows the date the free access ends). The released version will require a purchase.
-  - Watch: English is now supported ("Force English" on the phone applies to the watch too).
-  - Watch: New session screen design (a heart-rate gauge in the sauna).
-  - Watch: When the screen dims, the app stays on the session screen in a low-power view (elapsed time in minutes) instead of going back to the watch face.
-  - Nearby venue search now focuses on saunas, bathhouses and spas.
-  - Updated the [Guide](pixel/guide.html) and [FAQ](pixel/faq.html) for v1.0.0.
 
 ---
 
