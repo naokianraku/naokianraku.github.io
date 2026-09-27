@@ -84,11 +84,12 @@ similar options). It works the same on every watch:
   phase and its **previous elapsed time is carried over** (it does not reset to
   zero). You **stay paused** afterwards — rotate the crown UP or tap **Resume** to
   continue.
-- **Wrist turn** is disabled during a session (so it can't bring up the end
-  confirmation by accident); it only closes a confirmation or heart-rate alert that
-  is already open. Turn gestures on/off and change hint frequency in the watch's
-  system settings (Gestures → Hand gestures or similar; names can differ by watch
-  software version).
+- **Wrist turn** is disabled during a session by default (so it can't bring up the
+  end confirmation by accident; it doesn't pause or close confirmations or alerts
+  either). If you turn on the experimental "Wrist turn to pause (beta)" on the watch,
+  you can pause and resume by turning your wrist (see the last item in this list).
+  Turn gestures on/off and change hint frequency in the watch's system settings
+  (Gestures → Hand gestures or similar; names can differ by watch software version).
 - **On-screen Next / Pause buttons** during a running session appear **only if you turn
   on Settings → Watch settings → "Show control buttons"** (off by default). If you
   turn on the experimental "Use Double pinch (beta)" on the watch (see the last item
@@ -142,6 +143,25 @@ similar options). It works the same on every watch:
   While the option is off, the app doesn't accept double pinch (it won't close a
   confirmation or save a rating). However, if "Double-tap to advance (beta)" is on,
   the finger movement of a pinch may be picked up and advance to the next phase.
+- **Wrist turn to pause (beta, off by default; Pixel Watch 3 and later, Wear OS 7)** —
+  it's off by default because it's experimental. To try it, on the watch go to the
+  MaxRecovery home → **Settings → Options → "Wrist turn to pause (beta)"** and turn it
+  on. The option only appears on Pixel Watch 3 and later when wrist turn is turned on
+  in the watch's own system settings.
+  When it's on, **turning your wrist (a quick turn outward and back) pauses** a running
+  session, and **turning it again resumes** (the screen and notification are the same
+  as when you pause or resume with the crown or the pause menu). On a confirmation
+  (end, go back, final-set choice) it **cancels**. It doesn't close heart-rate alerts
+  or the inactivity warning (so a movement such as wiping off sweat can't dismiss an
+  alert you haven't seen — use the crown or tap). It does nothing on the rating
+  screen, while saving, or on the "Unfinished session" prompt. So that one movement
+  can't pause and then resume, a wrist turn within **1 second** of the previous wrist
+  turn, or of pausing/resuming with the crown or a button, is ignored. If it doesn't
+  respond well, the crown works as usual. If you turn wrist turn off in the watch's
+  system settings, it isn't used even with this option on.
+  While the option is off, the app ignores wrist turns during a session (no pause, no
+  end confirmation, and it doesn't close confirmations or alerts). Outside a session
+  (home, settings, history and so on), wrist turn stays the system's Back either way.
 
 The watch displays the current phase, elapsed time, heart rate, and your recent
 HR peak / bottom (last 5 minutes). Configured phase times act as **haptic
@@ -426,7 +446,7 @@ Terms in the app and in this guide that refer to the same thing (English = the w
 |---|---|---|
 | クラウン（リューズ） | Crown | ウォッチ側面の回転リューズ。本取説の「リューズ」＝アプリの「クラウン」 / The rotating side button |
 | ダブルピンチ | Double pinch | Pixel Watch 3 以降・実験（ウォッチの設定「ダブルピンチを使う（実験）」を ON にしたときだけ。既定オフ）。計測中は「次へ」と同じ / Pixel Watch 3+, beta (only when "Use Double pinch (beta)" is on in the watch app's settings; off by default); same as Next while running |
-| 手首ターン | Wrist turn | セッション中は無効（確認画面と心拍の警告を閉じるだけ） / Disabled in a session (only closes confirmations and heart-rate alerts) |
+| 手首ターン | Wrist turn | Pixel Watch 3 以降・実験（ウォッチの設定「手首ターンで一時停止（実験）」を ON にしたときだけ。既定オフ）。計測中は一時停止／再開、確認画面はキャンセル。オフのときはセッション中は無効 / Pixel Watch 3+, beta (only when "Wrist turn to pause (beta)" is on in the watch app's settings; off by default): pauses/resumes in a session and cancels confirmations. When off, disabled in a session |
 | 標準モード（開始ボタン「標準モード開始」） | Standard (Start Standard) | サウナ→水風呂→外気浴を繰り返す / The full sauna → cold bath → cool-down cycle |
 | シンプルモード（開始ボタン「シンプルモード開始」） | Simple (Start Simple) | サウナのみを繰り返す簡易計測 / Sauna-only simple timing |
 | 準備時間（設定「準備時間から開始」）→ 準備フェーズ（表示「準備」） | Start with prep time → Prep | ON にすると最初に入る、着替え等の時間 / Optional first phase before the sauna |

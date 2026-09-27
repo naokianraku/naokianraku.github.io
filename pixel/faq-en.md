@@ -250,9 +250,10 @@ only control, on every watch. **While paused**, an on-screen menu appears with
 **Resume / Back / End**. If you prefer touch controls, turn on **Settings → Watch
 settings → "Show control buttons"** to also show Next/Pause buttons during a
 running session. There is also an optional **"Double-tap to advance"** gesture
-(beta, OFF by default). On Pixel Watch 3 and later you can also try advancing with a
-double pinch (tap your thumb and index finger together twice) by turning on **"Use
-Double pinch (beta)"** (OFF by default) in the watch's settings (see below).
+(beta, OFF by default). On Pixel Watch 3 and later you can also try two experimental
+gestures in the watch's settings (both OFF by default; see below): **"Use Double pinch
+(beta)"** to advance with a double pinch (tap your thumb and index finger together
+twice), and **"Wrist turn to pause (beta)"** to pause and resume by turning your wrist.
 Phase times are **haptic
 alerts only** — the app does not auto-advance, so you choose when to move on. When a
 confirmation or warning appears, turning the crown (either way) closes it too (it
@@ -280,10 +281,26 @@ save a rating, for example). However, if "Double-tap to advance" is on, the fing
 movement of a pinch may be picked up and advance to the next phase. If that bothers
 you, turn "Double-tap to advance" off.
 
+**Q. Can I pause with a gesture?**
+As an experimental feature on Pixel Watch 3 and later (Wear OS 7), you can pause and
+resume with a wrist turn; it's OFF by default. On the watch, go to the MaxRecovery
+home → **Settings → Options → "Wrist turn to pause (beta)"** and turn it on. The option
+only appears when wrist turn is turned on in the watch's own system settings. When it's
+on, turning your wrist (a quick turn outward and back) pauses a running session and
+turning it again resumes. On a confirmation (end, go back, final-set choice) it
+cancels. It doesn't close heart-rate alerts or the inactivity warning (so you don't
+miss them). So that one movement can't pause and then resume, a wrist turn within 1
+second of the previous wrist turn, or of pausing/resuming with the crown or a button,
+is ignored. If it doesn't respond well, the crown works as usual (down to pause, up to
+resume). Double pinch and the body double-tap only advance (Next); they don't pause.
+
 **Q. Turning my wrist shows "End session?".**
-In the latest version, **wrist turn is disabled during a session** (Pixel Watch 3 and
-later). It only closes a confirmation or heart-rate alert that is already open. If
-the confirmation does appear, close it by **turning the crown** (either way) or by
+In the latest version, while "Wrist turn to pause (beta)" is off (the default), **wrist
+turn is disabled during a session** (Pixel Watch 3 and later; it doesn't close
+confirmations or alerts either). While it's on, a wrist turn pauses/resumes or cancels
+a confirmation, and never opens the end confirmation (see the question above). Outside
+a session (home, settings and so on), wrist turn stays the system's Back. If the
+confirmation does appear, close it by **turning the crown** (either way) or by
 tapping **Cancel**; the session keeps running. Even in earlier
 versions, that confirmation closes by itself after 5 seconds and the session doesn't
 end unless you tap **End**. Please update the app.
