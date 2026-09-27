@@ -94,7 +94,7 @@ Open MaxRecovery on your Apple Watch and tap **Start Standard** or
 <p align="center"><img src="images/guide/en/iphone_analytics.jpg" width="200" alt="Analytics tab"></p>
 
 <p align="center"><a href="images/guide/en/report_p1.jpg"><img src="images/guide/en/report_p1.jpg" width="140" alt="PDF report page 1" style="border:1px solid #ddd"></a> <a href="images/guide/en/report_p2.jpg"><img src="images/guide/en/report_p2.jpg" width="140" alt="PDF report page 2" style="border:1px solid #ddd"></a> <a href="images/guide/en/report_p3.jpg"><img src="images/guide/en/report_p3.jpg" width="140" alt="PDF report page 3" style="border:1px solid #ddd"></a></p>
-<p align="center"><sub>Sample PDF report (fictional data, all 3 pages). Tap to enlarge</sub></p>
+<p align="center"><sub>Sample PDF report (venue names are fictional; all 3 pages). Tap to enlarge</sub></p>
 
 ### 7. Tips
 

@@ -84,7 +84,7 @@ Apple Watch で MaxRecovery を開き、**「標準モード開始」** か **�
 <p align="center"><img src="images/guide/ja/iphone_analytics.jpg" width="200" alt="分析タブ"></p>
 
 <p align="center"><a href="images/guide/ja/report_p1.jpg"><img src="images/guide/ja/report_p1.jpg" width="140" alt="PDF レポート 1 ページ目" style="border:1px solid #ddd"></a> <a href="images/guide/ja/report_p2.jpg"><img src="images/guide/ja/report_p2.jpg" width="140" alt="PDF レポート 2 ページ目" style="border:1px solid #ddd"></a> <a href="images/guide/ja/report_p3.jpg"><img src="images/guide/ja/report_p3.jpg" width="140" alt="PDF レポート 3 ページ目" style="border:1px solid #ddd"></a></p>
-<p align="center"><sub>PDF レポートの見本（架空のデータ、全 3 ページ）。タップで拡大</sub></p>
+<p align="center"><sub>PDF レポートの見本（店名は架空、全 3 ページ）。タップで拡大</sub></p>
 
 ---
 
