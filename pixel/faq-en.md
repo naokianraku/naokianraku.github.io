@@ -18,11 +18,16 @@ title: FAQ (Pixel Watch & Android)
 {% comment %}Work memo (not shown on the page): remove the next Q, "Do I need to buy Premium in the test version?", when the released version goes live (R6) — also the same Q in faq-ja.md and the "In the test version" paragraph in guide-ja.md / guide-en.md.{% endcomment %}
 **Q. Do I need to buy Premium in the test version (closed testing)?**
 No. In the test version, all Premium features are free to use (no purchase needed).
-The Premium screen shows no purchase buttons, and shows until when the free access
-lasts. The released version will require a purchase: once your app updates to the
-released version, Premium goes back to not subscribed (your records stay). If you
-bought Premium in an earlier version, you can cancel it with **"Manage subscription
-(cancel, payment)"** on the Premium screen.
+You have it when Settings → Premium shows the status "Premium active (test version)".
+The Premium screen has no purchase buttons and shows the date the free access ends.
+After that date, the usual purchase screen comes back, and purchases are charged for
+real.
+The released version will require a purchase. If you have not bought Premium, it
+returns to the unsubscribed state once your app updates to the released version (your
+records stay).
+If you subscribed in an earlier version, the subscription keeps renewing and charging
+until you cancel, even while Premium is free in the test version. Cancel it with
+**"Manage subscription (cancel, payment)"** on the Premium screen.
 
 **Q. How much is Premium?**
 Premium is an auto-renewing subscription with a **Monthly plan** and a **Yearly

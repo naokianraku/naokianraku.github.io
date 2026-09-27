@@ -333,7 +333,9 @@ FAQ.
 
 {% comment %}Work memo (not shown on the page): remove the next paragraph when the released version goes live (R6) — also the same note in guide-ja.md and the FAQ.{% endcomment %}
 **In the test version:** all Premium features are free to use (no purchase needed;
-the released version will require a purchase).
+the released version will require a purchase). The button under Settings → Premium
+reads **"About Premium in the test version"**; the Premium screen it opens shows the
+date the free access ends.
 
 **Languages:** the phone app (including the shared graph image and the PDF report)
 and the watch app are available in English and Japanese. The phone app follows the
