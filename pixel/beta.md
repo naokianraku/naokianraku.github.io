@@ -9,11 +9,11 @@ image:
 {% comment %}
 作業メモ（Liquid のコメントなので、公開ページには出ない）
 - 公開前に確認: Google グループの「メンバー一覧を表示できるユーザー」が管理者のみか（ページの「管理者には見える」はこれが前提）。
-- 公開する日に「最終更新 / Last updated」の日付を合わせる。
+- 公開する日に「最終更新 / Last updated」の日付を合わせる（2026-09-27 の公開で合わせた。以後は中身を変えたら更新）。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
-- Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（審査に提出）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
+- Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（公開済み）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
 - Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）の配信の前でも後でも正しい書き方にしてある（配信しても差し替えは不要。どの版かは、テスターがアプリの設定の「Premium 有効（テスト版）」で見分けられる）。先頭の「購入しないでください」は、古い版と、無料の期限（ビルドから 90 日）を過ぎたテスト用ビルドでは購入すると請求されるので、残す。製品版の公開時（R6）に、日本語・English の「ご注意 / Please note」の Premium の行を消す（募集を続けるなら「製品版では購入が必要です」だけにする）。
-- 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US から。*-phone-chart.jpg は phone/01 の上側を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
+- 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US の 1.0.0 候補の撮り直しから。*-watch-cooldown.png は wear/02_cool_down を 380px に縮めて灰色の縁つきの丸に切り抜いたもの。*-phone-chart.jpg は phone/01_home_heart_rate の上側（1080 幅の y=55〜1045）を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
 {% endcomment %}
 
 <style>
@@ -49,7 +49,7 @@ image:
 **MaxRecovery Timer の Android 版のテスターを募集しています。**サウナ→水風呂→外気浴の心拍を、ウォッチで記録してスマホで振り返るアプリです。
 
 <div class="beta-shots">
-  <figure class="watch"><a href="../assets/img/beta/ja-watch-cooldown.png"><img src="../assets/img/beta/ja-watch-cooldown.png" width="400" height="400" alt="ウォッチの計測画面。外気浴 1/3、経過 3 分 25 秒、心拍 89 bpm"></a><figcaption>ウォッチで記録</figcaption></figure>
+  <figure class="watch"><a href="../assets/img/beta/ja-watch-cooldown.png"><img src="../assets/img/beta/ja-watch-cooldown.png" width="400" height="400" alt="ウォッチの計測画面。外気浴 1/3、経過 1 分 17 秒、心拍 93 bpm"></a><figcaption>ウォッチで記録</figcaption></figure>
   <figure class="phone"><a href="../assets/img/beta/ja-phone-heart-rate.jpg"><img src="../assets/img/beta/ja-phone-chart.jpg" width="480" height="440" alt="スマホのホーム画面。3 セット分の心拍のグラフ（最大 145、最小 77 bpm）"></a><figcaption>心拍のグラフ</figcaption></figure>
 </div>
 
@@ -111,7 +111,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 **We are looking for testers for the Android version of MaxRecovery Timer.** It records your heart rate through sauna, cold bath and cool-down on your watch, and you review it on your phone.
 
 <div class="beta-shots">
-  <figure class="watch"><a href="../assets/img/beta/en-watch-cooldown.png"><img src="../assets/img/beta/en-watch-cooldown.png" width="400" height="400" loading="lazy" alt="Watch recording screen: cool-down 1/3, 3:29 elapsed, heart rate 89 bpm"></a><figcaption>Record on the watch</figcaption></figure>
+  <figure class="watch"><a href="../assets/img/beta/en-watch-cooldown.png"><img src="../assets/img/beta/en-watch-cooldown.png" width="400" height="400" loading="lazy" alt="Watch recording screen: cool-down 1/3, 1:24 elapsed, heart rate 93 bpm"></a><figcaption>Record on the watch</figcaption></figure>
   <figure class="phone"><a href="../assets/img/beta/en-phone-heart-rate.jpg"><img src="../assets/img/beta/en-phone-chart.jpg" width="480" height="440" loading="lazy" alt="Phone home screen: heart-rate chart for three rounds (max 145, min 77 bpm)"></a><figcaption>Heart-rate chart</figcaption></figure>
 </div>
 
