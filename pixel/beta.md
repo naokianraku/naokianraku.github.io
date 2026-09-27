@@ -12,7 +12,7 @@ image:
 - 公開する日に「最終更新 / Last updated」の日付を合わせる。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
 - Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（審査に提出）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
-- Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）を配信したら、日本語・English の「ご注意 / Please note」の Premium の行を「**テスト版では Premium の機能をすべて無料で使えます**（購入は不要です。製品版では購入が必要です）」/「**In the test version, all Premium features are free to use** (no purchase needed; the released version will require a purchase).」だけにする。
+- Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）の配信の前でも後でも正しい書き方にしてある（配信しても差し替えは不要。どの版かは、テスターがアプリの設定の「Premium 有効（テスト版）」で見分けられる）。先頭の「購入しないでください」は、古い版と、無料の期限（ビルドから 90 日）を過ぎたテスト用ビルドでは購入すると請求されるので、残す。製品版の公開時（R6）に、日本語・English の「ご注意 / Please note」の Premium の行を消す（募集を続けるなら「製品版では購入が必要です」だけにする）。
 - 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US から。*-phone-chart.jpg は phone/01 の上側を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
 {% endcomment %}
 
@@ -84,7 +84,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 ### ご注意
 
 - テスト版なので、不具合が起きることがあります。
-- **Premium は購入しないでください。**次のテスト版（1.0.0 候補）から、Premium の機能をすべて無料で使えます（製品版では購入が必要です）。それまでの版では、購入すると代金が請求されます。
+- **Premium は購入しないでください。**1.0.0 候補以降のテスト版では、Premium の機能をすべて無料で使えます（アプリの設定の「状態」に「Premium 有効（テスト版）」と出ます。無料で使える期限は Premium 画面に出ます）。それより前の版で購入したり、期限を過ぎてから購入したりすると、代金が請求されます。製品版では購入が必要です。
 - 医療機器ではありません。表示は参考情報です。
 
 <details class="beta-more" markdown="1">
@@ -146,7 +146,7 @@ If "Become a tester" does not appear, check that your browser is signed in with 
 ### Please note
 
 - This is a test version, so there may be bugs.
-- **Please do not buy Premium.** From the next test version (the 1.0.0 candidate), all Premium features are free to use (the released version will require a purchase). Until then, purchases are charged for real.
+- **Please do not buy Premium.** In test versions from the 1.0.0 candidate on, all Premium features are free to use (the app's Settings show the status "Premium active (test version)", and the Premium screen shows the date the free access ends). Purchases in earlier versions, or after that date, are charged for real. The released version will require a purchase.
 - Not a medical device. All values are for reference only.
 
 <details class="beta-more" markdown="1">
