@@ -11,7 +11,7 @@ image:
 - 公開前に確認: Google グループの「メンバー一覧を表示できるユーザー」が管理者のみか（ページの「管理者には見える」はこれが前提）。
 - 公開する日に「最終更新 / Last updated」の日付を合わせる。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
-- Play の掲載名が MaxRecovery Timer に変わったら: 日本語・English の「参加の手順 / How to join」の 3 にある旧名「MaxSauna Timer」の注記を消す。
+- Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（審査に提出）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
 - 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US から。*-phone-chart.jpg は phone/01 の上側を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
 {% endcomment %}
 
@@ -75,7 +75,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 
 1. [Google グループ](https://groups.google.com/g/maxrecovery-testers) で「グループに参加」を押す（スマホの Google Play と同じアカウントで。管理者の開発者には、メールアドレスが見えます）
 2. [参加用リンク](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) を開き、「テスターになる」を押す
-3. 同じページにある Google Play へのリンクから、スマホに入れる（今は旧名「MaxSauna Timer」と表示）
+3. 同じページにある Google Play へのリンクから、スマホに入れる（入れたアプリは、次の更新まで旧名「MaxSauna Timer」と表示されます）
 4. ウォッチがあれば、スマホの Play ストアでインストール先にウォッチも選ぶ（同じ Google アカウントで）
 
 「テスターになる」が出ないときは、ブラウザの Google アカウントがグループに入ったものと同じか確かめ、少し待ってから開き直してください。
@@ -137,7 +137,7 @@ The iPhone / Apple Watch version (a hot-bath tracker) is on the App Store: [Japa
 
 1. Open the [Google Group](https://groups.google.com/g/maxrecovery-testers) and tap "Join group" (same account as Google Play on your phone; the developer, as group manager, can see your email address)
 2. Open the [opt-in link](https://play.google.com/apps/testing/com.anraku.maxsaunatimer) and tap "Become a tester"
-3. Use the Google Play link on that page to install the app on your phone (listed as "MaxSauna Timer" for now)
+3. Use the Google Play link on that page to install the app on your phone (until the next update, the installed app shows its old name, "MaxSauna Timer")
 4. If you have a watch, choose it as an install device in the Play Store on your phone (same Google account)
 
 If "Become a tester" does not appear, check that your browser is signed in with the account that joined the group, wait a little and open the link again.
