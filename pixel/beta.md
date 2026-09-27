@@ -12,6 +12,7 @@ image:
 - 公開する日に「最終更新 / Last updated」の日付を合わせる。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
 - Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（審査に提出）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
+- Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）を配信したら、日本語・English の「ご注意 / Please note」の Premium の行を「**テスト版では Premium の機能をすべて無料で使えます**（購入は不要です。製品版では購入が必要です）」/「**In the test version, all Premium features are free to use** (no purchase needed; the released version will require a purchase).」だけにする。
 - 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US から。*-phone-chart.jpg は phone/01 の上側を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
 {% endcomment %}
 
@@ -83,7 +84,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 ### ご注意
 
 - テスト版なので、不具合が起きることがあります。
-- **Premium の購入は不要です。**テスト版でも、購入すると代金が請求されます。
+- **Premium は購入しないでください。**次のテスト版（1.0.0 候補）から、Premium の機能をすべて無料で使えます（製品版では購入が必要です）。それまでの版では、購入すると代金が請求されます。
 - 医療機器ではありません。表示は参考情報です。
 
 <details class="beta-more" markdown="1">
@@ -145,7 +146,7 @@ If "Become a tester" does not appear, check that your browser is signed in with 
 ### Please note
 
 - This is a test version, so there may be bugs.
-- **You do not need to buy Premium.** Purchases in the test version are charged for real.
+- **Please do not buy Premium.** From the next test version (the 1.0.0 candidate), all Premium features are free to use (the released version will require a purchase). Until then, purchases are charged for real.
 - Not a medical device. All values are for reference only.
 
 <details class="beta-more" markdown="1">
