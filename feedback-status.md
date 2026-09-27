@@ -4,7 +4,7 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 # 対応状況 — MaxRecovery Timer
 
-**最終更新:** 2026-09-27（9/26 に v0.1.7／Phone v0.2.0 を配信）
+**最終更新:** 2026-09-27（9/27 にテスト版の 1.0.0 候補＝v1.0.0／Phone v1.0.0-beta を配信）
 
 テスターの皆さまからいただいた不具合のご報告・ご要望と、その対応内容です。ご協力ありがとうございます！
 
@@ -14,21 +14,25 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 ### ⚠️ ご注意
 
-**手首を返すと「セッション終了？」が出ることがある（2026年9月の Pixel Watch アップデート）**
-- 状態：⚠️ v0.1.7 までの注意点（今後の版で対応予定）
-- 内容：2026年9月の Pixel Watch のアップデートで、手首をひねる（返す）動作がシステムの「戻る」になりました。v0.1.7 までは、計測中にこの動作をすると「セッション終了？」の確認が出ることがあります。**5秒で自動的に取り消され、記録は続きます。** 今後の版で、計測中はこの動作に反応しないようにする予定です。（F-022「手首をひねると意図せず次フェーズへ進む」とは別の現象です）
+**ウォッチとスマホのアプリは、両方とも更新してください**
+- 状態：⚠️ v1.0.0 の注意点
+- 内容：ウォッチだけを v1.0.0 に更新して、スマホのアプリが古いままだと、長い記録がスマホに届かず、ウォッチに残ります（ウォッチのホームに「スマホのアプリを更新してください（N 件未転送）」と出ます）。スマホのアプリを更新すると、自動で届きます。
 
 ### 🔎 調査中
 
 **F-026 2セット目以降の記録が途切れ、同じ頃に「計測中」の通知が消えた（重大）**
-- 状態：🔎 調査中（v0.1.7 で対策の第1段を配信）
+- 状態：🔎 本対策を配信・確認中（v1.0.0）
 - 内容：2セット目以降の心拍・フェーズの記録が途切れ、同じ頃に「計測中」の通知も消えていた、とのご報告です（画面のタイマーは動いていました）。原因はまだ特定できていません。
 - 対策（v0.1.7）：
   - 計測中の前面サービス（「計測中」の通知を出して計測を続けるための仕組み）を、画面の作り直し（文字サイズの変更など）で止めないようにしました。
   - 心拍が届かないときは、画面に「心拍を取得できません」と出るようにしました（止まった数字を出し続けません）。
   - 異常があったときの診断メモを、記録に残すようにしました。
-- 次の版：計測を画面から完全に切り離す対策を準備中です。
-- お願い：同じ症状が出たら、[フィードバックフォーム](feedback.html)で次の点を教えてください。
+- 対策（v1.0.0）：
+  - 計測を画面から切り離し、前面サービスの中で続けるようにしました。文字盤に戻ったり画面が消えたりしても、計測は止まりません。
+  - 計測中は文字盤に進行中のアイコンが出て、タップすると計測画面に戻れます。
+  - 心拍は、ウォッチのワークアウト機能で読み取るようにしました。
+  - 記録は、スマホが受け取るまでウォッチが送り直します。
+- お願い：v1.0.0 でも同じ症状が出たら、[フィードバックフォーム](feedback.html)で次の点を教えてください。
   - ウォッチの機種とアプリの版
   - 何セット目で、どんな操作をしたか（画面を手で覆った・文字盤に戻った など）
   - 「計測中」の通知が消えた時刻
@@ -76,8 +80,8 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 - 内容：設定 → ウォッチ設定 →「その他フェーズを使う」をONにすると、外気浴のあとに第4フェーズが入り、名称を「休憩／お風呂／給水／シャワー／ストレッチ」から選べます（名称選択を今回追加）。取説に案内を追記しました。
 
 **F-020 / F-021 画面を覆う・放置でセッションが消える／データが残らない（重大）**
-- 状態：✅ 対策実装・配信済み（v0.1.5）
-- 対策：計測中のセッションを自動保存し、画面を覆って消灯・アプリが終了しても、起動し直すと**セッションを復元してデータを失わない**ようにしました（画面オフでの完全な継続記録は引き続き改良中）。
+- 状態：✅ 対策実装・配信済み（v0.1.5）→ v1.0.0 で画面が消えても計測を続けるように
+- 対策：計測中のセッションを自動保存し、画面を覆って消灯・アプリが終了しても、起動し直すと**セッションを復元してデータを失わない**ようにしました。v1.0.0 からは、画面が消えても計測が続きます（F-026 の対策と同じ）。
 
 **F-016 操作方法の見直し：濡れ・水しぶきによる誤操作の防止（重要）**
 - 状態：✅ 実装・配信済み（v0.1.5）
@@ -117,16 +121,17 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 **F-025 セッション中画面に最大・最小心拍を表示**
 - 状態：✅ 追加・配信済み（v0.1.6）
-- 内容：セッション開始からの最大・最小心拍を表示します（「全」がセッション全体、「↓↑」が直近5分）。
+- 内容：セッション開始からの最大・最小心拍を表示します（「全」がセッション全体、「↓↑」が直近5分）。v1.0.0 の新しい計測画面では、合計時間の横の「全体 ↓↑」がセッション全体、心拍の下の「↓↑」が直近5分です。
 
 **F-010 / F-015 訂正とお詫び：1つ前のフェーズに戻れなかった**
 - 状態：✅ 修正・配信済み（v0.1.7）
 - 内容：v0.1.6 までは、一時停止メニューに「戻る」が表示されず、1つ前のフェーズに実際には戻れない不具合がありました（そのため F-015 の経過時間の引き継ぎも使えませんでした）。「戻れる」とご案内していたのに使えない状態が続き、申し訳ありませんでした。
 - 対策：v0.1.7 で修正しました。クラウンを下に回して一時停止 → 画面の「戻る」→ 確認で、1つ前のフェーズに戻ります。戻ったフェーズは経過時間を引き継ぎ、戻ったあとも**一時停止のまま**です。クラウンを上に回すと再開します。（「戻る」は、戻れるフェーズがあるときだけ表示されます）
 
-**F-027 経過時間の小数点以下（1/10秒）を表示しない**
-- 状態：✅ 対応・配信済み（v0.1.7）
-- 内容：セッション画面の経過時間を「分:秒」（例 01:23）で表示し、1/10秒の桁をなくしました。
+**F-027 経過時間の小数点以下（1/10秒）の表示**
+- 状態：✅ 対応・配信済み（v0.1.7）→ v1.0.0 で表示を変更
+- 内容：v0.1.7 で、セッション画面の経過時間を「分:秒」（例 01:23）にし、1/10秒の桁をなくしました。
+- v1.0.0 での変更：新しい計測画面にあわせて見直し、**画面がついているあいだだけ**、フェーズの経過時間の 1/10 秒を小さな文字で出します（例 01:18.4。Apple Watch 版と同じ形。合計時間は秒まで）。画面が暗くなったとき（省電力の表示）は分まで（例「8分」）です。ご要望と一部違う形に戻すことになり、すみません。見づらいときは、[フィードバックフォーム](feedback.html)で教えてください。
 
 **v0.1.7 のその他の改善**
 - 状態：✅ 配信済み（v0.1.7）
@@ -147,11 +152,30 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
   - 位置情報の権限を使わなくなりました。
   - Health Connect の設定から、データの使い方とプライバシーポリシーを確認できるようにしました。
 
+**手首を返すと「セッション終了？」が出ることがある（2026年9月の Pixel Watch アップデート）**
+- 状態：✅ 対応・配信済み（v1.0.0）
+- 内容：2026年9月の Pixel Watch のアップデートで、手首を返す動作がシステムの「戻る」になり、v0.1.7 までは、計測中に「セッション終了？」の確認が出ることがありました（5秒で自動的に取り消され、記録は続きます）。v1.0.0 からは、計測中の手首ターンに反応しません（下の「手首ターンで一時停止（実験）」をONにしたときを除く）。（F-022「手首をひねると意図せず次フェーズへ進む」とは別の現象です）
+
+**F-011 ジェスチャーで一時停止したい（要望）**
+- 状態：✅ 実験的に追加・配信済み（v1.0.0／既定OFF）
+- 内容：ウォッチの設定に「手首ターンで一時停止（実験）」を加えました。ONにすると、計測中に手首を返すと一時停止、もう一度返すと再開します。あわせて「ダブルピンチを使う（実験）」も加えました（ONにすると、計測中に「次へ」ボタンが出て、ダブルピンチでも押せます）。どちらも Pixel Watch 3 以降で、ウォッチ本体のジェスチャーがオンのときだけ設定に出ます。うまく反応しないときも、クラウンはいつもどおり使えます。「本体ダブルタップで次へ」もONにしていると、手首を返す動きやピンチの指の動きで次へ進むことがあるので、そのときはどちらかをOFFにしてください。使った感想を[フィードバックフォーム](feedback.html)で教えてください。
+
+**v1.0.0／Phone v1.0.0-beta（1.0.0 候補）の主な変更点**
+- 状態：✅ 配信済み（9/27）
+- 内容：
+  - アプリの名前を「MaxRecovery Timer」に変え、アイコンを新しくしました。
+  - テスト版では、Premium の機能をすべて無料で使えます（購入は不要です。無料で使える期限は Premium 画面に出ます）。製品版では購入が必要です。
+  - ウォッチ：英語表示に対応しました（スマホの「英語表示（強制）」もウォッチに反映されます）。
+  - ウォッチ：計測画面を新しいデザインにしました（サウナ中は心拍のゲージ）。
+  - ウォッチ：画面が暗くなっても文字盤に戻らず、計測画面を省電力の表示（経過時間は分まで）で出し続けます。
+  - 近くの施設の検索を、サウナ・銭湯・スパ中心にしました。
+  - [取説](pixel/guide.html)・[FAQ](pixel/faq.html) を v1.0.0 の内容に更新しました。
+
 ---
 
 # Fixed issues — MaxRecovery Timer (English)
 
-**Last updated:** 2026-09-27 (v0.1.7 / Phone v0.2.0 released on 2026-09-26)
+**Last updated:** 2026-09-27 (the 1.0.0 candidate test version, v1.0.0 / Phone v1.0.0-beta, released on 2026-09-27)
 
 This page summarizes the bug reports & requests from testers and how each was addressed. Thank you for your help!
 
@@ -161,21 +185,25 @@ This page summarizes the bug reports & requests from testers and how each was ad
 
 ### ⚠️ Please note
 
-**Turning your wrist can bring up "End session?" (September 2026 Pixel Watch update)**
-- Status: ⚠️ Applies up to v0.1.7 (to be addressed in a future version)
-- What: With the September 2026 Pixel Watch update, twisting (turning) your wrist became the system "Back" gesture. Up to v0.1.7, doing this during a session may bring up the "End session?" confirmation. **It cancels itself after 5 seconds and recording continues.** In a future version, the app will ignore this gesture during a session. (This is different from F-022, "Twisting the wrist unintentionally advances to the next phase".)
+**Update both the watch app and the phone app**
+- Status: ⚠️ Note for v1.0.0
+- What: If you update only the watch to v1.0.0 and the phone app is still an older version, long sessions can't reach the phone and stay on the watch (the watch home screen says "Update the phone app to receive N session(s)."). Once you update the phone app, they arrive automatically.
 
 ### 🔎 Investigating
 
 **F-026 Recording stopped from the 2nd set onward, and the "recording" notification disappeared around the same time (serious)**
-- Status: 🔎 Investigating (first round of countermeasures released in v0.1.7)
+- Status: 🔎 Main fix released, checking (v1.0.0)
 - What: A tester reported that heart-rate and phase recording stopped from the 2nd set onward, and that the "recording" notification had disappeared around the same time (the timer on screen kept running). We have not identified the cause yet.
 - Countermeasures (v0.1.7):
   - The foreground service that keeps the session recording (and shows the "recording" notification) is no longer stopped when the screen is rebuilt (for example, when the font size changes).
   - When no heart rate is coming in, the screen now shows "Heart rate unavailable" (instead of keeping a frozen number).
   - When something goes wrong, a short diagnostic note is saved with the session.
-- Next version: We are preparing a fix that fully separates recording from the screen.
-- Request: If you see the same problem, please tell us the following via the [Feedback form](feedback.html):
+- Countermeasures (v1.0.0):
+  - Recording is now separated from the screen and runs inside the foreground service. Going back to the watch face or the screen turning off no longer stops it.
+  - While a session runs, an ongoing-activity icon appears on the watch face; tap it to return to the session screen.
+  - Heart rate is now read with the watch's workout feature.
+  - The watch resends each session until the phone has received it.
+- Request: If you still see the same problem on v1.0.0, please tell us the following via the [Feedback form](feedback.html):
   - Your watch model and the app version
   - Which set it happened in, and what you did (covered the screen with your hand, went back to the watch face, etc.)
   - The time the "recording" notification disappeared
@@ -223,8 +251,8 @@ This page summarizes the bug reports & requests from testers and how each was ad
 - What: Turn on Settings → Watch settings → "Use extra phase" to insert a 4th phase after cool-down, with a selectable name (rest / hot bath / hydration / shower / stretch — name selection added in this update). We added a note to the guide.
 
 **F-020 / F-021 Session lost / data not saved when the screen is covered or left running (serious)**
-- Status: ✅ Fix implemented & released (v0.1.5)
-- Fix: The running session is now auto-saved, so even if the screen is covered/off or the app is killed, relaunching restores the session and your data is not lost. (Full screen-off continuous recording is still being improved.)
+- Status: ✅ Fix implemented & released (v0.1.5) → recording continues with the screen off from v1.0.0
+- Fix: The running session is now auto-saved, so even if the screen is covered/off or the app is killed, relaunching restores the session and your data is not lost. From v1.0.0, recording also continues while the screen is off (the same fix as F-026).
 
 **F-016 Controls revised to prevent wet/splash mis-taps (important)**
 - Status: ✅ Implemented & released (v0.1.5)
@@ -264,16 +292,17 @@ This page summarizes the bug reports & requests from testers and how each was ad
 
 **F-025 Show session max / min heart rate on the session screen**
 - Status: ✅ Added & released (v0.1.6)
-- What: The session's max / min heart rate is shown ("全" = whole session, "↓↑" = last 5 minutes).
+- What: The session's max / min heart rate is shown ("全" = whole session, "↓↑" = last 5 minutes). On the new session screen in v1.0.0, "All ↓↑" next to the total time is the whole session ("全体" in Japanese), and the "↓↑" under the heart rate is the last 5 minutes.
 
 **F-010 / F-015 Correction and apology: going back one phase did not work**
 - Status: ✅ Fixed & released (v0.1.7)
 - What: Up to v0.1.6, "Go back" did not appear in the pause menu, so you could not actually return to the previous phase (which also meant F-015's elapsed-time carry-over could not be used). We said it was available when it wasn't — we're sorry.
 - Fix: Fixed in v0.1.7. Rotate the crown down to pause → tap "Go back" on the screen → confirm, and you return to the previous phase. The phase keeps its elapsed time, and the session **stays paused** after going back. Rotate the crown up to resume. ("Go back" only appears when there is a previous phase to return to.)
 
-**F-027 Remove the tenths of a second from the elapsed time**
-- Status: ✅ Done & released (v0.1.7)
-- What: The elapsed time on the session screen is now shown as minutes:seconds (e.g. 01:23), without the 1/10-second digit.
+**F-027 Tenths of a second in the elapsed time**
+- Status: ✅ Done & released (v0.1.7) → display changed in v1.0.0
+- What: In v0.1.7, the elapsed time on the session screen became minutes:seconds (e.g. 01:23), without the 1/10-second digit.
+- Change in v1.0.0: We revisited this for the new session screen. **Only while the screen is on**, the phase's elapsed time shows the tenths in smaller type (e.g. 01:18.4, the same as the Apple Watch version; the total time shows seconds). When the screen dims (the low-power view), it shows whole minutes (e.g. "8 min"). We're sorry this partly goes back on your request. If it's hard to read, please tell us via the [Feedback form](feedback.html).
 
 **Other improvements in v0.1.7**
 - Status: ✅ Released (v0.1.7)
@@ -293,6 +322,25 @@ This page summarizes the bug reports & requests from testers and how each was ad
   - Venue names are now saved only when you type them yourself. Nearby venues are searched only when you tap "Find nearby venues" (up to 5 times a day). Venue names saved previously are deleted (the app lets you know).
   - The app no longer uses the location permission.
   - You can now check how data is used and the privacy policy from Health Connect's settings.
+
+**Turning your wrist can bring up "End session?" (September 2026 Pixel Watch update)**
+- Status: ✅ Fixed & released (v1.0.0)
+- What: With the September 2026 Pixel Watch update, turning your wrist became the system "Back" gesture, and up to v0.1.7 it could bring up the "End session?" confirmation during a session (it cancelled itself after 5 seconds and recording continued). From v1.0.0, the app ignores wrist turns during a session (unless you turn on "Wrist turn to pause (beta)" below). (This is different from F-022, "Twisting the wrist unintentionally advances to the next phase".)
+
+**F-011 Pause with a gesture (request)**
+- Status: ✅ Added (experimental) & released (v1.0.0 / off by default)
+- What: We added "Wrist turn to pause (beta)" to the watch settings. When it's on, turning your wrist pauses a running session and turning it again resumes. We also added "Use Double pinch (beta)" (when it's on, a Next button appears during a session and a double pinch presses it). Both appear in the settings only on Pixel Watch 3 and later, when the gesture is turned on in the watch's own settings. If they don't respond well, the crown works as usual. If "Double-tap to advance" is also on, a wrist turn or the finger movement of a pinch may advance to the next phase; if that happens, turn one of them off. Please tell us how they work for you via the [Feedback form](feedback.html).
+
+**Main changes in v1.0.0 / Phone v1.0.0-beta (the 1.0.0 candidate)**
+- Status: ✅ Released (9/27)
+- What:
+  - Renamed the app to "MaxRecovery Timer", with a new icon.
+  - In the test version, all Premium features are free to use (no purchase needed; the Premium screen shows the date the free access ends). The released version will require a purchase.
+  - Watch: English is now supported ("Force English" on the phone applies to the watch too).
+  - Watch: New session screen design (a heart-rate gauge in the sauna).
+  - Watch: When the screen dims, the app stays on the session screen in a low-power view (elapsed time in minutes) instead of going back to the watch face.
+  - Nearby venue search now focuses on saunas, bathhouses and spas.
+  - Updated the [Guide](pixel/guide.html) and [FAQ](pixel/faq.html) for v1.0.0.
 
 ---
 
