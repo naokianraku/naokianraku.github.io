@@ -8,12 +8,12 @@ image:
 
 {% comment %}
 作業メモ（Liquid のコメントなので、公開ページには出ない）
-- 公開前に確認: Google グループの「メンバー一覧を表示できるユーザー」が管理者のみか（ページの「管理者には見える」はこれが前提）。
+- Google グループの設定は確認済み（2026-09-27：メンバーの一覧はオーナーのみ・メールアドレスは管理者のみ）。設定を変えたら、手順 1 の「管理者には見える」も見直す。
 - 公開する日に「最終更新 / Last updated」の日付を合わせる（2026-09-27 の公開で合わせた。以後は中身を変えたら更新）。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
 - Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（公開済み）。1.0.0 候補を配信したら: 日本語・English の「参加の手順 / How to join」の 3 にある「入れたアプリは旧名で表示」の注記を消す。
 - Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）の配信の前でも後でも正しい書き方にしてある（配信しても差し替えは不要。どの版かは、テスターがアプリの設定の「Premium 有効（テスト版）」で見分けられる）。先頭の「購入しないでください」は、古い版と、無料の期限（ビルドから 90 日）を過ぎたテスト用ビルドでは購入すると請求されるので、残す。製品版の公開時（R6）に、日本語・English の「ご注意 / Please note」の Premium の行を消す（募集を続けるなら「製品版では購入が必要です」だけにする）。
-- 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US の 1.0.0 候補の撮り直しから。*-watch-cooldown.png は wear/02_cool_down を 380px に縮めて灰色の縁つきの丸に切り抜いたもの。*-phone-chart.jpg は phone/01_home_heart_rate の上側（1080 幅の y=55〜1045）を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）
+- 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US の 1.0.0 候補の撮り直しから。*-watch-cooldown.png は wear/02_cool_down を 380px に縮めて灰色の縁つきの丸に切り抜いたもの。*-phone-chart.jpg は phone/01_home_heart_rate の上側（1080 幅の y=55〜1045）を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）。ウォッチの画像は 1.0.0 候補の新しい計測画面なので、配信中の 0.1.7 とは見た目が違う（1.0.0 候補の配信でそろう。配信が遅れるなら figcaption に「次のテスト版の画面」を添える）
 {% endcomment %}
 
 <style>
@@ -29,6 +29,7 @@ image:
   section h3 + ul, section h3 + ol { margin-top: 0; }
   section p, section li { text-wrap: pretty; }
   .beta-nowrap { white-space: nowrap; }
+  h1 .beta-nowrap { color: inherit; } /* サイト共通の span の文字色（本文色）を見出しでは使わない */
   .beta-store a { white-space: nowrap; }
   .beta-more { margin: -4px 0 20px; }
   .beta-more summary { cursor: pointer; padding: 6px 0; color: var(--link); }
@@ -36,9 +37,9 @@ image:
   .beta-more ul { margin: 4px 0 0; }
 </style>
 
-# テスター募集 / Join the beta
+# テスター募集 / <span class="beta-nowrap">Join the beta</span>
 
-[日本語](#ja) ・ [English](#en) ・ <span class="beta-nowrap">最終更新 / Last updated: 2026-09-27</span>
+[日本語](#ja) ・ [English](#en)<br><span class="beta-nowrap">最終更新 / Last updated: 2026-09-27</span>
 
 ---
 
@@ -70,7 +71,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 
 - Android 11 以降のスマホ
 - Google Play の国／地域が日本の Google アカウント
-- Wear OS 3 以降のウォッチ（任意。心拍の計測に必要）
+- Wear OS 3 以降のウォッチ（任意。記録にはウォッチが必要）
 
 ### 参加の手順
 
@@ -132,7 +133,7 @@ The iPhone / Apple Watch version (a hot-bath tracker) is on the App Store: [Japa
 
 - An Android phone (Android 11 or later)
 - A Google account whose Google Play country is Japan
-- A Wear OS 3+ watch (optional; needed to record heart rate)
+- A Wear OS 3+ watch (optional, but you need one to record sessions)
 
 ### How to join
 
@@ -160,6 +161,6 @@ If "Become a tester" does not appear, check that your browser is signed in with 
 
 ### Contact
 
-Questions are welcome through the [feedback form](../feedback.html). News is posted on X: [@anraku_tech](https://x.com/anraku_tech).
+Questions are welcome through the [feedback form](../feedback.html). To get a reply, fill in "メールアドレス" (email address) on the form. News is posted on X: [@anraku_tech](https://x.com/anraku_tech).
 
 </div>

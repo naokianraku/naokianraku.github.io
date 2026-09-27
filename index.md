@@ -18,6 +18,8 @@ A hot-bath wellness app for timing sessions (warming room, hot spring,
 hot yoga, infrared sauna, etc.) and recording heart-rate-based data,
 available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 
+**Android 版のテスター募集中 / Android testers wanted:** [参加方法 / How to join](pixel/beta.html)（Google Play のクローズドテスト・日本のみ / closed test on Google Play, Japan only）
+
 #### Apple Watch & iPhone version / Apple Watch・iPhone 版
 
 **App Store:** [日本語](https://apps.apple.com/jp/app/maxrecovery-timer/id6815294404) ・ [English](https://apps.apple.com/us/app/maxrecovery-timer/id6815294404)
@@ -30,8 +32,6 @@ available for **Apple Watch / iPhone** and **Pixel Watch / Android**.
 | 利用規約 / Terms of Use | [terms-of-use.html](terms-of-use.html) | [terms-of-use.html](terms-of-use.html) |
 
 #### Pixel Watch & Android version / Pixel Watch・Android 版
-
-**テスター募集中 / Testers wanted:** [参加方法 / How to join](pixel/beta.html)（Google Play のクローズドテスト・日本のみ / closed test on Google Play, Japan only）
 
 | | 日本語 | English |
 |---|---|---|
