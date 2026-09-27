@@ -4,7 +4,7 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 # 対応状況 — MaxRecovery Timer
 
-**最終更新:** 2026-09-XX（v0.1.7／Phone v0.2.0 を配信）
+**最終更新:** 2026-09-27（9/26 に v0.1.7／Phone v0.2.0 を配信）
 
 テスターの皆さまからいただいた不具合のご報告・ご要望と、その対応内容です。ご協力ありがとうございます！
 
@@ -151,7 +151,7 @@ title: 対応状況 / Fixed issues — MaxRecovery Timer
 
 # Fixed issues — MaxRecovery Timer (English)
 
-**Last updated:** 2026-09-XX (v0.1.7 / Phone v0.2.0 released)
+**Last updated:** 2026-09-27 (v0.1.7 / Phone v0.2.0 released on 2026-09-26)
 
 This page summarizes the bug reports & requests from testers and how each was addressed. Thank you for your help!
 
