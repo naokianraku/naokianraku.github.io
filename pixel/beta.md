@@ -12,7 +12,7 @@ image:
 - 公開する日に「最終更新 / Last updated」の日付を合わせる（2026-09-27 の公開で合わせた。以後は中身を変えたら更新）。
 - このページにメールアドレスは載せない（問い合わせはフィードバックフォームのみ）。
 - Play の掲載名は 2026-09-27 に MaxRecovery Timer へ変更（公開済み）。1.0.0 候補（アプリの名前も MaxRecovery）の配信で、日本語・English の「参加の手順 / How to join」の 3 にあった「入れたアプリは旧名で表示」の注記は消した（9/27）。
-- Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）の配信後に、日本語・English の「ご注意 / Please note」の Premium の行を「テスト版では Premium の機能をすべて無料で使えます（購入は不要です。製品版では購入が必要です）」/「In the test version, all Premium features are free to use (no purchase needed; the released version will require a purchase).」に差し替え済み（9/27）。無料で使えるのはビルドから 90 日（1.0.0 候補は 2026-12-26 まで）で、過ぎたテスト用ビルドで購入すると請求されるので、期限の前に次のテスト用ビルドを配るか、この行を見直す。製品版の公開時（R6）に、この行を消す（募集を続けるなら「製品版では購入が必要です」だけにする）。
+- Premium の注記: 1.0.0 候補（Premium を開放したテスト用ビルド）の配信後に、日本語・English の「ご注意 / Please note」の Premium の行を「テスト版では Premium の機能をすべて無料で使えます（購入は不要です。製品版では購入が必要です）」/「In the test version, all Premium features are free to use (no purchase needed; the released version will require a purchase).」に差し替え済み（9/27）。あわせて、自動更新がまだで古い版（0.2.0 は購入ボタンがあり、実際に請求される）のままの人が買わないよう、「アプリを最新版にして、設定の「状態」が「Premium 有効（テスト版）」になっていることを確かめてください」を 1 文足した（9/27、講評を受けて）。無料で使えるのはビルドから 90 日（1.0.0 候補は 2026-12-26 まで）で、過ぎたテスト用ビルドで購入すると請求されるので、期限の前に次のテスト用ビルドを配るか、この行を見直す。製品版の公開時（R6）に、この行を消す（募集を続けるなら「製品版では購入が必要です」だけにする）。
 - 画面の画像: assets/img/beta/（store_assets/screenshots の ja-JP・en-US の 1.0.0 候補の撮り直しから。*-watch-cooldown.png は wear/02_cool_down を 380px に縮めて灰色の縁つきの丸に切り抜いたもの。*-phone-chart.jpg は phone/01_home_heart_rate の上側（1080 幅の y=55〜1045）を切り出したもの、押すと *-phone-heart-rate.jpg の全画面が開く）。ウォッチの画像は 1.0.0 候補の新しい計測画面（0.1.7 とは見た目が違ったが、9/27 の 1.0.0 候補の配信で配信中の版とそろった。解消）
 {% endcomment %}
 
@@ -85,7 +85,7 @@ iPhone / Apple Watch 版（温浴の記録アプリ）は App Store で配信中
 ### ご注意
 
 - テスト版なので、不具合が起きることがあります。
-- **テスト版では Premium の機能をすべて無料で使えます**（購入は不要です。製品版では購入が必要です）。
+- **テスト版では Premium の機能をすべて無料で使えます**（購入は不要です。製品版では購入が必要です）。アプリを最新版にして、設定の「状態」が「Premium 有効（テスト版）」になっていることを確かめてください。
 - 医療機器ではありません。表示は参考情報です。
 
 <details class="beta-more" markdown="1">
@@ -147,7 +147,7 @@ If "Become a tester" does not appear, check that your browser is signed in with 
 ### Please note
 
 - This is a test version, so there may be bugs.
-- **In the test version, all Premium features are free to use** (no purchase needed; the released version will require a purchase).
+- **In the test version, all Premium features are free to use** (no purchase needed; the released version will require a purchase). Update the app to the latest version and check that Settings shows the status "Premium active (test version)".
 - Not a medical device. All values are for reference only.
 
 <details class="beta-more" markdown="1">
