@@ -87,13 +87,14 @@ similar options). It works the same on every watch:
 - **Wrist turn** is disabled during a session by default (so it can't bring up the
   end confirmation by accident; it doesn't pause or close confirmations or alerts
   either). If you turn on the experimental "Wrist turn to pause (beta)" on the watch,
-  you can pause and resume by turning your wrist (see the last item in this list).
+  you can pause and resume by turning your wrist (see the Wrist turn to pause item
+  below).
   Turn gestures on/off and change hint frequency in the watch's system settings
   (Gestures → Hand gestures or similar; names can differ by watch software version).
 - **On-screen Next / Pause buttons** during a running session appear **only if you turn
   on Settings → Watch settings → "Show control buttons"** (off by default). If you
-  turn on the experimental "Use Double pinch (beta)" on the watch (see the last item
-  in this list), **Next** is always shown (Pause only when the setting is on).
+  turn on the experimental "Use Double pinch (beta)" on the watch (see the Double pinch
+  item below), **Next** is always shown (Pause only when the setting is on).
 - **Crown rotation** — Settings → Watch settings lets you choose how far you must
   turn the crown to act (**Light / Standard / More / Most**), to avoid accidental
   triggers from incidental contact.
@@ -102,8 +103,8 @@ similar options). It works the same on every watch:
   advances to the next phase hands-free. It's turned off while "Use Double pinch
   (beta)" is on for the watch and double pinch is available (so one move can't
   advance twice). Experimental and may misfire (it can also react to the finger
-  movement of a double pinch); keep it off if you see unwanted advances, and use
-  **Back** to undo.
+  movement of a double pinch or to a wrist turn); keep it off if you see unwanted
+  advances, and use **Back** to undo.
 - **Swipe right** to open the end confirmation ("End session?"; it closes by itself
   after 5 seconds and the session keeps running). Tap **Cancel** (or **turn the
   crown**) to close it, or tap **End** to finish. The screen shows
@@ -159,6 +160,9 @@ similar options). It works the same on every watch:
   turn, or of pausing/resuming with the crown or a button, is ignored. If it doesn't
   respond well, the crown works as usual. If you turn wrist turn off in the watch's
   system settings, it isn't used even with this option on.
+  Note: if "Double-tap to advance (beta)" is also on, the wrist movement may be picked
+  up and advance to the next phase. If that happens, turn one of them off (use **Back**
+  to undo an unwanted advance).
   While the option is off, the app ignores wrist turns during a session (no pause, no
   end confirmation, and it doesn't close confirmations or alerts). Outside a session
   (home, settings, history and so on), wrist turn stays the system's Back either way.

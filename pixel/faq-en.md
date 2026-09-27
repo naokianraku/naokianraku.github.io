@@ -293,6 +293,8 @@ miss them). So that one movement can't pause and then resume, a wrist turn withi
 second of the previous wrist turn, or of pausing/resuming with the crown or a button,
 is ignored. If it doesn't respond well, the crown works as usual (down to pause, up to
 resume). Double pinch and the body double-tap only advance (Next); they don't pause.
+However, if "Double-tap to advance" is also on, the wrist movement may be picked up and
+advance to the next phase. If that bothers you, turn one of them off.
 
 **Q. Turning my wrist shows "End session?".**
 In the latest version, while "Wrist turn to pause (beta)" is off (the default), **wrist
